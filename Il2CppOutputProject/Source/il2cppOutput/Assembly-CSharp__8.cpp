@@ -53,6 +53,27 @@ struct VirtualFuncInvoker1
 		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
 
 struct Action_1_tD91E4D0ED3C2E385D3BDD4B3EA48B5F99D39F1DC;
 struct AsyncLocal_1_t1D3339EA4C8650D2DEDDF9553E5C932B3DC2CCFD;
@@ -162,6 +183,8 @@ struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D;
 struct IActionListener_t6EC78D7D4E37B0C2ADB839D1DCBF2630E56CB6AF;
 struct ICollection_t37E7B9DC5B4EF41D190D607F92835BF1171C0E8E;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+struct IDictionaryEnumerator_tE129D608FCDB7207E0F0ECE33473CC950A83AD16;
+struct IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5;
 struct IEqualityComparer_tEF8F1EC76B9C8E76695BE848D41E6B147928D1C1;
 struct IMessageHandler_tE2435F3BA6206C5F62BBB471453E1B1754461043;
 struct IPrincipal_tE7AF5096287F6C3472585E124CB38FF2A51EAB5F;
@@ -261,6 +284,7 @@ IL2CPP_EXTERN_C RuntimeClass* ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC
 IL2CPP_EXTERN_C RuntimeClass* Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EffecMn_t7BBBF6893ECE79ED57FD347042288DBB9258D4AB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EffectData_t6AAAD6E8A14E2A8F15B0E3EC836975813F0C7A33_il2cpp_TypeInfo_var;
@@ -277,6 +301,8 @@ IL2CPP_EXTERN_C RuntimeClass* GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC9
 IL2CPP_EXTERN_C RuntimeClass* GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Key_tABCAEDDA423FEA303C2D20401D8E0797217C46F7_il2cpp_TypeInfo_var;
@@ -1841,6 +1867,21 @@ struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F
 	float ___b;
 	float ___a;
 };
+struct DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB 
+{
+	RuntimeObject* ____key;
+	RuntimeObject* ____value;
+};
+struct DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_marshaled_pinvoke
+{
+	Il2CppIUnknown* ____key;
+	Il2CppIUnknown* ____value;
+};
+struct DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_marshaled_com
+{
+	Il2CppIUnknown* ____key;
+	Il2CppIUnknown* ____value;
+};
 struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F 
 {
 	double ___m_value;
@@ -3038,6 +3079,8 @@ struct ScaleGUI_tAC0F093B231E7B5B21591E227A94BCC5F3BBF8A6_StaticFields
 	float ___WIDTH;
 	float ___HEIGHT;
 	List_1_tCFA270E118B873F542F52B1DD58F21D0AF4D1452* ___stack;
+	float ___offsetX;
+	float ___offsetY;
 };
 struct Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields
 {
@@ -4782,9 +4825,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ipKeyboard_update_mD2E37D94376C658DF5F8F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_update_m1374D2FB6C728DEE95838CB96FA0BD0E989CBA92 (GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Image_update_mD56427FFE8C11D93416FBFBAF2E5A2F8F63B4DD4 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataInputStream_update_m4A0DE34D52755C521EBD7E6C84E4031983643BC8 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D Screen_get_safeArea_m2ADAD6C36CC5DB40CC2DAD300DD1DF7CA4DF2525 (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9 (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetMouseButtonDown_m8DFC792D15FFF15D311614D5CC6C5D055E5A1DE3 (int32_t ___0_button, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C (const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_pointerPressed_m7097422DD39A2DB25972BE2626A19AB76B0729E2 (GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA (int32_t ___0_button, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_pointerDragged_mC04A1BD24D456739B87A891787917A5B305F5765 (GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
@@ -4793,12 +4840,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_pointerReleased_mA50C6D63261F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_get_anyKeyDown_m9B8D98B5574A2AA63CEED98FBF0E2A1D946BCA71 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Event_get_keyCode_mADBB236A741F96D86E4A536E15FFECFD4C367B64 (Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MyKeyMap_map_mEB1AF289EAEBE6F728B43F60D9D9EFD4882EC800 (int32_t ___0_k, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434 (int32_t ___0_key, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_keyPressedz_m9B20B1DC5CE29F50930CAE203555F63E95F6DF1F (GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* __this, int32_t ___0_keyCode, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_keyReleasedz_mA76F9964CA8A9ED56CB82439F2316D8718D5A75C (GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* __this, int32_t ___0_keyCode, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62 (String_t* ___0_axisName, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_scrollMouse_m01EF998748D0549DB693512052A1D124968938AD (GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* __this, int32_t ___0_a, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_pointerMouse_m736A7BC7458B3C74F74CD33D4444E324CCC256A8 (GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434 (int32_t ___0_key, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_ME_close_m9E8E26F3FDCF4543183F1A9870E23B49CE5DA828 (Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* __this, const RuntimeMethod* method) ;
@@ -4906,6 +4953,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIStyleState_set_textColor_m5868D12858E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawString_mEB74D377B7983954748183CB29F1FC788BE04B96 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, String_t* ___0_s, int32_t ___1_x, int32_t ___2_y, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* ___3_style, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_IndexOf_mCBADAB35416ED6F5F733DF46CC86C23E5C9E5A56 (String_t* __this, String_t* ___0_value, int32_t ___1_startIndex, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEntry_get_Value_m75FD18FE968AE131F28AA2CB0DF4895EBA39075E_inline (DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_ClearCache_m33D31A43F493F9076647570A79E6E92BD6A50237 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setColor_mA2B06BBE8E66EB27AEE45C5F97C3C0156A2150ED (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_rgb, float ___1_alpha, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_x, int32_t ___1_y, int32_t ___2_w, int32_t ___3_h, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972 (float* __this, const RuntimeMethod* method) ;
@@ -4934,12 +4985,9 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_xMin_mE89C40702926D016A633399E20DB9501E251630D_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_yMin_mB19848FB25DE61EDF958F7A22CFDD86DE103062F_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics__drawRegion_m76946AFD7DD06EC231B8A2CCDF31C9D91C4DA686 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, float ___1_x0, float ___2_y0, int32_t ___3_w, int32_t ___4_h, int32_t ___5_transform, int32_t ___6_x, int32_t ___7_y, int32_t ___8_anchor, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics___drawRegion_mA524478BD75BB0782B4F56485C5182751223D622 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, int32_t ___1_x0, int32_t ___2_y0, int32_t ___3_w, int32_t ___4_h, int32_t ___5_transform, float ___6_x, float ___7_y, int32_t ___8_anchor, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D mGraphics_intersectRect_mCEAE753D572C6B183DA6ECD9AC1721DC7E1666E2 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___0_r1, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___1_r2, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 GUI_get_matrix_m3CA02DED0598EE32BD9E66CA533A78EFB0A246FC (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_UpdatePos_m22DCAEC4DFDBF3973EB861E878B7C936FDEC2732 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_anchor, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Graphics_DrawTexture_m3A59D4F8533A5C833090389AF5CDF3A7BDE31F2C (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___0_screenRect, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___1_texture, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___2_sourceRect, int32_t ___3_leftBorder, int32_t ___4_rightBorder, int32_t ___5_topBorder, int32_t ___6_bottomBorder, const RuntimeMethod* method) ;
@@ -6939,8 +6987,375 @@ IL_00cb:
 // Method Definition Index: 12506
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_Update_m6A75833947272413C503ECE10B0D91F56F193526 (Main_t6125012C4D88701077DD3C4660130C5535730E1E* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MyKeyMap_t024AC4A382D5E2E2F7FD7D3DCF19ACD75DF6EDA3_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFC6687DC37346CD2569888E29764F727FAF530E0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	int32_t V_6 = 0;
+	int32_t V_7 = 0;
+	float V_8 = 0.0f;
+	int32_t V_9 = 0;
+	int32_t V_10 = 0;
 	{
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:309>
+		V_0 = (0.0f);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:310>
+		V_1 = (0.0f);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:311>
+		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
+		bool L_0 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isIPhone;
+		if (!L_0)
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:313>
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_1;
+		L_1 = Screen_get_safeArea_m2ADAD6C36CC5DB40CC2DAD300DD1DF7CA4DF2525(NULL);
+		V_2 = L_1;
+		float L_2;
+		L_2 = Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline((&V_2), NULL);
+		V_0 = L_2;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:314>
+		int32_t L_3;
+		L_3 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_4;
+		L_4 = Screen_get_safeArea_m2ADAD6C36CC5DB40CC2DAD300DD1DF7CA4DF2525(NULL);
+		V_2 = L_4;
+		float L_5;
+		L_5 = Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49_inline((&V_2), NULL);
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_6;
+		L_6 = Screen_get_safeArea_m2ADAD6C36CC5DB40CC2DAD300DD1DF7CA4DF2525(NULL);
+		V_2 = L_6;
+		float L_7;
+		L_7 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline((&V_2), NULL);
+		V_1 = ((float)il2cpp_codegen_subtract(((float)L_3), ((float)il2cpp_codegen_add(L_5, L_7))));
+	}
+
+IL_0044:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:317>
+		bool L_8;
+		L_8 = Input_GetMouseButtonDown_m8DFC792D15FFF15D311614D5CC6C5D055E5A1DE3(0, NULL);
+		if (!L_8)
+		{
+			goto IL_00cb;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:319>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
+		V_3 = L_9;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:320>
+		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
+		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_10 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = V_3;
+		float L_12 = L_11.___x;
+		float L_13 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_14 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		int32_t L_15;
+		L_15 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = V_3;
+		float L_17 = L_16.___y;
+		float L_18 = V_1;
+		int32_t L_19 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		int32_t L_20 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___addYWhenOpenKeyBoard;
+		NullCheck(L_10);
+		GameCanvas_pointerPressed_m7097422DD39A2DB25972BE2626A19AB76B0729E2(L_10, il2cpp_codegen_cast_double_to_int<int32_t>(((float)(((float)il2cpp_codegen_subtract(L_12, L_13))/((float)L_14)))), ((int32_t)il2cpp_codegen_add(il2cpp_codegen_cast_double_to_int<int32_t>(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)L_15), L_17)), L_18))/((float)L_19)))), L_20)), NULL);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:321>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_21 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_3;
+		float L_23 = L_22.___x;
+		float L_24 = V_0;
+		int32_t L_25 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		L_21->___x = ((float)(((float)il2cpp_codegen_subtract(L_23, L_24))/((float)L_25)));
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:322>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_26 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
+		int32_t L_27;
+		L_27 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = V_3;
+		float L_29 = L_28.___y;
+		float L_30 = V_1;
+		int32_t L_31 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		int32_t L_32 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___addYWhenOpenKeyBoard;
+		L_26->___y = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)L_27), L_29)), L_30))/((float)L_31))), ((float)L_32)));
+	}
+
+IL_00cb:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:324>
+		bool L_33;
+		L_33 = Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA(0, NULL);
+		if (!L_33)
+		{
+			goto IL_015a;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:326>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
+		L_34 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
+		V_4 = L_34;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:327>
+		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
+		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_35 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_4;
+		float L_37 = L_36.___x;
+		float L_38 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_39 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		int32_t L_40;
+		L_40 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = V_4;
+		float L_42 = L_41.___y;
+		float L_43 = V_1;
+		int32_t L_44 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		int32_t L_45 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___addYWhenOpenKeyBoard;
+		NullCheck(L_35);
+		GameCanvas_pointerDragged_mC04A1BD24D456739B87A891787917A5B305F5765(L_35, il2cpp_codegen_cast_double_to_int<int32_t>(((float)(((float)il2cpp_codegen_subtract(L_37, L_38))/((float)L_39)))), ((int32_t)il2cpp_codegen_add(il2cpp_codegen_cast_double_to_int<int32_t>(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)L_40), L_42)), L_43))/((float)L_44)))), L_45)), NULL);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:328>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_46 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = V_4;
+		float L_48 = L_47.___x;
+		float L_49 = V_0;
+		int32_t L_50 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		L_46->___x = ((float)(((float)il2cpp_codegen_subtract(L_48, L_49))/((float)L_50)));
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:329>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_51 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
+		int32_t L_52;
+		L_52 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_53 = V_4;
+		float L_54 = L_53.___y;
+		float L_55 = V_1;
+		int32_t L_56 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		int32_t L_57 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___addYWhenOpenKeyBoard;
+		L_51->___y = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)L_52), L_54)), L_55))/((float)L_56))), ((float)L_57)));
+	}
+
+IL_015a:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:331>
+		bool L_58;
+		L_58 = Input_GetMouseButtonUp_mBE89CC9C69BBEA9A863819E77EA54411B0476ED6(0, NULL);
+		if (!L_58)
+		{
+			goto IL_01e9;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:333>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_59;
+		L_59 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
+		V_5 = L_59;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:334>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_60 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_61 = V_5;
+		float L_62 = L_61.___x;
+		float L_63 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_64 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		L_60->___x = ((float)(((float)il2cpp_codegen_subtract(L_62, L_63))/((float)L_64)));
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:335>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_65 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
+		int32_t L_66;
+		L_66 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_67 = V_5;
+		float L_68 = L_67.___y;
+		float L_69 = V_1;
+		int32_t L_70 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		int32_t L_71 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___addYWhenOpenKeyBoard;
+		L_65->___y = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)L_66), L_68)), L_69))/((float)L_70))), ((float)L_71)));
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:336>
+		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
+		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_72 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_73 = V_5;
+		float L_74 = L_73.___x;
+		float L_75 = V_0;
+		int32_t L_76 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		int32_t L_77;
+		L_77 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_78 = V_5;
+		float L_79 = L_78.___y;
+		float L_80 = V_1;
+		int32_t L_81 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		int32_t L_82 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___addYWhenOpenKeyBoard;
+		NullCheck(L_72);
+		GameCanvas_pointerReleased_mA50C6D63261F1E857F13B5EFD51686810E5713D3(L_72, il2cpp_codegen_cast_double_to_int<int32_t>(((float)(((float)il2cpp_codegen_subtract(L_74, L_75))/((float)L_76)))), ((int32_t)il2cpp_codegen_add(il2cpp_codegen_cast_double_to_int<int32_t>(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)L_77), L_79)), L_80))/((float)L_81)))), L_82)), NULL);
+	}
+
+IL_01e9:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:338>
+		bool L_83;
+		L_83 = Input_get_anyKeyDown_m9B8D98B5574A2AA63CEED98FBF0E2A1D946BCA71(NULL);
+		if (!L_83)
+		{
+			goto IL_0225;
+		}
+	}
+	{
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_84;
+		L_84 = Event_get_current_mBD7135E10C392EAD61AC0A0D2489EF758C8A3FAD(NULL);
+		if (!L_84)
+		{
+			goto IL_0225;
+		}
+	}
+	{
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_85;
+		L_85 = Event_get_current_mBD7135E10C392EAD61AC0A0D2489EF758C8A3FAD(NULL);
+		NullCheck(L_85);
+		int32_t L_86;
+		L_86 = Event_get_type_m8A825D6DA432B967DAA3E22E5C8571620A75F8A8(L_85, NULL);
+		if ((!(((uint32_t)L_86) == ((uint32_t)4))))
+		{
+			goto IL_0225;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:340>
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_87;
+		L_87 = Event_get_current_mBD7135E10C392EAD61AC0A0D2489EF758C8A3FAD(NULL);
+		NullCheck(L_87);
+		int32_t L_88;
+		L_88 = Event_get_keyCode_mADBB236A741F96D86E4A536E15FFECFD4C367B64(L_87, NULL);
+		il2cpp_codegen_runtime_class_init_inline(MyKeyMap_t024AC4A382D5E2E2F7FD7D3DCF19ACD75DF6EDA3_il2cpp_TypeInfo_var);
+		int32_t L_89;
+		L_89 = MyKeyMap_map_mEB1AF289EAEBE6F728B43F60D9D9EFD4882EC800(L_88, NULL);
+		V_6 = L_89;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:341>
+		int32_t L_90 = V_6;
+		if (!L_90)
+		{
+			goto IL_0225;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:343>
+		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
+		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_91 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
+		int32_t L_92 = V_6;
+		NullCheck(L_91);
+		GameCanvas_keyPressedz_m9B20B1DC5CE29F50930CAE203555F63E95F6DF1F(L_91, L_92, NULL);
+	}
+
+IL_0225:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:346>
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_93;
+		L_93 = Event_get_current_mBD7135E10C392EAD61AC0A0D2489EF758C8A3FAD(NULL);
+		if (!L_93)
+		{
+			goto IL_025a;
+		}
+	}
+	{
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_94;
+		L_94 = Event_get_current_mBD7135E10C392EAD61AC0A0D2489EF758C8A3FAD(NULL);
+		NullCheck(L_94);
+		int32_t L_95;
+		L_95 = Event_get_type_m8A825D6DA432B967DAA3E22E5C8571620A75F8A8(L_94, NULL);
+		if ((!(((uint32_t)L_95) == ((uint32_t)5))))
+		{
+			goto IL_025a;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:348>
+		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_96;
+		L_96 = Event_get_current_mBD7135E10C392EAD61AC0A0D2489EF758C8A3FAD(NULL);
+		NullCheck(L_96);
+		int32_t L_97;
+		L_97 = Event_get_keyCode_mADBB236A741F96D86E4A536E15FFECFD4C367B64(L_96, NULL);
+		il2cpp_codegen_runtime_class_init_inline(MyKeyMap_t024AC4A382D5E2E2F7FD7D3DCF19ACD75DF6EDA3_il2cpp_TypeInfo_var);
+		int32_t L_98;
+		L_98 = MyKeyMap_map_mEB1AF289EAEBE6F728B43F60D9D9EFD4882EC800(L_97, NULL);
+		V_7 = L_98;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:349>
+		int32_t L_99 = V_7;
+		if (!L_99)
+		{
+			goto IL_025a;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:351>
+		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
+		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_100 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
+		int32_t L_101 = V_7;
+		NullCheck(L_100);
+		GameCanvas_keyReleasedz_mA76F9964CA8A9ED56CB82439F2316D8718D5A75C(L_100, L_101, NULL);
+	}
+
+IL_025a:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:354>
+		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
+		bool L_102 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isPC;
+		if (!L_102)
+		{
+			goto IL_02bf;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:356>
+		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
+		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_103 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
+		float L_104;
+		L_104 = Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62(_stringLiteralFC6687DC37346CD2569888E29764F727FAF530E0, NULL);
+		NullCheck(L_103);
+		GameCanvas_scrollMouse_m01EF998748D0549DB693512052A1D124968938AD(L_103, il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply(L_104, (10.0f)))), NULL);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:357>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_105;
+		L_105 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
+		float L_106 = L_105.___x;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:358>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_107;
+		L_107 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
+		float L_108 = L_107.___y;
+		V_8 = L_108;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:359>
+		float L_109 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_110 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		V_9 = ((int32_t)(il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_subtract(L_106, L_109)))/L_110));
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:360>
+		int32_t L_111;
+		L_111 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
+		float L_112 = V_8;
+		float L_113 = V_1;
+		int32_t L_114 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
+		V_10 = ((int32_t)(il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)L_111), L_112)), L_113)))/L_114));
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:361>
+		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_115 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
+		int32_t L_116 = V_9;
+		int32_t L_117 = V_10;
+		NullCheck(L_115);
+		GameCanvas_pointerMouse_m736A7BC7458B3C74F74CD33D4444E324CCC256A8(L_115, L_116, L_117, NULL);
+	}
+
+IL_02bf:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:363>
 		return;
 	}
 }
@@ -6970,7 +7385,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_checkInput_m43C0C520387C8218FB32F70
 	int32_t V_7 = 0;
 	int32_t V_8 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:313>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:367>
 		bool L_0;
 		L_0 = Input_GetMouseButtonDown_m8DFC792D15FFF15D311614D5CC6C5D055E5A1DE3(0, NULL);
 		if (!L_0)
@@ -6979,11 +7394,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_checkInput_m43C0C520387C8218FB32F70
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:315>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:369>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
 		V_0 = L_1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:316>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:370>
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_2 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = V_0;
@@ -6998,13 +7413,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_checkInput_m43C0C520387C8218FB32F70
 		int32_t L_10 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___addYWhenOpenKeyBoard;
 		NullCheck(L_2);
 		GameCanvas_pointerPressed_m7097422DD39A2DB25972BE2626A19AB76B0729E2(L_2, il2cpp_codegen_cast_double_to_int<int32_t>(((float)(L_4/((float)L_5)))), ((int32_t)il2cpp_codegen_add(il2cpp_codegen_cast_double_to_int<int32_t>(((float)(((float)il2cpp_codegen_subtract(((float)L_6), L_8))/((float)L_9)))), L_10)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:317>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:371>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_11 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
 		float L_13 = L_12.___x;
 		int32_t L_14 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		L_11->___x = ((float)(L_13/((float)L_14)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:318>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:372>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_15 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = V_0;
 		float L_17 = L_16.___y;
@@ -7015,7 +7430,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_checkInput_m43C0C520387C8218FB32F70
 
 IL_0078:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:320>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:374>
 		bool L_20;
 		L_20 = Input_GetMouseButton_m4995DD4A2D4F916565C1B1B5AAF7DF17C126B3EA(0, NULL);
 		if (!L_20)
@@ -7024,11 +7439,11 @@ IL_0078:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:322>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:376>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21;
 		L_21 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
 		V_1 = L_21;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:323>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:377>
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_22 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23 = V_1;
@@ -7043,13 +7458,13 @@ IL_0078:
 		int32_t L_30 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___addYWhenOpenKeyBoard;
 		NullCheck(L_22);
 		GameCanvas_pointerDragged_mC04A1BD24D456739B87A891787917A5B305F5765(L_22, il2cpp_codegen_cast_double_to_int<int32_t>(((float)(L_24/((float)L_25)))), ((int32_t)il2cpp_codegen_add(il2cpp_codegen_cast_double_to_int<int32_t>(((float)(((float)il2cpp_codegen_subtract(((float)L_26), L_28))/((float)L_29)))), L_30)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:324>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:378>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_31 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = V_1;
 		float L_33 = L_32.___x;
 		int32_t L_34 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		L_31->___x = ((float)(L_33/((float)L_34)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:325>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:379>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_35 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_1;
 		float L_37 = L_36.___y;
@@ -7060,7 +7475,7 @@ IL_0078:
 
 IL_00f0:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:327>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:381>
 		bool L_40;
 		L_40 = Input_GetMouseButtonUp_mBE89CC9C69BBEA9A863819E77EA54411B0476ED6(0, NULL);
 		if (!L_40)
@@ -7069,25 +7484,25 @@ IL_00f0:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:329>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:383>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41;
 		L_41 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
 		V_2 = L_41;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:330>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:384>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_42 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_43 = V_2;
 		float L_44 = L_43.___x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_45 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		L_42->___x = ((float)(L_44/((float)L_45)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:331>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:385>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_46 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___lastMousePos);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = V_2;
 		float L_48 = L_47.___y;
 		int32_t L_49 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		int32_t L_50 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___addYWhenOpenKeyBoard;
 		L_46->___y = ((float)il2cpp_codegen_add(((float)(L_48/((float)L_49))), ((float)L_50)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:332>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:386>
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_51 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52 = V_2;
@@ -7105,7 +7520,7 @@ IL_00f0:
 
 IL_0168:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:334>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:388>
 		bool L_60;
 		L_60 = Input_get_anyKeyDown_m9B8D98B5574A2AA63CEED98FBF0E2A1D946BCA71(NULL);
 		if (!L_60)
@@ -7125,7 +7540,7 @@ IL_0168:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:336>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:390>
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_63;
 		L_63 = Event_get_current_mBD7135E10C392EAD61AC0A0D2489EF758C8A3FAD(NULL);
 		NullCheck(L_63);
@@ -7135,7 +7550,7 @@ IL_0168:
 		int32_t L_65;
 		L_65 = MyKeyMap_map_mEB1AF289EAEBE6F728B43F60D9D9EFD4882EC800(L_64, NULL);
 		V_3 = L_65;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:337>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:391>
 		bool L_66;
 		L_66 = Input_GetKey_mE5681EF775F3CEBA7EAD7C63984F7B34C8E8D434(((int32_t)304), NULL);
 		if (L_66)
@@ -7154,7 +7569,7 @@ IL_0168:
 
 IL_01a4:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:339>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:393>
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_68;
 		L_68 = Event_get_current_mBD7135E10C392EAD61AC0A0D2489EF758C8A3FAD(NULL);
 		NullCheck(L_68);
@@ -7175,21 +7590,21 @@ IL_01a4:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:342>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:396>
 		V_3 = ((int32_t)64);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:343>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:397>
 		goto IL_01c4;
 	}
 
 IL_01c1:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:345>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:399>
 		V_3 = ((int32_t)95);
 	}
 
 IL_01c4:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:349>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:403>
 		int32_t L_72 = V_3;
 		if (!L_72)
 		{
@@ -7197,7 +7612,7 @@ IL_01c4:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:351>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:405>
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_73 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
 		int32_t L_74 = V_3;
@@ -7207,7 +7622,7 @@ IL_01c4:
 
 IL_01d2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:354>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:408>
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_75;
 		L_75 = Event_get_current_mBD7135E10C392EAD61AC0A0D2489EF758C8A3FAD(NULL);
 		NullCheck(L_75);
@@ -7219,7 +7634,7 @@ IL_01d2:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:356>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:410>
 		Event_tEBC6F24B56CE22B9C9AD1AC6C24A6B83BC3860CB* L_77;
 		L_77 = Event_get_current_mBD7135E10C392EAD61AC0A0D2489EF758C8A3FAD(NULL);
 		NullCheck(L_77);
@@ -7229,7 +7644,7 @@ IL_01d2:
 		int32_t L_79;
 		L_79 = MyKeyMap_map_mEB1AF289EAEBE6F728B43F60D9D9EFD4882EC800(L_78, NULL);
 		V_5 = L_79;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:357>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:411>
 		int32_t L_80 = V_5;
 		if (!L_80)
 		{
@@ -7237,7 +7652,7 @@ IL_01d2:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:359>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:413>
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_81 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
 		int32_t L_82 = V_5;
@@ -7247,7 +7662,7 @@ IL_01d2:
 
 IL_0200:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:362>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:416>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_83 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isPC;
 		if (!L_83)
@@ -7256,33 +7671,33 @@ IL_0200:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:364>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:418>
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_84 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
 		float L_85;
 		L_85 = Input_GetAxis_m10372E6C5FF591668D2DC5F58C58D213CC598A62(_stringLiteralFC6687DC37346CD2569888E29764F727FAF530E0, NULL);
 		NullCheck(L_84);
 		GameCanvas_scrollMouse_m01EF998748D0549DB693512052A1D124968938AD(L_84, il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply(L_85, (10.0f)))), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:365>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:419>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_86;
 		L_86 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
 		float L_87 = L_86.___x;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:366>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:420>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_88;
 		L_88 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
 		float L_89 = L_88.___y;
 		V_6 = L_89;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:367>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:421>
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_90 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		V_7 = ((int32_t)(il2cpp_codegen_cast_double_to_int<int32_t>(L_87)/L_90));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:368>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:422>
 		int32_t L_91;
 		L_91 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
 		float L_92 = V_6;
 		int32_t L_93 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		V_8 = ((int32_t)(((int32_t)il2cpp_codegen_subtract(L_91, il2cpp_codegen_cast_double_to_int<int32_t>(L_92)))/L_93));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:369>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:423>
 		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_94 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___gameCanvas;
 		int32_t L_95 = V_7;
 		int32_t L_96 = V_8;
@@ -7292,7 +7707,7 @@ IL_0200:
 
 IL_0260:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:371>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:425>
 		return;
 	}
 }
@@ -7312,25 +7727,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_OnApplicationQuit_mFB8FEEC631840E4D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:375>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:429>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral9AA8D0838211AE7EFD439C373315CBE48466EA0D, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:376>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:430>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bRun = (bool)0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:377>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:431>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB_il2cpp_TypeInfo_var);
 		Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_0;
 		L_0 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
 		NullCheck(L_0);
 		Session_ME_close_m9E8E26F3FDCF4543183F1A9870E23B49CE5DA828(L_0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:378>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:432>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45_il2cpp_TypeInfo_var);
 		Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45* L_1;
 		L_1 = Session_ME2_gI_m5952BA066D6A86FA59EDABC88564DF04289709B6(NULL);
 		NullCheck(L_1);
 		Session_ME2_close_mDAE7E0C78BB90D54ACB0B3D08F03FA8B2291EE67(L_1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:379>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:433>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_2 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isPC;
 		if (!L_2)
@@ -7339,14 +7754,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_OnApplicationQuit_mFB8FEEC631840E4D
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:381>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:435>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		Application_Quit_mE304382DB9A6455C2A474C8F364C7387F37E9281(NULL);
 	}
 
 IL_0030:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:383>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:437>
 		return;
 	}
 }
@@ -7363,10 +7778,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_OnApplicationPause_m3BF5BE77070EC00
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:387>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:441>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isResume = (bool)0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:388>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:442>
 		bool L_0 = ___0_paused;
 		if (!L_0)
 		{
@@ -7374,7 +7789,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_OnApplicationPause_m3BF5BE77070EC00
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:390>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:444>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = GameCanvas_isWaiting_m5CE4C025787080B3CED47C280578E92631E4EBCE(NULL);
@@ -7384,7 +7799,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_OnApplicationPause_m3BF5BE77070EC00
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:392>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:446>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isQuitApp = (bool)1;
 		goto IL_001e;
@@ -7392,14 +7807,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_OnApplicationPause_m3BF5BE77070EC00
 
 IL_0018:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:397>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:451>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isResume = (bool)1;
 	}
 
 IL_001e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:399>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:453>
 		bool L_2;
 		L_2 = TouchScreenKeyboard_get_visible_m5994AFC21D2C48F997FC3DECF1235B0A620B0B63(NULL);
 		if (!L_2)
@@ -7408,19 +7823,19 @@ IL_001e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:401>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:455>
 		il2cpp_codegen_runtime_class_init_inline(TField_t56E19AE85CA63279C53042EF348814217A9F0E70_il2cpp_TypeInfo_var);
 		TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A* L_3 = ((TField_t56E19AE85CA63279C53042EF348814217A9F0E70_StaticFields*)il2cpp_codegen_static_fields_for(TField_t56E19AE85CA63279C53042EF348814217A9F0E70_il2cpp_TypeInfo_var))->___kb;
 		NullCheck(L_3);
 		TouchScreenKeyboard_set_active_m4382D57F87E4C86B59864E86BE93A8A2A474B7C2(L_3, (bool)0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:402>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:456>
 		((TField_t56E19AE85CA63279C53042EF348814217A9F0E70_StaticFields*)il2cpp_codegen_static_fields_for(TField_t56E19AE85CA63279C53042EF348814217A9F0E70_il2cpp_TypeInfo_var))->___kb = (TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&((TField_t56E19AE85CA63279C53042EF348814217A9F0E70_StaticFields*)il2cpp_codegen_static_fields_for(TField_t56E19AE85CA63279C53042EF348814217A9F0E70_il2cpp_TypeInfo_var))->___kb), (void*)(TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A*)NULL);
 	}
 
 IL_0036:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:404>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:458>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_4 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isQuitApp;
 		if (!L_4)
@@ -7429,14 +7844,14 @@ IL_0036:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:406>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:460>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		Application_Quit_mE304382DB9A6455C2A474C8F364C7387F37E9281(NULL);
 	}
 
 IL_0042:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:408>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:462>
 		return;
 	}
 }
@@ -7450,7 +7865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_exit_m215CC2FD93AC61FC507E65385A5AD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:412>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:466>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_0 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isPC;
 		if (!L_0)
@@ -7459,7 +7874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_exit_m215CC2FD93AC61FC507E65385A5AD
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:414>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:468>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		Main_t6125012C4D88701077DD3C4660130C5535730E1E* L_1 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___main;
 		NullCheck(L_1);
@@ -7469,10 +7884,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_exit_m215CC2FD93AC61FC507E65385A5AD
 
 IL_0012:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:418>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:472>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___a = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:420>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:474>
 		return;
 	}
 }
@@ -7486,7 +7901,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Main_detectCompactDevice_m2E5FE104B73DFC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:424>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:478>
 		int32_t L_0 = ((iPhoneSettings_tE5975BDB07D10A10CA2F1140E6ADD1C350722011_StaticFields*)il2cpp_codegen_static_fields_for(iPhoneSettings_tE5975BDB07D10A10CA2F1140E6ADD1C350722011_il2cpp_TypeInfo_var))->___generation;
 		if ((((int32_t)L_0) == ((int32_t)1)))
 		{
@@ -7517,13 +7932,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Main_detectCompactDevice_m2E5FE104B73DFC
 
 IL_0020:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:426>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:480>
 		return (bool)0;
 	}
 
 IL_0022:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:428>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:482>
 		return (bool)1;
 	}
 }
@@ -7537,7 +7952,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Main_checkCanSendSMS_mA8292E9B5596528F5F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:433>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:487>
 		int32_t L_0 = ((iPhoneSettings_tE5975BDB07D10A10CA2F1140E6ADD1C350722011_StaticFields*)il2cpp_codegen_static_fields_for(iPhoneSettings_tE5975BDB07D10A10CA2F1140E6ADD1C350722011_il2cpp_TypeInfo_var))->___generation;
 		if ((((int32_t)L_0) == ((int32_t)3)))
 		{
@@ -7561,13 +7976,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Main_checkCanSendSMS_mA8292E9B5596528F5F
 
 IL_0019:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:435>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:489>
 		return (bool)1;
 	}
 
 IL_001b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:437>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Main.cs:491>
 		return (bool)0;
 	}
 }
@@ -14888,6 +15303,129 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mFont__cctor_mE5D656ADF86BE370E40440D4E0
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 12578
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_ClearCache_m33D31A43F493F9076647570A79E6E92BD6A50237 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* V_2 = NULL;
+	RuntimeObject* V_3 = NULL;
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:103>
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_0 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___cachedTextures;
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(23, L_0);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_003f:
+			{
+				{
+					RuntimeObject* L_2 = V_0;
+					V_3 = ((RuntimeObject*)IsInst((RuntimeObject*)L_2, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var));
+					RuntimeObject* L_3 = V_3;
+					if (!L_3)
+					{
+						goto IL_004f;
+					}
+				}
+				{
+					RuntimeObject* L_4 = V_3;
+					NullCheck(L_4);
+					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_4);
+				}
+
+IL_004f:
+				{
+					return;
+				}
+			}
+		});
+		try
+		{
+			{
+				goto IL_0035_1;
+			}
+
+IL_000d_1:
+			{
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:103>
+				RuntimeObject* L_5 = V_0;
+				NullCheck(L_5);
+				RuntimeObject* L_6;
+				L_6 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(1, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_5);
+				V_1 = ((*(DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB*)((DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB*)(DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB*)UnBox(L_6, DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB_il2cpp_TypeInfo_var))));
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:105>
+				RuntimeObject* L_7;
+				L_7 = DictionaryEntry_get_Value_m75FD18FE968AE131F28AA2CB0DF4895EBA39075E_inline((&V_1), NULL);
+				V_2 = ((Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)IsInstSealed((RuntimeObject*)L_7, Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var));
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:106>
+				Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_8 = V_2;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_9;
+				L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (!L_9)
+				{
+					goto IL_0035_1;
+				}
+			}
+			{
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:108>
+				Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_10 = V_2;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_10, NULL);
+			}
+
+IL_0035_1:
+			{
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:103>
+				RuntimeObject* L_11 = V_0;
+				NullCheck(L_11);
+				bool L_12;
+				L_12 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_11);
+				if (L_12)
+				{
+					goto IL_000d_1;
+				}
+			}
+			{
+				goto IL_0050;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0050:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:111>
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_13 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___cachedTextures;
+		NullCheck(L_13);
+		VirtualActionInvoker0::Invoke(16, L_13);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:112>
+		return;
+	}
+}
+// Method Definition Index: 12579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_cache_m6362994CEE7A4D549944451DCFA201425174B95C (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, String_t* ___0_key, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___1_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14898,7 +15436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_cache_m6362994CEE7A4D549944451
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:102>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:116>
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_0 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___cachedTextures;
 		NullCheck(L_0);
@@ -14906,53 +15444,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_cache_m6362994CEE7A4D549944451
 		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(29, L_0);
 		if ((((int32_t)L_1) <= ((int32_t)((int32_t)400))))
 		{
-			goto IL_001b;
+			goto IL_0016;
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:104>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:118>
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
-		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_2 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___cachedTextures;
+		mGraphics_ClearCache_m33D31A43F493F9076647570A79E6E92BD6A50237(NULL);
+	}
+
+IL_0016:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:120>
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_2 = ___1_value;
 		NullCheck(L_2);
-		VirtualActionInvoker0::Invoke(16, L_2);
-	}
-
-IL_001b:
-	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:106>
-		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_3 = ___1_value;
-		NullCheck(L_3);
-		int32_t L_4;
-		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_3);
-		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_5 = ___1_value;
-		NullCheck(L_5);
-		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_5);
+		int32_t L_3;
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_2);
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_4 = ___1_value;
+		NullCheck(L_4);
+		int32_t L_5;
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_4);
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		int32_t L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
-		int32_t L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
-		if ((((int32_t)((int32_t)il2cpp_codegen_multiply(L_4, L_6))) >= ((int32_t)((int32_t)il2cpp_codegen_multiply(L_7, L_8)))))
+		int32_t L_6 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
+		int32_t L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
+		if ((((int32_t)((int32_t)il2cpp_codegen_multiply(L_3, L_5))) >= ((int32_t)((int32_t)il2cpp_codegen_multiply(L_6, L_7)))))
 		{
-			goto IL_0041;
+			goto IL_003c;
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:108>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:122>
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
-		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_9 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___cachedTextures;
-		String_t* L_10 = ___0_key;
-		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_11 = ___1_value;
-		NullCheck(L_9);
-		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(15, L_9, L_10, L_11);
+		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_8 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___cachedTextures;
+		String_t* L_9 = ___0_key;
+		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_10 = ___1_value;
+		NullCheck(L_8);
+		VirtualActionInvoker2< RuntimeObject*, RuntimeObject* >::Invoke(15, L_8, L_9, L_10);
 	}
 
-IL_0041:
+IL_003c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:110>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:124>
 		return;
 	}
 }
-// Method Definition Index: 12579
+// Method Definition Index: 12580
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_tx, int32_t ___1_ty, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14962,26 +15498,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_translate_m935DBC9CDE2048589DF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:114>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:128>
 		int32_t L_0 = ___0_tx;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___0_tx = ((int32_t)il2cpp_codegen_multiply(L_0, L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:115>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:129>
 		int32_t L_2 = ___1_ty;
 		int32_t L_3 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_ty = ((int32_t)il2cpp_codegen_multiply(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:116>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:130>
 		int32_t L_4 = __this->___translateX;
 		int32_t L_5 = ___0_tx;
 		__this->___translateX = ((int32_t)il2cpp_codegen_add(L_4, L_5));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:117>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:131>
 		int32_t L_6 = __this->___translateY;
 		int32_t L_7 = ___1_ty;
 		__this->___translateY = ((int32_t)il2cpp_codegen_add(L_6, L_7));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:118>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:132>
 		__this->___isTranslate = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:119>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:133>
 		int32_t L_8 = __this->___translateX;
 		if (L_8)
 		{
@@ -14996,31 +15532,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_translate_m935DBC9CDE2048589DF
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:121>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:135>
 		__this->___isTranslate = (bool)0;
 	}
 
 IL_004c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:123>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:137>
 		return;
 	}
 }
-// Method Definition Index: 12580
+// Method Definition Index: 12581
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_translate_m29BB00EDF1B4164B7FDEF9DF2B6FD71C7571E5A2 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:127>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:141>
 		float L_0 = __this->___translateXf;
 		float L_1 = ___0_x;
 		__this->___translateXf = ((float)il2cpp_codegen_add(L_0, L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:128>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:142>
 		float L_2 = __this->___translateYf;
 		float L_3 = ___1_y;
 		__this->___translateYf = ((float)il2cpp_codegen_add(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:129>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:143>
 		__this->___isTranslate = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:130>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:144>
 		float L_4 = __this->___translateXf;
 		if ((!(((float)L_4) == ((float)(0.0f)))))
 		{
@@ -15035,17 +15571,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_translate_m29BB00EDF1B4164B7FD
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:132>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:146>
 		__this->___isTranslate = (bool)0;
 	}
 
 IL_0044:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:134>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:148>
 		return;
 	}
 }
-// Method Definition Index: 12581
+// Method Definition Index: 12582
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getTranslateX_m0081BC7A604BC933026464239DF8601C7BB175B9 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15055,14 +15591,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getTranslateX_m0081BC7A604B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:138>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:152>
 		int32_t L_0 = __this->___translateX;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		return ((int32_t)(L_0/L_1));
 	}
 }
-// Method Definition Index: 12582
+// Method Definition Index: 12583
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getTranslateY_mC8B2DF28F2BED3BFAAB16A3522AE8029D63F99EA (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15072,7 +15608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getTranslateY_mC8B2DF28F2BE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:143>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:157>
 		int32_t L_0 = __this->___translateY;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
@@ -15080,7 +15616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getTranslateY_mC8B2DF28F2BE
 		return ((int32_t)il2cpp_codegen_add(((int32_t)(L_0/L_1)), L_2));
 	}
 }
-// Method Definition Index: 12583
+// Method Definition Index: 12584
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setClip_m40F6AC445C68B4E10ABA519E1A2EDC421FC39797 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_x, int32_t ___1_y, int32_t ___2_w, int32_t ___3_h, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15090,48 +15626,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setClip_m40F6AC445C68B4E10ABA5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:148>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:162>
 		int32_t L_0 = ___0_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___0_x = ((int32_t)il2cpp_codegen_multiply(L_0, L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:149>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:163>
 		int32_t L_2 = ___1_y;
 		int32_t L_3 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_y = ((int32_t)il2cpp_codegen_multiply(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:150>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:164>
 		int32_t L_4 = ___2_w;
 		int32_t L_5 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_w = ((int32_t)il2cpp_codegen_multiply(L_4, L_5));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:151>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:165>
 		int32_t L_6 = ___3_h;
 		int32_t L_7 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___3_h = ((int32_t)il2cpp_codegen_multiply(L_6, L_7));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:152>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:166>
 		int32_t L_8 = __this->___translateX;
 		__this->___clipTX = L_8;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:153>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:167>
 		int32_t L_9 = __this->___translateY;
 		__this->___clipTY = L_9;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:154>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:168>
 		int32_t L_10 = ___0_x;
 		__this->___clipX = L_10;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:155>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:169>
 		int32_t L_11 = ___1_y;
 		__this->___clipY = L_11;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:156>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:170>
 		int32_t L_12 = ___2_w;
 		__this->___clipW = L_12;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:157>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:171>
 		int32_t L_13 = ___3_h;
 		__this->___clipH = L_13;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:158>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:172>
 		__this->___isClip = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:159>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:173>
 		return;
 	}
 }
-// Method Definition Index: 12584
+// Method Definition Index: 12585
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getClipX_mAEC2A88B86DFFC09833D8C24035EB2487CD2A7DE (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15141,13 +15677,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getClipX_mAEC2A88B86DFFC098
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:163>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:177>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx;
 		return L_0;
 	}
 }
-// Method Definition Index: 12585
+// Method Definition Index: 12586
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getClipY_m74A9FAAB5AE7CAE9ABD9C76A5374A74B7E5F224F (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15157,13 +15693,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getClipY_m74A9FAAB5AE7CAE9A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:168>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:182>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 		return L_0;
 	}
 }
-// Method Definition Index: 12586
+// Method Definition Index: 12587
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getClipWidth_m566972B63DB4A50DBEC54243A57B0BE377340331 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15173,13 +15709,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getClipWidth_m566972B63DB4A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:173>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:187>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 		return L_0;
 	}
 }
-// Method Definition Index: 12587
+// Method Definition Index: 12588
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getClipHeight_m2B66689983ECE1DCCC782A65FD1819942D701554 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15189,34 +15725,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getClipHeight_m2B66689983EC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:178>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:192>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gH;
 		return L_0;
 	}
 }
-// Method Definition Index: 12588
+// Method Definition Index: 12589
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillRect_m62A5492ABE6EE41417E1CCAFB0ED8CEE0DF7A893 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_x, int32_t ___1_y, int32_t ___2_w, int32_t ___3_h, int32_t ___4_color, int32_t ___5_alpha, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:183>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:197>
 		V_0 = (0.5f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:184>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:198>
 		int32_t L_0 = ___4_color;
 		float L_1 = V_0;
 		mGraphics_setColor_mA2B06BBE8E66EB27AEE45C5F97C3C0156A2150ED(__this, L_0, L_1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:185>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:199>
 		int32_t L_2 = ___0_x;
 		int32_t L_3 = ___1_y;
 		int32_t L_4 = ___2_w;
 		int32_t L_5 = ___3_h;
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(__this, L_2, L_3, L_4, L_5, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:186>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:200>
 		return;
 	}
 }
-// Method Definition Index: 12589
+// Method Definition Index: 12590
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawLine_m33432F3F49D925F8028D5E5AB7C98124938F6D0F (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_x1, int32_t ___1_y1, int32_t ___2_x2, int32_t ___3_y2, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15246,24 +15782,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawLine_m33432F3F49D925F8028D
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_10;
 	memset((&V_10), 0, sizeof(V_10));
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:190>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:204>
 		int32_t L_0 = ___0_x1;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___0_x1 = ((int32_t)il2cpp_codegen_multiply(L_0, L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:191>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:205>
 		int32_t L_2 = ___1_y1;
 		int32_t L_3 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_y1 = ((int32_t)il2cpp_codegen_multiply(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:192>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:206>
 		int32_t L_4 = ___2_x2;
 		int32_t L_5 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_x2 = ((int32_t)il2cpp_codegen_multiply(L_4, L_5));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:193>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:207>
 		int32_t L_6 = ___3_y2;
 		int32_t L_7 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___3_y2 = ((int32_t)il2cpp_codegen_multiply(L_6, L_7));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:194>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:208>
 		int32_t L_8 = ___1_y1;
 		int32_t L_9 = ___3_y2;
 		if ((!(((uint32_t)L_8) == ((uint32_t)L_9))))
@@ -15272,7 +15808,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawLine_m33432F3F49D925F8028D
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:196>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:210>
 		int32_t L_10 = ___0_x1;
 		int32_t L_11 = ___2_x2;
 		if ((((int32_t)L_10) <= ((int32_t)L_11)))
@@ -15281,30 +15817,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawLine_m33432F3F49D925F8028D
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:198>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:212>
 		int32_t L_12 = ___2_x2;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:199>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:213>
 		int32_t L_13 = ___0_x1;
 		___2_x2 = L_13;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:200>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:214>
 		___0_x1 = L_12;
 	}
 
 IL_0034:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:202>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:216>
 		int32_t L_14 = ___0_x1;
 		int32_t L_15 = ___1_y1;
 		int32_t L_16 = ___2_x2;
 		int32_t L_17 = ___0_x1;
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(__this, L_14, L_15, ((int32_t)il2cpp_codegen_subtract(L_16, L_17)), 1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:203>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:217>
 		return;
 	}
 
 IL_0041:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:205>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:219>
 		int32_t L_18 = ___0_x1;
 		int32_t L_19 = ___2_x2;
 		if ((!(((uint32_t)L_18) == ((uint32_t)L_19))))
@@ -15313,7 +15849,7 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:207>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:221>
 		int32_t L_20 = ___1_y1;
 		int32_t L_21 = ___3_y2;
 		if ((((int32_t)L_20) <= ((int32_t)L_21)))
@@ -15322,30 +15858,30 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:209>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:223>
 		int32_t L_22 = ___3_y2;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:210>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:224>
 		int32_t L_23 = ___1_y1;
 		___3_y2 = L_23;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:211>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:225>
 		___1_y1 = L_22;
 	}
 
 IL_0051:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:213>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:227>
 		int32_t L_24 = ___0_x1;
 		int32_t L_25 = ___1_y1;
 		int32_t L_26 = ___3_y2;
 		int32_t L_27 = ___1_y1;
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(__this, L_24, L_25, 1, ((int32_t)il2cpp_codegen_subtract(L_26, L_27)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:214>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:228>
 		return;
 	}
 
 IL_005f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:216>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:230>
 		bool L_28 = __this->___isTranslate;
 		if (!L_28)
 		{
@@ -15353,19 +15889,19 @@ IL_005f:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:218>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:232>
 		int32_t L_29 = ___0_x1;
 		int32_t L_30 = __this->___translateX;
 		___0_x1 = ((int32_t)il2cpp_codegen_add(L_29, L_30));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:219>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:233>
 		int32_t L_31 = ___1_y1;
 		int32_t L_32 = __this->___translateY;
 		___1_y1 = ((int32_t)il2cpp_codegen_add(L_31, L_32));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:220>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:234>
 		int32_t L_33 = ___2_x2;
 		int32_t L_34 = __this->___translateX;
 		___2_x2 = ((int32_t)il2cpp_codegen_add(L_33, L_34));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:221>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:235>
 		int32_t L_35 = ___3_y2;
 		int32_t L_36 = __this->___translateY;
 		___3_y2 = ((int32_t)il2cpp_codegen_add(L_35, L_36));
@@ -15373,7 +15909,7 @@ IL_005f:
 
 IL_0090:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:223>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:237>
 		float* L_37 = (float*)(&__this->___r);
 		String_t* L_38;
 		L_38 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_37, NULL);
@@ -15386,7 +15922,7 @@ IL_0090:
 		String_t* L_43;
 		L_43 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral979BC0CABD503D3AD3B13C4F5694AFB05BD29ECB, L_38, L_40, L_42, NULL);
 		V_0 = L_43;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:224>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:238>
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_44 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___cachedTextures;
 		String_t* L_45 = V_0;
@@ -15394,7 +15930,7 @@ IL_0090:
 		RuntimeObject* L_46;
 		L_46 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21, L_44, L_45);
 		V_1 = ((Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)CastclassSealed((RuntimeObject*)L_46, Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:225>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:239>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_47 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_48;
@@ -15405,25 +15941,25 @@ IL_0090:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:227>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:241>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_49 = (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)il2cpp_codegen_object_new(Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var);
 		Texture2D__ctor_m3BA82E87442B7F69E118477069AE11101B9DF796(L_49, 1, 1, NULL);
 		V_1 = L_49;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:228>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:242>
 		float L_50 = __this->___r;
 		float L_51 = __this->___g;
 		float L_52 = __this->___b;
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&V_10), L_50, L_51, L_52, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:229>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:243>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_53 = V_1;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_54 = V_10;
 		NullCheck(L_53);
 		Texture2D_SetPixel_m2CCFC5F729135D59DC4A697C2605A3FC5C8574DB(L_53, 0, 0, L_54, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:230>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:244>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_55 = V_1;
 		NullCheck(L_55);
 		Texture2D_Apply_mA014182C9EE0BBF6EEE3B286854F29E50EB972DC(L_55, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:231>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:245>
 		String_t* L_56 = V_0;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_57 = V_1;
 		mGraphics_cache_m6362994CEE7A4D549944451DCFA201425174B95C(__this, L_56, L_57, NULL);
@@ -15431,22 +15967,22 @@ IL_0090:
 
 IL_010f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:233>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:247>
 		int32_t L_58 = ___0_x1;
 		int32_t L_59 = ___1_y1;
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_2), ((float)L_58), ((float)L_59), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:234>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:248>
 		int32_t L_60 = ___2_x2;
 		int32_t L_61 = ___3_y2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_62;
 		memset((&L_62), 0, sizeof(L_62));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_62), ((float)L_60), ((float)L_61), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:235>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:249>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_63 = V_2;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_64;
 		L_64 = Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline(L_62, L_63, NULL);
 		V_3 = L_64;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:236>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:250>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_65 = V_3;
 		float L_66 = L_65.___y;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_67 = V_3;
@@ -15454,7 +15990,7 @@ IL_010f:
 		float L_69;
 		L_69 = atanf(((float)(L_66/L_68)));
 		V_4 = ((float)il2cpp_codegen_multiply((57.2957802f), L_69));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:237>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:251>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_70 = V_3;
 		float L_71 = L_70.___x;
 		if ((!(((float)L_71) < ((float)(0.0f)))))
@@ -15463,31 +15999,31 @@ IL_010f:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:239>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:253>
 		float L_72 = V_4;
 		V_4 = ((float)il2cpp_codegen_add(L_72, (180.0f)));
 	}
 
 IL_015c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:241>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:255>
 		float L_73;
 		L_73 = ceilf((0.0f));
 		V_5 = il2cpp_codegen_cast_double_to_int<int32_t>(L_73);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:242>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:256>
 		float L_74 = V_4;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_75 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(GUIUtility_tA20863F7281628086EFC61CF90CB52D20E1FD76A_il2cpp_TypeInfo_var);
 		GUIUtility_RotateAroundPivot_mA1AD5027CE63F6902AE6458286C13F53C8EE441F(L_74, L_75, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:243>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:257>
 		V_6 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:244>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:258>
 		V_7 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:245>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:259>
 		V_8 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:246>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:260>
 		V_9 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:247>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:261>
 		bool L_76 = __this->___isClip;
 		if (!L_76)
 		{
@@ -15495,19 +16031,19 @@ IL_015c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:249>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:263>
 		int32_t L_77 = __this->___clipX;
 		V_6 = L_77;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:250>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:264>
 		int32_t L_78 = __this->___clipY;
 		V_7 = L_78;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:251>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:265>
 		int32_t L_79 = __this->___clipW;
 		V_8 = L_79;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:252>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:266>
 		int32_t L_80 = __this->___clipH;
 		V_9 = L_80;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:253>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:267>
 		bool L_81 = __this->___isTranslate;
 		if (!L_81)
 		{
@@ -15515,11 +16051,11 @@ IL_015c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:255>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:269>
 		int32_t L_82 = V_6;
 		int32_t L_83 = __this->___clipTX;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_82, L_83));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:256>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:270>
 		int32_t L_84 = V_7;
 		int32_t L_85 = __this->___clipTY;
 		V_7 = ((int32_t)il2cpp_codegen_add(L_84, L_85));
@@ -15527,7 +16063,7 @@ IL_015c:
 
 IL_01c3:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:259>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:273>
 		bool L_86 = __this->___isClip;
 		if (!L_86)
 		{
@@ -15535,7 +16071,7 @@ IL_01c3:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:261>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:275>
 		int32_t L_87 = V_6;
 		int32_t L_88 = V_7;
 		int32_t L_89 = V_8;
@@ -15549,7 +16085,7 @@ IL_01c3:
 
 IL_01e1:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:263>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:277>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_92 = V_2;
 		float L_93 = L_92.___x;
 		int32_t L_94 = V_6;
@@ -15565,7 +16101,7 @@ IL_01e1:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_101 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var);
 		Graphics_DrawTexture_m400F92CB13445A7BC054BC074B7073EA7E4B322F(L_100, L_101, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:264>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:278>
 		bool L_102 = __this->___isClip;
 		if (!L_102)
 		{
@@ -15573,23 +16109,23 @@ IL_01e1:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:266>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:280>
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_EndGroup_mE8C7A3FB87B0EAA3556AB16466D0D640BBEE1675(NULL);
 	}
 
 IL_021d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:268>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:282>
 		float L_103 = V_4;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_104 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(GUIUtility_tA20863F7281628086EFC61CF90CB52D20E1FD76A_il2cpp_TypeInfo_var);
 		GUIUtility_RotateAroundPivot_mA1AD5027CE63F6902AE6458286C13F53C8EE441F(((float)il2cpp_codegen_subtract((0.0f), L_103)), L_104, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:269>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:283>
 		return;
 	}
 }
-// Method Definition Index: 12590
+// Method Definition Index: 12591
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F mGraphics_setColorMiniMap_m67854F600863BC001F0DEB05077BA7BE6EA542CD (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_rgb, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -15597,22 +16133,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 	float V_2 = 0.0f;
 	float V_3 = 0.0f;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:273>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:287>
 		int32_t L_0 = ___0_rgb;
 		V_0 = ((int32_t)(L_0&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:274>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:288>
 		int32_t L_1 = ___0_rgb;
 		V_1 = ((int32_t)(((int32_t)(L_1>>8))&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:275>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:289>
 		int32_t L_2 = ___0_rgb;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:276>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:290>
 		int32_t L_3 = V_0;
 		V_2 = ((float)(((float)L_3)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:277>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:291>
 		int32_t L_4 = V_1;
 		V_3 = ((float)(((float)L_4)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:278>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:279>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:292>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:293>
 		float L_5 = V_3;
 		float L_6 = V_2;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_7;
@@ -15621,7 +16157,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 		return L_7;
 	}
 }
-// Method Definition Index: 12591
+// Method Definition Index: 12592
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* mGraphics_getRGB_m0A7897E36C222CDAB0D9DC374219965FAC9B8375 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_cl, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15634,19 +16170,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52C
 	float V_1 = 0.0f;
 	float V_2 = 0.0f;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:284>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:298>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_cl;
 		float L_1 = L_0.___r;
 		V_0 = ((float)il2cpp_codegen_multiply((256.0f), L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:285>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:299>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2 = ___0_cl;
 		float L_3 = L_2.___g;
 		V_1 = ((float)il2cpp_codegen_multiply((256.0f), L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:286>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:300>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ___0_cl;
 		float L_5 = L_4.___b;
 		V_2 = ((float)il2cpp_codegen_multiply((256.0f), L_5));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:287>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:301>
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)3);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_7 = L_6;
 		float L_8 = V_0;
@@ -15663,44 +16199,44 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52C
 		return L_11;
 	}
 }
-// Method Definition Index: 12592
+// Method Definition Index: 12593
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRect_mA0674F7342D0E896CC7BAD0B1415C67C08218D81 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_x, int32_t ___1_y, int32_t ___2_w, int32_t ___3_h, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:292>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:306>
 		V_0 = 1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:293>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:307>
 		int32_t L_0 = ___0_x;
 		int32_t L_1 = ___1_y;
 		int32_t L_2 = ___2_w;
 		int32_t L_3 = V_0;
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(__this, L_0, L_1, L_2, L_3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:294>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:308>
 		int32_t L_4 = ___0_x;
 		int32_t L_5 = ___1_y;
 		int32_t L_6 = V_0;
 		int32_t L_7 = ___3_h;
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(__this, L_4, L_5, L_6, L_7, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:295>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:309>
 		int32_t L_8 = ___0_x;
 		int32_t L_9 = ___2_w;
 		int32_t L_10 = ___1_y;
 		int32_t L_11 = V_0;
 		int32_t L_12 = ___3_h;
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(__this, ((int32_t)il2cpp_codegen_add(L_8, L_9)), L_10, L_11, ((int32_t)il2cpp_codegen_add(L_12, 1)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:296>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:310>
 		int32_t L_13 = ___0_x;
 		int32_t L_14 = ___1_y;
 		int32_t L_15 = ___3_h;
 		int32_t L_16 = ___2_w;
 		int32_t L_17 = V_0;
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(__this, L_13, ((int32_t)il2cpp_codegen_add(L_14, L_15)), ((int32_t)il2cpp_codegen_add(L_16, 1)), L_17, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:297>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:311>
 		return;
 	}
 }
-// Method Definition Index: 12593
+// Method Definition Index: 12594
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_x, int32_t ___1_y, int32_t ___2_w, int32_t ___3_h, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15725,24 +16261,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillRect_m476E3A5360581B125A81
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_8;
 	memset((&V_8), 0, sizeof(V_8));
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:301>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:315>
 		int32_t L_0 = ___0_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___0_x = ((int32_t)il2cpp_codegen_multiply(L_0, L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:302>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:316>
 		int32_t L_2 = ___1_y;
 		int32_t L_3 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_y = ((int32_t)il2cpp_codegen_multiply(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:303>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:317>
 		int32_t L_4 = ___2_w;
 		int32_t L_5 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_w = ((int32_t)il2cpp_codegen_multiply(L_4, L_5));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:304>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:318>
 		int32_t L_6 = ___3_h;
 		int32_t L_7 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___3_h = ((int32_t)il2cpp_codegen_multiply(L_6, L_7));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:305>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:319>
 		int32_t L_8 = ___2_w;
 		if ((((int32_t)L_8) < ((int32_t)0)))
 		{
@@ -15759,13 +16295,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillRect_m476E3A5360581B125A81
 
 IL_002e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:307>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:321>
 		return;
 	}
 
 IL_002f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:309>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:323>
 		bool L_10 = __this->___isTranslate;
 		if (!L_10)
 		{
@@ -15773,11 +16309,11 @@ IL_002f:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:311>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:325>
 		int32_t L_11 = ___0_x;
 		int32_t L_12 = __this->___translateX;
 		___0_x = ((int32_t)il2cpp_codegen_add(L_11, L_12));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:312>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:326>
 		int32_t L_13 = ___1_y;
 		int32_t L_14 = __this->___translateY;
 		___1_y = ((int32_t)il2cpp_codegen_add(L_13, L_14));
@@ -15785,11 +16321,11 @@ IL_002f:
 
 IL_004b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:314>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:328>
 		V_0 = 1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:315>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:329>
 		V_1 = 1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:316>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:330>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_15 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_16 = L_15;
 		NullCheck(L_16);
@@ -15831,7 +16367,7 @@ IL_004b:
 		String_t* L_33;
 		L_33 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_30, NULL);
 		V_2 = L_33;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:317>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:331>
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_34 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___cachedTextures;
 		String_t* L_35 = V_2;
@@ -15839,7 +16375,7 @@ IL_004b:
 		RuntimeObject* L_36;
 		L_36 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21, L_34, L_35);
 		V_3 = ((Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)CastclassSealed((RuntimeObject*)L_36, Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:318>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:332>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_37 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_38;
@@ -15850,28 +16386,28 @@ IL_004b:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:320>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:334>
 		int32_t L_39 = V_0;
 		int32_t L_40 = V_1;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_41 = (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)il2cpp_codegen_object_new(Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var);
 		Texture2D__ctor_m3BA82E87442B7F69E118477069AE11101B9DF796(L_41, L_39, L_40, NULL);
 		V_3 = L_41;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:321>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:335>
 		float L_42 = __this->___r;
 		float L_43 = __this->___g;
 		float L_44 = __this->___b;
 		float L_45 = __this->___a;
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&V_8), L_42, L_43, L_44, L_45, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:322>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:336>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_46 = V_3;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_47 = V_8;
 		NullCheck(L_46);
 		Texture2D_SetPixel_m2CCFC5F729135D59DC4A697C2605A3FC5C8574DB(L_46, 0, 0, L_47, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:323>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:337>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_48 = V_3;
 		NullCheck(L_48);
 		Texture2D_Apply_mA014182C9EE0BBF6EEE3B286854F29E50EB972DC(L_48, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:324>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:338>
 		String_t* L_49 = V_2;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_50 = V_3;
 		mGraphics_cache_m6362994CEE7A4D549944451DCFA201425174B95C(__this, L_49, L_50, NULL);
@@ -15879,15 +16415,15 @@ IL_004b:
 
 IL_0108:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:326>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:340>
 		V_4 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:327>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:341>
 		V_5 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:328>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:342>
 		V_6 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:329>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:343>
 		V_7 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:330>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:344>
 		bool L_51 = __this->___isClip;
 		if (!L_51)
 		{
@@ -15895,19 +16431,19 @@ IL_0108:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:332>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:346>
 		int32_t L_52 = __this->___clipX;
 		V_4 = L_52;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:333>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:347>
 		int32_t L_53 = __this->___clipY;
 		V_5 = L_53;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:334>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:348>
 		int32_t L_54 = __this->___clipW;
 		V_6 = L_54;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:335>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:349>
 		int32_t L_55 = __this->___clipH;
 		V_7 = L_55;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:336>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:350>
 		bool L_56 = __this->___isTranslate;
 		if (!L_56)
 		{
@@ -15915,11 +16451,11 @@ IL_0108:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:338>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:352>
 		int32_t L_57 = V_4;
 		int32_t L_58 = __this->___clipTX;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_57, L_58));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:339>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:353>
 		int32_t L_59 = V_5;
 		int32_t L_60 = __this->___clipTY;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_59, L_60));
@@ -15927,7 +16463,7 @@ IL_0108:
 
 IL_015a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:342>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:356>
 		bool L_61 = __this->___isClip;
 		if (!L_61)
 		{
@@ -15935,7 +16471,7 @@ IL_015a:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:344>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:358>
 		int32_t L_62 = V_4;
 		int32_t L_63 = V_5;
 		int32_t L_64 = V_6;
@@ -15949,7 +16485,7 @@ IL_015a:
 
 IL_0178:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:346>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:360>
 		int32_t L_67 = ___0_x;
 		int32_t L_68 = V_4;
 		int32_t L_69 = ___1_y;
@@ -15962,7 +16498,7 @@ IL_0178:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_74 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_DrawTexture_mEA112F138EB225F3722CFF9338DB4D14AAC8C7E6(L_73, L_74, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:347>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:361>
 		bool L_75 = __this->___isClip;
 		if (!L_75)
 		{
@@ -15970,69 +16506,69 @@ IL_0178:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:349>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:363>
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_EndGroup_mE8C7A3FB87B0EAA3556AB16466D0D640BBEE1675(NULL);
 	}
 
 IL_019f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:351>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:365>
 		return;
 	}
 }
-// Method Definition Index: 12594
+// Method Definition Index: 12595
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_rgb, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:355>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:369>
 		int32_t L_0 = ___0_rgb;
 		V_0 = ((int32_t)(L_0&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:356>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:370>
 		int32_t L_1 = ___0_rgb;
 		V_1 = ((int32_t)(((int32_t)(L_1>>8))&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:357>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:371>
 		int32_t L_2 = ___0_rgb;
 		V_2 = ((int32_t)(((int32_t)(L_2>>((int32_t)16)))&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:358>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:372>
 		int32_t L_3 = V_0;
 		__this->___b = ((float)(((float)L_3)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:359>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:373>
 		int32_t L_4 = V_1;
 		__this->___g = ((float)(((float)L_4)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:360>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:374>
 		int32_t L_5 = V_2;
 		__this->___r = ((float)(((float)L_5)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:361>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:375>
 		__this->___a = (255.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:362>
-		return;
-	}
-}
-// Method Definition Index: 12595
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setColor_m2662BED37D8011AAF8DE9BAA5FF2C6064A200D67 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_color, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:366>
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_color;
-		float L_1 = L_0.___b;
-		__this->___b = L_1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:367>
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2 = ___0_color;
-		float L_3 = L_2.___g;
-		__this->___g = L_3;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:368>
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ___0_color;
-		float L_5 = L_4.___r;
-		__this->___r = L_5;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:369>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:376>
 		return;
 	}
 }
 // Method Definition Index: 12596
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setColor_m2662BED37D8011AAF8DE9BAA5FF2C6064A200D67 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_color, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:380>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_color;
+		float L_1 = L_0.___b;
+		__this->___b = L_1;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:381>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2 = ___0_color;
+		float L_3 = L_2.___g;
+		__this->___g = L_3;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:382>
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ___0_color;
+		float L_5 = L_4.___r;
+		__this->___r = L_5;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:383>
+		return;
+	}
+}
+// Method Definition Index: 12597
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setBgColor_m1F1A9FE4BCECF236EB18FD3BA2F3081436634FCC (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_rgb, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16046,7 +16582,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setBgColor_m1F1A9FE4BCECF236EB
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:373>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:387>
 		int32_t L_0 = ___0_rgb;
 		int32_t L_1 = __this->___currentBGColor;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
@@ -16055,28 +16591,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setBgColor_m1F1A9FE4BCECF236EB
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:375>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:389>
 		int32_t L_2 = ___0_rgb;
 		__this->___currentBGColor = L_2;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:376>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:390>
 		int32_t L_3 = ___0_rgb;
 		V_0 = ((int32_t)(L_3&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:377>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:391>
 		int32_t L_4 = ___0_rgb;
 		V_1 = ((int32_t)(((int32_t)(L_4>>8))&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:378>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:392>
 		int32_t L_5 = ___0_rgb;
 		V_2 = ((int32_t)(((int32_t)(L_5>>((int32_t)16)))&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:379>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:393>
 		int32_t L_6 = V_0;
 		__this->___b = ((float)(((float)L_6)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:380>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:394>
 		int32_t L_7 = V_1;
 		__this->___g = ((float)(((float)L_7)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:381>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:395>
 		int32_t L_8 = V_2;
 		__this->___r = ((float)(((float)L_8)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:382>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:396>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		Main_t6125012C4D88701077DD3C4660130C5535730E1E* L_9 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___main;
 		NullCheck(L_9);
@@ -16094,11 +16630,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setBgColor_m1F1A9FE4BCECF236EB
 
 IL_007d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:384>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:398>
 		return;
 	}
 }
-// Method Definition Index: 12597
+// Method Definition Index: 12598
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawString_mEB74D377B7983954748183CB29F1FC788BE04B96 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, String_t* ___0_s, int32_t ___1_x, int32_t ___2_y, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* ___3_style, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16114,16 +16650,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawString_mEB74D377B798395474
 	int32_t V_2 = 0;
 	int32_t V_3 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:388>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:402>
 		int32_t L_0 = ___1_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_x = ((int32_t)il2cpp_codegen_multiply(L_0, L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:389>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:403>
 		int32_t L_2 = ___2_y;
 		int32_t L_3 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_y = ((int32_t)il2cpp_codegen_multiply(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:390>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:404>
 		bool L_4 = __this->___isTranslate;
 		if (!L_4)
 		{
@@ -16131,11 +16667,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawString_mEB74D377B798395474
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:392>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:406>
 		int32_t L_5 = ___1_x;
 		int32_t L_6 = __this->___translateX;
 		___1_x = ((int32_t)il2cpp_codegen_add(L_5, L_6));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:393>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:407>
 		int32_t L_7 = ___2_y;
 		int32_t L_8 = __this->___translateY;
 		___2_y = ((int32_t)il2cpp_codegen_add(L_7, L_8));
@@ -16143,15 +16679,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawString_mEB74D377B798395474
 
 IL_002e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:395>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:409>
 		V_0 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:396>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:410>
 		V_1 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:397>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:411>
 		V_2 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:398>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:412>
 		V_3 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:399>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:413>
 		bool L_9 = __this->___isClip;
 		if (!L_9)
 		{
@@ -16159,19 +16695,19 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:401>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:415>
 		int32_t L_10 = __this->___clipX;
 		V_0 = L_10;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:402>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:416>
 		int32_t L_11 = __this->___clipY;
 		V_1 = L_11;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:403>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:417>
 		int32_t L_12 = __this->___clipW;
 		V_2 = L_12;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:404>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:418>
 		int32_t L_13 = __this->___clipH;
 		V_3 = L_13;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:405>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:419>
 		bool L_14 = __this->___isTranslate;
 		if (!L_14)
 		{
@@ -16179,11 +16715,11 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:407>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:421>
 		int32_t L_15 = V_0;
 		int32_t L_16 = __this->___clipTX;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_15, L_16));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:408>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:422>
 		int32_t L_17 = V_1;
 		int32_t L_18 = __this->___clipTY;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_17, L_18));
@@ -16191,7 +16727,7 @@ IL_002e:
 
 IL_0074:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:411>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:425>
 		bool L_19 = __this->___isClip;
 		if (!L_19)
 		{
@@ -16199,7 +16735,7 @@ IL_0074:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:413>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:427>
 		int32_t L_20 = V_0;
 		int32_t L_21 = V_1;
 		int32_t L_22 = V_2;
@@ -16213,7 +16749,7 @@ IL_0074:
 
 IL_008e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:415>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:429>
 		int32_t L_25 = ___1_x;
 		int32_t L_26 = V_0;
 		int32_t L_27 = ___2_y;
@@ -16227,7 +16763,7 @@ IL_008e:
 		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_32 = ___3_style;
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_Label_m0D7BA53414421D71010DFF628EAA6CCCB3DE737E(L_30, L_31, L_32, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:416>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:430>
 		bool L_33 = __this->___isClip;
 		if (!L_33)
 		{
@@ -16235,50 +16771,50 @@ IL_008e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:418>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:432>
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_EndGroup_mE8C7A3FB87B0EAA3556AB16466D0D640BBEE1675(NULL);
 	}
 
 IL_00ba:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:420>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:434>
 		return;
 	}
 }
-// Method Definition Index: 12598
+// Method Definition Index: 12599
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_setColor_mA2B06BBE8E66EB27AEE45C5F97C3C0156A2150ED (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_rgb, float ___1_alpha, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:424>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:438>
 		int32_t L_0 = ___0_rgb;
 		V_0 = ((int32_t)(L_0&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:425>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:439>
 		int32_t L_1 = ___0_rgb;
 		V_1 = ((int32_t)(((int32_t)(L_1>>8))&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:426>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:440>
 		int32_t L_2 = ___0_rgb;
 		V_2 = ((int32_t)(((int32_t)(L_2>>((int32_t)16)))&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:427>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:441>
 		int32_t L_3 = V_0;
 		__this->___b = ((float)(((float)L_3)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:428>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:442>
 		int32_t L_4 = V_1;
 		__this->___g = ((float)(((float)L_4)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:429>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:443>
 		int32_t L_5 = V_2;
 		__this->___r = ((float)(((float)L_5)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:430>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:444>
 		float L_6 = ___1_alpha;
 		__this->___a = L_6;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:431>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:445>
 		return;
 	}
 }
-// Method Definition Index: 12599
+// Method Definition Index: 12600
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawString_mDD9D33D3626ABE1D499F5BC8D381DE5B6FA133B2 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, String_t* ___0_s, int32_t ___1_x, int32_t ___2_y, GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* ___3_style, int32_t ___4_w, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16293,16 +16829,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawString_mDD9D33D3626ABE1D49
 	int32_t V_2 = 0;
 	int32_t V_3 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:435>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:449>
 		int32_t L_0 = ___1_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_x = ((int32_t)il2cpp_codegen_multiply(L_0, L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:436>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:450>
 		int32_t L_2 = ___2_y;
 		int32_t L_3 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_y = ((int32_t)il2cpp_codegen_multiply(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:437>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:451>
 		bool L_4 = __this->___isTranslate;
 		if (!L_4)
 		{
@@ -16310,11 +16846,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawString_mDD9D33D3626ABE1D49
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:439>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:453>
 		int32_t L_5 = ___1_x;
 		int32_t L_6 = __this->___translateX;
 		___1_x = ((int32_t)il2cpp_codegen_add(L_5, L_6));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:440>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:454>
 		int32_t L_7 = ___2_y;
 		int32_t L_8 = __this->___translateY;
 		___2_y = ((int32_t)il2cpp_codegen_add(L_7, L_8));
@@ -16322,15 +16858,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawString_mDD9D33D3626ABE1D49
 
 IL_002e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:442>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:456>
 		V_0 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:443>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:457>
 		V_1 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:444>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:458>
 		V_2 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:445>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:459>
 		V_3 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:446>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:460>
 		bool L_9 = __this->___isClip;
 		if (!L_9)
 		{
@@ -16338,19 +16874,19 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:448>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:462>
 		int32_t L_10 = __this->___clipX;
 		V_0 = L_10;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:449>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:463>
 		int32_t L_11 = __this->___clipY;
 		V_1 = L_11;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:450>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:464>
 		int32_t L_12 = __this->___clipW;
 		V_2 = L_12;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:451>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:465>
 		int32_t L_13 = __this->___clipH;
 		V_3 = L_13;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:452>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:466>
 		bool L_14 = __this->___isTranslate;
 		if (!L_14)
 		{
@@ -16358,11 +16894,11 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:454>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:468>
 		int32_t L_15 = V_0;
 		int32_t L_16 = __this->___clipTX;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_15, L_16));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:455>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:469>
 		int32_t L_17 = V_1;
 		int32_t L_18 = __this->___clipTY;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_17, L_18));
@@ -16370,7 +16906,7 @@ IL_002e:
 
 IL_0074:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:458>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:472>
 		bool L_19 = __this->___isClip;
 		if (!L_19)
 		{
@@ -16378,7 +16914,7 @@ IL_0074:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:460>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:474>
 		int32_t L_20 = V_0;
 		int32_t L_21 = V_1;
 		int32_t L_22 = V_2;
@@ -16392,7 +16928,7 @@ IL_0074:
 
 IL_008e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:462>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:476>
 		int32_t L_25 = ___1_x;
 		int32_t L_26 = V_0;
 		int32_t L_27 = ___2_y;
@@ -16405,7 +16941,7 @@ IL_008e:
 		GUIStyle_t20BA2F9F3FE9D13AAA607EEEBE5547835A6F6580* L_32 = ___3_style;
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_Label_m0D7BA53414421D71010DFF628EAA6CCCB3DE737E(L_30, L_31, L_32, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:463>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:477>
 		bool L_33 = __this->___isClip;
 		if (!L_33)
 		{
@@ -16413,24 +16949,24 @@ IL_008e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:465>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:479>
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_EndGroup_mE8C7A3FB87B0EAA3556AB16466D0D640BBEE1675(NULL);
 	}
 
 IL_00ba:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:467>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:481>
 		return;
 	}
 }
-// Method Definition Index: 12600
+// Method Definition Index: 12601
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_UpdatePos_m22DCAEC4DFDBF3973EB861E878B7C936FDEC2732 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_anchor, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:471>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:485>
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_0), (0.0f), (0.0f), NULL);
 		int32_t L_0 = ___0_anchor;
 		if ((((int32_t)L_0) > ((int32_t)((int32_t)17))))
@@ -16536,91 +17072,91 @@ IL_0050:
 
 IL_006d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:475>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:489>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_12 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___size);
 		float L_13 = L_12->___x;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_14 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___size);
 		float L_15 = L_14->___y;
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_0), ((float)(L_13/(2.0f))), ((float)(L_15/(2.0f))), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:476>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:490>
 		goto IL_0146;
 	}
 
 IL_009b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:478>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:492>
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_0), (0.0f), (0.0f), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:479>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:493>
 		goto IL_0146;
 	}
 
 IL_00b1:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:481>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:495>
 		int32_t L_16;
 		L_16 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_0), ((float)((int32_t)(L_16/2))), (0.0f), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:482>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:496>
 		goto IL_0146;
 	}
 
 IL_00c7:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:484>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:498>
 		int32_t L_17;
 		L_17 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_0), ((float)L_17), (0.0f), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:485>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:499>
 		goto IL_0146;
 	}
 
 IL_00db:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:487>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:501>
 		int32_t L_18;
 		L_18 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_0), (0.0f), ((float)((int32_t)(L_18/2))), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:488>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:502>
 		goto IL_0146;
 	}
 
 IL_00f1:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:490>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:504>
 		int32_t L_19;
 		L_19 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
 		int32_t L_20;
 		L_20 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_0), ((float)L_19), ((float)((int32_t)(L_20/2))), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:491>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:505>
 		goto IL_0146;
 	}
 
 IL_0108:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:493>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:507>
 		int32_t L_21;
 		L_21 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_0), (0.0f), ((float)L_21), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:494>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:508>
 		goto IL_0146;
 	}
 
 IL_011c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:496>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:510>
 		int32_t L_22;
 		L_22 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
 		int32_t L_23;
 		L_23 = Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9(NULL);
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_0), ((float)((int32_t)(L_22/2))), ((float)L_23), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:497>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:511>
 		goto IL_0146;
 	}
 
 IL_0133:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:499>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:513>
 		int32_t L_24;
 		L_24 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
 		int32_t L_25;
@@ -16630,13 +17166,13 @@ IL_0133:
 
 IL_0146:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:502>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:516>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_26 = V_0;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27 = __this->___relativePosition;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_28;
 		L_28 = Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline(L_26, L_27, NULL);
 		__this->___pos = L_28;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:503>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:517>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_29 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___pos);
 		float L_30 = L_29->___x;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_31 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->___size);
@@ -16653,7 +17189,7 @@ IL_0146:
 		memset((&L_41), 0, sizeof(L_41));
 		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_41), ((float)il2cpp_codegen_subtract(L_30, ((float)il2cpp_codegen_multiply(L_32, (0.5f))))), ((float)il2cpp_codegen_subtract(L_34, ((float)il2cpp_codegen_multiply(L_36, (0.5f))))), L_38, L_40, NULL);
 		__this->___rect = L_41;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:504>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:518>
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* L_42 = (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D*)(&__this->___rect);
 		float L_43;
 		L_43 = Rect_get_xMin_mE89C40702926D016A633399E20DB9501E251630D_inline(L_42, NULL);
@@ -16670,11 +17206,11 @@ IL_0146:
 		memset((&L_50), 0, sizeof(L_50));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_50), ((float)il2cpp_codegen_add(L_43, ((float)il2cpp_codegen_multiply(L_45, (0.5f))))), ((float)il2cpp_codegen_add(L_47, ((float)il2cpp_codegen_multiply(L_49, (0.5f))))), NULL);
 		__this->___pivot = L_50;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:505>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:519>
 		return;
 	}
 }
-// Method Definition Index: 12601
+// Method Definition Index: 12602
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m0848120CE73023DFD40EB85D4AEB769C05AFB247 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_arg0, int32_t ___1_x0, int32_t ___2_y0, int32_t ___3_w0, int32_t ___4_h0, int32_t ___5_arg5, int32_t ___6_x, int32_t ___7_y, int32_t ___8_arg8, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16684,7 +17220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m0848120CE73023DFD4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:509>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:523>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_arg0;
 		if (!L_0)
 		{
@@ -16692,32 +17228,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m0848120CE73023DFD4
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:511>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:525>
 		int32_t L_1 = ___6_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___6_x = ((int32_t)il2cpp_codegen_multiply(L_1, L_2));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:512>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:526>
 		int32_t L_3 = ___7_y;
 		int32_t L_4 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___7_y = ((int32_t)il2cpp_codegen_multiply(L_3, L_4));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:513>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:527>
 		int32_t L_5 = ___1_x0;
 		int32_t L_6 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_x0 = ((int32_t)il2cpp_codegen_multiply(L_5, L_6));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:514>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:528>
 		int32_t L_7 = ___2_y0;
 		int32_t L_8 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_y0 = ((int32_t)il2cpp_codegen_multiply(L_7, L_8));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:515>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:529>
 		int32_t L_9 = ___3_w0;
 		int32_t L_10 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___3_w0 = ((int32_t)il2cpp_codegen_multiply(L_9, L_10));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:516>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:530>
 		int32_t L_11 = ___4_h0;
 		int32_t L_12 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___4_h0 = ((int32_t)il2cpp_codegen_multiply(L_11, L_12));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:517>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:531>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_13 = ___0_arg0;
 		int32_t L_14 = ___1_x0;
 		int32_t L_15 = ___2_y0;
@@ -16732,11 +17268,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m0848120CE73023DFD4
 
 IL_0054:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:519>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:533>
 		return;
 	}
 }
-// Method Definition Index: 12602
+// Method Definition Index: 12603
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_mD8A0316B5935124AF4266F4165C14CF7A62423FE (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_arg0, int64_t ___1_x0, int64_t ___2_y0, int32_t ___3_w0, int32_t ___4_h0, int32_t ___5_arg5, int32_t ___6_x, int32_t ___7_y, int32_t ___8_arg8, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16746,7 +17282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_mD8A0316B5935124AF4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:523>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:537>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_arg0;
 		if (!L_0)
 		{
@@ -16754,32 +17290,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_mD8A0316B5935124AF4
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:525>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:539>
 		int32_t L_1 = ___6_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___6_x = ((int32_t)il2cpp_codegen_multiply(L_1, L_2));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:526>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:540>
 		int32_t L_3 = ___7_y;
 		int32_t L_4 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___7_y = ((int32_t)il2cpp_codegen_multiply(L_3, L_4));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:527>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:541>
 		int64_t L_5 = ___1_x0;
 		int32_t L_6 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_x0 = ((int64_t)il2cpp_codegen_multiply(L_5, ((int64_t)L_6)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:528>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:542>
 		int64_t L_7 = ___2_y0;
 		int32_t L_8 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_y0 = ((int64_t)il2cpp_codegen_multiply(L_7, ((int64_t)L_8)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:529>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:543>
 		int32_t L_9 = ___3_w0;
 		int32_t L_10 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___3_w0 = ((int32_t)il2cpp_codegen_multiply(L_9, L_10));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:530>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:544>
 		int32_t L_11 = ___4_h0;
 		int32_t L_12 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___4_h0 = ((int32_t)il2cpp_codegen_multiply(L_11, L_12));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:531>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:545>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_13 = ___0_arg0;
 		int64_t L_14 = ___1_x0;
 		int64_t L_15 = ___2_y0;
@@ -16794,11 +17330,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_mD8A0316B5935124AF4
 
 IL_0056:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:533>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:547>
 		return;
 	}
 }
-// Method Definition Index: 12603
+// Method Definition Index: 12604
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m9041AD8EEFDB7387E5F7EC2114BA8817B745F732 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_arg0, int32_t ___1_x0, int32_t ___2_y0, int32_t ___3_w0, int32_t ___4_h0, int32_t ___5_arg5, float ___6_x, float ___7_y, int32_t ___8_arg8, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16808,7 +17344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m9041AD8EEFDB7387E5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:537>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:551>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_arg0;
 		if (!L_0)
 		{
@@ -16816,32 +17352,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m9041AD8EEFDB7387E5
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:539>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:553>
 		float L_1 = ___6_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___6_x = ((float)il2cpp_codegen_multiply(L_1, ((float)L_2)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:540>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:554>
 		float L_3 = ___7_y;
 		int32_t L_4 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___7_y = ((float)il2cpp_codegen_multiply(L_3, ((float)L_4)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:541>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:555>
 		int32_t L_5 = ___1_x0;
 		int32_t L_6 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_x0 = ((int32_t)il2cpp_codegen_multiply(L_5, L_6));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:542>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:556>
 		int32_t L_7 = ___2_y0;
 		int32_t L_8 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_y0 = ((int32_t)il2cpp_codegen_multiply(L_7, L_8));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:543>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:557>
 		int32_t L_9 = ___3_w0;
 		int32_t L_10 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___3_w0 = ((int32_t)il2cpp_codegen_multiply(L_9, L_10));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:544>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:558>
 		int32_t L_11 = ___4_h0;
 		int32_t L_12 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___4_h0 = ((int32_t)il2cpp_codegen_multiply(L_11, L_12));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:545>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:559>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_13 = ___0_arg0;
 		int32_t L_14 = ___1_x0;
 		int32_t L_15 = ___2_y0;
@@ -16856,15 +17392,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m9041AD8EEFDB7387E5
 
 IL_0054:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:547>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:561>
 		return;
 	}
 }
-// Method Definition Index: 12604
+// Method Definition Index: 12605
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m41A4DA4D558913E568150D417AB01F8062BCEF50 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_arg0, int32_t ___1_x0, int32_t ___2_y0, int32_t ___3_w0, int32_t ___4_h0, int32_t ___5_arg5, int32_t ___6_x, int32_t ___7_y, int32_t ___8_arg8, bool ___9_isClip, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:551>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:565>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_arg0;
 		int32_t L_1 = ___1_x0;
 		int32_t L_2 = ___2_y0;
@@ -16875,11 +17411,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m41A4DA4D558913E568
 		int32_t L_7 = ___7_y;
 		int32_t L_8 = ___8_arg8;
 		mGraphics_drawRegion_m0848120CE73023DFD40EB85D4AEB769C05AFB247(__this, L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:552>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:566>
 		return;
 	}
 }
-// Method Definition Index: 12605
+// Method Definition Index: 12606
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics___drawRegion_mA524478BD75BB0782B4F56485C5182751223D622 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, int32_t ___1_x0, int32_t ___2_y0, int32_t ___3_w, int32_t ___4_h, int32_t ___5_transform, float ___6_x, float ___7_y, int32_t ___8_anchor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16915,7 +17451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics___drawRegion_mA524478BD75BB078
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D V_19;
 	memset((&V_19), 0, sizeof(V_19));
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:556>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:570>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_image;
 		if (L_0)
 		{
@@ -16923,13 +17459,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics___drawRegion_mA524478BD75BB078
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:558>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:572>
 		return;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:560>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:574>
 		bool L_1 = __this->___isTranslate;
 		if (!L_1)
 		{
@@ -16937,11 +17473,11 @@ IL_0004:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:562>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:576>
 		float L_2 = ___6_x;
 		int32_t L_3 = __this->___translateX;
 		___6_x = ((float)il2cpp_codegen_add(L_2, ((float)L_3)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:563>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:577>
 		float L_4 = ___7_y;
 		int32_t L_5 = __this->___translateY;
 		___7_y = ((float)il2cpp_codegen_add(L_4, ((float)L_5)));
@@ -16949,27 +17485,27 @@ IL_0004:
 
 IL_0024:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:565>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:579>
 		int32_t L_6 = ___3_w;
 		V_0 = ((float)L_6);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:566>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:580>
 		int32_t L_7 = ___4_h;
 		V_1 = ((float)L_7);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:567>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:581>
 		V_2 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:568>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:582>
 		V_3 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:569>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:583>
 		V_4 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:570>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:584>
 		V_5 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:571>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:585>
 		V_6 = (1.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:572>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:586>
 		V_7 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:573>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:587>
 		V_8 = 1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:574>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:588>
 		int32_t L_8 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_9 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
@@ -16980,7 +17516,7 @@ IL_0024:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:576>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:590>
 		float L_11 = V_4;
 		float L_12 = V_0;
 		V_4 = ((float)il2cpp_codegen_subtract(L_11, ((float)(L_12/(2.0f)))));
@@ -16988,7 +17524,7 @@ IL_0024:
 
 IL_0072:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:578>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:592>
 		int32_t L_13 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_14 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
@@ -16999,7 +17535,7 @@ IL_0072:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:580>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:594>
 		float L_16 = V_5;
 		float L_17 = V_1;
 		V_5 = ((float)il2cpp_codegen_subtract(L_16, ((float)(L_17/(2.0f)))));
@@ -17007,7 +17543,7 @@ IL_0072:
 
 IL_008d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:582>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:596>
 		int32_t L_18 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_19 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___RIGHT;
@@ -17018,7 +17554,7 @@ IL_008d:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:584>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:598>
 		float L_21 = V_4;
 		float L_22 = V_0;
 		V_4 = ((float)il2cpp_codegen_subtract(L_21, L_22));
@@ -17026,7 +17562,7 @@ IL_008d:
 
 IL_00a2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:586>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:600>
 		int32_t L_23 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_24 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___BOTTOM;
@@ -17037,7 +17573,7 @@ IL_00a2:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:588>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:602>
 		float L_26 = V_5;
 		float L_27 = V_1;
 		V_5 = ((float)il2cpp_codegen_subtract(L_26, L_27));
@@ -17045,23 +17581,23 @@ IL_00a2:
 
 IL_00b7:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:590>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:604>
 		float L_28 = ___6_x;
 		float L_29 = V_4;
 		___6_x = ((float)il2cpp_codegen_add(L_28, L_29));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:591>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:605>
 		float L_30 = ___7_y;
 		float L_31 = V_5;
 		___7_y = ((float)il2cpp_codegen_add(L_30, L_31));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:592>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:606>
 		V_9 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:593>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:607>
 		V_10 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:594>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:608>
 		V_11 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:595>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:609>
 		V_12 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:596>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:610>
 		bool L_32 = __this->___isClip;
 		if (!L_32)
 		{
@@ -17069,19 +17605,19 @@ IL_00b7:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:598>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:612>
 		int32_t L_33 = __this->___clipX;
 		V_9 = L_33;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:599>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:613>
 		int32_t L_34 = __this->___clipY;
 		V_10 = L_34;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:600>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:614>
 		int32_t L_35 = __this->___clipW;
 		V_11 = L_35;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:601>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:615>
 		int32_t L_36 = __this->___clipH;
 		V_12 = L_36;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:602>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:616>
 		bool L_37 = __this->___isTranslate;
 		if (!L_37)
 		{
@@ -17089,11 +17625,11 @@ IL_00b7:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:604>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:618>
 		int32_t L_38 = V_9;
 		int32_t L_39 = __this->___clipTX;
 		V_9 = ((int32_t)il2cpp_codegen_add(L_38, L_39));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:605>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:619>
 		int32_t L_40 = V_10;
 		int32_t L_41 = __this->___clipTY;
 		V_10 = ((int32_t)il2cpp_codegen_add(L_40, L_41));
@@ -17101,13 +17637,13 @@ IL_00b7:
 
 IL_011a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:607>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:621>
 		float L_42 = ___6_x;
 		float L_43 = ___7_y;
 		int32_t L_44 = ___3_w;
 		int32_t L_45 = ___4_h;
 		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&V_17), L_42, L_43, ((float)L_44), ((float)L_45), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:608>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:622>
 		int32_t L_46 = V_9;
 		int32_t L_47 = V_10;
 		int32_t L_48 = V_11;
@@ -17118,7 +17654,7 @@ IL_011a:
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_52;
 		L_52 = mGraphics_intersectRect_mCEAE753D572C6B183DA6ECD9AC1721DC7E1666E2(__this, L_50, L_51, NULL);
 		V_18 = L_52;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:609>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:623>
 		float L_53;
 		L_53 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline((&V_18), NULL);
 		if ((((float)L_53) <= ((float)(0.0f))))
@@ -17137,27 +17673,27 @@ IL_011a:
 
 IL_0166:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:611>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:625>
 		return;
 	}
 
 IL_0167:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:613>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:627>
 		float L_55;
 		L_55 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline((&V_18), NULL);
 		V_0 = L_55;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:614>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:628>
 		float L_56;
 		L_56 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline((&V_18), NULL);
 		V_1 = L_56;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:615>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:629>
 		float L_57;
 		L_57 = Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline((&V_18), NULL);
 		float L_58;
 		L_58 = Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline((&V_17), NULL);
 		V_2 = ((float)il2cpp_codegen_subtract(L_57, L_58));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:616>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:630>
 		float L_59;
 		L_59 = Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49_inline((&V_18), NULL);
 		float L_60;
@@ -17167,9 +17703,9 @@ IL_0167:
 
 IL_0197:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:618>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:632>
 		V_13 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:619>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:633>
 		V_14 = (0.0f);
 		int32_t L_61 = ___5_transform;
 		switch (((int32_t)il2cpp_codegen_subtract(L_61, 1)))
@@ -17194,13 +17730,13 @@ IL_0197:
 
 IL_01bc:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:623>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:637>
 		float L_62 = V_13;
 		float L_63 = V_0;
 		V_13 = ((float)il2cpp_codegen_add(L_62, L_63));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:624>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:638>
 		V_6 = (-1.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:625>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:639>
 		bool L_64 = __this->___isClip;
 		if (!L_64)
 		{
@@ -17208,7 +17744,7 @@ IL_01bc:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:627>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:641>
 		int32_t L_65 = V_9;
 		float L_66 = ___6_x;
 		if ((!(((float)((float)L_65)) > ((float)L_66))))
@@ -17217,7 +17753,7 @@ IL_01bc:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:629>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:643>
 		float L_67 = V_2;
 		V_7 = ((float)il2cpp_codegen_subtract((0.0f), L_67));
 		goto IL_0229;
@@ -17225,7 +17761,7 @@ IL_01bc:
 
 IL_01e3:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:631>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:645>
 		int32_t L_68 = V_9;
 		int32_t L_69 = V_11;
 		float L_70 = ___6_x;
@@ -17236,39 +17772,39 @@ IL_01e3:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:633>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:647>
 		int32_t L_72 = V_9;
 		int32_t L_73 = V_11;
 		float L_74 = ___6_x;
 		int32_t L_75 = ___3_w;
 		V_7 = ((float)il2cpp_codegen_subtract((0.0f), ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)((int32_t)il2cpp_codegen_add(L_72, L_73))), L_74)), ((float)L_75)))));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:636>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:650>
 		goto IL_0229;
 	}
 
 IL_0208:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:638>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:652>
 		V_8 = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:639>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:653>
 		float L_76 = V_14;
 		float L_77 = V_1;
 		V_14 = ((float)il2cpp_codegen_add(L_76, L_77));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:640>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:654>
 		goto IL_0229;
 	}
 
 IL_0213:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:642>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:656>
 		V_8 = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:643>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:657>
 		float L_78 = V_14;
 		float L_79 = V_1;
 		V_14 = ((float)il2cpp_codegen_add(L_78, L_79));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:644>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:658>
 		V_6 = (-1.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:645>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:659>
 		float L_80 = V_13;
 		float L_81 = V_0;
 		V_13 = ((float)il2cpp_codegen_add(L_80, L_81));
@@ -17276,11 +17812,11 @@ IL_0213:
 
 IL_0229:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:648>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:662>
 		V_15 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:649>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:663>
 		V_16 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:650>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:664>
 		int32_t L_82 = ___5_transform;
 		if ((((int32_t)L_82) == ((int32_t)5)))
 		{
@@ -17311,26 +17847,26 @@ IL_0229:
 
 IL_0246:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:652>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:666>
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_86;
 		L_86 = GUI_get_matrix_m3CA02DED0598EE32BD9E66CA533A78EFB0A246FC(NULL);
 		__this->___matrixBackup = L_86;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:653>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:667>
 		int32_t L_87 = ___3_w;
 		int32_t L_88 = ___4_h;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_89;
 		memset((&L_89), 0, sizeof(L_89));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_89), ((float)L_87), ((float)L_88), NULL);
 		__this->___size = L_89;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:654>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:668>
 		float L_90 = ___6_x;
 		float L_91 = ___7_y;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_92;
 		memset((&L_92), 0, sizeof(L_92));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_92), L_90, L_91, NULL);
 		__this->___relativePosition = L_92;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:655>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:669>
 		mGraphics_UpdatePos_m22DCAEC4DFDBF3973EB861E878B7C936FDEC2732(__this, 3, NULL);
 		int32_t L_93 = ___5_transform;
 		if ((((int32_t)L_93) == ((int32_t)5)))
@@ -17346,22 +17882,22 @@ IL_0246:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:659>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:673>
 		mGraphics_UpdatePos_m22DCAEC4DFDBF3973EB861E878B7C936FDEC2732(__this, 3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:660>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:674>
 		goto IL_02a3;
 	}
 
 IL_028b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:662>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:676>
 		int32_t L_95 = ___3_w;
 		int32_t L_96 = ___4_h;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_97;
 		memset((&L_97), 0, sizeof(L_97));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_97), ((float)L_95), ((float)L_96), NULL);
 		__this->___size = L_97;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:663>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:677>
 		mGraphics_UpdatePos_m22DCAEC4DFDBF3973EB861E878B7C936FDEC2732(__this, 3, NULL);
 	}
 
@@ -17394,37 +17930,37 @@ IL_02a3:
 
 IL_02c1:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:669>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:683>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_99 = __this->___pivot;
 		il2cpp_codegen_runtime_class_init_inline(GUIUtility_tA20863F7281628086EFC61CF90CB52D20E1FD76A_il2cpp_TypeInfo_var);
 		GUIUtility_RotateAroundPivot_mA1AD5027CE63F6902AE6458286C13F53C8EE441F((90.0f), L_99, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:670>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:684>
 		goto IL_035d;
 	}
 
 IL_02d6:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:672>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:686>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_100 = __this->___pivot;
 		il2cpp_codegen_runtime_class_init_inline(GUIUtility_tA20863F7281628086EFC61CF90CB52D20E1FD76A_il2cpp_TypeInfo_var);
 		GUIUtility_RotateAroundPivot_mA1AD5027CE63F6902AE6458286C13F53C8EE441F((270.0f), L_100, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:673>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:687>
 		goto IL_035d;
 	}
 
 IL_02e8:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:675>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:689>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_101 = __this->___pivot;
 		il2cpp_codegen_runtime_class_init_inline(GUIUtility_tA20863F7281628086EFC61CF90CB52D20E1FD76A_il2cpp_TypeInfo_var);
 		GUIUtility_RotateAroundPivot_mA1AD5027CE63F6902AE6458286C13F53C8EE441F((270.0f), L_101, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:676>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:690>
 		float L_102 = V_13;
 		float L_103 = V_0;
 		V_13 = ((float)il2cpp_codegen_add(L_102, L_103));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:677>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:691>
 		V_6 = (-1.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:678>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:692>
 		bool L_104 = __this->___isClip;
 		if (!L_104)
 		{
@@ -17432,7 +17968,7 @@ IL_02e8:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:680>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:694>
 		int32_t L_105 = V_9;
 		float L_106 = ___6_x;
 		if ((!(((float)((float)L_105)) > ((float)L_106))))
@@ -17441,7 +17977,7 @@ IL_02e8:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:682>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:696>
 		float L_107 = V_2;
 		V_7 = ((float)il2cpp_codegen_subtract((0.0f), L_107));
 		goto IL_035d;
@@ -17449,7 +17985,7 @@ IL_02e8:
 
 IL_031f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:684>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:698>
 		int32_t L_108 = V_9;
 		int32_t L_109 = V_11;
 		float L_110 = ___6_x;
@@ -17460,25 +17996,25 @@ IL_031f:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:686>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:700>
 		int32_t L_112 = V_9;
 		int32_t L_113 = V_11;
 		float L_114 = ___6_x;
 		int32_t L_115 = ___3_w;
 		V_7 = ((float)il2cpp_codegen_subtract((0.0f), ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)((int32_t)il2cpp_codegen_add(L_112, L_113))), L_114)), ((float)L_115)))));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:689>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:703>
 		goto IL_035d;
 	}
 
 IL_0344:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:691>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:705>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_116 = __this->___pivot;
 		il2cpp_codegen_runtime_class_init_inline(GUIUtility_tA20863F7281628086EFC61CF90CB52D20E1FD76A_il2cpp_TypeInfo_var);
 		GUIUtility_RotateAroundPivot_mA1AD5027CE63F6902AE6458286C13F53C8EE441F((270.0f), L_116, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:692>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:706>
 		V_8 = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:693>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:707>
 		float L_117 = V_14;
 		float L_118 = V_1;
 		V_14 = ((float)il2cpp_codegen_add(L_117, L_118));
@@ -17486,7 +18022,7 @@ IL_0344:
 
 IL_035d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:697>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:711>
 		float L_119 = ___6_x;
 		float L_120 = V_2;
 		float L_121 = V_13;
@@ -17548,7 +18084,7 @@ IL_035d:
 		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_157), ((float)(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)L_134), L_135)), L_136))/((float)L_139))), ((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)L_142), L_143)), ((float)il2cpp_codegen_add(((float)L_144), L_145))))/((float)L_148))), ((float)(L_149/((float)L_152))), ((float)(L_153/((float)L_156))), NULL);
 		il2cpp_codegen_runtime_class_init_inline(Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var);
 		Graphics_DrawTexture_m3A59D4F8533A5C833090389AF5CDF3A7BDE31F2C(L_131, L_133, L_157, 0, 0, 0, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:698>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:712>
 		int32_t L_158 = ___5_transform;
 		if ((((int32_t)L_158) == ((int32_t)5)))
 		{
@@ -17579,7 +18115,7 @@ IL_035d:
 
 IL_03f9:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:700>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:714>
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_162 = __this->___matrixBackup;
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_set_matrix_m7759FEC96FBCB97E02B1BA44D2EC1B3FEEFA257F(L_162, NULL);
@@ -17587,11 +18123,11 @@ IL_03f9:
 
 IL_0404:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:702>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:716>
 		return;
 	}
 }
-// Method Definition Index: 12606
+// Method Definition Index: 12607
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics__drawRegion_m76946AFD7DD06EC231B8A2CCDF31C9D91C4DA686 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, float ___1_x0, float ___2_y0, int32_t ___3_w, int32_t ___4_h, int32_t ___5_transform, int32_t ___6_x, int32_t ___7_y, int32_t ___8_anchor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17627,7 +18163,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics__drawRegion_m76946AFD7DD06EC23
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D V_19;
 	memset((&V_19), 0, sizeof(V_19));
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:706>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:720>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_image;
 		if (L_0)
 		{
@@ -17635,13 +18171,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics__drawRegion_m76946AFD7DD06EC23
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:708>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:722>
 		return;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:710>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:724>
 		bool L_1 = __this->___isTranslate;
 		if (!L_1)
 		{
@@ -17649,11 +18185,11 @@ IL_0004:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:712>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:726>
 		int32_t L_2 = ___6_x;
 		int32_t L_3 = __this->___translateX;
 		___6_x = ((int32_t)il2cpp_codegen_add(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:713>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:727>
 		int32_t L_4 = ___7_y;
 		int32_t L_5 = __this->___translateY;
 		___7_y = ((int32_t)il2cpp_codegen_add(L_4, L_5));
@@ -17661,27 +18197,27 @@ IL_0004:
 
 IL_0022:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:715>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:729>
 		int32_t L_6 = ___3_w;
 		V_0 = ((float)L_6);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:716>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:730>
 		int32_t L_7 = ___4_h;
 		V_1 = ((float)L_7);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:717>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:731>
 		V_2 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:718>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:732>
 		V_3 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:719>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:733>
 		V_4 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:720>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:734>
 		V_5 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:721>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:735>
 		V_6 = (1.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:722>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:736>
 		V_7 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:723>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:737>
 		V_8 = 1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:724>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:738>
 		int32_t L_8 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_9 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
@@ -17692,7 +18228,7 @@ IL_0022:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:726>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:740>
 		float L_11 = V_4;
 		float L_12 = V_0;
 		V_4 = ((float)il2cpp_codegen_subtract(L_11, ((float)(L_12/(2.0f)))));
@@ -17700,7 +18236,7 @@ IL_0022:
 
 IL_0070:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:728>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:742>
 		int32_t L_13 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_14 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
@@ -17711,7 +18247,7 @@ IL_0070:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:730>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:744>
 		float L_16 = V_5;
 		float L_17 = V_1;
 		V_5 = ((float)il2cpp_codegen_subtract(L_16, ((float)(L_17/(2.0f)))));
@@ -17719,7 +18255,7 @@ IL_0070:
 
 IL_008b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:732>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:746>
 		int32_t L_18 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_19 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___RIGHT;
@@ -17730,7 +18266,7 @@ IL_008b:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:734>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:748>
 		float L_21 = V_4;
 		float L_22 = V_0;
 		V_4 = ((float)il2cpp_codegen_subtract(L_21, L_22));
@@ -17738,7 +18274,7 @@ IL_008b:
 
 IL_00a0:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:736>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:750>
 		int32_t L_23 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_24 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___BOTTOM;
@@ -17749,7 +18285,7 @@ IL_00a0:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:738>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:752>
 		float L_26 = V_5;
 		float L_27 = V_1;
 		V_5 = ((float)il2cpp_codegen_subtract(L_26, L_27));
@@ -17757,23 +18293,23 @@ IL_00a0:
 
 IL_00b5:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:740>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:754>
 		int32_t L_28 = ___6_x;
 		float L_29 = V_4;
 		___6_x = ((int32_t)il2cpp_codegen_add(L_28, il2cpp_codegen_cast_double_to_int<int32_t>(L_29)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:741>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:755>
 		int32_t L_30 = ___7_y;
 		float L_31 = V_5;
 		___7_y = ((int32_t)il2cpp_codegen_add(L_30, il2cpp_codegen_cast_double_to_int<int32_t>(L_31)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:742>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:756>
 		V_9 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:743>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:757>
 		V_10 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:744>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:758>
 		V_11 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:745>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:759>
 		V_12 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:746>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:760>
 		bool L_32 = __this->___isClip;
 		if (!L_32)
 		{
@@ -17781,19 +18317,19 @@ IL_00b5:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:748>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:762>
 		int32_t L_33 = __this->___clipX;
 		V_9 = L_33;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:749>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:763>
 		int32_t L_34 = __this->___clipY;
 		V_10 = L_34;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:750>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:764>
 		int32_t L_35 = __this->___clipW;
 		V_11 = L_35;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:751>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:765>
 		int32_t L_36 = __this->___clipH;
 		V_12 = L_36;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:752>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:766>
 		bool L_37 = __this->___isTranslate;
 		if (!L_37)
 		{
@@ -17801,11 +18337,11 @@ IL_00b5:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:754>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:768>
 		int32_t L_38 = V_9;
 		int32_t L_39 = __this->___clipTX;
 		V_9 = ((int32_t)il2cpp_codegen_add(L_38, L_39));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:755>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:769>
 		int32_t L_40 = V_10;
 		int32_t L_41 = __this->___clipTY;
 		V_10 = ((int32_t)il2cpp_codegen_add(L_40, L_41));
@@ -17813,13 +18349,13 @@ IL_00b5:
 
 IL_011a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:757>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:771>
 		int32_t L_42 = ___6_x;
 		int32_t L_43 = ___7_y;
 		int32_t L_44 = ___3_w;
 		int32_t L_45 = ___4_h;
 		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&V_17), ((float)L_42), ((float)L_43), ((float)L_44), ((float)L_45), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:758>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:772>
 		int32_t L_46 = V_9;
 		int32_t L_47 = V_10;
 		int32_t L_48 = V_11;
@@ -17830,7 +18366,7 @@ IL_011a:
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_52;
 		L_52 = mGraphics_intersectRect_mCEAE753D572C6B183DA6ECD9AC1721DC7E1666E2(__this, L_50, L_51, NULL);
 		V_18 = L_52;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:759>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:773>
 		float L_53;
 		L_53 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline((&V_18), NULL);
 		if ((((float)L_53) <= ((float)(0.0f))))
@@ -17849,27 +18385,27 @@ IL_011a:
 
 IL_0168:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:761>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:775>
 		return;
 	}
 
 IL_0169:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:763>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:777>
 		float L_55;
 		L_55 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline((&V_18), NULL);
 		V_0 = L_55;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:764>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:778>
 		float L_56;
 		L_56 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline((&V_18), NULL);
 		V_1 = L_56;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:765>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:779>
 		float L_57;
 		L_57 = Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline((&V_18), NULL);
 		float L_58;
 		L_58 = Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline((&V_17), NULL);
 		V_2 = ((float)il2cpp_codegen_subtract(L_57, L_58));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:766>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:780>
 		float L_59;
 		L_59 = Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49_inline((&V_18), NULL);
 		float L_60;
@@ -17879,9 +18415,9 @@ IL_0169:
 
 IL_0199:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:768>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:782>
 		V_13 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:769>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:783>
 		V_14 = (0.0f);
 		int32_t L_61 = ___5_transform;
 		switch (((int32_t)il2cpp_codegen_subtract(L_61, 1)))
@@ -17906,13 +18442,13 @@ IL_0199:
 
 IL_01be:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:773>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:787>
 		float L_62 = V_13;
 		float L_63 = V_0;
 		V_13 = ((float)il2cpp_codegen_add(L_62, L_63));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:774>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:788>
 		V_6 = (-1.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:775>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:789>
 		bool L_64 = __this->___isClip;
 		if (!L_64)
 		{
@@ -17920,7 +18456,7 @@ IL_01be:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:777>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:791>
 		int32_t L_65 = V_9;
 		int32_t L_66 = ___6_x;
 		if ((((int32_t)L_65) <= ((int32_t)L_66)))
@@ -17929,7 +18465,7 @@ IL_01be:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:779>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:793>
 		float L_67 = V_2;
 		V_7 = ((float)il2cpp_codegen_subtract((0.0f), L_67));
 		goto IL_0222;
@@ -17937,7 +18473,7 @@ IL_01be:
 
 IL_01e4:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:781>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:795>
 		int32_t L_68 = V_9;
 		int32_t L_69 = V_11;
 		int32_t L_70 = ___6_x;
@@ -17948,39 +18484,39 @@ IL_01e4:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:783>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:797>
 		int32_t L_72 = V_9;
 		int32_t L_73 = V_11;
 		int32_t L_74 = ___6_x;
 		int32_t L_75 = ___3_w;
 		V_7 = ((float)((-((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_72, L_73)), L_74)), L_75)))));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:786>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:800>
 		goto IL_0222;
 	}
 
 IL_0201:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:788>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:802>
 		V_8 = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:789>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:803>
 		float L_76 = V_14;
 		float L_77 = V_1;
 		V_14 = ((float)il2cpp_codegen_add(L_76, L_77));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:790>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:804>
 		goto IL_0222;
 	}
 
 IL_020c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:792>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:806>
 		V_8 = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:793>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:807>
 		float L_78 = V_14;
 		float L_79 = V_1;
 		V_14 = ((float)il2cpp_codegen_add(L_78, L_79));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:794>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:808>
 		V_6 = (-1.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:795>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:809>
 		float L_80 = V_13;
 		float L_81 = V_0;
 		V_13 = ((float)il2cpp_codegen_add(L_80, L_81));
@@ -17988,11 +18524,11 @@ IL_020c:
 
 IL_0222:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:798>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:812>
 		V_15 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:799>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:813>
 		V_16 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:800>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:814>
 		int32_t L_82 = ___5_transform;
 		if ((((int32_t)L_82) == ((int32_t)5)))
 		{
@@ -18023,26 +18559,26 @@ IL_0222:
 
 IL_023f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:802>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:816>
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_86;
 		L_86 = GUI_get_matrix_m3CA02DED0598EE32BD9E66CA533A78EFB0A246FC(NULL);
 		__this->___matrixBackup = L_86;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:803>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:817>
 		int32_t L_87 = ___3_w;
 		int32_t L_88 = ___4_h;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_89;
 		memset((&L_89), 0, sizeof(L_89));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_89), ((float)L_87), ((float)L_88), NULL);
 		__this->___size = L_89;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:804>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:818>
 		int32_t L_90 = ___6_x;
 		int32_t L_91 = ___7_y;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_92;
 		memset((&L_92), 0, sizeof(L_92));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_92), ((float)L_90), ((float)L_91), NULL);
 		__this->___relativePosition = L_92;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:805>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:819>
 		mGraphics_UpdatePos_m22DCAEC4DFDBF3973EB861E878B7C936FDEC2732(__this, 3, NULL);
 		int32_t L_93 = ___5_transform;
 		if ((((int32_t)L_93) == ((int32_t)5)))
@@ -18058,22 +18594,22 @@ IL_023f:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:809>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:823>
 		mGraphics_UpdatePos_m22DCAEC4DFDBF3973EB861E878B7C936FDEC2732(__this, 3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:810>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:824>
 		goto IL_029e;
 	}
 
 IL_0286:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:812>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:826>
 		int32_t L_95 = ___3_w;
 		int32_t L_96 = ___4_h;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_97;
 		memset((&L_97), 0, sizeof(L_97));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_97), ((float)L_95), ((float)L_96), NULL);
 		__this->___size = L_97;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:813>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:827>
 		mGraphics_UpdatePos_m22DCAEC4DFDBF3973EB861E878B7C936FDEC2732(__this, 3, NULL);
 	}
 
@@ -18106,37 +18642,37 @@ IL_029e:
 
 IL_02bc:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:819>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:833>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_99 = __this->___pivot;
 		il2cpp_codegen_runtime_class_init_inline(GUIUtility_tA20863F7281628086EFC61CF90CB52D20E1FD76A_il2cpp_TypeInfo_var);
 		GUIUtility_RotateAroundPivot_mA1AD5027CE63F6902AE6458286C13F53C8EE441F((90.0f), L_99, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:820>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:834>
 		goto IL_034c;
 	}
 
 IL_02ce:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:822>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:836>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_100 = __this->___pivot;
 		il2cpp_codegen_runtime_class_init_inline(GUIUtility_tA20863F7281628086EFC61CF90CB52D20E1FD76A_il2cpp_TypeInfo_var);
 		GUIUtility_RotateAroundPivot_mA1AD5027CE63F6902AE6458286C13F53C8EE441F((270.0f), L_100, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:823>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:837>
 		goto IL_034c;
 	}
 
 IL_02e0:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:825>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:839>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_101 = __this->___pivot;
 		il2cpp_codegen_runtime_class_init_inline(GUIUtility_tA20863F7281628086EFC61CF90CB52D20E1FD76A_il2cpp_TypeInfo_var);
 		GUIUtility_RotateAroundPivot_mA1AD5027CE63F6902AE6458286C13F53C8EE441F((270.0f), L_101, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:826>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:840>
 		float L_102 = V_13;
 		float L_103 = V_0;
 		V_13 = ((float)il2cpp_codegen_add(L_102, L_103));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:827>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:841>
 		V_6 = (-1.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:828>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:842>
 		bool L_104 = __this->___isClip;
 		if (!L_104)
 		{
@@ -18144,7 +18680,7 @@ IL_02e0:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:830>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:844>
 		int32_t L_105 = V_9;
 		int32_t L_106 = ___6_x;
 		if ((((int32_t)L_105) <= ((int32_t)L_106)))
@@ -18153,7 +18689,7 @@ IL_02e0:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:832>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:846>
 		float L_107 = V_2;
 		V_7 = ((float)il2cpp_codegen_subtract((0.0f), L_107));
 		goto IL_034c;
@@ -18161,7 +18697,7 @@ IL_02e0:
 
 IL_0316:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:834>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:848>
 		int32_t L_108 = V_9;
 		int32_t L_109 = V_11;
 		int32_t L_110 = ___6_x;
@@ -18172,25 +18708,25 @@ IL_0316:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:836>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:850>
 		int32_t L_112 = V_9;
 		int32_t L_113 = V_11;
 		int32_t L_114 = ___6_x;
 		int32_t L_115 = ___3_w;
 		V_7 = ((float)((-((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_112, L_113)), L_114)), L_115)))));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:839>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:853>
 		goto IL_034c;
 	}
 
 IL_0333:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:841>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:855>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_116 = __this->___pivot;
 		il2cpp_codegen_runtime_class_init_inline(GUIUtility_tA20863F7281628086EFC61CF90CB52D20E1FD76A_il2cpp_TypeInfo_var);
 		GUIUtility_RotateAroundPivot_mA1AD5027CE63F6902AE6458286C13F53C8EE441F((270.0f), L_116, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:842>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:856>
 		V_8 = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:843>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:857>
 		float L_117 = V_14;
 		float L_118 = V_1;
 		V_14 = ((float)il2cpp_codegen_add(L_117, L_118));
@@ -18198,7 +18734,7 @@ IL_0333:
 
 IL_034c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:847>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:861>
 		int32_t L_119 = ___6_x;
 		float L_120 = V_2;
 		float L_121 = V_13;
@@ -18260,7 +18796,7 @@ IL_034c:
 		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_157), ((float)(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_134, L_135)), L_136))/((float)L_139))), ((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_subtract(((float)L_142), L_143)), ((float)il2cpp_codegen_add(L_144, L_145))))/((float)L_148))), ((float)(L_149/((float)L_152))), ((float)(L_153/((float)L_156))), NULL);
 		il2cpp_codegen_runtime_class_init_inline(Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var);
 		Graphics_DrawTexture_m3A59D4F8533A5C833090389AF5CDF3A7BDE31F2C(L_131, L_133, L_157, 0, 0, 0, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:848>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:862>
 		int32_t L_158 = ___5_transform;
 		if ((((int32_t)L_158) == ((int32_t)5)))
 		{
@@ -18291,7 +18827,7 @@ IL_034c:
 
 IL_03e8:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:850>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:864>
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_162 = __this->___matrixBackup;
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_set_matrix_m7759FEC96FBCB97E02B1BA44D2EC1B3FEEFA257F(L_162, NULL);
@@ -18299,11 +18835,11 @@ IL_03e8:
 
 IL_03f3:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:852>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:866>
 		return;
 	}
 }
-// Method Definition Index: 12607
+// Method Definition Index: 12608
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegionGui_mE60CF69AA6BAACC84947EB2F990296DA55E08810 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, float ___1_x0, float ___2_y0, int32_t ___3_w, int32_t ___4_h, int32_t ___5_transform, float ___6_x, float ___7_y, int32_t ___8_anchor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18314,41 +18850,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegionGui_mE60CF69AA6BAACC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:856>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:870>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
 		L_0 = mGraphics_setColorMiniMap_m67854F600863BC001F0DEB05077BA7BE6EA542CD(__this, ((int32_t)807956), NULL);
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_set_color_mA44927D3F2ACB1E228815F10042A6F62B7645648(L_0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:857>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:871>
 		float L_1 = ___6_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___6_x = ((float)il2cpp_codegen_multiply(L_1, ((float)L_2)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:858>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:872>
 		float L_3 = ___7_y;
 		int32_t L_4 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___7_y = ((float)il2cpp_codegen_multiply(L_3, ((float)L_4)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:859>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:873>
 		float L_5 = ___1_x0;
 		int32_t L_6 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_x0 = ((float)il2cpp_codegen_multiply(L_5, ((float)L_6)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:860>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:874>
 		float L_7 = ___2_y0;
 		int32_t L_8 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_y0 = ((float)il2cpp_codegen_multiply(L_7, ((float)L_8)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:861>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:875>
 		int32_t L_9 = ___3_w;
 		int32_t L_10 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___3_w = ((int32_t)il2cpp_codegen_multiply(L_9, L_10));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:862>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:876>
 		int32_t L_11 = ___4_h;
 		int32_t L_12 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___4_h = ((int32_t)il2cpp_codegen_multiply(L_11, L_12));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:863>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:877>
 		return;
 	}
 }
-// Method Definition Index: 12608
+// Method Definition Index: 12609
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion2_m389805FAEC56B74BC49DE3E431462392F36D234A (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, float ___1_x0, float ___2_y0, int32_t ___3_w, int32_t ___4_h, int32_t ___5_transform, int32_t ___6_x, int32_t ___7_y, int32_t ___8_anchor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18374,13 +18910,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion2_m389805FAEC56B74BC
 	float V_9 = 0.0f;
 	int32_t V_10 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:867>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:881>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_image;
 		NullCheck(L_0);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = L_0->___colorBlend;
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_set_color_mA44927D3F2ACB1E228815F10042A6F62B7645648(L_1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:868>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:882>
 		bool L_2 = __this->___isTranslate;
 		if (!L_2)
 		{
@@ -18388,11 +18924,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion2_m389805FAEC56B74BC
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:870>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:884>
 		int32_t L_3 = ___6_x;
 		int32_t L_4 = __this->___translateX;
 		___6_x = ((int32_t)il2cpp_codegen_add(L_3, L_4));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:871>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:885>
 		int32_t L_5 = ___7_y;
 		int32_t L_6 = __this->___translateY;
 		___7_y = ((int32_t)il2cpp_codegen_add(L_5, L_6));
@@ -18400,7 +18936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion2_m389805FAEC56B74BC
 
 IL_0029:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:873>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:887>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = L_7;
 		NullCheck(L_8);
@@ -18443,7 +18979,7 @@ IL_0029:
 		String_t* L_23;
 		L_23 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_19, NULL);
 		V_0 = L_23;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:874>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:888>
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_24 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___cachedTextures;
 		String_t* L_25 = V_0;
@@ -18451,7 +18987,7 @@ IL_0029:
 		RuntimeObject* L_26;
 		L_26 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(21, L_24, L_25);
 		V_1 = ((Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)CastclassSealed((RuntimeObject*)L_26, Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:875>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:889>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_27 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_28;
@@ -18462,7 +18998,7 @@ IL_0029:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:877>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:891>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_29 = ___0_image;
 		float L_30 = ___1_x0;
 		float L_31 = ___2_y0;
@@ -18471,11 +19007,11 @@ IL_0029:
 		int32_t L_34 = ___5_transform;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_35;
 		L_35 = Image_createImage_m0230E45DEFD7E07BCF320CCEF8F61198521303BC(L_29, il2cpp_codegen_cast_double_to_int<int32_t>(L_30), il2cpp_codegen_cast_double_to_int<int32_t>(L_31), L_32, L_33, L_34, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:878>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:892>
 		NullCheck(L_35);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_36 = L_35->___texture;
 		V_1 = L_36;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:879>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:893>
 		String_t* L_37 = V_0;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_38 = V_1;
 		mGraphics_cache_m6362994CEE7A4D549944451DCFA201425174B95C(__this, L_37, L_38, NULL);
@@ -18483,25 +19019,25 @@ IL_0029:
 
 IL_00b9:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:881>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:895>
 		V_2 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:882>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:896>
 		V_3 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:883>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:897>
 		V_4 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:884>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:898>
 		V_5 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:885>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:899>
 		int32_t L_39 = ___3_w;
 		V_6 = ((float)L_39);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:886>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:900>
 		int32_t L_40 = ___4_h;
 		V_7 = ((float)L_40);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:887>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:901>
 		V_8 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:888>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:902>
 		V_9 = (0.0f);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:889>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:903>
 		int32_t L_41 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_42 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
@@ -18512,7 +19048,7 @@ IL_00b9:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:891>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:905>
 		float L_44 = V_8;
 		float L_45 = V_6;
 		V_8 = ((float)il2cpp_codegen_subtract(L_44, ((float)(L_45/(2.0f)))));
@@ -18520,7 +19056,7 @@ IL_00b9:
 
 IL_00f7:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:893>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:907>
 		int32_t L_46 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_47 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
@@ -18531,7 +19067,7 @@ IL_00f7:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:895>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:909>
 		float L_49 = V_9;
 		float L_50 = V_7;
 		V_9 = ((float)il2cpp_codegen_subtract(L_49, ((float)(L_50/(2.0f)))));
@@ -18539,7 +19075,7 @@ IL_00f7:
 
 IL_0113:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:897>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:911>
 		int32_t L_51 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_52 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___RIGHT;
@@ -18550,7 +19086,7 @@ IL_0113:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:899>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:913>
 		float L_54 = V_8;
 		float L_55 = V_6;
 		V_8 = ((float)il2cpp_codegen_subtract(L_54, L_55));
@@ -18558,7 +19094,7 @@ IL_0113:
 
 IL_0129:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:901>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:915>
 		int32_t L_56 = ___8_anchor;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_57 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___BOTTOM;
@@ -18569,7 +19105,7 @@ IL_0129:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:903>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:917>
 		float L_59 = V_9;
 		float L_60 = V_7;
 		V_9 = ((float)il2cpp_codegen_subtract(L_59, L_60));
@@ -18577,15 +19113,15 @@ IL_0129:
 
 IL_013f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:905>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:919>
 		int32_t L_61 = ___6_x;
 		float L_62 = V_8;
 		___6_x = ((int32_t)il2cpp_codegen_add(L_61, il2cpp_codegen_cast_double_to_int<int32_t>(L_62)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:906>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:920>
 		int32_t L_63 = ___7_y;
 		float L_64 = V_9;
 		___7_y = ((int32_t)il2cpp_codegen_add(L_63, il2cpp_codegen_cast_double_to_int<int32_t>(L_64)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:907>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:921>
 		bool L_65 = __this->___isClip;
 		if (!L_65)
 		{
@@ -18593,19 +19129,19 @@ IL_013f:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:909>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:923>
 		int32_t L_66 = __this->___clipX;
 		V_2 = L_66;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:910>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:924>
 		int32_t L_67 = __this->___clipY;
 		V_3 = L_67;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:911>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:925>
 		int32_t L_68 = __this->___clipW;
 		V_4 = L_68;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:912>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:926>
 		int32_t L_69 = __this->___clipH;
 		V_5 = L_69;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:913>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:927>
 		bool L_70 = __this->___isTranslate;
 		if (!L_70)
 		{
@@ -18613,11 +19149,11 @@ IL_013f:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:915>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:929>
 		int32_t L_71 = V_2;
 		int32_t L_72 = __this->___clipTX;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_71, L_72));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:916>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:930>
 		int32_t L_73 = V_3;
 		int32_t L_74 = __this->___clipTY;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_73, L_74));
@@ -18625,7 +19161,7 @@ IL_013f:
 
 IL_018f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:919>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:933>
 		bool L_75 = __this->___isClip;
 		if (!L_75)
 		{
@@ -18633,7 +19169,7 @@ IL_018f:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:921>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:935>
 		int32_t L_76 = V_2;
 		int32_t L_77 = V_3;
 		int32_t L_78 = V_4;
@@ -18647,7 +19183,7 @@ IL_018f:
 
 IL_01ab:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:923>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:937>
 		int32_t L_81 = ___6_x;
 		int32_t L_82 = V_2;
 		int32_t L_83 = ___7_y;
@@ -18660,7 +19196,7 @@ IL_01ab:
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_88 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_DrawTexture_mEA112F138EB225F3722CFF9338DB4D14AAC8C7E6(L_87, L_88, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:924>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:938>
 		bool L_89 = __this->___isClip;
 		if (!L_89)
 		{
@@ -18668,24 +19204,24 @@ IL_01ab:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:926>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:940>
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_EndGroup_mE8C7A3FB87B0EAA3556AB16466D0D640BBEE1675(NULL);
 	}
 
 IL_01d3:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:928>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:942>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_90;
 		memset((&L_90), 0, sizeof(L_90));
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_90), (1.0f), (1.0f), (1.0f), (1.0f), NULL);
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_set_color_mA44927D3F2ACB1E228815F10042A6F62B7645648(L_90, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:929>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:943>
 		return;
 	}
 }
-// Method Definition Index: 12609
+// Method Definition Index: 12610
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImagaByDrawTexture_m2E57FFD9EBB10A79FA542351D5D94CF85DD62DED (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, float ___1_x, float ___2_y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18696,16 +19232,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImagaByDrawTexture_m2E57FF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:933>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:947>
 		float L_0 = ___1_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_x = ((float)il2cpp_codegen_multiply(L_0, ((float)L_1)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:934>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:948>
 		float L_2 = ___2_y;
 		int32_t L_3 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_y = ((float)il2cpp_codegen_multiply(L_2, ((float)L_3)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:935>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:949>
 		float L_4 = ___1_x;
 		int32_t L_5 = __this->___translateX;
 		float L_6 = ___2_y;
@@ -18726,11 +19262,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImagaByDrawTexture_m2E57FF
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_14 = L_13->___texture;
 		il2cpp_codegen_runtime_class_init_inline(GUI_tA9CDB3D69DB13D51AD83ABDB587EF95947EC2D2A_il2cpp_TypeInfo_var);
 		GUI_DrawTexture_mEA112F138EB225F3722CFF9338DB4D14AAC8C7E6(L_12, L_14, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:936>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:950>
 		return;
 	}
 }
-// Method Definition Index: 12610
+// Method Definition Index: 12611
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, int32_t ___1_x, int32_t ___2_y, int32_t ___3_anchor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18740,7 +19276,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mB4F389D1F0ADBB67BD4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:940>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:954>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_image;
 		if (!L_0)
 		{
@@ -18748,7 +19284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mB4F389D1F0ADBB67BD4
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:942>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:956>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_1 = ___0_image;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_2 = ___0_image;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
@@ -18765,15 +19301,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mB4F389D1F0ADBB67BD4
 
 IL_001d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:944>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:958>
 		return;
 	}
 }
-// Method Definition Index: 12611
+// Method Definition Index: 12612
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageFog_m3E1EEA49AC7951A4D3848C9E8C39790EC8201E0A (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, int32_t ___1_x, int32_t ___2_y, int32_t ___3_anchor, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:948>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:962>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_image;
 		if (!L_0)
 		{
@@ -18781,7 +19317,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageFog_m3E1EEA49AC7951A4
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:950>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:964>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_1 = ___0_image;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_2 = ___0_image;
 		NullCheck(L_2);
@@ -18803,11 +19339,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageFog_m3E1EEA49AC7951A4
 
 IL_0027:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:952>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:966>
 		return;
 	}
 }
-// Method Definition Index: 12612
+// Method Definition Index: 12613
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mAAA9386DFFCECD62E06D0B58A429AD85B9795755 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, int32_t ___1_x, int32_t ___2_y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18817,7 +19353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mAAA9386DFFCECD62E06
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:956>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:970>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_image;
 		if (!L_0)
 		{
@@ -18825,7 +19361,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mAAA9386DFFCECD62E06
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:958>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:972>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_1 = ___0_image;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_2 = ___0_image;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
@@ -18843,11 +19379,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mAAA9386DFFCECD62E06
 
 IL_0026:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:960>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:974>
 		return;
 	}
 }
-// Method Definition Index: 12613
+// Method Definition Index: 12614
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mAD3D7A89BB50DF1F70CE5FFE6FDD8B06E6AB8FD8 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, float ___1_x, float ___2_y, int32_t ___3_anchor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18857,7 +19393,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mAD3D7A89BB50DF1F70C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:964>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:978>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_image;
 		if (!L_0)
 		{
@@ -18865,7 +19401,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mAD3D7A89BB50DF1F70C
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:966>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:980>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_1 = ___0_image;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_2 = ___0_image;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
@@ -18882,55 +19418,55 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImage_mAD3D7A89BB50DF1F70C
 
 IL_001d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:968>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:982>
 		return;
 	}
 }
-// Method Definition Index: 12614
+// Method Definition Index: 12615
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRoundRect_m40977BE25DF173FDADDB10ACE726AD2F5414A7AC (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_x, int32_t ___1_y, int32_t ___2_w, int32_t ___3_h, int32_t ___4_arcWidth, int32_t ___5_arcHeight, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:972>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:986>
 		int32_t L_0 = ___0_x;
 		int32_t L_1 = ___1_y;
 		int32_t L_2 = ___2_w;
 		int32_t L_3 = ___3_h;
 		mGraphics_drawRect_mA0674F7342D0E896CC7BAD0B1415C67C08218D81(__this, L_0, L_1, L_2, L_3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:973>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:987>
 		return;
 	}
 }
-// Method Definition Index: 12615
+// Method Definition Index: 12616
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillRoundRect_m8C967B9ADC6A37AFD896AFAA7CBCA43F37745AFB (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_x, int32_t ___1_y, int32_t ___2_width, int32_t ___3_height, int32_t ___4_arcWidth, int32_t ___5_arcHeight, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:977>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:991>
 		int32_t L_0 = ___0_x;
 		int32_t L_1 = ___1_y;
 		int32_t L_2 = ___2_width;
 		int32_t L_3 = ___3_height;
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(__this, L_0, L_1, L_2, L_3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:978>
-		return;
-	}
-}
-// Method Definition Index: 12616
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_reset_mE63C2CEA0AC1D5620A2F13C12ABE96F1D2323DFA (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:982>
-		__this->___isClip = (bool)0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:983>
-		__this->___isTranslate = (bool)0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:984>
-		__this->___translateX = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:985>
-		__this->___translateY = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:986>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:992>
 		return;
 	}
 }
 // Method Definition Index: 12617
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_reset_mE63C2CEA0AC1D5620A2F13C12ABE96F1D2323DFA (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:996>
+		__this->___isClip = (bool)0;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:997>
+		__this->___isTranslate = (bool)0;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:998>
+		__this->___translateX = 0;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:999>
+		__this->___translateY = 0;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1000>
+		return;
+	}
+}
+// Method Definition Index: 12618
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D mGraphics_intersectRect_mCEAE753D572C6B183DA6ECD9AC1721DC7E1666E2 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___0_r1, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___1_r2, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -18942,55 +19478,55 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0
 	float V_6 = 0.0f;
 	float V_7 = 0.0f;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:990>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1004>
 		float L_0;
 		L_0 = Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline((&___0_r1), NULL);
 		V_0 = L_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:991>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1005>
 		float L_1;
 		L_1 = Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49_inline((&___0_r1), NULL);
 		V_1 = L_1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:992>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1006>
 		float L_2;
 		L_2 = Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline((&___1_r2), NULL);
 		V_2 = L_2;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:993>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1007>
 		float L_3;
 		L_3 = Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49_inline((&___1_r2), NULL);
 		V_3 = L_3;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:994>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1008>
 		float L_4 = V_0;
 		V_4 = L_4;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:995>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1009>
 		float L_5 = V_4;
 		float L_6;
 		L_6 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline((&___0_r1), NULL);
 		V_4 = ((float)il2cpp_codegen_add(L_5, L_6));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:996>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1010>
 		float L_7 = V_1;
 		V_5 = L_7;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:997>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1011>
 		float L_8 = V_5;
 		float L_9;
 		L_9 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline((&___0_r1), NULL);
 		V_5 = ((float)il2cpp_codegen_add(L_8, L_9));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:998>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1012>
 		float L_10 = V_2;
 		V_6 = L_10;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:999>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1013>
 		float L_11 = V_6;
 		float L_12;
 		L_12 = Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline((&___1_r2), NULL);
 		V_6 = ((float)il2cpp_codegen_add(L_11, L_12));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1000>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1014>
 		float L_13 = V_3;
 		V_7 = L_13;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1001>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1015>
 		float L_14 = V_7;
 		float L_15;
 		L_15 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline((&___1_r2), NULL);
 		V_7 = ((float)il2cpp_codegen_add(L_14, L_15));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1002>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1016>
 		float L_16 = V_0;
 		float L_17 = V_2;
 		if ((!(((float)L_16) < ((float)L_17))))
@@ -18999,14 +19535,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1004>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1018>
 		float L_18 = V_2;
 		V_0 = L_18;
 	}
 
 IL_0062:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1006>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1020>
 		float L_19 = V_1;
 		float L_20 = V_3;
 		if ((!(((float)L_19) < ((float)L_20))))
@@ -19015,14 +19551,14 @@ IL_0062:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1008>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1022>
 		float L_21 = V_3;
 		V_1 = L_21;
 	}
 
 IL_0068:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1010>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1024>
 		float L_22 = V_4;
 		float L_23 = V_6;
 		if ((!(((float)L_22) > ((float)L_23))))
@@ -19031,14 +19567,14 @@ IL_0068:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1012>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1026>
 		float L_24 = V_6;
 		V_4 = L_24;
 	}
 
 IL_0072:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1014>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1028>
 		float L_25 = V_5;
 		float L_26 = V_7;
 		if ((!(((float)L_25) > ((float)L_26))))
@@ -19047,22 +19583,22 @@ IL_0072:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1016>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1030>
 		float L_27 = V_7;
 		V_5 = L_27;
 	}
 
 IL_007c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1018>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1032>
 		float L_28 = V_4;
 		float L_29 = V_0;
 		V_4 = ((float)il2cpp_codegen_subtract(L_28, L_29));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1019>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1033>
 		float L_30 = V_5;
 		float L_31 = V_1;
 		V_5 = ((float)il2cpp_codegen_subtract(L_30, L_31));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1020>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1034>
 		float L_32 = V_4;
 		if ((!(((float)L_32) < ((float)(-30000.0f)))))
 		{
@@ -19070,13 +19606,13 @@ IL_007c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1022>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1036>
 		V_4 = (-30000.0f);
 	}
 
 IL_0098:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1024>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1038>
 		float L_33 = V_5;
 		if ((!(((float)L_33) < ((float)(-30000.0f)))))
 		{
@@ -19084,13 +19620,13 @@ IL_0098:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1026>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1040>
 		V_5 = (-30000.0f);
 	}
 
 IL_00a8:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1028>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1042>
 		float L_34 = V_0;
 		float L_35 = V_1;
 		float L_36 = V_4;
@@ -19101,7 +19637,7 @@ IL_00a8:
 		return L_38;
 	}
 }
-// Method Definition Index: 12618
+// Method Definition Index: 12619
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageScale_m0DA8AEFA4E4E86307421FAE41AE4CF6879A0D315 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, int32_t ___1_x, int32_t ___2_y, int32_t ___3_w, int32_t ___4_h, int32_t ___5_tranform, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19119,24 +19655,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageScale_m0DA8AEFA4E4E86
 	float G_B4_1 = 0.0f;
 	float G_B4_2 = 0.0f;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1033>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1047>
 		int32_t L_0 = ___1_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_x = ((int32_t)il2cpp_codegen_multiply(L_0, L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1034>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1048>
 		int32_t L_2 = ___2_y;
 		int32_t L_3 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_y = ((int32_t)il2cpp_codegen_multiply(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1035>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1049>
 		int32_t L_4 = ___3_w;
 		int32_t L_5 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___3_w = ((int32_t)il2cpp_codegen_multiply(L_4, L_5));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1036>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1050>
 		int32_t L_6 = ___4_h;
 		int32_t L_7 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___4_h = ((int32_t)il2cpp_codegen_multiply(L_6, L_7));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1037>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1051>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_8 = ___0_image;
 		if (!L_8)
 		{
@@ -19144,7 +19680,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageScale_m0DA8AEFA4E4E86
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1039>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1053>
 		int32_t L_9 = ___1_x;
 		int32_t L_10 = __this->___translateX;
 		int32_t L_11 = ___2_y;
@@ -19190,11 +19726,11 @@ IL_0046:
 
 IL_005a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1041>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1055>
 		return;
 	}
 }
-// Method Definition Index: 12619
+// Method Definition Index: 12620
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageScale_m0A51330B2632FDE6C1136C6D8F02E7AF89E98FA4 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, int32_t ___1_x, int32_t ___2_y, int32_t ___3_w, int32_t ___4_h, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19205,24 +19741,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageScale_m0A51330B2632FD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1045>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1059>
 		int32_t L_0 = ___1_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_x = ((int32_t)il2cpp_codegen_multiply(L_0, L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1046>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1060>
 		int32_t L_2 = ___2_y;
 		int32_t L_3 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_y = ((int32_t)il2cpp_codegen_multiply(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1047>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1061>
 		int32_t L_4 = ___3_w;
 		int32_t L_5 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___3_w = ((int32_t)il2cpp_codegen_multiply(L_4, L_5));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1048>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1062>
 		int32_t L_6 = ___4_h;
 		int32_t L_7 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___4_h = ((int32_t)il2cpp_codegen_multiply(L_6, L_7));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1049>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1063>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_8 = ___0_image;
 		if (!L_8)
 		{
@@ -19230,7 +19766,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageScale_m0A51330B2632FD
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1051>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1065>
 		int32_t L_9 = ___1_x;
 		int32_t L_10 = ___2_y;
 		int32_t L_11 = ___3_w;
@@ -19247,11 +19783,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageScale_m0A51330B2632FD
 
 IL_0043:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1053>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1067>
 		return;
 	}
 }
-// Method Definition Index: 12620
+// Method Definition Index: 12621
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageSimple_m1E85868B88BAED6B6E5FDE06D84FE29549E7906A (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, int32_t ___1_x, int32_t ___2_y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19262,16 +19798,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageSimple_m1E85868B88BAE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1057>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1071>
 		int32_t L_0 = ___1_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___1_x = ((int32_t)il2cpp_codegen_multiply(L_0, L_1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1058>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1072>
 		int32_t L_2 = ___2_y;
 		int32_t L_3 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		___2_y = ((int32_t)il2cpp_codegen_multiply(L_2, L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1059>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1073>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_4 = ___0_image;
 		if (!L_4)
 		{
@@ -19279,7 +19815,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageSimple_m1E85868B88BAE
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1061>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1075>
 		int32_t L_5 = ___1_x;
 		int32_t L_6 = ___2_y;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_7 = ___0_image;
@@ -19300,15 +19836,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawImageSimple_m1E85868B88BAE
 
 IL_0037:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1063>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1077>
 		return;
 	}
 }
-// Method Definition Index: 12621
+// Method Definition Index: 12622
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getImageWidth_mA3B8B13BC6B4D4AB97574EE27D4D8BC17C232691 (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1067>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1081>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_image;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -19316,11 +19852,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getImageWidth_mA3B8B13BC6B4
 		return L_1;
 	}
 }
-// Method Definition Index: 12622
+// Method Definition Index: 12623
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getImageHeight_mED3A11F0A5DD9EF3C75007686780CB5B78669773 (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_image, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1072>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1086>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_image;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -19328,7 +19864,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getImageHeight_mED3A11F0A5D
 		return L_1;
 	}
 }
-// Method Definition Index: 12623
+// Method Definition Index: 12624
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool mGraphics_isNotTranColor_m22A27A3FD589968A14B74C654FB21142D32F415A (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_color, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19338,7 +19874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool mGraphics_isNotTranColor_m22A27A3FD58996
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1077>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1091>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_color;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
 		L_1 = Color_get_clear_m02E023A7D396B973288B3915F6F24FBF7E0DC81D_inline(NULL);
@@ -19363,17 +19899,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool mGraphics_isNotTranColor_m22A27A3FD58996
 
 IL_001a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1079>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1093>
 		return (bool)0;
 	}
 
 IL_001c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1081>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1095>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 12624
+// Method Definition Index: 12625
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* mGraphics_blend_m33726CE29E878E1888277F659F69238D9839F885 (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_img0, float ___1_level, int32_t ___2_rgb, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19399,30 +19935,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 	float V_12 = 0.0f;
 	float V_13 = 0.0f;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1086>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1100>
 		int32_t L_0 = ___2_rgb;
 		V_0 = ((int32_t)(L_0&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1087>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1101>
 		int32_t L_1 = ___2_rgb;
 		V_1 = ((int32_t)(((int32_t)(L_1>>8))&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1088>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1102>
 		int32_t L_2 = ___2_rgb;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1089>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1103>
 		int32_t L_3 = V_0;
 		V_2 = ((float)(((float)L_3)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1090>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1104>
 		int32_t L_4 = V_1;
 		V_3 = ((float)(((float)L_4)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1091>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1105>
 		V_4 = ((float)(((float)((int32_t)(((int32_t)(L_2>>((int32_t)16)))&((int32_t)255))))/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1092>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1106>
 		float L_5 = V_4;
 		float L_6 = V_3;
 		float L_7 = V_2;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_8;
 		memset((&L_8), 0, sizeof(L_8));
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_8), L_5, L_6, L_7, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1093>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1107>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_9 = ___0_img0;
 		NullCheck(L_9);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_10 = L_9->___texture;
@@ -19430,32 +19966,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_11;
 		L_11 = Texture2D_GetPixels_m77A00D71DF5CDC7DAA0EE66FF2C90A24C7604039(L_10, NULL);
 		V_5 = L_11;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1094>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1108>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_12 = L_8;
 		float L_13 = L_12.___r;
 		V_6 = L_13;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1095>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1109>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_14 = L_12;
 		float L_15 = L_14.___g;
 		V_7 = L_15;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1096>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1110>
 		float L_16 = L_14.___b;
 		V_8 = L_16;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1097>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1111>
 		V_9 = 0;
 		goto IL_015b;
 	}
 
 IL_006c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1099>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1113>
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_17 = V_5;
 		int32_t L_18 = V_9;
 		NullCheck(L_17);
 		int32_t L_19 = L_18;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_20 = (L_17)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
 		V_10 = L_20;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1100>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1114>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_21 = V_10;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		bool L_22;
@@ -19466,7 +20002,7 @@ IL_006c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1102>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1116>
 		float L_23 = V_6;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_24 = V_10;
 		float L_25 = L_24.___r;
@@ -19474,7 +20010,7 @@ IL_006c:
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_27 = V_10;
 		float L_28 = L_27.___r;
 		V_11 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_23, L_25)), L_26)), L_28));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1103>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1117>
 		float L_29 = V_7;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_30 = V_10;
 		float L_31 = L_30.___g;
@@ -19482,7 +20018,7 @@ IL_006c:
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_33 = V_10;
 		float L_34 = L_33.___g;
 		V_12 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_29, L_31)), L_32)), L_34));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1104>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1118>
 		float L_35 = V_8;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_36 = V_10;
 		float L_37 = L_36.___b;
@@ -19490,7 +20026,7 @@ IL_006c:
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_39 = V_10;
 		float L_40 = L_39.___b;
 		V_13 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_35, L_37)), L_38)), L_40));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1105>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1119>
 		float L_41 = V_11;
 		if ((!(((float)L_41) > ((float)(255.0f)))))
 		{
@@ -19498,13 +20034,13 @@ IL_006c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1107>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1121>
 		V_11 = (255.0f);
 	}
 
 IL_00d5:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1109>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1123>
 		float L_42 = V_11;
 		if ((!(((float)L_42) < ((float)(0.0f)))))
 		{
@@ -19512,13 +20048,13 @@ IL_00d5:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1111>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1125>
 		V_11 = (0.0f);
 	}
 
 IL_00e5:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1113>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1127>
 		float L_43 = V_12;
 		if ((!(((float)L_43) > ((float)(255.0f)))))
 		{
@@ -19526,13 +20062,13 @@ IL_00e5:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1115>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1129>
 		V_12 = (255.0f);
 	}
 
 IL_00f5:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1117>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1131>
 		float L_44 = V_12;
 		if ((!(((float)L_44) < ((float)(0.0f)))))
 		{
@@ -19540,13 +20076,13 @@ IL_00f5:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1119>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1133>
 		V_12 = (0.0f);
 	}
 
 IL_0105:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1121>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1135>
 		float L_45 = V_13;
 		if ((!(((float)L_45) < ((float)(0.0f)))))
 		{
@@ -19554,13 +20090,13 @@ IL_0105:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1123>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1137>
 		V_13 = (0.0f);
 	}
 
 IL_0115:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1125>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1139>
 		float L_46 = V_13;
 		if ((!(((float)L_46) > ((float)(255.0f)))))
 		{
@@ -19568,25 +20104,25 @@ IL_0115:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1127>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1141>
 		V_13 = (255.0f);
 	}
 
 IL_0125:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1129>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1143>
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_47 = V_5;
 		int32_t L_48 = V_9;
 		NullCheck(L_47);
 		float L_49 = V_11;
 		((L_47)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_48)))->___r = L_49;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1130>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1144>
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_50 = V_5;
 		int32_t L_51 = V_9;
 		NullCheck(L_50);
 		float L_52 = V_12;
 		((L_50)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_51)))->___g = L_52;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1131>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1145>
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_53 = V_5;
 		int32_t L_54 = V_9;
 		NullCheck(L_53);
@@ -19596,14 +20132,14 @@ IL_0125:
 
 IL_0155:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1097>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1111>
 		int32_t L_56 = V_9;
 		V_9 = ((int32_t)il2cpp_codegen_add(L_56, 1));
 	}
 
 IL_015b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1097>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1111>
 		int32_t L_57 = V_9;
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_58 = V_5;
 		NullCheck(L_58);
@@ -19613,7 +20149,7 @@ IL_015b:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1134>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1148>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_59 = ___0_img0;
 		NullCheck(L_59);
 		int32_t L_60;
@@ -19624,31 +20160,31 @@ IL_015b:
 		L_62 = Image_getRealImageHeight_m5E709D014F2D6F54A9774B3B559F73FCF41A74A2_inline(L_61, NULL);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_63;
 		L_63 = Image_createImage_m971E8C9BCDCEF1AA521A095D3A4AD01C56284681(L_60, L_62, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1135>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1149>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_64 = L_63;
 		NullCheck(L_64);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_65 = L_64->___texture;
 		ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389* L_66 = V_5;
 		NullCheck(L_65);
 		Texture2D_SetPixels_mAE0CDFA15FA96F840D7FFADC31405D8AF20D9073(L_65, L_66, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1136>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1150>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_67 = L_64;
 		NullCheck(L_67);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_68 = L_67->___texture;
 		Image_setTextureQuality_mE725F4B9CB217AC2596D8C6FB73E8DEBBA41518A(L_68, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1137>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1151>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_69 = L_67;
 		NullCheck(L_69);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_70 = L_69->___texture;
 		NullCheck(L_70);
 		Texture2D_Apply_mA014182C9EE0BBF6EEE3B286854F29E50EB972DC(L_70, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1138>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1152>
 		Cout_LogError2_mB157EAB3FDA033582552621DE510EB72CAAB38DB(_stringLiteral4ADDD6E7C46C3C7113B6D92EFDA4FECB8130525A, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1139>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1153>
 		return L_69;
 	}
 }
-// Method Definition Index: 12625
+// Method Definition Index: 12626
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F mGraphics_setColorObj_m1C406405B0AA15834C0CBA0743D8313A13B86178 (int32_t ___0_rgb, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -19656,22 +20192,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 	float V_2 = 0.0f;
 	float V_3 = 0.0f;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1144>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1158>
 		int32_t L_0 = ___0_rgb;
 		V_0 = ((int32_t)(L_0&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1145>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1159>
 		int32_t L_1 = ___0_rgb;
 		V_1 = ((int32_t)(((int32_t)(L_1>>8))&((int32_t)255)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1146>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1160>
 		int32_t L_2 = ___0_rgb;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1147>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1161>
 		int32_t L_3 = V_0;
 		V_2 = ((float)(((float)L_3)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1148>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1162>
 		int32_t L_4 = V_1;
 		V_3 = ((float)(((float)L_4)/(256.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1149>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1150>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1163>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1164>
 		float L_5 = V_3;
 		float L_6 = V_2;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_7;
@@ -19680,7 +20216,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 		return L_7;
 	}
 }
-// Method Definition Index: 12626
+// Method Definition Index: 12627
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillTrans_m40984CA3C7BE410BA364A0E51C5349AC9AED7905 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_imgTrans, int32_t ___1_x, int32_t ___2_y, int32_t ___3_w, int32_t ___4_h, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19690,9 +20226,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillTrans_m40984CA3C7BE410BA36
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1155>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1169>
 		mGraphics_setColor_mA2B06BBE8E66EB27AEE45C5F97C3C0156A2150ED(__this, 0, (0.5f), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1156>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1170>
 		int32_t L_0 = ___1_x;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
@@ -19703,11 +20239,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillTrans_m40984CA3C7BE410BA36
 		int32_t L_6 = ___4_h;
 		int32_t L_7 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(__this, ((int32_t)il2cpp_codegen_multiply(L_0, L_1)), ((int32_t)il2cpp_codegen_multiply(L_2, L_3)), ((int32_t)il2cpp_codegen_multiply(L_4, L_5)), ((int32_t)il2cpp_codegen_multiply(L_6, L_7)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1157>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1171>
 		return;
 	}
 }
-// Method Definition Index: 12627
+// Method Definition Index: 12628
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_blendColor_m89DB7C1D782F2F70766887FD42CFDA76C4918121 (float ___0_level, int32_t ___1_color, int32_t ___2_colorBlend, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19724,27 +20260,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_blendColor_m89DB7C1D782F2F7
 	float V_4 = 0.0f;
 	float V_5 = 0.0f;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1161>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1175>
 		int32_t L_0 = ___2_colorBlend;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1;
 		L_1 = mGraphics_setColorObj_m1C406405B0AA15834C0CBA0743D8313A13B86178(L_0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1162>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1176>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2 = L_1;
 		float L_3 = L_2.___r;
 		V_0 = ((float)il2cpp_codegen_multiply(L_3, (255.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1163>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1177>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = L_2;
 		float L_5 = L_4.___g;
 		V_1 = ((float)il2cpp_codegen_multiply(L_5, (255.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1164>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1178>
 		float L_6 = L_4.___b;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1165>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1179>
 		int32_t L_7 = ___1_color;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_8;
 		L_8 = mGraphics_setColorObj_m1C406405B0AA15834C0CBA0743D8313A13B86178(L_7, NULL);
 		V_2 = L_8;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1166>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1180>
 		float L_9 = V_0;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_10 = V_2;
 		float L_11 = L_10.___r;
@@ -19752,7 +20288,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_blendColor_m89DB7C1D782F2F7
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_13 = V_2;
 		float L_14 = L_13.___r;
 		V_3 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(L_9, L_11)), L_12)), L_14));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1167>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1181>
 		float L_15 = V_1;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_16 = V_2;
 		float L_17 = L_16.___g;
@@ -19760,14 +20296,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_blendColor_m89DB7C1D782F2F7
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_19 = V_2;
 		float L_20 = L_19.___g;
 		V_4 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(L_15, L_17)), L_18)), L_20));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1168>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1182>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_21 = V_2;
 		float L_22 = L_21.___b;
 		float L_23 = ___0_level;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_24 = V_2;
 		float L_25 = L_24.___b;
 		V_5 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_6, (255.0f))), L_22)), L_23)), L_25));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1169>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1183>
 		float L_26 = V_3;
 		if ((!(((float)L_26) > ((float)(255.0f)))))
 		{
@@ -19775,13 +20311,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_blendColor_m89DB7C1D782F2F7
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1171>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1185>
 		V_3 = (255.0f);
 	}
 
 IL_0077:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1173>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1187>
 		float L_27 = V_3;
 		if ((!(((float)L_27) < ((float)(0.0f)))))
 		{
@@ -19789,13 +20325,13 @@ IL_0077:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1175>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1189>
 		V_3 = (0.0f);
 	}
 
 IL_0085:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1177>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1191>
 		float L_28 = V_4;
 		if ((!(((float)L_28) > ((float)(255.0f)))))
 		{
@@ -19803,13 +20339,13 @@ IL_0085:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1179>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1193>
 		V_4 = (255.0f);
 	}
 
 IL_0095:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1181>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1195>
 		float L_29 = V_4;
 		if ((!(((float)L_29) < ((float)(0.0f)))))
 		{
@@ -19817,13 +20353,13 @@ IL_0095:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1183>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1197>
 		V_4 = (0.0f);
 	}
 
 IL_00a5:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1185>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1199>
 		float L_30 = V_5;
 		if ((!(((float)L_30) < ((float)(0.0f)))))
 		{
@@ -19831,13 +20367,13 @@ IL_00a5:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1187>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1201>
 		V_5 = (0.0f);
 	}
 
 IL_00b5:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1189>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1203>
 		float L_31 = V_5;
 		if ((!(((float)L_31) > ((float)(255.0f)))))
 		{
@@ -19845,65 +20381,65 @@ IL_00b5:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1191>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1205>
 		V_5 = (255.0f);
 	}
 
 IL_00c5:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1193>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1207>
 		float L_32 = V_5;
 		float L_33 = V_4;
 		float L_34 = V_3;
 		return ((int32_t)(((int32_t)(((int32_t)(il2cpp_codegen_cast_double_to_int<int32_t>(L_32)&((int32_t)il2cpp_codegen_add(((int32_t)255), ((int32_t)(il2cpp_codegen_cast_double_to_int<int32_t>(L_33)<<8))))))&((int32_t)il2cpp_codegen_add(((int32_t)255), ((int32_t)(il2cpp_codegen_cast_double_to_int<int32_t>(L_34)<<((int32_t)16)))))))&((int32_t)255)));
 	}
 }
-// Method Definition Index: 12628
+// Method Definition Index: 12629
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getIntByColor_m330B1809485BA7C4174FFE0DAD98C050B78F4B26 (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_cl, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	float V_1 = 0.0f;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1198>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1212>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_cl;
 		float L_1 = L_0.___r;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1199>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1213>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2 = ___0_cl;
 		float L_3 = L_2.___b;
 		V_0 = ((float)il2cpp_codegen_multiply(L_3, (255.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1200>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1214>
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ___0_cl;
 		float L_5 = L_4.___g;
 		V_1 = ((float)il2cpp_codegen_multiply(L_5, (255.0f)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1201>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1215>
 		float L_6 = V_1;
 		float L_7 = V_0;
 		return ((int32_t)(((int32_t)(((int32_t)(((int32_t)(il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_multiply(L_1, (255.0f))))&((int32_t)255)))<<((int32_t)16)))|((int32_t)(((int32_t)(il2cpp_codegen_cast_double_to_int<int32_t>(L_6)&((int32_t)255)))<<8))))|((int32_t)(il2cpp_codegen_cast_double_to_int<int32_t>(L_7)&((int32_t)255)))));
 	}
 }
-// Method Definition Index: 12629
+// Method Definition Index: 12630
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getRealImageWidth_m95DBB7D6ADA744F17A88039901CEBABE375ED43B (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_img, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1206>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1220>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_img;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___w;
 		return L_1;
 	}
 }
-// Method Definition Index: 12630
+// Method Definition Index: 12631
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t mGraphics_getRealImageHeight_m77ADF099A530A4EA9D01A4F0DD440D0CAC524884 (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_img, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1211>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1225>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_img;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___h;
 		return L_1;
 	}
 }
-// Method Definition Index: 12631
+// Method Definition Index: 12632
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillArg_mD3E87BD8B6AACE6FE3A0FB58E0C75C4CB432DB52 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, int32_t ___0_i, int32_t ___1_j, int32_t ___2_k, int32_t ___3_l, int32_t ___4_m, int32_t ___5_n, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19913,7 +20449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillArg_mD3E87BD8B6AACE6FE3A0F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1216>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1230>
 		int32_t L_0 = ___0_i;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
@@ -19924,11 +20460,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_fillArg_mD3E87BD8B6AACE6FE3A0F
 		int32_t L_6 = ___3_l;
 		int32_t L_7 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(__this, ((int32_t)il2cpp_codegen_multiply(L_0, L_1)), ((int32_t)il2cpp_codegen_multiply(L_2, L_3)), ((int32_t)il2cpp_codegen_multiply(L_4, L_5)), ((int32_t)il2cpp_codegen_multiply(L_6, L_7)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1217>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1231>
 		return;
 	}
 }
-// Method Definition Index: 12632
+// Method Definition Index: 12633
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_CreateLineMaterial_m8E9905A1DC8CF75914CF753DF5F11EF038EC1C80 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19940,7 +20476,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_CreateLineMaterial_m8E9905A1DC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1221>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1235>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_0 = __this->___lineMaterial;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -19951,10 +20487,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_CreateLineMaterial_m8E9905A1DC
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1223>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1224>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1225>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1226>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1237>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1238>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1239>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1240>
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_2;
 		L_2 = Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5(_stringLiteral4A60C4653A100496BC0C52497B5B89127513348F, NULL);
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_3 = (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3*)il2cpp_codegen_object_new(Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_il2cpp_TypeInfo_var);
@@ -19964,7 +20500,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_CreateLineMaterial_m8E9905A1DC
 		Object_set_hideFlags_mACB8BFC903FB3B01BBD427753E791BF28B5E33D4(L_4, ((int32_t)61), NULL);
 		__this->___lineMaterial = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___lineMaterial), (void*)L_4);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1227>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1241>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_5 = __this->___lineMaterial;
 		NullCheck(L_5);
 		Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* L_6;
@@ -19975,11 +20511,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_CreateLineMaterial_m8E9905A1DC
 
 IL_003c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1229>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1243>
 		return;
 	}
 }
-// Method Definition Index: 12633
+// Method Definition Index: 12634
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawlineGL_m844B5CE36A7FA7644318B0213AF974FFBA6CFD8D (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* ___0_totalLine, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19997,30 +20533,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawlineGL_m844B5CE36A7FA76443
 	int32_t V_5 = 0;
 	int32_t V_6 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1233>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1247>
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_0 = __this->___lineMaterial;
 		NullCheck(L_0);
 		bool L_1;
 		L_1 = Material_SetPass_mBB03542DFF4FAEADFCED332009F9D61B6DED75FE(L_0, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1234>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1248>
 		GL_PushMatrix_mB505DD9B224528266FCADC716A16343838105A09(NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1235>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1249>
 		GL_Begin_m17A70A7A3C161D8A127C11BDC5FC393392AB70C7(1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1236>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1250>
 		V_0 = 0;
 		goto IL_0167;
 	}
 
 IL_001f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1238>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1252>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_2 = ___0_totalLine;
 		int32_t L_3 = V_0;
 		NullCheck(L_2);
 		RuntimeObject* L_4;
 		L_4 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_2, L_3, NULL);
 		V_1 = ((mLine_t747ADF6619CE31D9DC479A7EAB40A4214B3BE63A*)CastclassClass((RuntimeObject*)L_4, mLine_t747ADF6619CE31D9DC479A7EAB40A4214B3BE63A_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1239>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1253>
 		mLine_t747ADF6619CE31D9DC479A7EAB40A4214B3BE63A* L_5 = V_1;
 		NullCheck(L_5);
 		float L_6 = L_5->___r;
@@ -20037,32 +20573,32 @@ IL_001f:
 		memset((&L_13), 0, sizeof(L_13));
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_13), L_6, L_8, L_10, L_12, NULL);
 		GL_Color_mE2D27D8FCA9B5E07ECC15574BCBCBA16E6E0CB3E(L_13, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1240>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1254>
 		mLine_t747ADF6619CE31D9DC479A7EAB40A4214B3BE63A* L_14 = V_1;
 		NullCheck(L_14);
 		int32_t L_15 = L_14->___x1;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_16 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		V_2 = ((int32_t)il2cpp_codegen_multiply(L_15, L_16));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1241>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1255>
 		mLine_t747ADF6619CE31D9DC479A7EAB40A4214B3BE63A* L_17 = V_1;
 		NullCheck(L_17);
 		int32_t L_18 = L_17->___y1;
 		int32_t L_19 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		V_3 = ((int32_t)il2cpp_codegen_multiply(L_18, L_19));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1242>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1256>
 		mLine_t747ADF6619CE31D9DC479A7EAB40A4214B3BE63A* L_20 = V_1;
 		NullCheck(L_20);
 		int32_t L_21 = L_20->___x2;
 		int32_t L_22 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		V_4 = ((int32_t)il2cpp_codegen_multiply(L_21, L_22));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1243>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1257>
 		mLine_t747ADF6619CE31D9DC479A7EAB40A4214B3BE63A* L_23 = V_1;
 		NullCheck(L_23);
 		int32_t L_24 = L_23->___y2;
 		int32_t L_25 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		V_5 = ((int32_t)il2cpp_codegen_multiply(L_24, L_25));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1244>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1258>
 		bool L_26 = __this->___isTranslate;
 		if (!L_26)
 		{
@@ -20070,19 +20606,19 @@ IL_001f:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1246>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1260>
 		int32_t L_27 = V_2;
 		int32_t L_28 = __this->___translateX;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_27, L_28));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1247>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1261>
 		int32_t L_29 = V_3;
 		int32_t L_30 = __this->___translateY;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_29, L_30));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1248>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1262>
 		int32_t L_31 = V_4;
 		int32_t L_32 = __this->___translateX;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_31, L_32));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1249>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1263>
 		int32_t L_33 = V_5;
 		int32_t L_34 = __this->___translateY;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_33, L_34));
@@ -20090,14 +20626,14 @@ IL_001f:
 
 IL_00b4:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1251>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1265>
 		V_6 = 0;
 		goto IL_0157;
 	}
 
 IL_00bc:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1253>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1267>
 		int32_t L_35 = V_2;
 		int32_t L_36 = V_6;
 		int32_t L_37 = V_3;
@@ -20108,7 +20644,7 @@ IL_00bc:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40;
 		L_40 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_39, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_40, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1254>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1268>
 		int32_t L_41 = V_4;
 		int32_t L_42 = V_6;
 		int32_t L_43 = V_5;
@@ -20119,7 +20655,7 @@ IL_00bc:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_46;
 		L_46 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_45, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_46, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1255>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1269>
 		int32_t L_47 = V_6;
 		if ((((int32_t)L_47) <= ((int32_t)0)))
 		{
@@ -20127,7 +20663,7 @@ IL_00bc:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1257>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1271>
 		int32_t L_48 = V_2;
 		int32_t L_49 = V_6;
 		int32_t L_50 = V_3;
@@ -20137,7 +20673,7 @@ IL_00bc:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_52;
 		L_52 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_51, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_52, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1258>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1272>
 		int32_t L_53 = V_4;
 		int32_t L_54 = V_6;
 		int32_t L_55 = V_5;
@@ -20147,7 +20683,7 @@ IL_00bc:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57;
 		L_57 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_56, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_57, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1259>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1273>
 		int32_t L_58 = V_2;
 		int32_t L_59 = V_3;
 		int32_t L_60 = V_6;
@@ -20157,7 +20693,7 @@ IL_00bc:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62;
 		L_62 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_61, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_62, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1260>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1274>
 		int32_t L_63 = V_4;
 		int32_t L_64 = V_5;
 		int32_t L_65 = V_6;
@@ -20171,14 +20707,14 @@ IL_00bc:
 
 IL_0151:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1251>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1265>
 		int32_t L_68 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_68, 1));
 	}
 
 IL_0157:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1251>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1265>
 		int32_t L_69 = V_6;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_70 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
@@ -20188,14 +20724,14 @@ IL_0157:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1236>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1250>
 		int32_t L_71 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_71, 1));
 	}
 
 IL_0167:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1236>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1250>
 		int32_t L_72 = V_0;
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_73 = ___0_totalLine;
 		NullCheck(L_73);
@@ -20207,19 +20743,19 @@ IL_0167:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1264>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1278>
 		GL_End_m6CE9D562B738075125F901B1D5254520EC30AB36(NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1265>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1279>
 		GL_PopMatrix_mCE0D33302104D1168B6382136039E979E8C02855(NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1266>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1280>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_75 = ___0_totalLine;
 		NullCheck(L_75);
 		MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_75, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1267>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1281>
 		return;
 	}
 }
-// Method Definition Index: 12634
+// Method Definition Index: 12635
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawLine_m9E315D20E404AA6BDC183C5E79B4D341D507051C (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_x, int32_t ___2_y, int32_t ___3_xTo, int32_t ___4_yTo, int32_t ___5_nLine, int32_t ___6_color, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20232,18 +20768,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawLine_m9E315D20E404AA6BDC18
 	MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1271>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1285>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = (MyVector_t5E551DE127AB217F3BF51644B186993381C11E30*)il2cpp_codegen_object_new(MyVector_t5E551DE127AB217F3BF51644B186993381C11E30_il2cpp_TypeInfo_var);
 		MyVector__ctor_m9CAA74C33B5605E7806E3F1C9E1D78A97AE10692(L_0, NULL);
 		V_0 = L_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1272>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1286>
 		V_1 = 0;
 		goto IL_0025;
 	}
 
 IL_000a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1274>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1288>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_1 = V_0;
 		int32_t L_2 = ___1_x;
 		int32_t L_3 = ___2_y;
@@ -20256,14 +20792,14 @@ IL_000a:
 		mLine__ctor_m4F437CDAEBD9374411DD123EE98D5F92D4CDADA4(L_9, L_2, L_3, ((int32_t)il2cpp_codegen_add(L_4, L_5)), ((int32_t)il2cpp_codegen_add(L_6, L_7)), L_8, NULL);
 		NullCheck(L_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_1, L_9, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1272>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1286>
 		int32_t L_10 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_10, 1));
 	}
 
 IL_0025:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1272>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1286>
 		int32_t L_11 = V_1;
 		int32_t L_12 = ___5_nLine;
 		if ((((int32_t)L_11) < ((int32_t)L_12)))
@@ -20272,26 +20808,26 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1276>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1290>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_13 = ___0_g;
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_14 = V_0;
 		NullCheck(L_13);
 		mGraphics_drawlineGL_m844B5CE36A7FA7644318B0213AF974FFBA6CFD8D(L_13, L_14, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1277>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1291>
 		return;
 	}
 }
-// Method Definition Index: 12635
+// Method Definition Index: 12636
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_drawRegion_m17D7CA13E1B10B25870A83456D2EF3A61BC12E77 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, Small_t8AE30B28DD8FA1AE17919DFCA65F97AF22112B2E* ___0_img, int32_t ___1_p1, int32_t ___2_p2, int32_t ___3_p3, int32_t ___4_p4, int32_t ___5_transform, int32_t ___6_x, int32_t ___7_y, int32_t ___8_anchor, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1281>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1295>
 		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_0 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
 		NotImplementedException__ctor_mDAB47BC6BD0E342E8F2171E5CABE3E67EA049F1C(L_0, NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&mGraphics_drawRegion_m17D7CA13E1B10B25870A83456D2EF3A61BC12E77_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 12636
+// Method Definition Index: 12637
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics__ctor_m2B94FEAD110AAAF64C13D7BA4001D507BB140C63 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20316,7 +20852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics__ctor_m2B94FEAD110AAAF64C13D7B
 		return;
 	}
 }
-// Method Definition Index: 12637
+// Method Definition Index: 12638
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics__cctor_m5C0DFA7698720DC2C53BCD4CABA599F4142AD976 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20362,7 +20898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics__cctor_m5C0DFA7698720DC2C53BCD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12638
+// Method Definition Index: 12639
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mLine__ctor_m4F437CDAEBD9374411DD123EE98D5F92D4CDADA4 (mLine_t747ADF6619CE31D9DC479A7EAB40A4214B3BE63A* __this, int32_t ___0_x1, int32_t ___1_y1, int32_t ___2_x2, int32_t ___3_y2, int32_t ___4_cl, const RuntimeMethod* method) 
 {
 	{
@@ -20387,7 +20923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mLine__ctor_m4F437CDAEBD9374411DD123EE98
 		return;
 	}
 }
-// Method Definition Index: 12639
+// Method Definition Index: 12640
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mLine_setColor_mF6EC677B2BDE1C58841D6A4597E8680C8A7B9CB0 (mLine_t747ADF6619CE31D9DC479A7EAB40A4214B3BE63A* __this, int32_t ___0_rgb, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -20426,7 +20962,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mLine_setColor_mF6EC677B2BDE1C58841D6A45
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12640
+// Method Definition Index: 12641
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob__ctor_mEB546634441A2324ADE606872CD7BC9A7A896914 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20589,7 +21125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob__ctor_mEB546634441A2324ADE606872CD7B
 		return;
 	}
 }
-// Method Definition Index: 12641
+// Method Definition Index: 12642
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob__ctor_m7CCB8C2EC0F15736DD508E4A64369554A9B70CD6 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, int32_t ___0_mobId, bool ___1_isDisable, bool ___2_isDontMove, bool ___3_isFire, bool ___4_isIce, bool ___5_isWind, int32_t ___6_templateId, int32_t ___7_sys, int64_t ___8_hp, int8_t ___9_level, int64_t ___10_maxp, int16_t ___11_pointx, int16_t ___12_pointy, int8_t ___13_status, int8_t ___14_levelBoss, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21120,7 +21656,7 @@ IL_040d:
 		return;
 	}
 }
-// Method Definition Index: 12642
+// Method Definition Index: 12643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_isBigBoss_mA6C5247FF64DFBEA5AA6DD64B5B6D704982A0A79 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21160,7 +21696,7 @@ IL_0022:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 12643
+// Method Definition Index: 12644
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_getData_m9D5661FFF3F292EB4597011E02E628A8E29FFB63 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21346,7 +21882,7 @@ IL_00fd:
 		return;
 	}
 }
-// Method Definition Index: 12644
+// Method Definition Index: 12645
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_setBody_m7E91EE56CF56EE6BD4E1B896FD6F882CAA1B9847 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, int16_t ___0_id, const RuntimeMethod* method) 
 {
 	{
@@ -21359,7 +21895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_setBody_m7E91EE56CF56EE6BD4E1B896FD6
 		return;
 	}
 }
-// Method Definition Index: 12645
+// Method Definition Index: 12646
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_clearBody_m2595AA375D106359F36D67C62AC0708FBE2F37D6 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -21369,7 +21905,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_clearBody_m2595AA375D106359F36D67C62
 		return;
 	}
 }
-// Method Definition Index: 12646
+// Method Definition Index: 12647
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_isExistNewMob_mEDB33D569B2355EBB8F197C40F929BD1EE110D86 (String_t* ___0_id, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21436,7 +21972,7 @@ IL_0022:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 12647
+// Method Definition Index: 12648
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_checkData_m73A9B123EEE9F74EC35B625A1993E4B3404F1A03 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21577,7 +22113,7 @@ IL_0053:
 		return;
 	}
 }
-// Method Definition Index: 12648
+// Method Definition Index: 12649
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_checkFrameTick_mF98CA3DED3A343196A3375B696FA7C8AB560A637 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___0_array, const RuntimeMethod* method) 
 {
 	{
@@ -21611,7 +22147,7 @@ IL_0014:
 		return;
 	}
 }
-// Method Definition Index: 12649
+// Method Definition Index: 12650
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_updateShadown_mDB99D511A3D459268DF3015628A7C19225DBD427 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21774,7 +22310,7 @@ IL_010e:
 		return;
 	}
 }
-// Method Definition Index: 12650
+// Method Definition Index: 12651
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_paintShadow_m8CEA834C99E27715F8C43D6AB227FA32F05A201E (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21931,7 +22467,7 @@ IL_00ff:
 		return;
 	}
 }
-// Method Definition Index: 12651
+// Method Definition Index: 12652
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_updateSuperEff_m2EBB503ECE435852F2BEB61F7FB426B2DCF7B491 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22011,7 +22547,7 @@ IL_0057:
 		return;
 	}
 }
-// Method Definition Index: 12652
+// Method Definition Index: 12653
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_update_mE1E3AACACAFD053E7CA339463073B93460033B91 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23338,7 +23874,7 @@ IL_07c3:
 		return;
 	}
 }
-// Method Definition Index: 12653
+// Method Definition Index: 12654
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_setInjure_m34BB6C8C44A84BDE7634529CDCC6AD756C97F600 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23408,7 +23944,7 @@ IL_0063:
 		return;
 	}
 }
-// Method Definition Index: 12654
+// Method Definition Index: 12655
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BigBoss_tACCDDAE7D4413DB737512EA279C664EE46BD4E35* Mob_getBigBoss_mBC315D570B1746E8638A70E46897A2AB78D9F3D2 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23476,7 +24012,7 @@ IL_0028:
 		return (BigBoss_tACCDDAE7D4413DB737512EA279C664EE46BD4E35*)NULL;
 	}
 }
-// Method Definition Index: 12655
+// Method Definition Index: 12656
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BigBoss2_tED37121B25D7A6ADFA70C06225C692492FAFB308* Mob_getBigBoss2_m80B39A7EDC9D452F4ED284EDE253E5683F1E45C2 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23544,7 +24080,7 @@ IL_0028:
 		return (BigBoss2_tED37121B25D7A6ADFA70C06225C692492FAFB308*)NULL;
 	}
 }
-// Method Definition Index: 12656
+// Method Definition Index: 12657
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BachTuoc_tC0DEE6E5044CD8D353B42E225D47DE6B109E9F58* Mob_getBachTuoc_m441449BEBB5ABE66BD8BBD2667E6D02FC0BB6928 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23612,7 +24148,7 @@ IL_0028:
 		return (BachTuoc_tC0DEE6E5044CD8D353B42E225D47DE6B109E9F58*)NULL;
 	}
 }
-// Method Definition Index: 12657
+// Method Definition Index: 12658
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NewBoss_t89FB16D05D55D1A5A21C16E97C923E3AF51E76B0* Mob_getNewBoss_m8A8B537CC53AE3EBA58D9E1172CBD3222FB1123A (int8_t ___0_idBoss, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23652,7 +24188,7 @@ IL_0020:
 		return (NewBoss_t89FB16D05D55D1A5A21C16E97C923E3AF51E76B0*)NULL;
 	}
 }
-// Method Definition Index: 12658
+// Method Definition Index: 12659
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_removeBigBoss_mD8454B2FC141F0452974C3133556390A2D01C2DC (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23725,7 +24261,7 @@ IL_002d:
 		return;
 	}
 }
-// Method Definition Index: 12659
+// Method Definition Index: 12660
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_setAttack_m8B56B783C09C1FB3AB39DF35D28FFF6BF27CEAE0 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* ___0_cFocus, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23831,7 +24367,7 @@ IL_008b:
 		return;
 	}
 }
-// Method Definition Index: 12660
+// Method Definition Index: 12661
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_isSpecial_mC20C76EFD6392222F85C9DC741FAB9A7AE67484F (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23878,7 +24414,7 @@ IL_002a:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 12661
+// Method Definition Index: 12662
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_isNewModStand_m8BB20341CFD46272D3B66614F32A04B5833E0DCA (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23887,7 +24423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_isNewModStand_m8BB20341CFD46272D3B66
 		return (bool)((((int32_t)L_0) == ((int32_t)((int32_t)76)))? 1 : 0);
 	}
 }
-// Method Definition Index: 12662
+// Method Definition Index: 12663
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_isNewMod_mF37E25EBC2FA39C817940FECD880260F3471A4C7 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -23917,7 +24453,7 @@ IL_0014:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 12663
+// Method Definition Index: 12664
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_updateInjure_m9824FC62BF34919AA92C2501885D0AF2143B598D (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24328,7 +24864,7 @@ IL_0258:
 		return;
 	}
 }
-// Method Definition Index: 12664
+// Method Definition Index: 12665
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_updateMobStandWait_mE8659B650120980BDD4BEE4BEA50B24EA168EC83 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24603,7 +25139,7 @@ IL_01ad:
 		return;
 	}
 }
-// Method Definition Index: 12665
+// Method Definition Index: 12666
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_updateMobAttack_mCCD7D17D60776102FEC4715346A7054E823C88CC (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25184,7 +25720,7 @@ IL_034a:
 		return;
 	}
 }
-// Method Definition Index: 12666
+// Method Definition Index: 12667
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_updateMobWalk_mD0BA866B60372F8A29A1420B87C2EEF55BF47A61 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25985,7 +26521,7 @@ IL_051e:
 		return;
 	}
 }
-// Method Definition Index: 12667
+// Method Definition Index: 12668
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MobTemplate_tCE9A1D97CCEED63161946DB800240D65D1DFD3FE* Mob_getTemplate_m54DB09C957DDC2BCAAB6CDFACF8AAEC76B8C868D (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26005,7 +26541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MobTemplate_tCE9A1D97CCEED63161946DB800240D65
 		return L_3;
 	}
 }
-// Method Definition Index: 12668
+// Method Definition Index: 12669
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_isPaint_mA0E3F75DC911BFE83CE3697553C58C48AC5440EE (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26163,7 +26699,7 @@ IL_0094:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 12669
+// Method Definition Index: 12670
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_isUpdate_mDBD82834BBD783BB4614226EE99D717F204D2CE4 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26231,7 +26767,7 @@ IL_002f:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 12670
+// Method Definition Index: 12671
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_checkIsBoss_m5A31A48C2A5AFDFC91F467718DA1759AAAE4FA24 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -26262,7 +26798,7 @@ IL_0013:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 12671
+// Method Definition Index: 12672
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_updateHp_bar_m93DD5E25244085800B54391A3FEBB452DDD271F3 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26364,7 +26900,7 @@ IL_00b0:
 		return;
 	}
 }
-// Method Definition Index: 12672
+// Method Definition Index: 12673
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_paint_m1FEE6F5B65F1BA3EC784F59B738C32AF1BC4AF34 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26994,7 +27530,7 @@ IL_023e:
 		return;
 	}
 }
-// Method Definition Index: 12673
+// Method Definition Index: 12674
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mob_getHPColor_mC863EC4A35370DF1DE474AD74FD119696FCE007E (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27002,7 +27538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mob_getHPColor_mC863EC4A35370DF1DE474
 		return ((int32_t)16711680);
 	}
 }
-// Method Definition Index: 12674
+// Method Definition Index: 12675
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_startDie_m246ABA9BE7ABCEBAB7DA2B0986065F20149EE5CB (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27035,7 +27571,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_startDie_m246ABA9BE7ABCEBAB7DA2B0986
 		return;
 	}
 }
-// Method Definition Index: 12675
+// Method Definition Index: 12676
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_attackOtherMob_m5D20C0BB2823B0E65E9FFC9B75DB0249AD2EE1B6 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, Mob_t394900507F39725FA57379059AA703E63166F45F* ___0_mobToAttack, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27170,7 +27706,7 @@ IL_00b4:
 		return;
 	}
 }
-// Method Definition Index: 12676
+// Method Definition Index: 12677
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mob_getX_m1CC00E11E7CB8DE77BF585C8EA276ABB2674C7F6 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27179,7 +27715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mob_getX_m1CC00E11E7CB8DE77BF585C8EA2
 		return L_0;
 	}
 }
-// Method Definition Index: 12677
+// Method Definition Index: 12678
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mob_getY_m92B02CDAC377B677066D33C174010E25AD7CF8E0 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27188,7 +27724,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mob_getY_m92B02CDAC377B677066D33C1740
 		return L_0;
 	}
 }
-// Method Definition Index: 12678
+// Method Definition Index: 12679
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mob_getH_mFDEBA69523E13822BDD058A40293841F39F8C0A2 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27197,7 +27733,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mob_getH_mFDEBA69523E13822BDD058A4029
 		return L_0;
 	}
 }
-// Method Definition Index: 12679
+// Method Definition Index: 12680
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mob_getW_mFCBA5FBB9465E8C74D92B3BD309A7D8F7D96AA0F (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27206,7 +27742,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Mob_getW_mFCBA5FBB9465E8C74D92B3BD309
 		return L_0;
 	}
 }
-// Method Definition Index: 12680
+// Method Definition Index: 12681
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_stopMoving_mEE5394B97017F097366CDD4B1A18A87BA2241495 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -27241,7 +27777,7 @@ IL_0031:
 		return;
 	}
 }
-// Method Definition Index: 12681
+// Method Definition Index: 12682
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_isInvisible_mC434051FBD2DF510E5B811CF0930D87FD2548316 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27262,7 +27798,7 @@ IL_0012:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 12682
+// Method Definition Index: 12683
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_removeHoldEff_mACC73EC2D2020F0E73C6CACF7E1646AA159F4486 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27284,7 +27820,7 @@ IL_000f:
 		return;
 	}
 }
-// Method Definition Index: 12683
+// Method Definition Index: 12684
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_removeBlindEff_m440A03CB6EA6EC7BAFFF91F08A2A7512E59C88D9 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27294,7 +27830,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_removeBlindEff_m440A03CB6EA6EC7BAFFF
 		return;
 	}
 }
-// Method Definition Index: 12684
+// Method Definition Index: 12685
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_removeSleepEff_m13AC5FEF9361D480A7EE54F1890867FB15404393 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27304,7 +27840,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_removeSleepEff_m13AC5FEF9361D480A7EE
 		return;
 	}
 }
-// Method Definition Index: 12685
+// Method Definition Index: 12686
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob_GetFrame_mD30A2BCECD54E5061FC16CE05BDB0A1CC8388BC9 (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27413,7 +27949,7 @@ IL_00b1:
 		return;
 	}
 }
-// Method Definition Index: 12686
+// Method Definition Index: 12687
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mob_isTypeNewMod_m899D3045064314DDC3B7EF9DBA9261C1D2871A3D (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27464,7 +28000,7 @@ IL_002e:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 12687
+// Method Definition Index: 12688
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob__cctor_m92B35F667C4E4413191C0C2E8472C7C8B8401243 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27499,7 +28035,55 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mob__cctor_m92B35F667C4E4413191C0C2E8472
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 18656
+// Method Definition Index: 18331
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->___m_XMin;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 18333
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->___m_YMin;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 18337
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		float L_0 = __this->___m_Height;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		float L_1 = V_0;
+		return L_1;
+	}
+}
+// Method Definition Index: 18659
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -27518,7 +28102,7 @@ IL_001d:
 		return L_1;
 	}
 }
-// Method Definition Index: 18659
+// Method Definition Index: 18662
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_gray_m6D01087E0F20F34718EBA5B213853B4BB49F1DEF_inline (const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -27548,7 +28132,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void mFont_setHeight_m949D2DC073C
 		return;
 	}
 }
-// Method Definition Index: 18645
+// Method Definition Index: 18648
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) 
 {
 	{
@@ -27562,7 +28146,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F187
 		return;
 	}
 }
-// Method Definition Index: 18654
+// Method Definition Index: 18657
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline (const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -27581,7 +28165,7 @@ IL_001d:
 		return L_1;
 	}
 }
-// Method Definition Index: 18658
+// Method Definition Index: 18661
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_yellow_m66637FA14383E8D74F24AE256B577CE1D55D469F_inline (const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -27600,7 +28184,7 @@ IL_001d:
 		return L_1;
 	}
 }
-// Method Definition Index: 18655
+// Method Definition Index: 18658
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -27619,7 +28203,7 @@ IL_001d:
 		return L_1;
 	}
 }
-// Method Definition Index: 18657
+// Method Definition Index: 18660
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_black_mB50217951591A045844C61E7FF31EEE3FEF16737_inline (const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -27646,7 +28230,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-// Method Definition Index: 18730
+// Method Definition Index: 10404
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* DictionaryEntry_get_Value_m75FD18FE968AE131F28AA2CB0DF4895EBA39075E_inline (DictionaryEntry_t171080F37B311C25AA9E75888F9C9D703FA721BB* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->____value;
+		return L_0;
+	}
+}
+// Method Definition Index: 18733
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -27657,7 +28249,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		return;
 	}
 }
-// Method Definition Index: 18738
+// Method Definition Index: 18741
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Subtraction_m44475FCDAD2DA2F98D78A6625EC2DCDFE8803837_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -27684,7 +28276,7 @@ IL_0023:
 		return L_9;
 	}
 }
-// Method Definition Index: 18327
+// Method Definition Index: 18328
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_x, float ___1_y, float ___2_width, float ___3_height, const RuntimeMethod* method) 
 {
 	{
@@ -27699,7 +28291,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BE
 		return;
 	}
 }
-// Method Definition Index: 18736
+// Method Definition Index: 18739
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector2_get_magnitude_m5C59B4056420AEFDB291AD0914A3F675330A75CE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27727,7 +28319,7 @@ IL_0026:
 		return L_5;
 	}
 }
-// Method Definition Index: 18644
+// Method Definition Index: 18647
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
 {
 	{
@@ -27742,7 +28334,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 		return;
 	}
 }
-// Method Definition Index: 18737
+// Method Definition Index: 18740
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -27769,7 +28361,7 @@ IL_0023:
 		return L_9;
 	}
 }
-// Method Definition Index: 18338
+// Method Definition Index: 18339
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_xMin_mE89C40702926D016A633399E20DB9501E251630D_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -27785,7 +28377,7 @@ IL_000a:
 		return L_1;
 	}
 }
-// Method Definition Index: 18334
+// Method Definition Index: 18335
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_width_m620D67551372073C9C32C4C4624C2A5713F7F9A9_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -27801,56 +28393,8 @@ IL_000a:
 		return L_1;
 	}
 }
-// Method Definition Index: 18339
+// Method Definition Index: 18340
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_yMin_mB19848FB25DE61EDF958F7A22CFDD86DE103062F_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = __this->___m_YMin;
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		float L_1 = V_0;
-		return L_1;
-	}
-}
-// Method Definition Index: 18336
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = __this->___m_Height;
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		float L_1 = V_0;
-		return L_1;
-	}
-}
-// Method Definition Index: 18330
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_x_mB267B718E0D067F2BAE31BA477647FBF964916EB_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = __this->___m_XMin;
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		float L_1 = V_0;
-		return L_1;
-	}
-}
-// Method Definition Index: 18332
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Rect_get_y_mC733E8D49F3CE21B2A3D40A1B72D687F22C97F49_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	{
@@ -27883,7 +28427,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Image_getRealImageHeight_
 		return L_0;
 	}
 }
-// Method Definition Index: 18660
+// Method Definition Index: 18663
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_clear_m02E023A7D396B973288B3915F6F24FBF7E0DC81D_inline (const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -27902,7 +28446,7 @@ IL_001d:
 		return L_1;
 	}
 }
-// Method Definition Index: 18651
+// Method Definition Index: 18654
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Color_op_Equality_mB2BDC39B0B367BA15AA8DF22F8CB0D02D20BDC71_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_lhs, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_rhs, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -27925,7 +28469,7 @@ IL_0015:
 		return L_5;
 	}
 }
-// Method Definition Index: 18742
+// Method Definition Index: 18745
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -27948,7 +28492,7 @@ IL_001a:
 		return L_5;
 	}
 }
-// Method Definition Index: 18663
+// Method Definition Index: 18666
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 Color_op_Implicit_m9B3228DAFA8DC57A75DE00CBBF13ED4F1E7B01FF_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_c, const RuntimeMethod* method) 
 {
 	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 V_0;
@@ -27975,7 +28519,7 @@ IL_0021:
 		return L_9;
 	}
 }
-// Method Definition Index: 18772
+// Method Definition Index: 18775
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector4_op_Equality_mCEA0E5F229F4AE8C55152F7A8F84345F24F52DC6_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___0_lhs, Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___1_rhs, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
@@ -28025,7 +28569,7 @@ IL_0057:
 		return L_25;
 	}
 }
-// Method Definition Index: 18689
+// Method Definition Index: 18692
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
@@ -28038,7 +28582,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999E
 		return;
 	}
 }
-// Method Definition Index: 18765
+// Method Definition Index: 18768
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* __this, float ___0_x, float ___1_y, float ___2_z, float ___3_w, const RuntimeMethod* method) 
 {
 	{

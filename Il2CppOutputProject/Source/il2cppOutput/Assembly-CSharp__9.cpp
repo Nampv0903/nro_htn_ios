@@ -387,6 +387,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral0B0FEB3147CE20EB2C90076367F895C59BCD14B3
 IL2CPP_EXTERN_C String_t* _stringLiteral0B65878A9DF9490F49C36F1B24553D6A69AAAEEB;
 IL2CPP_EXTERN_C String_t* _stringLiteral0D45C2059E1C66D0914B15E58AF81F4D024404A7;
 IL2CPP_EXTERN_C String_t* _stringLiteral0E31D35F1E626A3E448D8DF66D82AE36DA858F70;
+IL2CPP_EXTERN_C String_t* _stringLiteral0EBD646B60E1C3FCE0203770591ED3C3D63537DC;
 IL2CPP_EXTERN_C String_t* _stringLiteral10A105116F1400FFCE661E402C3C12DDCA0D688C;
 IL2CPP_EXTERN_C String_t* _stringLiteral10F9949BE0635983BF85EAE5CE11355E60E35A37;
 IL2CPP_EXTERN_C String_t* _stringLiteral110B1C4CFA988EDC097937501AD3B282E59089B3;
@@ -430,6 +431,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral381B7C83B74E5866B084D94F2F697986A6FD36A8
 IL2CPP_EXTERN_C String_t* _stringLiteral38353772B2428490F81C990874E6397B028CD796;
 IL2CPP_EXTERN_C String_t* _stringLiteral3A40070A33DCC67657D81C398DAEAB33C416A206;
 IL2CPP_EXTERN_C String_t* _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0;
+IL2CPP_EXTERN_C String_t* _stringLiteral3D714DD3E8E77A697EF557E85ED2B014A96328C5;
 IL2CPP_EXTERN_C String_t* _stringLiteral3E3E2C4B66DB6B3A06FE6C4CBD32853713E7CB70;
 IL2CPP_EXTERN_C String_t* _stringLiteral3EA57D8FCCFE42F6A6F615D31ECB475B0B97EEC5;
 IL2CPP_EXTERN_C String_t* _stringLiteral3EC1BFF730FC4DA2AD828DA058610E59D259E40E;
@@ -488,6 +490,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral7D4DCAFCA0D652FD42A44E584EEC7CCB92598C66
 IL2CPP_EXTERN_C String_t* _stringLiteral7DA974BBFBBCB30ABC57DC4AABE220EBD345ECBD;
 IL2CPP_EXTERN_C String_t* _stringLiteral7DB115560393D8CD43BB46B02F4864FC92C06137;
 IL2CPP_EXTERN_C String_t* _stringLiteral7DE8259AE042EF0EE1A66BEB59A09FD5C84F6EE8;
+IL2CPP_EXTERN_C String_t* _stringLiteral7E70AF961A2F88ADB9DB7B9C3B5F25A532C1570A;
 IL2CPP_EXTERN_C String_t* _stringLiteral7FAA371A7E0D135DFB9BB99DE7FCFCF3E653AD42;
 IL2CPP_EXTERN_C String_t* _stringLiteral82D362395B63055A4F70D734C14197B3C7D0F862;
 IL2CPP_EXTERN_C String_t* _stringLiteral82F0D9B0C7EFEC8E82029699DBC70124A2881AB2;
@@ -3435,6 +3438,8 @@ struct ScaleGUI_tAC0F093B231E7B5B21591E227A94BCC5F3BBF8A6_StaticFields
 	float ___WIDTH;
 	float ___HEIGHT;
 	List_1_tCFA270E118B873F542F52B1DD58F21D0AF4D1452* ___stack;
+	float ___offsetX;
+	float ___offsetY;
 };
 struct Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields
 {
@@ -5761,7 +5766,7 @@ inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12688
+// Method Definition Index: 12689
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobCapcha_init_m5F2731B277604B5559BAA78EA3DE01B220B7FF48 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5783,7 +5788,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobCapcha_init_m5F2731B277604B5559BAA78E
 		return;
 	}
 }
-// Method Definition Index: 12689
+// Method Definition Index: 12690
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobCapcha_paint_mC57486883356FF6C2EF485E880F5724AD8C5C6B6 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_x, int32_t ___2_y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6173,7 +6178,7 @@ IL_01d3:
 		return;
 	}
 }
-// Method Definition Index: 12690
+// Method Definition Index: 12691
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobCapcha_moveCamera_m67D54A5E2F631DD6E2454F463A44DD44E51F443B (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6273,7 +6278,7 @@ IL_00ce:
 		return;
 	}
 }
-// Method Definition Index: 12691
+// Method Definition Index: 12692
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobCapcha__ctor_m5B5E5CCD9C1FA03725686AD1CD500F80AF3C2E55 (MobCapcha_t5372E645B9FF9006FBF02FD526A528F8F43AE8F3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6289,7 +6294,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobCapcha__ctor_m5B5E5CCD9C1FA03725686AD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12692
+// Method Definition Index: 12693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobTemplate__ctor_m7B158B32F14E3F456C43B3B3C5CE0BE02AA542F4 (MobTemplate_tCE9A1D97CCEED63161946DB800240D65D1DFD3FE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6343,7 +6348,7 @@ IL2CPP_EXTERN_C void Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4_marshal_c
 	il2cpp_codegen_marshal_free_bstring(marshaled.___password);
 	marshaled.___password = NULL;
 }
-// Method Definition Index: 12693
+// Method Definition Index: 12694
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Account__ctor_mE9F7EB5DD348B4FCC26A70F042C752A77820F3A2 (Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4* __this, String_t* ___0_username, String_t* ___1_password, const RuntimeMethod* method) 
 {
 	{
@@ -6366,7 +6371,7 @@ IL2CPP_EXTERN_C  void Account__ctor_mE9F7EB5DD348B4FCC26A70F042C752A77820F3A2_Ad
 	_thisAdjusted = reinterpret_cast<Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4*>(__this + _offset);
 	Account__ctor_mE9F7EB5DD348B4FCC26A70F042C752A77820F3A2(_thisAdjusted, ___0_username, ___1_password, method);
 }
-// Method Definition Index: 12694
+// Method Definition Index: 12695
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Account_getUsername_mFE66E47C7863EDBE45431918B074E7D96AA6FDDB (Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6384,7 +6389,7 @@ IL2CPP_EXTERN_C  String_t* Account_getUsername_mFE66E47C7863EDBE45431918B074E7D9
 	_returnValue = Account_getUsername_mFE66E47C7863EDBE45431918B074E7D96AA6FDDB_inline(_thisAdjusted, method);
 	return _returnValue;
 }
-// Method Definition Index: 12695
+// Method Definition Index: 12696
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Account_getPassword_m25A2190AE12E99B800B25891DBD00FC35C76B21B (Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6410,7 +6415,7 @@ IL2CPP_EXTERN_C  String_t* Account_getPassword_m25A2190AE12E99B800B25891DBD00FC3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12696
+// Method Definition Index: 12697
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoLogin__ctor_m357D3424AF233FB207F41BAF413AB425F639976A (AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6435,7 +6440,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoLogin__ctor_m357D3424AF233FB207F41BA
 		return;
 	}
 }
-// Method Definition Index: 12697
+// Method Definition Index: 12698
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 AutoLogin_GetAccWithUsername_m462B49E72A711E0367E3D8BA2A205138FC2CBD83 (AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* __this, List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* ___0_accounts, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6547,7 +6552,7 @@ IL_0052:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12698
+// Method Definition Index: 12699
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BypassCertificateHandler_ValidateCertificate_mAD2156D4AFE3376044121AF1EC5C542BD375FD4D (BypassCertificateHandler_tF0F7F150BA328B6CEF00477A8801E13370373B4D* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_certificateData, const RuntimeMethod* method) 
 {
 	{
@@ -6555,7 +6560,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BypassCertificateHandler_ValidateCertifi
 		return (bool)1;
 	}
 }
-// Method Definition Index: 12699
+// Method Definition Index: 12700
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BypassCertificateHandler__ctor_mEB58A4564A9E93DDF91F7ADB4BA1802216B12E91 (BypassCertificateHandler_tF0F7F150BA328B6CEF00477A8801E13370373B4D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6571,7 +6576,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BypassCertificateHandler__ctor_mEB58A456
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12700
+// Method Definition Index: 12701
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CoroutineRunner_t8847927DF73692C6AD756F9D0DE661D9CDA14D6A* CoroutineRunner_get_Instance_m5E6C38F8FBE0EB48DA54D55B30FD76347F1B9E08 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6618,7 +6623,7 @@ IL_0027:
 		return L_5;
 	}
 }
-// Method Definition Index: 12701
+// Method Definition Index: 12702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CoroutineRunner_RunCoroutine_m1ED165EDEBAFD998107CF2DFFD883CA59ACFE06D (CoroutineRunner_t8847927DF73692C6AD756F9D0DE661D9CDA14D6A* __this, RuntimeObject* ___0_coroutine, const RuntimeMethod* method) 
 {
 	{
@@ -6630,7 +6635,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CoroutineRunner_RunCoroutine_m1ED165EDEB
 		return;
 	}
 }
-// Method Definition Index: 12702
+// Method Definition Index: 12703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CoroutineRunner__ctor_m13D5D5FC80594EC13E3006B444B2F6DE57499244 (CoroutineRunner_t8847927DF73692C6AD756F9D0DE661D9CDA14D6A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6646,7 +6651,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CoroutineRunner__ctor_m13D5D5FC80594EC13
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12703
+// Method Definition Index: 12704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemAuto__ctor_m52D31611F747B764CA2CA8DDEA961A6331AE95DA (ItemAuto_tAD6C1784205B0369AA061ED726253FAE4736C74A* __this, int32_t ___0_iconID, int32_t ___1_id, const RuntimeMethod* method) 
 {
 	{
@@ -6675,7 +6680,7 @@ IL2CPP_EXTERN_C  void ItemAuto__ctor_m52D31611F747B764CA2CA8DDEA961A6331AE95DA_A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12704
+// Method Definition Index: 12705
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NewBagUI_t0D61AA6947C7D554A6252D2BFAA8F22503AB98AE* NewBagUI_GI_m3F846C68349882F3C4519D97BFBA4DF86F6A758A (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6711,7 +6716,7 @@ IL_0014:
 		return G_B2_0;
 	}
 }
-// Method Definition Index: 12705
+// Method Definition Index: 12706
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewBagUI__ctor_m0699C902B705E2D1048D79A479F11BFDE69B3B86 (NewBagUI_t0D61AA6947C7D554A6252D2BFAA8F22503AB98AE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6756,7 +6761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewBagUI__ctor_m0699C902B705E2D1048D79A4
 		return;
 	}
 }
-// Method Definition Index: 12706
+// Method Definition Index: 12707
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewBagUI_OpenBag_mF398E0C0098091FD2736C8C47EC4E9292A03B0C0 (NewBagUI_t0D61AA6947C7D554A6252D2BFAA8F22503AB98AE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6767,7 +6772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewBagUI_OpenBag_mF398E0C0098091FD2736C8
 		return;
 	}
 }
-// Method Definition Index: 12707
+// Method Definition Index: 12708
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewBagUI_Paint_m65230A213FF594D8F2B8B52CD7389FCBC64D2827 (NewBagUI_t0D61AA6947C7D554A6252D2BFAA8F22503AB98AE* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6806,7 +6811,7 @@ IL_0030:
 		return;
 	}
 }
-// Method Definition Index: 12708
+// Method Definition Index: 12709
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewBagUI_perform_m31BE799B57923A35A99132DCAE7979AD24B129D8 (NewBagUI_t0D61AA6947C7D554A6252D2BFAA8F22503AB98AE* __this, int32_t ___0_idAction, RuntimeObject* ___1_p, const RuntimeMethod* method) 
 {
 	{
@@ -6836,7 +6841,7 @@ IL_000a:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12709
+// Method Definition Index: 12710
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteAddress__ctor_mD0A0940719796C1697103E5F5971C85A0FA19777 (RemoteAddress_t5452C2771C3CC8FB1778D58D2A7EBCF88785BC4C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -6852,7 +6857,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteAddress__ctor_mD0A0940719796C16971
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12710
+// Method Definition Index: 12711
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6886,7 +6891,7 @@ IL_000e:
 		return G_B2_0;
 	}
 }
-// Method Definition Index: 12711
+// Method Definition Index: 12712
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoEncodeIp_m8FE94C4BED9FBA89C9EC091C2C54383ED2AC4CE1 (const RuntimeMethod* method) 
 {
 	{
@@ -6894,7 +6899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoEncodeIp_m8FE94C4BED9FBA89C9EC
 		return;
 	}
 }
-// Method Definition Index: 12712
+// Method Definition Index: 12713
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_OpenMenu_mCC104DA65B0A9C0B481CF41EEC1A3C38EC74DB12 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6963,7 +6968,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_OpenMenu_mCC104DA65B0A9C0B481CF4
 		return;
 	}
 }
-// Method Definition Index: 12713
+// Method Definition Index: 12714
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ModFunc_UpdateKey_m7A27E53D8005BB4972A62346452EDBAE2A6ECD1D (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, int32_t ___0_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7390,7 +7395,7 @@ IL_023f:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 12714
+// Method Definition Index: 12715
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LoadGame_m0D0691DF4130CF57136567A3D2E9719187352432 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7472,7 +7477,7 @@ IL_0049:
 		return;
 	}
 }
-// Method Definition Index: 12715
+// Method Definition Index: 12716
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7538,7 +7543,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C
 		return;
 	}
 }
-// Method Definition Index: 12716
+// Method Definition Index: 12717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_GotoNpc_m835AE943C52ECDA969CF91E7E3EC9597B382432C (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, int32_t ___0_npcID, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7641,7 +7646,7 @@ IL_0061:
 		return;
 	}
 }
-// Method Definition Index: 12717
+// Method Definition Index: 12718
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ModFunc_FindItemIndex_mCDF0BB0D4805AEB3519C058843DEE63A6B979578 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, int32_t ___0_idItem, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7755,7 +7760,7 @@ IL_004f:
 		return (-1);
 	}
 }
-// Method Definition Index: 12718
+// Method Definition Index: 12719
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AttackChar_m0E69984CAA98D411AD346631DD49A1CBA5C3077B (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7818,7 +7823,7 @@ IL_002c:
 		return;
 	}
 }
-// Method Definition Index: 12719
+// Method Definition Index: 12720
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AttackMob_m6F198955F15AA1DB869AF968EECACF88EEA8EFC6 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, Mob_t394900507F39725FA57379059AA703E63166F45F* ___0_mob, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7876,7 +7881,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 12720
+// Method Definition Index: 12721
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoAttack_mED25384DEA933C7E6948072B0B3AB9EF345EC45C (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8121,7 +8126,7 @@ IL_014d:
 		return;
 	}
 }
-// Method Definition Index: 12721
+// Method Definition Index: 12722
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetUsedSkill_mCFDAA6172A0A073E069F1ADCCC9BA0EBE28ABDD4 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* ___0_skill, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8146,7 +8151,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetUsedSkill_mCFDAA6172A0A073E06
 		return;
 	}
 }
-// Method Definition Index: 12722
+// Method Definition Index: 12723
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_UsePorata_mD35BD0F836940AE0C91AF1970ABB0B6A246D4D3A (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8238,7 +8243,7 @@ IL_0045:
 		return;
 	}
 }
-// Method Definition Index: 12723
+// Method Definition Index: 12724
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoFocusBoss_mE86099E39F5C9109EB209B3A300307FC0DC51A42 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8342,7 +8347,7 @@ IL_004c:
 		return;
 	}
 }
-// Method Definition Index: 12724
+// Method Definition Index: 12725
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ModFunc_GetMapID_m4E073713002C776284D0B8D050412814C8349EA4 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, String_t* ___0_mapName, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8422,7 +8427,7 @@ IL_002f:
 		return L_14;
 	}
 }
-// Method Definition Index: 12725
+// Method Definition Index: 12726
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_CharGender_m813650EF282C7F20F75D94727D952627847D740F (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* ___0_char, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8516,7 +8521,7 @@ IL_0049:
 		return L_8;
 	}
 }
-// Method Definition Index: 12726
+// Method Definition Index: 12727
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_UseItem_mBD1C237E58C65E781155ECDE0C7090BD864C3741 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, int32_t ___0_itemId, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8562,7 +8567,7 @@ IL_001c:
 		return;
 	}
 }
-// Method Definition Index: 12727
+// Method Definition Index: 12728
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_UseItemAuto_mB5A6670031BF7E0FA0285B7EED8C9A50F3A18579 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8819,7 +8824,7 @@ IL_0107:
 		return;
 	}
 }
-// Method Definition Index: 12728
+// Method Definition Index: 12729
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoHoiSinh_mB3F1CF5CFE0E12B7C7517F795106D30A668FF0C0 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8878,7 +8883,7 @@ IL_0032:
 		return;
 	}
 }
-// Method Definition Index: 12729
+// Method Definition Index: 12730
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ModFunc_GetCurrPhaLe_mB017E0673E522A90285DF0A4A3C9BA62CE48486E (Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* ___0_item, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -8946,7 +8951,7 @@ IL_002c:
 		return 0;
 	}
 }
-// Method Definition Index: 12730
+// Method Definition Index: 12731
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoPhaLe_mF49067ADE5136018D2AC9E7637FA5F97E2E22AAC (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9155,7 +9160,7 @@ IL_0121:
 		return;
 	}
 }
-// Method Definition Index: 12731
+// Method Definition Index: 12732
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_BanVang_m596A4F7F9132C7E6D5A1E45697637D8FEFF378CF (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9305,7 +9310,7 @@ IL_00d2:
 		return;
 	}
 }
-// Method Definition Index: 12732
+// Method Definition Index: 12733
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* ModFunc_FindItemBagWithIndexUI_m7F70E237C52EC55F625D455779ECAF1A33445540 (int32_t ___0_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9383,7 +9388,7 @@ IL_0025:
 		return (Item_tFAF77888D49883A321EB596A7D93CB5615D37E95*)NULL;
 	}
 }
-// Method Definition Index: 12733
+// Method Definition Index: 12734
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CollectAllThuongDe_m6B58585E8CA92004BF3E81525B6A63C73798EB19 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9417,7 +9422,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CollectAllThuongDe_m6B58585E8CA9
 		return;
 	}
 }
-// Method Definition Index: 12734
+// Method Definition Index: 12735
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_OpenMenuThuongDe_m1E32CFE6B5BFE15A9675FCCA82DABFB8EF8E7CE6 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	{
@@ -9444,7 +9449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_OpenMenuThuongDe_m1E32CFE6B5BFE1
 		return;
 	}
 }
-// Method Definition Index: 12735
+// Method Definition Index: 12736
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_quayThuongDe_mA791C915C0CA8B9C7A8EE2DD7D6744F33A2C1A11 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9559,7 +9564,7 @@ IL_007f:
 		return;
 	}
 }
-// Method Definition Index: 12736
+// Method Definition Index: 12737
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ModFunc_Chat_m405D09F2EB54599250084170F28D1931383B3C1D (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, String_t* ___0_text, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10030,7 +10035,7 @@ IL_0222:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 12737
+// Method Definition Index: 12738
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_UpdateTouch_mDFD3A67C3B9DC83135FEA0E59195BD15CCB4F664 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10080,7 +10085,7 @@ IL_000d:
 		bool L_5 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick;
 		if (!L_5)
 		{
-			goto IL_0115;
+			goto IL_01d2;
 		}
 	}
 	{
@@ -10088,7 +10093,7 @@ IL_000d:
 		bool L_6 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease;
 		if (!L_6)
 		{
-			goto IL_0115;
+			goto IL_01d2;
 		}
 	}
 	{
@@ -10120,7 +10125,7 @@ IL_004c:
 		bool L_10 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick;
 		if (!L_10)
 		{
-			goto IL_0115;
+			goto IL_01d2;
 		}
 	}
 	{
@@ -10128,7 +10133,7 @@ IL_004c:
 		bool L_11 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease;
 		if (!L_11)
 		{
-			goto IL_0115;
+			goto IL_01d2;
 		}
 	}
 	{
@@ -10151,7 +10156,7 @@ IL_0086:
 		L_14 = GameCanvas_isPointerHoldIn_m234C35FAF5C1849E79803D0E1530460C2CF9F78E(((int32_t)il2cpp_codegen_subtract(L_12, ((int32_t)84))), ((int32_t)il2cpp_codegen_add(L_13, ((int32_t)47))), ((int32_t)32), ((int32_t)32), NULL);
 		if (!L_14)
 		{
-			goto IL_00c6;
+			goto IL_00cc;
 		}
 	}
 	{
@@ -10160,7 +10165,7 @@ IL_0086:
 		bool L_15 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick;
 		if (!L_15)
 		{
-			goto IL_0115;
+			goto IL_01d2;
 		}
 	}
 	{
@@ -10168,7 +10173,7 @@ IL_0086:
 		bool L_16 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease;
 		if (!L_16)
 		{
-			goto IL_0115;
+			goto IL_01d2;
 		}
 	}
 	{
@@ -10185,68 +10190,197 @@ IL_0086:
 		return;
 	}
 
-IL_00c6:
+IL_00cc:
 	{
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1173>
-		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
-		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_18 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgPanel;
-		NullCheck(L_18);
-		int32_t L_19;
-		L_19 = Image_getWidth_m56A0FEDBD7CDA88D486BC548201E91A3DD2A8E97(L_18, NULL);
-		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_20 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgModFunc;
-		NullCheck(L_20);
-		int32_t L_21;
-		L_21 = Image_getWidth_m56A0FEDBD7CDA88D486BC548201E91A3DD2A8E97(L_20, NULL);
-		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_22 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgModFunc;
-		NullCheck(L_22);
-		int32_t L_23;
-		L_23 = Image_getHeight_mD92E26605D4EEDF37389EC951FF44F41AF7D28A4(L_22, NULL);
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		int32_t L_18 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___modKeyPosX;
+		int32_t L_19 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___modKeyPosY;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		bool L_24;
-		L_24 = GameCanvas_isPointerHoldIn_m234C35FAF5C1849E79803D0E1530460C2CF9F78E(((int32_t)il2cpp_codegen_add(L_19, 8)), 3, ((int32_t)il2cpp_codegen_add(L_21, 2)), ((int32_t)il2cpp_codegen_add(L_23, 2)), NULL);
-		if (!L_24)
+		bool L_20;
+		L_20 = GameCanvas_isPointerHoldIn_m234C35FAF5C1849E79803D0E1530460C2CF9F78E(((int32_t)il2cpp_codegen_add(L_18, ((int32_t)16))), ((int32_t)il2cpp_codegen_subtract(L_19, ((int32_t)70))), ((int32_t)32), ((int32_t)32), NULL);
+		if (!L_20)
 		{
-			goto IL_0115;
+			goto IL_010b;
 		}
 	}
 	{
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1175>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		bool L_25 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick;
-		if (!L_25)
+		bool L_21 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick;
+		if (!L_21)
 		{
-			goto IL_0115;
+			goto IL_01d2;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		bool L_26 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease;
-		if (!L_26)
+		bool L_22 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease;
+		if (!L_22)
 		{
-			goto IL_0115;
+			goto IL_01d2;
 		}
 	}
 	{
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1177>
-		ModFunc_OpenMenu_mCC104DA65B0A9C0B481CF41EEC1A3C38EC74DB12(__this, NULL);
+		ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92* L_23;
+		L_23 = ManualXmap_GI_mC0D676D4045600EEE798FECB194B8566FB7A4526(NULL);
+		NullCheck(L_23);
+		ManualXmap_LoadMapRight_m7FF2D6EE62ADEE514D6F8E322CFE7BC02896E2D4(L_23, NULL);
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1178>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		GameCanvas_clearAllPointerEvent_m92D47FDBFDE736C2C335BDFFC963CC51A4EC02A6(NULL);
+		return;
+	}
+
+IL_010b:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1182>
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		int32_t L_24 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___modKeyPosX;
+		int32_t L_25 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___modKeyPosY;
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_26;
+		L_26 = GameCanvas_isPointerHoldIn_m234C35FAF5C1849E79803D0E1530460C2CF9F78E(((int32_t)il2cpp_codegen_subtract(L_24, ((int32_t)18))), ((int32_t)il2cpp_codegen_subtract(L_25, ((int32_t)70))), ((int32_t)32), ((int32_t)32), NULL);
+		if (!L_26)
+		{
+			goto IL_014a;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1184>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_27 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick;
+		if (!L_27)
+		{
+			goto IL_01d2;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_28 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease;
+		if (!L_28)
+		{
+			goto IL_01d2;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1186>
+		ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92* L_29;
+		L_29 = ManualXmap_GI_mC0D676D4045600EEE798FECB194B8566FB7A4526(NULL);
+		NullCheck(L_29);
+		ManualXmap_LoadMapCenter_mDC4D1381F235EECB8CA8979301D16C8A659ADBE6(L_29, NULL);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1187>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		GameCanvas_clearAllPointerEvent_m92D47FDBFDE736C2C335BDFFC963CC51A4EC02A6(NULL);
+		return;
+	}
+
+IL_014a:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1191>
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		int32_t L_30 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___modKeyPosX;
+		int32_t L_31 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___modKeyPosY;
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_32;
+		L_32 = GameCanvas_isPointerHoldIn_m234C35FAF5C1849E79803D0E1530460C2CF9F78E(((int32_t)il2cpp_codegen_subtract(L_30, ((int32_t)52))), ((int32_t)il2cpp_codegen_subtract(L_31, ((int32_t)70))), ((int32_t)32), ((int32_t)32), NULL);
+		if (!L_32)
+		{
+			goto IL_0183;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1193>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_33 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick;
+		if (!L_33)
+		{
+			goto IL_01d2;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_34 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease;
+		if (!L_34)
+		{
+			goto IL_01d2;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1195>
+		ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92* L_35;
+		L_35 = ManualXmap_GI_mC0D676D4045600EEE798FECB194B8566FB7A4526(NULL);
+		NullCheck(L_35);
+		ManualXmap_LoadMapLeft_m380FF485E8369768BB7A9ABE419291858EF1B671(L_35, NULL);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1196>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		GameCanvas_clearAllPointerEvent_m92D47FDBFDE736C2C335BDFFC963CC51A4EC02A6(NULL);
+		return;
+	}
+
+IL_0183:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1200>
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_36 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgPanel;
+		NullCheck(L_36);
+		int32_t L_37;
+		L_37 = Image_getWidth_m56A0FEDBD7CDA88D486BC548201E91A3DD2A8E97(L_36, NULL);
+		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_38 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgModFunc;
+		NullCheck(L_38);
+		int32_t L_39;
+		L_39 = Image_getWidth_m56A0FEDBD7CDA88D486BC548201E91A3DD2A8E97(L_38, NULL);
+		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_40 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgModFunc;
+		NullCheck(L_40);
+		int32_t L_41;
+		L_41 = Image_getHeight_mD92E26605D4EEDF37389EC951FF44F41AF7D28A4(L_40, NULL);
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_42;
+		L_42 = GameCanvas_isPointerHoldIn_m234C35FAF5C1849E79803D0E1530460C2CF9F78E(((int32_t)il2cpp_codegen_add(L_37, 8)), 3, ((int32_t)il2cpp_codegen_add(L_39, 2)), ((int32_t)il2cpp_codegen_add(L_41, 2)), NULL);
+		if (!L_42)
+		{
+			goto IL_01d2;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1202>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_43 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick;
+		if (!L_43)
+		{
+			goto IL_01d2;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_44 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease;
+		if (!L_44)
+		{
+			goto IL_01d2;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1204>
+		ModFunc_OpenMenu_mCC104DA65B0A9C0B481CF41EEC1A3C38EC74DB12(__this, NULL);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1205>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
-		SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_27;
-		L_27 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
-		NullCheck(L_27);
-		SoundMn_buttonClick_m0A9406690EA36F7D2A682AB8A8F868B2576EA021(L_27, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1179>
+		SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_45;
+		L_45 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
+		NullCheck(L_45);
+		SoundMn_buttonClick_m0A9406690EA36F7D2A682AB8A8F868B2576EA021(L_45, NULL);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1206>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_clearAllPointerEvent_m92D47FDBFDE736C2C335BDFFC963CC51A4EC02A6(NULL);
 	}
 
-IL_0115:
+IL_01d2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1182>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1209>
 		return;
 	}
 }
-// Method Definition Index: 12738
+// Method Definition Index: 12739
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ModFunc_AutoLogin_mFB76114317D568A6CED933863C899D6AD95DBA4E (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10264,7 +10398,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ModFunc_AutoLogin_mFB76114317D568A6CED93
 	Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1207>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1234>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoLogin;
 		if (L_0)
@@ -10273,13 +10407,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ModFunc_AutoLogin_mFB76114317D568A6CED93
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1209>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1236>
 		return (bool)0;
 	}
 
 IL_0009:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1212>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1239>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* L_1 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoLogin;
 		NullCheck(L_1);
@@ -10290,13 +10424,13 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1214>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1241>
 		return (bool)1;
 	}
 
 IL_0017:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1217>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1244>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* L_3 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoLogin;
 		NullCheck(L_3);
@@ -10309,13 +10443,13 @@ IL_0017:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1219>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1246>
 		return (bool)0;
 	}
 
 IL_0030:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1222>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1249>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		int32_t L_6 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___testConnect;
 		if ((((int32_t)L_6) == ((int32_t)2)))
@@ -10324,7 +10458,7 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1224>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1251>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
 		if (L_7)
@@ -10342,12 +10476,12 @@ IL_0030:
 
 IL_0049:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1225>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1252>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_9 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
 		NullCheck(L_9);
 		VirtualActionInvoker0::Invoke(4, L_9);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1226>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1253>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* L_10 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoLogin;
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
@@ -10355,13 +10489,13 @@ IL_0049:
 		L_11 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		NullCheck(L_10);
 		L_10->___lastTimeWait = L_11;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1227>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1254>
 		return (bool)0;
 	}
 
 IL_0064:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1230>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1257>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_12 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_13 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
@@ -10371,7 +10505,7 @@ IL_0064:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1232>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1259>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_14 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		if (L_14)
@@ -10389,12 +10523,12 @@ IL_0064:
 
 IL_0081:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1233>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1260>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_16 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		NullCheck(L_16);
 		VirtualActionInvoker0::Invoke(4, L_16);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1234>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1261>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* L_17 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoLogin;
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
@@ -10402,13 +10536,13 @@ IL_0081:
 		L_18 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		NullCheck(L_17);
 		L_17->___lastTimeWait = L_18;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1235>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1262>
 		return (bool)0;
 	}
 
 IL_009c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1238>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1265>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* L_19 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoLogin;
 		NullCheck(L_19);
@@ -10419,7 +10553,7 @@ IL_009c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1240>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1267>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* L_21 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoLogin;
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_22 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
@@ -10427,7 +10561,7 @@ IL_009c:
 		Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 L_23;
 		L_23 = AutoLogin_GetAccWithUsername_m462B49E72A711E0367E3D8BA2A205138FC2CBD83(L_21, L_22, NULL);
 		V_0 = L_23;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1241>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1268>
 		String_t* L_24;
 		L_24 = Account_getUsername_mFE66E47C7863EDBE45431918B074E7D96AA6FDDB_inline((&V_0), NULL);
 		NullCheck(L_24);
@@ -10439,15 +10573,15 @@ IL_009c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1243>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1270>
 		String_t* L_26;
 		L_26 = Account_getUsername_mFE66E47C7863EDBE45431918B074E7D96AA6FDDB_inline((&V_0), NULL);
 		Rms_saveRMSString_m5CC2A73B0F9A79E8FB75301D183725DE3A880C7A(_stringLiteralB944D324E89341142404BAF3FB1FD652E176C9E4, L_26, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1244>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1271>
 		String_t* L_27;
 		L_27 = Account_getPassword_m25A2190AE12E99B800B25891DBD00FC35C76B21B_inline((&V_0), NULL);
 		Rms_saveRMSString_m5CC2A73B0F9A79E8FB75301D183725DE3A880C7A(_stringLiteral3E3E2C4B66DB6B3A06FE6C4CBD32853713E7CB70, L_27, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1245>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1272>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_28 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_29 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
@@ -10457,7 +10591,7 @@ IL_009c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1247>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1274>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_30 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		NullCheck(L_30);
@@ -10466,7 +10600,7 @@ IL_009c:
 
 IL_00ff:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1249>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1276>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* L_31 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoLogin;
 		NullCheck(L_31);
@@ -10475,7 +10609,7 @@ IL_00ff:
 
 IL_010a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1251>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1278>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* L_32 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoLogin;
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
@@ -10487,21 +10621,21 @@ IL_010a:
 
 IL_0119:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1254>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1281>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_34 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		NullCheck(L_34);
 		LoginScr_doLogin_m2FE7AD3446FDF0B894B7716CC49012E76190B708(L_34, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1255>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1282>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0* L_35 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoLogin;
 		NullCheck(L_35);
 		L_35->___waitToNextLogin = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1256>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1283>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 12739
+// Method Definition Index: 12740
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Update_mAC620577BEE47FBF79775F3DC5655A4B2B9B44A5 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10515,9 +10649,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Update_mAC620577BEE47FBF79775F3D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1261>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1288>
 		ModFunc_UpdateTouch_mDFD3A67C3B9DC83135FEA0E59195BD15CCB4F664(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1263>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1290>
 		bool L_0 = __this->___isPeanPet;
 		if (!L_0)
 		{
@@ -10535,13 +10669,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Update_mAC620577BEE47FBF79775F3D
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1265>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1292>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_3;
 		L_3 = Char_myPetz_m04C6BECC5FA88B7620BE154967A62D02E8F8882F(NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1266>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1267>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1268>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1293>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1294>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1295>
 		NullCheck(L_3);
 		bool L_4 = L_3->___isDie;
 		if (L_4)
@@ -10597,13 +10731,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Update_mAC620577BEE47FBF79775F3D
 
 IL_0089:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1270>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1297>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_17;
 		L_17 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_17);
 		GameScr_doUseHP_mA688595E47D6A0DC6F73EB0C0C1BF023D8D5191E(L_17, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1271>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1298>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_18;
 		L_18 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -10612,7 +10746,7 @@ IL_0089:
 
 IL_009e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1288>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1315>
 		bool L_19 = __this->___isAutoPhaLe;
 		if (!L_19)
 		{
@@ -10627,7 +10761,7 @@ IL_009e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1290>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1317>
 		Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_21 = __this->___itemPhale;
 		NullCheck(L_21);
 		int32_t L_22 = L_21->___indexUI;
@@ -10642,13 +10776,13 @@ IL_009e:
 
 IL_00cb:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1294>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1321>
 		__this->___currPhale = (-1);
 	}
 
 IL_00d2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1297>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1324>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_25 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isAutoChat;
 		if (!L_25)
@@ -10667,9 +10801,9 @@ IL_00d2:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1299>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1326>
 		ModFunc_AutoChat_mA8DA9DAAB1BAF4E212DA861A0B46BF5065A9693A(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1300>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1327>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_28;
 		L_28 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -10678,7 +10812,7 @@ IL_00d2:
 
 IL_00fe:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1303>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1330>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_29 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isAutoChatTG;
 		if (!L_29)
@@ -10697,9 +10831,9 @@ IL_00fe:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1305>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1332>
 		ModFunc_AutoChatTG_m4E02184190131D09A99CC64E6CD25A09292307CA(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1306>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1333>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_32;
 		L_32 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -10708,7 +10842,7 @@ IL_00fe:
 
 IL_012a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1315>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1342>
 		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 		bool L_33;
 		L_33 = TileMap_isOfflineMap_mA63BF0C584B35B0CC872105983DB2E6CFE3EFBB8(NULL);
@@ -10728,9 +10862,9 @@ IL_012a:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1317>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1344>
 		ModFunc_UseItemAuto_mB5A6670031BF7E0FA0285B7EED8C9A50F3A18579(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1318>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1345>
 		bool L_36 = __this->___isUpdateZones;
 		if (!L_36)
 		{
@@ -10738,7 +10872,7 @@ IL_012a:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1320>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1347>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_37;
 		L_37 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		NullCheck(L_37);
@@ -10747,7 +10881,7 @@ IL_012a:
 
 IL_015d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1322>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1349>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_38;
 		L_38 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -10756,7 +10890,7 @@ IL_015d:
 
 IL_0168:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1325>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1352>
 		bool L_39 = __this->___isAutoVQMM;
 		if (!L_39)
 		{
@@ -10774,9 +10908,9 @@ IL_0168:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1327>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1354>
 		ModFunc_quayThuongDe_mA791C915C0CA8B9C7A8EE2DD7D6744F33A2C1A11(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1328>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1355>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_42;
 		L_42 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -10785,7 +10919,7 @@ IL_0168:
 
 IL_0195:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1333>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1360>
 		bool L_43 = __this->___autoWakeUp;
 		if (!L_43)
 		{
@@ -10803,9 +10937,9 @@ IL_0195:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1335>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1362>
 		ModFunc_AutoHoiSinh_mB3F1CF5CFE0E12B7C7517F795106D30A668FF0C0(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1336>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1363>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_46;
 		L_46 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -10814,7 +10948,7 @@ IL_0195:
 
 IL_01c2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1343>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1370>
 		bool L_47 = __this->___focusBoss;
 		if (!L_47)
 		{
@@ -10832,9 +10966,9 @@ IL_01c2:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1345>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1372>
 		ModFunc_AutoFocusBoss_mE86099E39F5C9109EB209B3A300307FC0DC51A42(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1346>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1373>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_50;
 		L_50 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -10843,7 +10977,7 @@ IL_01c2:
 
 IL_01ef:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1369>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1396>
 		bool L_51 = __this->___autoAttack;
 		if (!L_51)
 		{
@@ -10851,19 +10985,19 @@ IL_01ef:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1371>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1398>
 		ModFunc_AutoAttack_mED25384DEA933C7E6948072B0B3AB9EF345EC45C(__this, NULL);
 	}
 
 IL_01fd:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1399>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1426>
 		ModFunc_UpdateNotifTichXanh_m63584C54A18CF900AE0C7EB1C1682CB4E8A61FDA(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1400>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1427>
 		return;
 	}
 }
-// Method Definition Index: 12740
+// Method Definition Index: 12741
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintButton_mAF201B793A34F9B7565BDB7140A1D663819B2055 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_xAnchor, int32_t ___2_yAnchor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10876,6 +11010,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintButton_mAF201B793A34F9B7565
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0EBD646B60E1C3FCE0203770591ED3C3D63537DC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3D714DD3E8E77A697EF557E85ED2B014A96328C5);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7E70AF961A2F88ADB9DB7B9C3B5F25A532C1570A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBF86C9E9E7FE0EF09A2EAE8066CDC31F859254CC);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDD7461C99FE0AF610527A1F4273DBC4696AB5F17);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFD60316EE3ADB7B16A998DF8AE0D68C293F6622E);
@@ -10883,24 +11020,58 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintButton_mAF201B793A34F9B7565
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	bool V_3 = false;
+	int32_t V_4 = 0;
+	int32_t V_5 = 0;
+	bool V_6 = false;
+	int32_t V_7 = 0;
+	int32_t V_8 = 0;
+	bool V_9 = false;
+	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B19_0 = NULL;
+	int32_t G_B19_1 = 0;
+	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B18_0 = NULL;
+	int32_t G_B18_1 = 0;
+	Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* G_B20_0 = NULL;
+	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B20_1 = NULL;
+	int32_t G_B20_2 = 0;
+	int32_t G_B22_0 = 0;
+	int32_t G_B21_0 = 0;
+	int32_t G_B23_0 = 0;
+	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B25_0 = NULL;
+	int32_t G_B25_1 = 0;
+	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B24_0 = NULL;
+	int32_t G_B24_1 = 0;
+	Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* G_B26_0 = NULL;
+	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B26_1 = NULL;
+	int32_t G_B26_2 = 0;
+	int32_t G_B28_0 = 0;
+	int32_t G_B27_0 = 0;
+	int32_t G_B29_0 = 0;
+	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B31_0 = NULL;
+	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B30_0 = NULL;
+	Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* G_B32_0 = NULL;
+	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B32_1 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1404>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1431>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_0 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isIPhone;
 		if (!L_0)
 		{
-			goto IL_02d0;
+			goto IL_0499;
 		}
 	}
 	{
 		bool L_1 = __this->___isShowButton;
 		if (!L_1)
 		{
-			goto IL_02d0;
+			goto IL_0499;
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1406>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1433>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
 		if (L_2)
@@ -10983,20 +11154,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintButton_mAF201B793A34F9B7565
 
 IL_0070:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1408>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1435>
 		return;
 	}
 
 IL_0071:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1411>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1438>
 		int32_t L_17 = ___1_xAnchor;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___modKeyPosX = L_17;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1412>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1439>
 		int32_t L_18 = ___2_yAnchor;
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___modKeyPosY = L_18;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1415>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1442>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_19 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_20 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNut;
@@ -11007,7 +11178,7 @@ IL_0071:
 		int32_t L_24 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
 		NullCheck(L_19);
 		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_19, L_20, ((int32_t)il2cpp_codegen_add(L_21, ((int32_t)20))), ((int32_t)il2cpp_codegen_subtract(L_22, ((int32_t)26))), ((int32_t)(L_23|L_24)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1416>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1443>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_25 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_green2;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_26 = ___0_g;
@@ -11025,7 +11196,7 @@ IL_0071:
 		int32_t L_34 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
 		NullCheck(L_25);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_25, L_26, _stringLiteralBF86C9E9E7FE0EF09A2EAE8066CDC31F859254CC, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_27, 6)), ((int32_t)(L_29/2)))), ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_30, ((int32_t)47))), ((int32_t)(L_32/2)))), ((int32_t)(L_33|L_34)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1417>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1444>
 		int32_t L_35 = ___1_xAnchor;
 		int32_t L_36 = ___2_yAnchor;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -11037,7 +11208,7 @@ IL_0071:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1419>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1446>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_38 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_39 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNutF;
@@ -11048,7 +11219,7 @@ IL_0071:
 		int32_t L_43 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
 		NullCheck(L_38);
 		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_38, L_39, ((int32_t)il2cpp_codegen_add(L_40, ((int32_t)20))), ((int32_t)il2cpp_codegen_subtract(L_41, ((int32_t)26))), ((int32_t)(L_42|L_43)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1420>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1447>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_44 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_focus;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_45 = ___0_g;
@@ -11070,7 +11241,7 @@ IL_0071:
 
 IL_0143:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1423>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1450>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_54 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_55 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNut;
@@ -11081,7 +11252,7 @@ IL_0143:
 		int32_t L_59 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
 		NullCheck(L_54);
 		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_54, L_55, ((int32_t)il2cpp_codegen_subtract(L_56, ((int32_t)21))), ((int32_t)il2cpp_codegen_add(L_57, ((int32_t)21))), ((int32_t)(L_58|L_59)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1424>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1451>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_60 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_green2;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_61 = ___0_g;
@@ -11099,7 +11270,7 @@ IL_0143:
 		int32_t L_69 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
 		NullCheck(L_60);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_60, L_61, _stringLiteralFD60316EE3ADB7B16A998DF8AE0D68C293F6622E, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_62, ((int32_t)35))), ((int32_t)(L_64/2)))), ((int32_t)il2cpp_codegen_add(L_65, ((int32_t)(L_67/2)))), ((int32_t)(L_68|L_69)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1425>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1452>
 		int32_t L_70 = ___1_xAnchor;
 		int32_t L_71 = ___2_yAnchor;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -11111,7 +11282,7 @@ IL_0143:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1427>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1454>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_73 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_74 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNutF;
@@ -11122,7 +11293,7 @@ IL_0143:
 		int32_t L_78 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
 		NullCheck(L_73);
 		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_73, L_74, ((int32_t)il2cpp_codegen_subtract(L_75, ((int32_t)21))), ((int32_t)il2cpp_codegen_add(L_76, ((int32_t)21))), ((int32_t)(L_77|L_78)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1428>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1455>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_79 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_focus;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_80 = ___0_g;
@@ -11144,7 +11315,7 @@ IL_0143:
 
 IL_0207:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1431>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1458>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_89 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_90 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNut;
@@ -11155,7 +11326,7 @@ IL_0207:
 		int32_t L_94 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
 		NullCheck(L_89);
 		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_89, L_90, ((int32_t)il2cpp_codegen_subtract(L_91, ((int32_t)66))), ((int32_t)il2cpp_codegen_add(L_92, ((int32_t)62))), ((int32_t)(L_93|L_94)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1432>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1459>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_95 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_green2;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_96 = ___0_g;
@@ -11173,7 +11344,7 @@ IL_0207:
 		int32_t L_104 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
 		NullCheck(L_95);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_95, L_96, _stringLiteralDD7461C99FE0AF610527A1F4273DBC4696AB5F17, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_97, ((int32_t)80))), ((int32_t)(L_99/2)))), ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_100, ((int32_t)41))), ((int32_t)(L_102/2)))), ((int32_t)(L_103|L_104)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1433>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1460>
 		int32_t L_105 = ___1_xAnchor;
 		int32_t L_106 = ___2_yAnchor;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -11185,7 +11356,7 @@ IL_0207:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1435>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1462>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_108 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_109 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNutF;
@@ -11196,7 +11367,7 @@ IL_0207:
 		int32_t L_113 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
 		NullCheck(L_108);
 		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_108, L_109, ((int32_t)il2cpp_codegen_subtract(L_110, ((int32_t)66))), ((int32_t)il2cpp_codegen_add(L_111, ((int32_t)62))), ((int32_t)(L_112|L_113)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1436>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1463>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_114 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_focus;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_115 = ___0_g;
@@ -11218,11 +11389,315 @@ IL_0207:
 
 IL_02d0:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1439>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1468>
+		V_0 = ((int32_t)32);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1469>
+		int32_t L_124 = ___2_yAnchor;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1472>
+		int32_t L_125 = ___1_xAnchor;
+		V_1 = ((int32_t)il2cpp_codegen_subtract(L_125, ((int32_t)52)));
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1473>
+		int32_t L_126 = ((int32_t)il2cpp_codegen_subtract(L_124, ((int32_t)70)));
+		V_2 = L_126;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1474>
+		int32_t L_127 = V_1;
+		int32_t L_128 = V_2;
+		int32_t L_129 = V_0;
+		int32_t L_130 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_131;
+		L_131 = GameCanvas_isPointerHoldIn_m234C35FAF5C1849E79803D0E1530460C2CF9F78E(L_127, L_128, L_129, L_130, NULL);
+		V_3 = L_131;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1475>
+		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_132 = ___0_g;
+		bool L_133 = V_3;
+		if (L_133)
+		{
+			G_B19_0 = L_132;
+			G_B19_1 = L_126;
+			goto IL_02f3;
+		}
+		G_B18_0 = L_132;
+		G_B18_1 = L_126;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_134 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNut;
+		G_B20_0 = L_134;
+		G_B20_1 = G_B18_0;
+		G_B20_2 = G_B18_1;
+		goto IL_02f8;
+	}
+
+IL_02f3:
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_135 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNutF;
+		G_B20_0 = L_135;
+		G_B20_1 = G_B19_0;
+		G_B20_2 = G_B19_1;
+	}
+
+IL_02f8:
+	{
+		int32_t L_136 = V_1;
+		int32_t L_137 = V_0;
+		int32_t L_138 = V_2;
+		int32_t L_139 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_140 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
+		int32_t L_141 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
+		NullCheck(G_B20_1);
+		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(G_B20_1, G_B20_0, ((int32_t)il2cpp_codegen_add(L_136, ((int32_t)(L_137/2)))), ((int32_t)il2cpp_codegen_add(L_138, ((int32_t)(L_139/2)))), ((int32_t)(L_140|L_141)), NULL);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1476>
+		bool L_142 = V_3;
+		if (!L_142)
+		{
+			G_B22_0 = G_B20_2;
+			goto IL_033e;
+		}
+		G_B21_0 = G_B20_2;
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1477>
+		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
+		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_143 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_focus;
+		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_144 = ___0_g;
+		int32_t L_145 = V_1;
+		int32_t L_146 = V_0;
+		int32_t L_147 = V_2;
+		int32_t L_148 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_149 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
+		int32_t L_150 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
+		NullCheck(L_143);
+		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_143, L_144, _stringLiteral0EBD646B60E1C3FCE0203770591ED3C3D63537DC, ((int32_t)il2cpp_codegen_add(L_145, ((int32_t)(L_146/2)))), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_147, ((int32_t)(L_148/2)))), 3)), ((int32_t)(L_149|L_150)), NULL);
+		G_B23_0 = G_B21_0;
+		goto IL_0365;
+	}
+
+IL_033e:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1479>
+		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
+		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_151 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_green2;
+		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_152 = ___0_g;
+		int32_t L_153 = V_1;
+		int32_t L_154 = V_0;
+		int32_t L_155 = V_2;
+		int32_t L_156 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_157 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
+		int32_t L_158 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
+		NullCheck(L_151);
+		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_151, L_152, _stringLiteral0EBD646B60E1C3FCE0203770591ED3C3D63537DC, ((int32_t)il2cpp_codegen_add(L_153, ((int32_t)(L_154/2)))), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_155, ((int32_t)(L_156/2)))), 3)), ((int32_t)(L_157|L_158)), NULL);
+		G_B23_0 = G_B22_0;
+	}
+
+IL_0365:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1483>
+		int32_t L_159 = ___1_xAnchor;
+		V_4 = ((int32_t)il2cpp_codegen_subtract(L_159, ((int32_t)18)));
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1484>
+		int32_t L_160 = G_B23_0;
+		V_5 = L_160;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1485>
+		int32_t L_161 = V_4;
+		int32_t L_162 = V_5;
+		int32_t L_163 = V_0;
+		int32_t L_164 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_165;
+		L_165 = GameCanvas_isPointerHoldIn_m234C35FAF5C1849E79803D0E1530460C2CF9F78E(L_161, L_162, L_163, L_164, NULL);
+		V_6 = L_165;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1486>
+		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_166 = ___0_g;
+		bool L_167 = V_6;
+		if (L_167)
+		{
+			G_B25_0 = L_166;
+			G_B25_1 = L_160;
+			goto IL_0387;
+		}
+		G_B24_0 = L_166;
+		G_B24_1 = L_160;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_168 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNut;
+		G_B26_0 = L_168;
+		G_B26_1 = G_B24_0;
+		G_B26_2 = G_B24_1;
+		goto IL_038c;
+	}
+
+IL_0387:
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_169 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNutF;
+		G_B26_0 = L_169;
+		G_B26_1 = G_B25_0;
+		G_B26_2 = G_B25_1;
+	}
+
+IL_038c:
+	{
+		int32_t L_170 = V_4;
+		int32_t L_171 = V_0;
+		int32_t L_172 = V_5;
+		int32_t L_173 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_174 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
+		int32_t L_175 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
+		NullCheck(G_B26_1);
+		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(G_B26_1, G_B26_0, ((int32_t)il2cpp_codegen_add(L_170, ((int32_t)(L_171/2)))), ((int32_t)il2cpp_codegen_add(L_172, ((int32_t)(L_173/2)))), ((int32_t)(L_174|L_175)), NULL);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1487>
+		bool L_176 = V_6;
+		if (!L_176)
+		{
+			G_B28_0 = G_B26_2;
+			goto IL_03d7;
+		}
+		G_B27_0 = G_B26_2;
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1488>
+		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
+		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_177 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_focus;
+		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_178 = ___0_g;
+		int32_t L_179 = V_4;
+		int32_t L_180 = V_0;
+		int32_t L_181 = V_5;
+		int32_t L_182 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_183 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
+		int32_t L_184 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
+		NullCheck(L_177);
+		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_177, L_178, _stringLiteral3D714DD3E8E77A697EF557E85ED2B014A96328C5, ((int32_t)il2cpp_codegen_add(L_179, ((int32_t)(L_180/2)))), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_181, ((int32_t)(L_182/2)))), 3)), ((int32_t)(L_183|L_184)), NULL);
+		G_B29_0 = G_B27_0;
+		goto IL_0400;
+	}
+
+IL_03d7:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1490>
+		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
+		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_185 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_green2;
+		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_186 = ___0_g;
+		int32_t L_187 = V_4;
+		int32_t L_188 = V_0;
+		int32_t L_189 = V_5;
+		int32_t L_190 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_191 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
+		int32_t L_192 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
+		NullCheck(L_185);
+		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_185, L_186, _stringLiteral3D714DD3E8E77A697EF557E85ED2B014A96328C5, ((int32_t)il2cpp_codegen_add(L_187, ((int32_t)(L_188/2)))), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_189, ((int32_t)(L_190/2)))), 3)), ((int32_t)(L_191|L_192)), NULL);
+		G_B29_0 = G_B28_0;
+	}
+
+IL_0400:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1494>
+		int32_t L_193 = ___1_xAnchor;
+		V_7 = ((int32_t)il2cpp_codegen_add(L_193, ((int32_t)16)));
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1495>
+		V_8 = G_B29_0;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1496>
+		int32_t L_194 = V_7;
+		int32_t L_195 = V_8;
+		int32_t L_196 = V_0;
+		int32_t L_197 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		bool L_198;
+		L_198 = GameCanvas_isPointerHoldIn_m234C35FAF5C1849E79803D0E1530460C2CF9F78E(L_194, L_195, L_196, L_197, NULL);
+		V_9 = L_198;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1497>
+		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_199 = ___0_g;
+		bool L_200 = V_9;
+		if (L_200)
+		{
+			G_B31_0 = L_199;
+			goto IL_0421;
+		}
+		G_B30_0 = L_199;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_201 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNut;
+		G_B32_0 = L_201;
+		G_B32_1 = G_B30_0;
+		goto IL_0426;
+	}
+
+IL_0421:
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_202 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgNutF;
+		G_B32_0 = L_202;
+		G_B32_1 = G_B31_0;
+	}
+
+IL_0426:
+	{
+		int32_t L_203 = V_7;
+		int32_t L_204 = V_0;
+		int32_t L_205 = V_8;
+		int32_t L_206 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_207 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
+		int32_t L_208 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
+		NullCheck(G_B32_1);
+		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(G_B32_1, G_B32_0, ((int32_t)il2cpp_codegen_add(L_203, ((int32_t)(L_204/2)))), ((int32_t)il2cpp_codegen_add(L_205, ((int32_t)(L_206/2)))), ((int32_t)(L_207|L_208)), NULL);
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1498>
+		bool L_209 = V_9;
+		if (!L_209)
+		{
+			goto IL_0470;
+		}
+	}
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1499>
+		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
+		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_210 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_focus;
+		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_211 = ___0_g;
+		int32_t L_212 = V_7;
+		int32_t L_213 = V_0;
+		int32_t L_214 = V_8;
+		int32_t L_215 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_216 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
+		int32_t L_217 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
+		NullCheck(L_210);
+		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_210, L_211, _stringLiteral7E70AF961A2F88ADB9DB7B9C3B5F25A532C1570A, ((int32_t)il2cpp_codegen_add(L_212, ((int32_t)(L_213/2)))), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_214, ((int32_t)(L_215/2)))), 3)), ((int32_t)(L_216|L_217)), NULL);
+		return;
+	}
+
+IL_0470:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1501>
+		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
+		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_218 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_green2;
+		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_219 = ___0_g;
+		int32_t L_220 = V_7;
+		int32_t L_221 = V_0;
+		int32_t L_222 = V_8;
+		int32_t L_223 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+		int32_t L_224 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
+		int32_t L_225 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
+		NullCheck(L_218);
+		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_218, L_219, _stringLiteral7E70AF961A2F88ADB9DB7B9C3B5F25A532C1570A, ((int32_t)il2cpp_codegen_add(L_220, ((int32_t)(L_221/2)))), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_222, ((int32_t)(L_223/2)))), 3)), ((int32_t)(L_224|L_225)), NULL);
+	}
+
+IL_0499:
+	{
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1504>
 		return;
 	}
 }
-// Method Definition Index: 12741
+// Method Definition Index: 12742
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Paint_m3B88CD3FD1F04905CFBC866A9FDEF4882FB4FEB4 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11347,19 +11822,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Paint_m3B88CD3FD1F04905CFBC866A9
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B40_2 = NULL;
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B40_3 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1443>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1508>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgHP;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_1;
 		L_1 = mGraphics_getImageWidth_mA3B8B13BC6B4D4AB97574EE27D4D8BC17C232691(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1444>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1509>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_2 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgMP;
 		int32_t L_3;
 		L_3 = mGraphics_getImageWidth_mA3B8B13BC6B4D4AB97574EE27D4D8BC17C232691(L_2, NULL);
 		V_1 = L_3;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1456>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1521>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_4 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_5 = ___0_g;
@@ -11378,7 +11853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Paint_m3B88CD3FD1F04905CFBC866A9
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_12 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_4);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_4, L_5, L_9, ((int32_t)il2cpp_codegen_add(((int32_t)84), ((int32_t)(L_10/2)))), 4, L_11, L_12, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1457>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1522>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_13 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_blue1;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_14 = ___0_g;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_15;
@@ -11394,9 +11869,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Paint_m3B88CD3FD1F04905CFBC866A9
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_21 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_13);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_13, L_14, L_18, ((int32_t)il2cpp_codegen_add(((int32_t)84), ((int32_t)(L_19/2)))), ((int32_t)17), L_20, L_21, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1458>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1523>
 		V_2 = ((int32_t)90);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1459>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1524>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_22;
 		L_22 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_22);
@@ -11404,7 +11879,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Paint_m3B88CD3FD1F04905CFBC866A9
 		NullCheck(L_23);
 		int32_t L_24 = L_23->___y;
 		V_3 = ((int32_t)il2cpp_codegen_subtract(L_24, ((int32_t)20)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1461>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1526>
 		bool L_25 = __this->___showInfoMe;
 		if (L_25)
 		{
@@ -11412,16 +11887,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Paint_m3B88CD3FD1F04905CFBC866A9
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1464>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1529>
 		V_6 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1465>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1466>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1467>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1468>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1469>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1470>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1471>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1472>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1530>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1531>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1532>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1533>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1534>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1535>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1536>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1537>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_26 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_27 = ___0_g;
@@ -11463,16 +11938,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Paint_m3B88CD3FD1F04905CFBC866A9
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_46 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_26);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_26, L_27, L_41, L_42, ((int32_t)il2cpp_codegen_add(L_43, L_44)), L_45, L_46, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1474>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1539>
 		int32_t L_47 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_47, ((int32_t)10)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1475>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1476>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1477>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1478>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1479>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1480>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1481>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1540>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1541>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1542>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1543>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1544>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1545>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1546>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_48 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_49 = ___0_g;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_50 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)4);
@@ -11518,7 +11993,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Paint_m3B88CD3FD1F04905CFBC866A9
 
 IL_0152:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1484>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1549>
 		bool L_69 = __this->___isAutoPhaLe;
 		if (!L_69)
 		{
@@ -11526,7 +12001,7 @@ IL_0152:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1486>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1551>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_70 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_71 = ___0_g;
@@ -11567,7 +12042,7 @@ IL_0182:
 		int32_t L_77 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___CENTER;
 		NullCheck(G_B6_2);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(G_B6_2, G_B6_1, G_B6_0, ((int32_t)(L_76/2)), ((int32_t)72), L_77, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1487>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1552>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_78 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_79 = ___0_g;
 		Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_80 = __this->___itemPhale;
@@ -11607,7 +12082,7 @@ IL_01bf:
 		int32_t L_85 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___CENTER;
 		NullCheck(G_B9_2);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(G_B9_2, G_B9_1, G_B9_0, ((int32_t)(L_84/2)), ((int32_t)82), L_85, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1488>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1553>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_86 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_87 = ___0_g;
 		int32_t* L_88 = (int32_t*)(&__this->___maxPhale);
@@ -11623,7 +12098,7 @@ IL_01bf:
 
 IL_0205:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1490>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1555>
 		bool L_93 = __this->___isAutoPhaLe;
 		if (L_93)
 		{
@@ -11640,14 +12115,14 @@ IL_0205:
 
 IL_0218:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1492>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1557>
 		int32_t L_95;
 		L_95 = ModFunc_FindItemIndex_mCDF0BB0D4805AEB3519C058843DEE63A6B979578(__this, ((int32_t)457), NULL);
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_96;
 		L_96 = ModFunc_FindItemBagWithIndexUI_m7F70E237C52EC55F625D455779ECAF1A33445540(L_95, NULL);
 		V_7 = L_96;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1493>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1558>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_97 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_98 = ___0_g;
@@ -11671,13 +12146,13 @@ IL_0218:
 		int32_t L_107 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___CENTER;
 		NullCheck(L_97);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_97, L_98, L_105, ((int32_t)(L_106/2)), ((int32_t)102), L_107, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1494>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1495>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1496>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1497>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1498>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1499>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1500>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1559>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1560>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1561>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1562>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1563>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1564>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1565>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_108 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_109 = ___0_g;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_110 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)4);
@@ -11758,7 +12233,7 @@ IL_02b0:
 
 IL_02ce:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1516>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1581>
 		bool L_126 = __this->___showInfoMe;
 		if (!L_126)
 		{
@@ -11766,7 +12241,7 @@ IL_02ce:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1518>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1583>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_127;
 		L_127 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -11777,12 +12252,12 @@ IL_02ce:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1520>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1585>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_129;
 		L_129 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		NullCheck(L_129);
 		Service_petInfo_mC6E6DF38D7D8802A534AA473D37BC1E029AC7C92(L_129, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1521>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1586>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_130;
 		L_130 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -11791,11 +12266,11 @@ IL_02ce:
 
 IL_0302:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1524>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1589>
 		V_8 = ((int32_t)10);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1525>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1590>
 		V_9 = ((int32_t)64);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1526>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1591>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_131 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_yellow;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_132 = ___0_g;
@@ -11805,7 +12280,7 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_136 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_131);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_131, L_132, _stringLiteral1BADC7A2576CC526338B737C270A77D375EF4F4A, L_133, L_134, L_135, L_136, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1527>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1592>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_137 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_138 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
@@ -11824,7 +12299,7 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_147 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_137);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_137, L_138, L_142, L_143, ((int32_t)il2cpp_codegen_add(L_144, L_145)), L_146, L_147, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1528>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1593>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_148 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_149 = ___0_g;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_150;
@@ -11842,7 +12317,7 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_158 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_148);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_148, L_149, L_153, L_154, ((int32_t)il2cpp_codegen_add(L_155, ((int32_t)il2cpp_codegen_multiply(2, L_156)))), L_157, L_158, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1529>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1594>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_159 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_160 = ___0_g;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_161;
@@ -11860,7 +12335,7 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_169 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_159);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_159, L_160, L_164, L_165, ((int32_t)il2cpp_codegen_add(L_166, ((int32_t)il2cpp_codegen_multiply(3, L_167)))), L_168, L_169, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1530>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1595>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_170 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_171 = ___0_g;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_172;
@@ -11878,12 +12353,12 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_180 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_170);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_170, L_171, L_175, L_176, ((int32_t)il2cpp_codegen_add(L_177, ((int32_t)il2cpp_codegen_multiply(4, L_178)))), L_179, L_180, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1532>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1597>
 		int32_t L_181 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_182 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_181, ((int32_t)(L_182/8))));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1534>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1599>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_183 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_yellow;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_184 = ___0_g;
 		int32_t L_185 = V_2;
@@ -11894,7 +12369,7 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_190 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_183);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_183, L_184, _stringLiteral8750A549554A3FAC5E389DCB2372FC33592E33B5, ((int32_t)il2cpp_codegen_subtract(L_185, L_186)), ((int32_t)il2cpp_codegen_add(L_187, L_188)), L_189, L_190, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1535>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1600>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_191 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_192 = ___0_g;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_193;
@@ -11914,7 +12389,7 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_203 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_191);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_191, L_192, L_196, ((int32_t)il2cpp_codegen_subtract(L_197, L_198)), ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_199, L_200)), L_201)), L_202, L_203, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1536>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1601>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_204 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_205 = ___0_g;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_206;
@@ -11934,7 +12409,7 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_216 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_204);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_204, L_205, L_209, ((int32_t)il2cpp_codegen_subtract(L_210, L_211)), ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_212, ((int32_t)il2cpp_codegen_multiply(2, L_213)))), L_214)), L_215, L_216, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1537>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1602>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_217 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_218 = ___0_g;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_219;
@@ -11954,7 +12429,7 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_229 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_217);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_217, L_218, L_222, ((int32_t)il2cpp_codegen_subtract(L_223, L_224)), ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_225, ((int32_t)il2cpp_codegen_multiply(3, L_226)))), L_227)), L_228, L_229, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1538>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1603>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_230 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_231 = ___0_g;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_232;
@@ -11974,7 +12449,7 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_242 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_230);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_230, L_231, L_235, ((int32_t)il2cpp_codegen_subtract(L_236, L_237)), ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_238, ((int32_t)il2cpp_codegen_multiply(4, L_239)))), L_240)), L_241, L_242, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1539>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1604>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_243 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_244 = ___0_g;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_245;
@@ -11994,7 +12469,7 @@ IL_0302:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_255 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_243);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_243, L_244, L_248, ((int32_t)il2cpp_codegen_subtract(L_249, L_250)), ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(L_251, ((int32_t)il2cpp_codegen_multiply(5, L_252)))), L_253)), L_254, L_255, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1540>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1605>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_256 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_257 = ___0_g;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_258;
@@ -12018,7 +12493,7 @@ IL_0302:
 
 IL_0586:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1543>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1608>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_269 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___notifBoss;
 		if (!L_269)
@@ -12027,16 +12502,16 @@ IL_0586:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1545>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1610>
 		V_10 = ((int32_t)38);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1546>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1611>
 		V_11 = 0;
 		goto IL_05c8;
 	}
 
 IL_0596:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1548>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1613>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_270 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___bossNotif;
 		int32_t L_271 = V_11;
@@ -12051,17 +12526,17 @@ IL_0596:
 		int32_t L_276 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___RIGHT;
 		NullCheck(((ShowBoss_t518A4708BE974224E897A04450BB8BD0F5029065*)CastclassClass((RuntimeObject*)L_272, ShowBoss_t518A4708BE974224E897A04450BB8BD0F5029065_il2cpp_TypeInfo_var)));
 		ShowBoss_PaintBoss_mFAB81B36E4B9E85C8333E5437F2E1ED263B004AE(((ShowBoss_t518A4708BE974224E897A04450BB8BD0F5029065*)CastclassClass((RuntimeObject*)L_272, ShowBoss_t518A4708BE974224E897A04450BB8BD0F5029065_il2cpp_TypeInfo_var)), L_273, ((int32_t)il2cpp_codegen_subtract(L_274, 2)), L_275, L_276, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1549>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1614>
 		int32_t L_277 = V_10;
 		V_10 = ((int32_t)il2cpp_codegen_add(L_277, ((int32_t)10)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1546>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1611>
 		int32_t L_278 = V_11;
 		V_11 = ((int32_t)il2cpp_codegen_add(L_278, 1));
 	}
 
 IL_05c8:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1546>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1611>
 		int32_t L_279 = V_11;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_280 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___bossNotif;
@@ -12076,7 +12551,7 @@ IL_05c8:
 
 IL_05d6:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1553>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1618>
 		bool L_282 = __this->___showCharsInMap;
 		if (!L_282)
 		{
@@ -12084,11 +12559,11 @@ IL_05d6:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1555>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1620>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_283 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		V_12 = ((int32_t)il2cpp_codegen_subtract(L_283, ((int32_t)130)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1556>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1621>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_284 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___notifBoss;
 		if (L_284)
@@ -12109,18 +12584,18 @@ IL_05f9:
 IL_05fb:
 	{
 		V_13 = G_B28_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1557>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1622>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_285 = __this->___charsInMap;
 		NullCheck(L_285);
 		MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_285, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1558>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1623>
 		V_14 = 0;
 		goto IL_0867;
 	}
 
 IL_0610:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1560>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1625>
 		int32_t L_286 = V_14;
 		if ((((int32_t)L_286) > ((int32_t)((int32_t)15))))
 		{
@@ -12139,17 +12614,17 @@ IL_0610:
 
 IL_0622:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1562>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1627>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_289 = ___0_g;
 		int32_t L_290 = V_12;
 		int32_t L_291 = V_13;
 		NullCheck(L_289);
 		mGraphics_fillRect_m62A5492ABE6EE41417E1CCAFB0ED8CEE0DF7A893(L_289, ((int32_t)il2cpp_codegen_subtract(L_290, 2)), ((int32_t)il2cpp_codegen_add(L_291, 1)), ((int32_t)150), ((int32_t)10), ((int32_t)2721889), ((int32_t)90), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1563>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1564>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1565>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1566>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1567>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1628>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1629>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1630>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1631>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1632>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_292 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_293 = ___0_g;
@@ -12173,13 +12648,13 @@ IL_0622:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_304 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_292);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_292, L_293, L_300, L_301, L_302, L_303, L_304, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1568>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1633>
 		goto IL_0878;
 	}
 
 IL_067b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1570>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1635>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_305 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vCharInMap;
 		int32_t L_306 = V_14;
@@ -12187,9 +12662,9 @@ IL_067b:
 		RuntimeObject* L_307;
 		L_307 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_305, L_306, NULL);
 		V_15 = ((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)CastclassClass((RuntimeObject*)L_307, Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1571>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1572>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1573>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1636>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1637>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1638>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_308 = V_15;
 		if (!L_308)
 		{
@@ -12241,24 +12716,24 @@ IL_067b:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1575>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1640>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_320 = ___0_g;
 		int32_t L_321 = V_12;
 		int32_t L_322 = V_13;
 		NullCheck(L_320);
 		mGraphics_fillRect_m62A5492ABE6EE41417E1CCAFB0ED8CEE0DF7A893(L_320, ((int32_t)il2cpp_codegen_subtract(L_321, 2)), ((int32_t)il2cpp_codegen_add(L_322, 1)), ((int32_t)150), ((int32_t)10), ((int32_t)2721889), ((int32_t)90), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1576>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1577>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1578>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1579>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1580>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1581>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1582>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1583>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1584>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1585>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1586>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1587>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1641>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1642>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1643>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1644>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1645>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1646>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1647>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1648>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1649>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1650>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1651>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1652>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_323 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)9));
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_324 = L_323;
 		int32_t L_325 = V_14;
@@ -12336,7 +12811,7 @@ IL_0713:
 		NullCheck(L_343);
 		(L_343)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)_stringLiteralE1602CD594F39B601B0A34667ED3E03283DFB92E);
 		V_16 = L_343;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1590>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1655>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_344 = V_15;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_345;
@@ -12349,7 +12824,7 @@ IL_0713:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1592>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1657>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_347 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_yellow;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_348 = ___0_g;
@@ -12367,7 +12842,7 @@ IL_0713:
 
 IL_07a2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1595>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1660>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_355 = V_15;
 		NullCheck(L_355);
 		int32_t L_356 = L_355->___charID;
@@ -12395,7 +12870,7 @@ IL_07a2:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1597>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1662>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_361 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_362 = ___0_g;
@@ -12413,7 +12888,7 @@ IL_07a2:
 
 IL_07e7:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1600>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1665>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_369;
 		L_369 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -12441,7 +12916,7 @@ IL_07e7:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1602>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1667>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_376 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_green;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_377 = ___0_g;
@@ -12459,7 +12934,7 @@ IL_07e7:
 
 IL_082d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1607>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1672>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_384 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_385 = ___0_g;
@@ -12476,26 +12951,26 @@ IL_082d:
 
 IL_084d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1610>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1675>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_392 = __this->___charsInMap;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_393 = V_15;
 		NullCheck(L_392);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_392, L_393, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1611>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1676>
 		int32_t L_394 = V_13;
 		V_13 = ((int32_t)il2cpp_codegen_add(L_394, ((int32_t)10)));
 	}
 
 IL_0861:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1558>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1623>
 		int32_t L_395 = V_14;
 		V_14 = ((int32_t)il2cpp_codegen_add(L_395, 1));
 	}
 
 IL_0867:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1558>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1623>
 		int32_t L_396 = V_14;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_397 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vCharInMap;
@@ -12510,16 +12985,16 @@ IL_0867:
 
 IL_0878:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1616>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1681>
 		V_4 = ((int32_t)70);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1617>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1682>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_399;
 		L_399 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		NullCheck(L_399);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_400 = L_399->___charFocus;
 		V_5 = L_400;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1618>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1683>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_401 = V_5;
 		if (!L_401)
 		{
@@ -12540,17 +13015,17 @@ IL_0878:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1620>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1621>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1622>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1623>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1624>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1625>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1626>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1627>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1628>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1629>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1630>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1685>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1686>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1687>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1688>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1689>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1690>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1691>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1692>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1693>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1694>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1695>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_405 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_406 = ___0_g;
@@ -12612,10 +13087,10 @@ IL_0878:
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_430 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_405);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_405, L_406, L_426, ((int32_t)(L_427/2)), L_428, L_429, L_430, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1631>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1696>
 		int32_t L_431 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_431, ((int32_t)10)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1632>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1697>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_432 = V_5;
 		NullCheck(L_432);
 		bool L_433 = L_432->___protectEff;
@@ -12625,7 +13100,7 @@ IL_0878:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1634>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1699>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_434 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_435 = ___0_g;
@@ -12635,14 +13110,14 @@ IL_0878:
 		int32_t L_438 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___CENTER;
 		NullCheck(L_434);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_434, L_435, _stringLiteral89C3BC71F27CE9A4EB55D543FACCAC2AA85BCB54, ((int32_t)(L_436/2)), L_437, L_438, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1635>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1700>
 		int32_t L_439 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_439, ((int32_t)10)));
 	}
 
 IL_0951:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1637>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1702>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_440 = V_5;
 		NullCheck(L_440);
 		int8_t L_441 = L_440->___isMonkey;
@@ -12652,7 +13127,7 @@ IL_0951:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1639>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1704>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_442 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_443 = ___0_g;
@@ -12662,14 +13137,14 @@ IL_0951:
 		int32_t L_446 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___CENTER;
 		NullCheck(L_442);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_442, L_443, _stringLiteralA6D2F570B77ED6A62A3949CC9E2A9271C9143D63, ((int32_t)(L_444/2)), L_445, L_446, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1640>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1705>
 		int32_t L_447 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_447, ((int32_t)10)));
 	}
 
 IL_0980:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1642>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1707>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_448 = V_5;
 		NullCheck(L_448);
 		bool L_449 = L_448->___sleepEff;
@@ -12679,7 +13154,7 @@ IL_0980:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1644>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1709>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_450 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_451 = ___0_g;
@@ -12689,14 +13164,14 @@ IL_0980:
 		int32_t L_454 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___CENTER;
 		NullCheck(L_450);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_450, L_451, _stringLiteralA6693CCA9E2EEA70D7BB771B34727D3D96CFBA19, ((int32_t)(L_452/2)), L_453, L_454, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1645>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1710>
 		int32_t L_455 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_455, ((int32_t)10)));
 	}
 
 IL_09ae:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1647>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1712>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_456 = V_5;
 		NullCheck(L_456);
 		int32_t L_457 = L_456->___holdEffID;
@@ -12706,7 +13181,7 @@ IL_09ae:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1649>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1714>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_458 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_459 = ___0_g;
@@ -12716,14 +13191,14 @@ IL_09ae:
 		int32_t L_462 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___CENTER;
 		NullCheck(L_458);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_458, L_459, _stringLiteralBEC3B1CAFD51E62BBDEFF38A539EBB9DCB4E467E, ((int32_t)(L_460/2)), L_461, L_462, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1650>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1715>
 		int32_t L_463 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_463, ((int32_t)10)));
 	}
 
 IL_09dc:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1652>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1717>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_464 = V_5;
 		NullCheck(L_464);
 		bool L_465 = L_464->___isFreez;
@@ -12733,7 +13208,7 @@ IL_09dc:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1654>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1719>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_466 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_467 = ___0_g;
@@ -12750,14 +13225,14 @@ IL_09dc:
 		int32_t L_474 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___CENTER;
 		NullCheck(L_466);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_466, L_467, L_471, ((int32_t)(L_472/2)), L_473, L_474, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1655>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1720>
 		int32_t L_475 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_475, ((int32_t)10)));
 	}
 
 IL_0a1b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1657>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1722>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_476 = V_5;
 		NullCheck(L_476);
 		bool L_477 = L_476->___blindEff;
@@ -12767,7 +13242,7 @@ IL_0a1b:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1659>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1724>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_478 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_479 = ___0_g;
@@ -12781,7 +13256,7 @@ IL_0a1b:
 
 IL_0a42:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1663>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1728>
 		bool L_483 = __this->___lineToBoss;
 		if (!L_483)
 		{
@@ -12789,14 +13264,14 @@ IL_0a42:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1665>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1730>
 		V_18 = 0;
 		goto IL_0ada;
 	}
 
 IL_0a55:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1667>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1732>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_484 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vCharInMap;
 		int32_t L_485 = V_18;
@@ -12804,7 +13279,7 @@ IL_0a55:
 		RuntimeObject* L_486;
 		L_486 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_484, L_485, NULL);
 		V_19 = ((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)CastclassClass((RuntimeObject*)L_486, Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1668>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1733>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_487 = V_19;
 		if (!L_487)
 		{
@@ -12833,13 +13308,13 @@ IL_0a55:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1670>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1735>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_493 = ___0_g;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_494;
 		L_494 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
 		NullCheck(L_493);
 		mGraphics_setColor_m2662BED37D8011AAF8DE9BAA5FF2C6064A200D67(L_493, L_494, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1671>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1736>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_495 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_496;
@@ -12867,14 +13342,14 @@ IL_0a55:
 
 IL_0ad4:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1665>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1730>
 		int32_t L_508 = V_18;
 		V_18 = ((int32_t)il2cpp_codegen_add(L_508, 1));
 	}
 
 IL_0ada:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1665>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1730>
 		int32_t L_509 = V_18;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_510 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vCharInMap;
@@ -12889,7 +13364,7 @@ IL_0ada:
 
 IL_0aeb:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1676>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1741>
 		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 		int32_t L_512 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___mapID;
 		if ((((int32_t)L_512) == ((int32_t)((int32_t)51))))
@@ -12930,12 +13405,12 @@ IL_0aeb:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1680>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1745>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_517 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___gameTick;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1681>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1746>
 		V_20 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(((int32_t)(((int32_t)(L_517/5))%((int32_t)30))), ((int32_t)59)))/((int32_t)29)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1682>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1747>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_518 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___logos;
 		int32_t L_519 = V_20;
@@ -12948,7 +13423,7 @@ IL_0aeb:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1684>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1749>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_522 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___logos;
 		int32_t L_523 = V_20;
@@ -12961,7 +13436,7 @@ IL_0aeb:
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_527 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		V_21 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_526, L_527))/4));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1685>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1750>
 		ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_528 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___logos;
 		int32_t L_529 = V_20;
 		NullCheck(L_528);
@@ -12972,7 +13447,7 @@ IL_0aeb:
 		L_532 = Image_getHeight_mD92E26605D4EEDF37389EC951FF44F41AF7D28A4(L_531, NULL);
 		int32_t L_533 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		V_22 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_532, L_533))/4));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1686>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1751>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_534 = ___0_g;
 		ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_535 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___logos;
 		int32_t L_536 = V_20;
@@ -12990,7 +13465,7 @@ IL_0aeb:
 
 IL_0b8b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1697>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1762>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_543 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_544 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___imgModFunc;
@@ -13000,14 +13475,14 @@ IL_0b8b:
 		L_546 = Image_getWidth_m56A0FEDBD7CDA88D486BC548201E91A3DD2A8E97(L_545, NULL);
 		NullCheck(L_543);
 		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_543, L_544, ((int32_t)il2cpp_codegen_add(L_546, ((int32_t)20))), ((int32_t)15), 3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1699>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1764>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_547 = ___0_g;
 		ModFunc_PaintPlayerTichXanh_mDB3897318F23C6DBE531DD5E6D31E9EB1ACC4C05(__this, L_547, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1700>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1765>
 		return;
 	}
 }
-// Method Definition Index: 12742
+// Method Definition Index: 12743
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_perform_m7A96591827A8F16821399F3CC40378FCF30F3A1A (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, int32_t ___0_idAction, RuntimeObject* ___1_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13618,22 +14093,22 @@ IL_00c6:
 
 IL_0128:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1708>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1773>
 		RuntimeObject* L_14 = ___1_p;
 		bool L_15;
 		L_15 = Int32_TryParse_mC928DE2FEC1C35ED5298BDDCA9868076E94B8A21(((String_t*)CastclassSealed((RuntimeObject*)L_14, String_t_il2cpp_TypeInfo_var)), (&V_1), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1709>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1774>
 		if (!L_15)
 		{
 			goto IL_0151;
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1711>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1776>
 		int32_t L_16 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(XmapController_tC554F90C4B318ED138E9388414DAC565A7356198_il2cpp_TypeInfo_var);
 		XmapController_StartRunToMapId_m211DA242B8BE41DAF3898929ED461BE4CFF20123(L_16, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1712>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1777>
 		String_t* L_17;
 		L_17 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
 		String_t* L_18;
@@ -13644,40 +14119,40 @@ IL_0128:
 
 IL_0151:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1716>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1781>
 		V_0 = _stringLiteral2BCD406E9C18113296CB30E421DF6E0625ABB2A9;
 	}
 
 IL_0157:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1718>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1783>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_19 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		String_t* L_20 = V_0;
 		NullCheck(L_19);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_19, L_20, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1719>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1784>
 		return;
 	}
 
 IL_0164:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1721>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1786>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_21 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_21);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_21, _stringLiteral88F9DF7C7D8F7D5EFFACCC4D3AF5EE966BBEB9BA, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1722>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1787>
 		return;
 	}
 
 IL_0175:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1726>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1791>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_22 = (MyVector_t5E551DE127AB217F3BF51644B186993381C11E30*)il2cpp_codegen_object_new(MyVector_t5E551DE127AB217F3BF51644B186993381C11E30_il2cpp_TypeInfo_var);
 		MyVector__ctor_m9CAA74C33B5605E7806E3F1C9E1D78A97AE10692(L_22, NULL);
 		V_2 = L_22;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1727>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1792>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_23 = V_2;
 		bool L_24 = __this->___isPeanPet;
 		if (L_24)
@@ -13705,22 +14180,22 @@ IL_0190:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_25, G_B26_0, ((int32_t)17), NULL);
 		NullCheck(G_B26_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B26_1, L_25, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1728>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1793>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_26 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_27 = V_2;
 		NullCheck(L_26);
 		Menu_startAt_m9AB27F670086B8C14AF718BCD403BC93A0465623(L_26, L_27, 4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1729>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1794>
 		return;
 	}
 
 IL_01a9:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1731>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1796>
 		bool L_28 = __this->___isPeanPet;
 		__this->___isPeanPet = (bool)((((int32_t)L_28) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1732>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1797>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_29 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_30 = __this->___isPeanPet;
@@ -13753,17 +14228,17 @@ IL_01d6:
 		L_31 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B30_1, G_B30_0, NULL);
 		NullCheck(G_B30_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B30_2, L_31, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1733>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1798>
 		return;
 	}
 
 IL_01e2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1735>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1800>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_32 = (MyVector_t5E551DE127AB217F3BF51644B186993381C11E30*)il2cpp_codegen_object_new(MyVector_t5E551DE127AB217F3BF51644B186993381C11E30_il2cpp_TypeInfo_var);
 		MyVector__ctor_m9CAA74C33B5605E7806E3F1C9E1D78A97AE10692(L_32, NULL);
 		V_3 = L_32;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1736>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1801>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_33 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_34 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___notifBoss;
@@ -13792,7 +14267,7 @@ IL_01fc:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_35, G_B34_0, ((int32_t)46), NULL);
 		NullCheck(G_B34_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B34_1, L_35, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1737>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1802>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_36 = V_3;
 		bool L_37 = __this->___lineToBoss;
 		if (L_37)
@@ -13820,7 +14295,7 @@ IL_021d:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_38, G_B37_0, ((int32_t)47), NULL);
 		NullCheck(G_B37_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B37_1, L_38, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1738>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1803>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_39 = V_3;
 		bool L_40 = __this->___focusBoss;
 		if (L_40)
@@ -13848,43 +14323,43 @@ IL_023e:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_41, G_B40_0, ((int32_t)52), NULL);
 		NullCheck(G_B40_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B40_1, L_41, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1739>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1804>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_42 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_43 = V_3;
 		NullCheck(L_42);
 		Menu_startAt_m9AB27F670086B8C14AF718BCD403BC93A0465623(L_42, L_43, 4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1740>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1805>
 		return;
 	}
 
 IL_0257:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1743>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1808>
 		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 		int32_t L_44 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___mapID;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___mapGoback = L_44;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1744>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1809>
 		int32_t L_45 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___zoneID;
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___zoneGoback = L_45;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1745>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1810>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_46;
 		L_46 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		NullCheck(L_46);
 		int32_t L_47 = L_46->___cx;
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___xGoback = L_47;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1746>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1811>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_48;
 		L_48 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		NullCheck(L_48);
 		int32_t L_49 = L_48->___cy;
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___yGoback = L_49;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1748>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1813>
 		bool L_50 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___isGoBack;
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___isGoBack = (bool)((((int32_t)L_50) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1749>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1814>
 		bool L_51 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___isGoBack;
 		if (!L_51)
 		{
@@ -13892,13 +14367,13 @@ IL_0257:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1751>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1752>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1753>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1754>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1755>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1756>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1757>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1816>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1817>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1818>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1819>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1820>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1821>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1822>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_52 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_53 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)4);
@@ -13927,13 +14402,13 @@ IL_0257:
 		L_62 = String_Concat_m9EB826D3BC0EF2322AA8E55DF0D20EE41B1E5A36(L_58, NULL);
 		NullCheck(L_52);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_52, L_62, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1758>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1759>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1760>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1761>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1762>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1763>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1764>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1823>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1824>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1825>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1826>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1827>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1828>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1829>
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_63 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_64 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)4);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_65 = L_64;
@@ -13963,7 +14438,7 @@ IL_0257:
 		L_75 = String_Concat_m9EB826D3BC0EF2322AA8E55DF0D20EE41B1E5A36(L_71, NULL);
 		NullCheck(L_63);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_63, L_75, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1765>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1830>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_76;
 		L_76 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -13988,12 +14463,12 @@ IL_0257:
 
 IL_0337:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1767>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1832>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_80;
 		L_80 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		NullCheck(L_80);
 		Service_returnTownFromDead_m3B1DF4AA2D38480044A9447D333CC47283366A35(L_80, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1768>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1833>
 		ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2* L_81 = (ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2*)il2cpp_codegen_object_new(ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var);
 		ThreadStart__ctor_m35CE51F76358F20E4A0C8F2963C3AE14E5FF7E71(L_81, NULL, (intptr_t)((void*)PickMob_GoBack_m8E3DDFC26B88AA94322D8CA253BE00DC3F50DE3A_RuntimeMethod_var), NULL);
 		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_82 = (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)il2cpp_codegen_object_new(Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var);
@@ -14004,7 +14479,7 @@ IL_0337:
 
 IL_0357:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1771>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1836>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_83 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
@@ -14038,16 +14513,16 @@ IL_0374:
 		L_85 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B48_1, G_B48_0, NULL);
 		NullCheck(G_B48_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B48_2, L_85, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1772>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1837>
 		return;
 	}
 
 IL_0380:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1774>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1839>
 		bool L_86 = __this->___autoAttack;
 		__this->___autoAttack = (bool)((((int32_t)L_86) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1775>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1840>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_87 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_88 = __this->___autoAttack;
@@ -14080,17 +14555,17 @@ IL_03ad:
 		L_89 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B52_1, G_B52_0, NULL);
 		NullCheck(G_B52_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B52_2, L_89, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1776>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1841>
 		return;
 	}
 
 IL_03b9:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1779>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1844>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_90 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___neSieuQuai;
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___neSieuQuai = (bool)((((int32_t)L_90) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1780>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1845>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_91 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_92 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___neSieuQuai;
@@ -14123,16 +14598,16 @@ IL_03e3:
 		L_93 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B56_1, G_B56_0, NULL);
 		NullCheck(G_B56_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B56_2, L_93, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1781>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1846>
 		return;
 	}
 
 IL_03ef:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1784>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1849>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tsPlayer = (bool)0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1785>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1850>
 		RuntimeObject* L_94 = ___1_p;
 		if (L_94)
 		{
@@ -14156,7 +14631,7 @@ IL_0408:
 	{
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tanSat = (bool)G_B60_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1786>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1851>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_97 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_98 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tanSat;
@@ -14189,28 +14664,28 @@ IL_042a:
 		L_99 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B63_1, G_B63_0, NULL);
 		NullCheck(G_B63_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B63_2, L_99, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1787>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1852>
 		return;
 	}
 
 IL_0436:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1790>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1855>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_100 = (MyVector_t5E551DE127AB217F3BF51644B186993381C11E30*)il2cpp_codegen_object_new(MyVector_t5E551DE127AB217F3BF51644B186993381C11E30_il2cpp_TypeInfo_var);
 		MyVector__ctor_m9CAA74C33B5605E7806E3F1C9E1D78A97AE10692(L_100, NULL);
 		V_4 = L_100;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1791>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1856>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_101 = (MyVector_t5E551DE127AB217F3BF51644B186993381C11E30*)il2cpp_codegen_object_new(MyVector_t5E551DE127AB217F3BF51644B186993381C11E30_il2cpp_TypeInfo_var);
 		MyVector__ctor_m9CAA74C33B5605E7806E3F1C9E1D78A97AE10692(L_101, NULL);
 		V_5 = L_101;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1792>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1857>
 		V_11 = 0;
 		goto IL_04d4;
 	}
 
 IL_044c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1794>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1859>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_102 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
 		int32_t L_103 = V_11;
@@ -14218,7 +14693,7 @@ IL_044c:
 		RuntimeObject* L_104;
 		L_104 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_102, L_103, NULL);
 		V_12 = ((Mob_t394900507F39725FA57379059AA703E63166F45F*)CastclassClass((RuntimeObject*)L_104, Mob_t394900507F39725FA57379059AA703E63166F45F_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1795>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1860>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_105;
 		L_105 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_106 = V_12;
@@ -14260,7 +14735,7 @@ IL_044c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1797>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1862>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_118 = V_5;
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_119 = V_12;
 		NullCheck(L_119);
@@ -14269,7 +14744,7 @@ IL_044c:
 		RuntimeObject* L_122 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_121);
 		NullCheck(L_118);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_118, L_122, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1798>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1863>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_123 = V_4;
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_124 = V_12;
 		NullCheck(L_124);
@@ -14288,14 +14763,14 @@ IL_044c:
 
 IL_04ce:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1792>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1857>
 		int32_t L_130 = V_11;
 		V_11 = ((int32_t)il2cpp_codegen_add(L_130, 1));
 	}
 
 IL_04d4:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1792>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1857>
 		int32_t L_131 = V_11;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_132 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
@@ -14308,7 +14783,7 @@ IL_04d4:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1801>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1866>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_134 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_135 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tanSat;
@@ -14337,7 +14812,7 @@ IL_04fa:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_136, G_B74_0, ((int32_t)44), NULL);
 		NullCheck(G_B74_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B74_1, L_136, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1802>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1867>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_137 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_138 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tsPlayer;
@@ -14366,7 +14841,7 @@ IL_051b:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_139, G_B77_0, ((int32_t)48), NULL);
 		NullCheck(G_B77_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B77_1, L_139, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1803>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1868>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_140 = V_4;
 		bool L_141 = __this->___autoAttack;
 		if (L_141)
@@ -14394,7 +14869,7 @@ IL_053d:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_142, G_B80_0, ((int32_t)42), NULL);
 		NullCheck(G_B80_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B80_1, L_142, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1804>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1869>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_143 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_144 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___neSieuQuai;
@@ -14423,7 +14898,7 @@ IL_055e:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_145, G_B83_0, ((int32_t)43), NULL);
 		NullCheck(G_B83_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B83_1, L_145, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1805>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1870>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_146 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_147 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___vuotDiaHinh;
@@ -14452,7 +14927,7 @@ IL_057f:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_148, G_B86_0, ((int32_t)76), NULL);
 		NullCheck(G_B86_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B86_1, L_148, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1806>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1871>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_149 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_150 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
@@ -14481,7 +14956,7 @@ IL_05a0:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_151, G_B89_0, ((int32_t)80), NULL);
 		NullCheck(G_B89_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B89_1, L_151, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1807>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1872>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_152 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_153 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___isGoBack;
@@ -14510,29 +14985,29 @@ IL_05c1:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_154, G_B92_0, ((int32_t)38), NULL);
 		NullCheck(G_B92_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B92_1, L_154, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1808>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1873>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_155 = V_4;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_156 = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)il2cpp_codegen_object_new(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1_il2cpp_TypeInfo_var);
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_156, _stringLiteralA6F887767F66C2986676BC8AC0E3A22EBE34CDF8, ((int32_t)51), NULL);
 		NullCheck(L_155);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_155, L_156, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1809>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1874>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_157 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_158 = V_4;
 		NullCheck(L_157);
 		Menu_startAt_m9AB27F670086B8C14AF718BCD403BC93A0465623(L_157, L_158, 4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1810>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1875>
 		return;
 	}
 
 IL_05ee:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1812>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1877>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_159 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___notifBoss;
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___notifBoss = (bool)((((int32_t)L_159) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1813>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1878>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_160 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_161 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___notifBoss;
@@ -14565,16 +15040,16 @@ IL_0618:
 		L_162 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B96_1, G_B96_0, NULL);
 		NullCheck(G_B96_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B96_2, L_162, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1814>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1879>
 		return;
 	}
 
 IL_0624:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1816>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1881>
 		bool L_163 = __this->___lineToBoss;
 		__this->___lineToBoss = (bool)((((int32_t)L_163) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1817>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1882>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_164 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_165 = __this->___lineToBoss;
@@ -14607,16 +15082,16 @@ IL_0651:
 		L_166 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B100_1, G_B100_0, NULL);
 		NullCheck(G_B100_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B100_2, L_166, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1818>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1883>
 		return;
 	}
 
 IL_065d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1821>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1886>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tanSat = (bool)0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1822>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1887>
 		RuntimeObject* L_167 = ___1_p;
 		if (L_167)
 		{
@@ -14640,7 +15115,7 @@ IL_0676:
 	{
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tsPlayer = (bool)G_B104_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1823>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1888>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_170 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_171 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tsPlayer;
@@ -14673,16 +15148,16 @@ IL_0698:
 		L_172 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B107_1, G_B107_0, NULL);
 		NullCheck(G_B107_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B107_2, L_172, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1824>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1889>
 		return;
 	}
 
 IL_06a4:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1826>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1891>
 		RuntimeObject* L_173 = ___1_p;
 		V_6 = ((Mob_t394900507F39725FA57379059AA703E63166F45F*)CastclassClass((RuntimeObject*)L_173, Mob_t394900507F39725FA57379059AA703E63166F45F_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1827>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1892>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_174 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___TypeMobsTanSat;
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_175 = V_6;
@@ -14697,7 +15172,7 @@ IL_06a4:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1829>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1894>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_178 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___TypeMobsTanSat;
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_179 = V_6;
@@ -14709,7 +15184,7 @@ IL_06a4:
 
 IL_06d0:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1831>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1896>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_181 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_182 = V_6;
@@ -14722,36 +15197,36 @@ IL_06d0:
 		L_185 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralB08BB9D5CA8DF0D426FBF52549D8836F0E9FA304, L_184, NULL);
 		NullCheck(L_181);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_181, L_185, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1832>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1897>
 		bool L_186 = ((bool)1);
 		RuntimeObject* L_187 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_186);
 		ModFunc_perform_m7A96591827A8F16821399F3CC40378FCF30F3A1A(__this, ((int32_t)44), L_187, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1833>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1898>
 		return;
 	}
 
 IL_0700:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1835>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1900>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_188 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___TypeMobsTanSat;
 		NullCheck(L_188);
 		List_1_Clear_mF6795DE5F49C1D0B91D6A0955F448B22970D67A9_inline(L_188, List_1_Clear_mF6795DE5F49C1D0B91D6A0955F448B22970D67A9_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1836>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1901>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_189 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_189);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_189, _stringLiteral874092F7D8003F020C155545393A7730FF926191, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1837>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1902>
 		return;
 	}
 
 IL_071b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1839>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1904>
 		bool L_190 = __this->___focusBoss;
 		__this->___focusBoss = (bool)((((int32_t)L_190) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1840>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1905>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_191 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_192 = __this->___focusBoss;
@@ -14784,23 +15259,23 @@ IL_0748:
 		L_193 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B115_1, G_B115_0, NULL);
 		NullCheck(G_B115_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B115_2, L_193, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1841>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1906>
 		return;
 	}
 
 IL_0754:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1843>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1908>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_194 = (MyVector_t5E551DE127AB217F3BF51644B186993381C11E30*)il2cpp_codegen_object_new(MyVector_t5E551DE127AB217F3BF51644B186993381C11E30_il2cpp_TypeInfo_var);
 		MyVector__ctor_m9CAA74C33B5605E7806E3F1C9E1D78A97AE10692(L_194, NULL);
 		V_7 = L_194;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1844>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1909>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_195 = V_7;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_196 = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)il2cpp_codegen_object_new(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1_il2cpp_TypeInfo_var);
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_196, _stringLiteral7991C108A05D4A80CF2B66B4E850BB5E9CAE7781, ((int32_t)54), NULL);
 		NullCheck(L_195);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_195, L_196, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1845>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1910>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_197 = V_7;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_198 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isAutoChat;
@@ -14835,7 +15310,7 @@ IL_0788:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_200, L_199, ((int32_t)55), NULL);
 		NullCheck(G_B119_2);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B119_2, L_200, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1846>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1911>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_201 = V_7;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_202 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isAutoChatTG;
@@ -14870,13 +15345,13 @@ IL_07b3:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_204, L_203, ((int32_t)56), NULL);
 		NullCheck(G_B122_2);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B122_2, L_204, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1847>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1912>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_205 = V_7;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_206 = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)il2cpp_codegen_object_new(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1_il2cpp_TypeInfo_var);
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_206, _stringLiteral10F9949BE0635983BF85EAE5CE11355E60E35A37, ((int32_t)57), NULL);
 		NullCheck(L_205);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_205, L_206, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1848>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1913>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_207 = V_7;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_208 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isPlayingMusic;
@@ -14905,33 +15380,33 @@ IL_07ec:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_209, G_B125_0, ((int32_t)60), NULL);
 		NullCheck(G_B125_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B125_1, L_209, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1849>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1914>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_210 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_211 = V_7;
 		NullCheck(L_210);
 		Menu_startAt_m9AB27F670086B8C14AF718BCD403BC93A0465623(L_210, L_211, 4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1850>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1915>
 		return;
 	}
 
 IL_0806:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1852>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1917>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_212;
 		L_212 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
 		ModFunc_MyChatTextField_m53C1BC12B48DECAE12F60B24A7DB32B4C190569E(__this, L_212, _stringLiteral37728F4DE52CE64A48DA75A1FFDA48AD9E018D9E, _stringLiteralD7B12BF4F6E1B1636C9D9A503E5D3C9AF3D0E385, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1853>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1918>
 		return;
 	}
 
 IL_081c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1855>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1920>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_213 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isAutoChat;
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isAutoChat = (bool)((((int32_t)L_213) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1856>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1921>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_214 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_215 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isAutoChat;
@@ -14964,17 +15439,17 @@ IL_0846:
 		L_216 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B130_1, G_B130_0, NULL);
 		NullCheck(G_B130_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B130_2, L_216, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1857>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1922>
 		return;
 	}
 
 IL_0852:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1859>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1924>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_217 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isAutoChatTG;
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isAutoChatTG = (bool)((((int32_t)L_217) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1860>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1925>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_218 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_219 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isAutoChatTG;
@@ -15007,31 +15482,31 @@ IL_087c:
 		L_220 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B134_1, G_B134_0, NULL);
 		NullCheck(G_B134_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B134_2, L_220, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1861>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1926>
 		return;
 	}
 
 IL_0888:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1863>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1928>
 		ModFunc_LoadSkillToScreen_m25261E97590FC2F46865772B35C2DB61074E8BD4(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1864>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1929>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_221 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_221);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_221, _stringLiteralE361900DAB8C039D7D4961733448F7A57825CDAA, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1865>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1930>
 		return;
 	}
 
 IL_089f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1867>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1932>
 		int32_t L_222;
 		L_222 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, 3, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_PlayMusic_mDB861CC46A1288E69E68FC45083BA6D933C77A5C(L_222, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1868>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1933>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		List_1_t33C1B21871505CF0516B63C148CD83EDA452BB5F* L_223 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___musics;
 		NullCheck(L_223);
@@ -15044,22 +15519,22 @@ IL_089f:
 		L_226 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral7AE800906FDB0AF4696DA163370E46EA72F40422, L_225, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_226, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1869>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1934>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_227 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_227);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_227, _stringLiteralA523593FE16FC33AF46969D46FBA1CF23EB9BC94, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1870>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1935>
 		return;
 	}
 
 IL_08de:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1873>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1938>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_228 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___vuotDiaHinh;
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___vuotDiaHinh = (bool)((((int32_t)L_228) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1874>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1939>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_229 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_230 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___vuotDiaHinh;
@@ -15092,17 +15567,17 @@ IL_0908:
 		L_231 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B140_1, G_B140_0, NULL);
 		NullCheck(G_B140_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B140_2, L_231, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1875>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1940>
 		return;
 	}
 
 IL_0914:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1878>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1943>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_232 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem = (bool)((((int32_t)L_232) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1879>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1944>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_233 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_234 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
@@ -15135,17 +15610,17 @@ IL_093e:
 		L_235 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B144_1, G_B144_0, NULL);
 		NullCheck(G_B144_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B144_2, L_235, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1880>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1945>
 		return;
 	}
 
 IL_094a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1882>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1947>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_236 = (MyVector_t5E551DE127AB217F3BF51644B186993381C11E30*)il2cpp_codegen_object_new(MyVector_t5E551DE127AB217F3BF51644B186993381C11E30_il2cpp_TypeInfo_var);
 		MyVector__ctor_m9CAA74C33B5605E7806E3F1C9E1D78A97AE10692(L_236, NULL);
 		V_8 = L_236;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1883>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1948>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_237 = V_8;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_238 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsAutoPickItems;
@@ -15180,7 +15655,7 @@ IL_096b:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_240, L_239, ((int32_t)90), NULL);
 		NullCheck(G_B148_2);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B148_2, L_240, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1884>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1949>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_241 = V_8;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_242 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsPickItemsAll;
@@ -15215,7 +15690,7 @@ IL_0996:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_244, L_243, ((int32_t)91), NULL);
 		NullCheck(G_B151_2);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B151_2, L_244, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1885>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1950>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_245 = V_8;
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_246 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsPickItemsDis;
@@ -15250,23 +15725,23 @@ IL_09c1:
 		Command__ctor_mBEF90D631F1834B890E5A23E2C5C9D57F7900ABB(L_248, L_247, ((int32_t)92), NULL);
 		NullCheck(G_B154_2);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(G_B154_2, L_248, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1886>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1951>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_249 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_250 = V_8;
 		NullCheck(L_249);
 		Menu_startAt_m9AB27F670086B8C14AF718BCD403BC93A0465623(L_249, L_250, 4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1887>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1952>
 		return;
 	}
 
 IL_09e0:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1889>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1954>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_251 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsAutoPickItems;
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsAutoPickItems = (bool)((((int32_t)L_251) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1890>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1955>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_252 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_253 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsAutoPickItems;
@@ -15299,17 +15774,17 @@ IL_0a0a:
 		L_254 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B158_1, G_B158_0, NULL);
 		NullCheck(G_B158_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B158_2, L_254, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1891>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1956>
 		return;
 	}
 
 IL_0a16:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1893>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1958>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_255 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsPickItemsAll;
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsPickItemsAll = (bool)((((int32_t)L_255) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1894>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1959>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_256 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_257 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsPickItemsAll;
@@ -15342,17 +15817,17 @@ IL_0a40:
 		L_258 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B162_1, G_B162_0, NULL);
 		NullCheck(G_B162_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B162_2, L_258, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1895>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1960>
 		return;
 	}
 
 IL_0a4c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1897>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1962>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_259 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsPickItemsDis;
 		((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsPickItemsDis = (bool)((((int32_t)L_259) == ((int32_t)0))? 1 : 0);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1898>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1963>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_260 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_261 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsPickItemsDis;
@@ -15385,15 +15860,15 @@ IL_0a76:
 		L_262 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B166_1, G_B166_0, NULL);
 		NullCheck(G_B166_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B166_2, L_262, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1899>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1964>
 		return;
 	}
 
 IL_0a82:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1901>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1966>
 		RuntimeObject* L_263 = ___1_p;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1902>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1967>
 		String_t* L_264 = ((String_t*)CastclassSealed((RuntimeObject*)L_263, String_t_il2cpp_TypeInfo_var));
 		NullCheck(L_264);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_265;
@@ -15404,7 +15879,7 @@ IL_0a82:
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_268;
 		L_268 = Int32_TryParse_mC928DE2FEC1C35ED5298BDDCA9868076E94B8A21(L_267, (&((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___indexAutoPoint), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1903>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1968>
 		NullCheck(L_264);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_269;
 		L_269 = String_Split_m15EB0AE498D606D2ABC49FC5F1EC3E29121F8AFB(L_264, _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0, 0, NULL);
@@ -15414,42 +15889,42 @@ IL_0a82:
 		il2cpp_codegen_runtime_class_init_inline(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
 		bool L_272;
 		L_272 = Boolean_TryParse_m417053B6E8D3724D0EED9E87C90D143622158352(L_271, (&((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoPointForPet), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1904>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1969>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_273 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_273);
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(L_273, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1905>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1970>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_274;
 		L_274 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
 		ModFunc_MyChatTextField_m53C1BC12B48DECAE12F60B24A7DB32B4C190569E(__this, L_274, _stringLiteral404BFC845D5833611F9B31AABA52E3FA676D54EF, _stringLiteralCE0B79772ECF363272450DA869AC6FC2A62616B4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1906>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1971>
 		return;
 	}
 
 IL_0ad9:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1908>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1973>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isOpenAccMAnager = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1909>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1974>
 		return;
 	}
 
 IL_0ae0:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1911>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1976>
 		RuntimeObject* L_275 = ___1_p;
 		V_9 = ((*(Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4*)((Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4*)(Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4*)UnBox(L_275, Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4_il2cpp_TypeInfo_var))));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1912>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1977>
 		String_t* L_276;
 		L_276 = Account_getUsername_mFE66E47C7863EDBE45431918B074E7D96AA6FDDB_inline((&V_9), NULL);
 		Rms_saveRMSString_m5CC2A73B0F9A79E8FB75301D183725DE3A880C7A(_stringLiteralB944D324E89341142404BAF3FB1FD652E176C9E4, L_276, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1913>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1978>
 		String_t* L_277;
 		L_277 = Account_getPassword_m25A2190AE12E99B800B25891DBD00FC35C76B21B_inline((&V_9), NULL);
 		Rms_saveRMSString_m5CC2A73B0F9A79E8FB75301D183725DE3A880C7A(_stringLiteral3E3E2C4B66DB6B3A06FE6C4CBD32853713E7CB70, L_277, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1914>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1979>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_278 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		if (!L_278)
@@ -15467,7 +15942,7 @@ IL_0ae0:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1916>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1981>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_281 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		NullCheck(L_281);
@@ -15476,16 +15951,16 @@ IL_0ae0:
 
 IL_0b27:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1918>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1983>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isOpenAccMAnager = (bool)0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1919>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1984>
 		return;
 	}
 
 IL_0b2e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1921>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1986>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_282 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
 		RuntimeObject* L_283 = ___1_p;
@@ -15493,60 +15968,60 @@ IL_0b2e:
 		int32_t L_284;
 		L_284 = List_1_IndexOf_m2C1EF98BFC8E7012F55DECA4C3EB350E727F4582(L_282, ((*(Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4*)((Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4*)(Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4*)UnBox(L_283, Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4_il2cpp_TypeInfo_var)))), List_1_IndexOf_m2C1EF98BFC8E7012F55DECA4C3EB350E727F4582_RuntimeMethod_var);
 		V_10 = L_284;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1922>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1987>
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_285 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
 		int32_t L_286 = V_10;
 		NullCheck(L_285);
 		List_1_RemoveAt_mB3195B0D4338FD1D05A148ADF7485D0074F12439(L_285, L_286, List_1_RemoveAt_mB3195B0D4338FD1D05A148ADF7485D0074F12439_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1923>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1988>
 		List_1_t8337980368BFC9B09A91E682F7CC78117A3E3D1E* L_287 = __this->___cmdsChooseAcc;
 		int32_t L_288 = V_10;
 		NullCheck(L_287);
 		List_1_RemoveAt_m4B15B76242389F9038F2B348C495BDF74AD4E291(L_287, L_288, List_1_RemoveAt_m4B15B76242389F9038F2B348C495BDF74AD4E291_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1924>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1989>
 		List_1_t8337980368BFC9B09A91E682F7CC78117A3E3D1E* L_289 = __this->___cmdsDelAcc;
 		int32_t L_290 = V_10;
 		NullCheck(L_289);
 		List_1_RemoveAt_m4B15B76242389F9038F2B348C495BDF74AD4E291(L_289, L_290, List_1_RemoveAt_m4B15B76242389F9038F2B348C495BDF74AD4E291_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1925>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1990>
 		ModFunc_SaveAcc_mBCC20298D9B1D0BA226BA4F6638D6DD4C1AC1246(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1926>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1991>
 		return;
 	}
 
 IL_0b6d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1928>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1993>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isOpenAccMAnager = (bool)0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1929>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1994>
 		return;
 	}
 
 IL_0b74:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1932>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1997>
 		RuntimeObject* L_291 = ___1_p;
 		int32_t L_292 = ___0_idAction;
 		ModFunc_AddOrRemoveAutoItem_m68B2E0861CD389CDBACEDF903B743CD50808CADD(__this, ((Item_tFAF77888D49883A321EB596A7D93CB5615D37E95*)CastclassClass((RuntimeObject*)L_291, Item_tFAF77888D49883A321EB596A7D93CB5615D37E95_il2cpp_TypeInfo_var)), (bool)((((int32_t)L_292) == ((int32_t)((int32_t)500)))? 1 : 0), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1933>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1998>
 		return;
 	}
 
 IL_0b89:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1936>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2001>
 		il2cpp_codegen_runtime_class_init_inline(XmapController_tC554F90C4B318ED138E9388414DAC565A7356198_il2cpp_TypeInfo_var);
 		XmapController_ShowXmapMenu_m355E3BB95CE5439B89674E84EC657346D0422883(NULL);
 	}
 
 IL_0b8e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1939>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2004>
 		return;
 	}
 }
-// Method Definition Index: 12743
+// Method Definition Index: 12744
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoBuyItem_mFAE098BA385FF949E8052C82825EB417E0FE8F63 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, int32_t ___0_num, Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* ___1_itemBuy, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15570,26 +16045,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoBuyItem_mFAE098BA385FF949E80
 		int32_t L_4 = ___0_num;
 		NullCheck(L_3);
 		L_3->___num = L_4;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1943>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1944>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1945>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1946>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1947>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1948>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1949>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1950>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1951>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2008>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2009>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2010>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2011>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2012>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2013>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2014>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2015>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2016>
 		ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2* L_5 = (ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2*)il2cpp_codegen_object_new(ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var);
 		ThreadStart__ctor_m35CE51F76358F20E4A0C8F2963C3AE14E5FF7E71(L_5, L_3, (intptr_t)((void*)U3CU3Ec__DisplayClass136_0_U3CAutoBuyItemU3Eb__0_m828A51CBFA41294249D5E3B93ACEA77DCC1647DF_RuntimeMethod_var), NULL);
 		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_6 = (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)il2cpp_codegen_object_new(Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var);
 		Thread__ctor_m1FA23A179DF4F5B659689D6FA40DE903086212E2(L_6, L_5, NULL);
 		NullCheck(L_6);
 		Thread_Start_m2230799AA331CA9ACEF49D5500281D0C1A9F72FA(L_6, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1952>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2017>
 		return;
 	}
 }
-// Method Definition Index: 12744
+// Method Definition Index: 12745
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddOrRemoveAutoItem_m68B2E0861CD389CDBACEDF903B743CD50808CADD (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* ___0_item, bool ___1_isAdd, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15613,7 +16088,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddOrRemoveAutoItem_m68B2E0861CD
 	ItemAuto_tAD6C1784205B0369AA061ED726253FAE4736C74A V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1956>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2021>
 		bool L_0 = ___1_isAdd;
 		if (!L_0)
 		{
@@ -15621,7 +16096,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddOrRemoveAutoItem_m68B2E0861CD
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1958>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2023>
 		List_1_t31080481A96AEA703ACCE3933D2B06EA454C510B* L_1 = __this->___listItemAuto;
 		Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_2 = ___0_item;
 		NullCheck(L_2);
@@ -15638,7 +16113,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddOrRemoveAutoItem_m68B2E0861CD
 		ItemAuto__ctor_m52D31611F747B764CA2CA8DDEA961A6331AE95DA((&L_8), L_4, L_7, NULL);
 		NullCheck(L_1);
 		List_1_Add_m26D238B4B3F831E4B810A2C4109B768EF4907DAB_inline(L_1, L_8, List_1_Add_m26D238B4B3F831E4B810A2C4109B768EF4907DAB_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1959>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2024>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_9 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_10 = ___0_item;
@@ -15655,7 +16130,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddOrRemoveAutoItem_m68B2E0861CD
 
 IL_004f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1963>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2028>
 		List_1_t31080481A96AEA703ACCE3933D2B06EA454C510B* L_14 = __this->___listItemAuto;
 		NullCheck(L_14);
 		Enumerator_t3C599B1049DD609045A7323A1D34BF71EF644D96 L_15;
@@ -15680,11 +16155,11 @@ FINALLY_00ca:
 
 IL_005d_1:
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1963>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2028>
 				ItemAuto_tAD6C1784205B0369AA061ED726253FAE4736C74A L_16;
 				L_16 = Enumerator_get_Current_m4511ABA441A20C429ACF85FEB12FC2077BF7406B_inline((&V_0), Enumerator_get_Current_m4511ABA441A20C429ACF85FEB12FC2077BF7406B_RuntimeMethod_var);
 				V_1 = L_16;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1965>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2030>
 				ItemAuto_tAD6C1784205B0369AA061ED726253FAE4736C74A L_17 = V_1;
 				int32_t L_18 = L_17.___iconID;
 				Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_19 = ___0_item;
@@ -15711,13 +16186,13 @@ IL_005d_1:
 				}
 			}
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1967>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2032>
 				List_1_t31080481A96AEA703ACCE3933D2B06EA454C510B* L_27 = __this->___listItemAuto;
 				ItemAuto_tAD6C1784205B0369AA061ED726253FAE4736C74A L_28 = V_1;
 				NullCheck(L_27);
 				bool L_29;
 				L_29 = List_1_Remove_mB42A5128E610CED55322C77108802B967AFEC21F(L_27, L_28, List_1_Remove_mB42A5128E610CED55322C77108802B967AFEC21F_RuntimeMethod_var);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1968>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2033>
 				il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 				InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_30 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 				Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_31 = ___0_item;
@@ -15729,13 +16204,13 @@ IL_005d_1:
 				L_34 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralFB27EB4A73DAB11315510932EF7B36712D01364A, L_33, _stringLiteral7BA915229CFEF34FEB10B7293F5E9F710D6E34EC, NULL);
 				NullCheck(L_30);
 				InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_30, L_34, 0, NULL);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1969>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2034>
 				goto IL_00d8;
 			}
 
 IL_00bf_1:
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1963>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2028>
 				bool L_35;
 				L_35 = Enumerator_MoveNext_mDD73E14BCEB8EC855D8A935F9AAB5656DB040BE0((&V_0), Enumerator_MoveNext_mDD73E14BCEB8EC855D8A935F9AAB5656DB040BE0_RuntimeMethod_var);
 				if (L_35)
@@ -15755,11 +16230,11 @@ IL_00bf_1:
 
 IL_00d8:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1973>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2038>
 		return;
 	}
 }
-// Method Definition Index: 12745
+// Method Definition Index: 12746
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoDoubleClickToObj_m50874301771006A34F93DFABB9F109E0D2E28444 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15772,7 +16247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoDoubleClickToObj_m508743017710
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1977>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2042>
 		RuntimeObject* L_0 = ___0_obj;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1;
@@ -15814,26 +16289,26 @@ IL_0021:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1979>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2044>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_9;
 		L_9 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		RuntimeObject* L_10 = ___0_obj;
 		NullCheck(L_9);
 		GameScr_checkEffToObj_m44F468985B5ECC306067496AE3486F05A684CE09(L_9, L_10, (bool)0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1980>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2045>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_11;
 		L_11 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		NullCheck(L_11);
 		Char_cancelAttack_mD35FCEB6C687238ED6C6DC23DA3559A41D064AD5(L_11, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1981>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2046>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_12;
 		L_12 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		NullCheck(L_12);
 		L_12->___currentMovePoint = (MovePoint_t935B2561B2469906D762963068D2E58357E88159*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_12->___currentMovePoint), (void*)(MovePoint_t935B2561B2469906D762963068D2E58357E88159*)NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1982>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2047>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_13;
 		L_13 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_14;
@@ -15845,21 +16320,21 @@ IL_0021:
 		int32_t L_16 = V_0;
 		NullCheck(L_13);
 		L_13->___cvx = L_16;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1983>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2048>
 		RuntimeObject* L_17 = ___0_obj;
 		NullCheck(L_17);
 		InterfaceActionInvoker0::Invoke(4, IMapObject_t3876B1AD6EA7C76557A1CDFD8AA3A911BB913899_il2cpp_TypeInfo_var, L_17);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1984>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2049>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_18;
 		L_18 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_18);
 		L_18->___auto = ((int32_t)10);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1985>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2050>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_19;
 		L_19 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_19);
 		GameScr_doFire_m94804A9CAC41FD65A2EB13A785B9986D5EB5C477(L_19, (bool)0, (bool)1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1986>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2051>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_20;
 		L_20 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		RuntimeObject* L_21 = ___0_obj;
@@ -15868,7 +16343,7 @@ IL_0021:
 		L_22 = InterfaceFuncInvoker0< int32_t >::Invoke(0, IMapObject_t3876B1AD6EA7C76557A1CDFD8AA3A911BB913899_il2cpp_TypeInfo_var, L_21);
 		NullCheck(L_20);
 		L_20->___clickToX = L_22;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1987>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2052>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_23;
 		L_23 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		RuntimeObject* L_24 = ___0_obj;
@@ -15877,27 +16352,27 @@ IL_0021:
 		L_25 = InterfaceFuncInvoker0< int32_t >::Invoke(1, IMapObject_t3876B1AD6EA7C76557A1CDFD8AA3A911BB913899_il2cpp_TypeInfo_var, L_24);
 		NullCheck(L_23);
 		L_23->___clickToY = L_25;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1988>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2053>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_26;
 		L_26 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_26);
 		L_26->___clickOnTileTop = (bool)0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1989>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2054>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_27;
 		L_27 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_27);
 		L_27->___clickMoving = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1990>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2055>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_28;
 		L_28 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_28);
 		L_28->___clickMovingRed = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1991>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2056>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_29;
 		L_29 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_29);
 		L_29->___clickMovingTimeOut = ((int32_t)20);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1992>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2057>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_30;
 		L_30 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_30);
@@ -15906,11 +16381,11 @@ IL_0021:
 
 IL_00e1:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1994>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2059>
 		return;
 	}
 }
-// Method Definition Index: 12746
+// Method Definition Index: 12747
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_MyChatTextField_m53C1BC12B48DECAE12F60B24A7DB32B4C190569E (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* ___0_chatTField, String_t* ___1_strChat, String_t* ___2_strName, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15923,13 +16398,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_MyChatTextField_m53C1BC12B48DECA
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1998>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2063>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_0 = ___0_chatTField;
 		String_t* L_1 = ___1_strChat;
 		NullCheck(L_0);
 		L_0->___strChat = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&L_0->___strChat), (void*)L_1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1999>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2064>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_2 = ___0_chatTField;
 		NullCheck(L_2);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_3 = L_2->___tfChat;
@@ -15937,23 +16412,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_MyChatTextField_m53C1BC12B48DECA
 		NullCheck(L_3);
 		L_3->___name = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___name), (void*)L_4);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2000>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2065>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_5 = ___0_chatTField;
 		String_t* L_6 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		NullCheck(L_5);
 		L_5->___to = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___to), (void*)L_6);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2001>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2066>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_7 = ___0_chatTField;
 		NullCheck(L_7);
 		L_7->___isShow = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2002>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2067>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_8 = ___0_chatTField;
 		NullCheck(L_8);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_9 = L_8->___tfChat;
 		NullCheck(L_9);
 		L_9->___isFocus = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2003>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2068>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_10 = ___0_chatTField;
 		NullCheck(L_10);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_11 = L_10->___tfChat;
@@ -15961,13 +16436,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_MyChatTextField_m53C1BC12B48DECA
 		int32_t L_12 = ((TField_t56E19AE85CA63279C53042EF348814217A9F0E70_StaticFields*)il2cpp_codegen_static_fields_for(TField_t56E19AE85CA63279C53042EF348814217A9F0E70_il2cpp_TypeInfo_var))->___INPUT_TYPE_NUMERIC;
 		NullCheck(L_11);
 		TField_setIputType_m72F29E07E1F1F559628ABB8FFC773EDB68298B46(L_11, L_12, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2004>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2069>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_13 = ___0_chatTField;
 		NullCheck(L_13);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_14 = L_13->___tfChat;
 		NullCheck(L_14);
 		TField_setMaxTextLenght_m61EBFB02EBBFD04345FCF29A2FE30D03120575FD_inline(L_14, ((int32_t)10), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2005>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2070>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_15 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isPC;
 		if (L_15)
@@ -15976,7 +16451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_MyChatTextField_m53C1BC12B48DECA
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2007>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2072>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_16 = ___0_chatTField;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_17 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
@@ -15988,7 +16463,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_MyChatTextField_m53C1BC12B48DECA
 
 IL_0066:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2009>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2074>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_19 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 		if (!L_19)
@@ -15997,7 +16472,7 @@ IL_0066:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2011>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2076>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_20 = ___0_chatTField;
 		NullCheck(L_20);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_21 = L_20->___tfChat;
@@ -16007,11 +16482,11 @@ IL_0066:
 
 IL_0078:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2013>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2078>
 		return;
 	}
 }
-// Method Definition Index: 12747
+// Method Definition Index: 12748
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_ChangeGameSpeed_m4AE9A24929C38F82C8EA38537091E533993B6D6E (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, String_t* ___0_strSpeed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16024,11 +16499,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_ChangeGameSpeed_m4AE9A24929C38F8
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2017>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2082>
 		String_t* L_0 = ___0_strSpeed;
 		bool L_1;
 		L_1 = Int32_TryParse_mC928DE2FEC1C35ED5298BDDCA9868076E94B8A21(L_0, (&V_0), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2018>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2083>
 		if (!L_1)
 		{
 			goto IL_0037;
@@ -16049,10 +16524,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_ChangeGameSpeed_m4AE9A24929C38F8
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2020>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2085>
 		int32_t L_4 = V_0;
 		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331(((float)L_4), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2021>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2086>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_5 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		String_t* L_6;
@@ -16066,30 +16541,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_ChangeGameSpeed_m4AE9A24929C38F8
 
 IL_0037:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2025>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2090>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_8 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_8);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_8, _stringLiteralDB232C0B03677237DF4F853979964073DA9F6087, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2027>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2092>
 		return;
 	}
 }
-// Method Definition Index: 12748
+// Method Definition Index: 12749
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_TeleportToPlayer_m5E293993DD06A92A7A1C14EF16E21689151BAF0E (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, int32_t ___0_charID, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2031>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2096>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_0;
 		L_0 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		int32_t L_1 = ___0_charID;
 		NullCheck(L_0);
 		Service_gotoPlayer_m6B76A7816D85DD76D3EC6378C78E86F7514B2AD3(L_0, L_1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2032>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2097>
 		return;
 	}
 }
-// Method Definition Index: 12749
+// Method Definition Index: 12750
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddNotifTichXanh_mE0A602CC181E9A0EB7F3D3F4CFCBC0F635A5DF5C (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, String_t* ___0_notif, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16101,12 +16576,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddNotifTichXanh_mE0A602CC181E9A
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2036>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2101>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = __this->___listNotifTichXanh;
 		String_t* L_1 = ___0_notif;
 		NullCheck(L_0);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_0, L_1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2037>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2102>
 		bool L_2 = __this->___startChat;
 		if (L_2)
 		{
@@ -16114,17 +16589,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddNotifTichXanh_mE0A602CC181E9A
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2039>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2104>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_3 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		V_0 = ((int32_t)(L_3/2));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2040>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2105>
 		__this->___startChat = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2041>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2106>
 		int32_t L_4 = V_0;
 		int32_t L_5 = V_0;
 		__this->___xNotif = ((int32_t)il2cpp_codegen_add(L_4, ((int32_t)(L_5/2))));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2042>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2107>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_6;
 		L_6 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -16133,11 +16608,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddNotifTichXanh_mE0A602CC181E9A
 
 IL_0039:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2044>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2109>
 		return;
 	}
 }
-// Method Definition Index: 12750
+// Method Definition Index: 12751
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintPlayerTichXanh_mDB3897318F23C6DBE531DD5E6D31E9EB1ACC4C05 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16152,7 +16627,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintPlayerTichXanh_mDB3897318F2
 	String_t* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2048>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2113>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = __this->___listNotifTichXanh;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -16163,31 +16638,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintPlayerTichXanh_mDB3897318F2
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2050>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2115>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_2 = __this->___listNotifTichXanh;
 		NullCheck(L_2);
 		RuntimeObject* L_3;
 		L_3 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_2, 0, NULL);
 		V_0 = ((String_t*)CastclassSealed((RuntimeObject*)L_3, String_t_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2051>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2116>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		V_1 = ((int32_t)(L_4/2));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2052>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2117>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_5 = ___0_g;
 		int32_t L_6 = V_1;
 		int32_t L_7 = V_1;
 		int32_t L_8 = V_1;
 		NullCheck(L_5);
 		mGraphics_setClip_m40F6AC445C68B4E10ABA519E1A2EDC421FC39797(L_5, ((int32_t)il2cpp_codegen_subtract(L_6, ((int32_t)(L_7/3)))), ((int32_t)50), ((int32_t)il2cpp_codegen_multiply(((int32_t)(L_8/3)), 2)), ((int32_t)12), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2053>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2118>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_9 = ___0_g;
 		int32_t L_10 = V_1;
 		int32_t L_11 = V_1;
 		int32_t L_12 = V_1;
 		NullCheck(L_9);
 		mGraphics_fillRect_m62A5492ABE6EE41417E1CCAFB0ED8CEE0DF7A893(L_9, ((int32_t)il2cpp_codegen_subtract(L_10, ((int32_t)(L_11/3)))), ((int32_t)50), ((int32_t)il2cpp_codegen_multiply(((int32_t)(L_12/3)), 2)), ((int32_t)12), 0, ((int32_t)60), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2054>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2119>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_13 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_yellow;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_14 = ___0_g;
@@ -16196,7 +16671,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintPlayerTichXanh_mDB3897318F2
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_17 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 		NullCheck(L_13);
 		mFont_drawStringBorder_m6DACD41D30144526679B00DC66D64F69E2539C52(L_13, L_14, L_15, L_16, ((int32_t)50), 0, L_17, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2055>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2120>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_18 = ___0_g;
 		int32_t L_19 = __this->___xNotif;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
@@ -16205,11 +16680,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintPlayerTichXanh_mDB3897318F2
 
 IL_007d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2057>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2122>
 		return;
 	}
 }
-// Method Definition Index: 12751
+// Method Definition Index: 12752
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_UpdateNotifTichXanh_m63584C54A18CF900AE0C7EB1C1682CB4E8A61FDA (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16223,7 +16698,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_UpdateNotifTichXanh_m63584C54A18
 	}
 	String_t* V_0 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2061>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2126>
 		bool L_0 = __this->___startChat;
 		if (!L_0)
 		{
@@ -16243,27 +16718,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_UpdateNotifTichXanh_m63584C54A18
 
 IL_0019:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2063>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2128>
 		return;
 	}
 
 IL_001a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2065>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2130>
 		int32_t L_3 = __this->___xNotif;
 		__this->___xNotif = ((int32_t)il2cpp_codegen_subtract(L_3, 1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2066>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2131>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_4 = __this->___listNotifTichXanh;
 		NullCheck(L_4);
 		RuntimeObject* L_5;
 		L_5 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_4, 0, NULL);
 		V_0 = ((String_t*)CastclassSealed((RuntimeObject*)L_5, String_t_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2067>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2132>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_6;
 		L_6 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		__this->___lastUpdateNotif = L_6;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2068>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2133>
 		int32_t L_7 = __this->___xNotif;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
@@ -16279,15 +16754,15 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2070>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2135>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_12 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		__this->___xNotif = ((int32_t)il2cpp_codegen_add(((int32_t)(L_12/2)), ((int32_t)100)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2071>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2136>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_13 = __this->___listNotifTichXanh;
 		NullCheck(L_13);
 		MyVector_removeElementAt_mBAAE9A96CE172AF34B3FAFAF22E50D5F191E97C5(L_13, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2072>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2137>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_14 = __this->___listNotifTichXanh;
 		NullCheck(L_14);
 		int32_t L_15;
@@ -16298,17 +16773,17 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2074>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2139>
 		__this->___startChat = (bool)0;
 	}
 
 IL_0093:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2077>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2142>
 		return;
 	}
 }
-// Method Definition Index: 12752
+// Method Definition Index: 12753
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetAutoIntrinsic_m8DA6078C87F194D56F79196CF49753BF7B2B0AFA (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, int32_t ___0_param, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16331,7 +16806,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetAutoIntrinsic_m8DA6078C87F194
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2081>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2146>
 		String_t* L_0 = __this->___curSelectIntrinsic;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -16342,7 +16817,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetAutoIntrinsic_m8DA6078C87F194
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2083>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2148>
 		String_t* L_2 = __this->___curSelectIntrinsic;
 		NullCheck(L_2);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3;
@@ -16358,7 +16833,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetAutoIntrinsic_m8DA6078C87F194
 		String_t* L_8 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
 		bool L_9;
 		L_9 = Int32_TryParse_mC928DE2FEC1C35ED5298BDDCA9868076E94B8A21(L_8, (&V_0), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2084>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2149>
 		if (!L_9)
 		{
 			goto IL_00f0;
@@ -16380,10 +16855,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetAutoIntrinsic_m8DA6078C87F194
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2086>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2151>
 		int32_t L_13 = ___0_param;
 		__this->___paramIntrinsic = L_13;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2087>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2152>
 		String_t* L_14 = __this->___curSelectIntrinsic;
 		NullCheck(L_14);
 		bool L_15;
@@ -16394,7 +16869,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetAutoIntrinsic_m8DA6078C87F194
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2089>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2154>
 		String_t* L_16 = __this->___curSelectIntrinsic;
 		NullCheck(L_16);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_17;
@@ -16412,7 +16887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetAutoIntrinsic_m8DA6078C87F194
 
 IL_0084:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2091>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2156>
 		String_t* L_21 = __this->___curSelectIntrinsic;
 		NullCheck(L_21);
 		bool L_22;
@@ -16423,7 +16898,7 @@ IL_0084:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2093>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2158>
 		String_t* L_23 = __this->___curSelectIntrinsic;
 		NullCheck(L_23);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_24;
@@ -16441,23 +16916,23 @@ IL_0084:
 
 IL_00b6:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2097>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2162>
 		__this->___paramIntrinsic = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2098>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2163>
 		__this->___curSelectIntrinsic = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___curSelectIntrinsic), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2099>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2164>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_28 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_28);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_28, _stringLiteralFD59286D660B931C81735BD93EF1DA6D222F1718, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2100>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2165>
 		return;
 	}
 
 IL_00d9:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2102>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2167>
 		ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2* L_29 = (ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2*)il2cpp_codegen_object_new(ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var);
 		ThreadStart__ctor_m35CE51F76358F20E4A0C8F2963C3AE14E5FF7E71(L_29, __this, (intptr_t)((void*)ModFunc_DoAutoIntrinsic_m41BE8DECA89F73D02BDCB1084827C92FBD27CECC_RuntimeMethod_var), NULL);
 		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_30 = (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)il2cpp_codegen_object_new(Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var);
@@ -16469,7 +16944,7 @@ IL_00d9:
 
 IL_00f0:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2106>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2171>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_31 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_31);
@@ -16479,16 +16954,16 @@ IL_00f0:
 
 IL_0101:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2111>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2176>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_32 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_32);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_32, _stringLiteralA104AB3323DE6B93965AC3642792BB8AD83DF696, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2113>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2178>
 		return;
 	}
 }
-// Method Definition Index: 12753
+// Method Definition Index: 12754
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoAutoIntrinsic_m41BE8DECA89F73D02BDCB1084827C92FBD27CECC (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	{
@@ -16497,32 +16972,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoAutoIntrinsic_m41BE8DECA89F73D
 
 IL_0002:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2120>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2185>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_0;
 		L_0 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		NullCheck(L_0);
 		Service_speacialSkill_m785F35AFB9717F034DE4DB90E12A8B955B848E20(L_0, (int8_t)0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2121>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2186>
 		Thread_Sleep_m71DE163765BF465EC4A0163F2ED4D43143094549(((int32_t)500), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2122>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2187>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_1;
 		L_1 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		NullCheck(L_1);
 		Service_confirmMenu_m78FE4E00C650D632FAE4E54C31C84A57EC139AE4(L_1, (int16_t)5, (int8_t)2, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2123>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2188>
 		Thread_Sleep_m71DE163765BF465EC4A0163F2ED4D43143094549(((int32_t)500), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2124>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2189>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_2;
 		L_2 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		NullCheck(L_2);
 		Service_confirmMenu_m78FE4E00C650D632FAE4E54C31C84A57EC139AE4(L_2, (int16_t)5, (int8_t)0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2125>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2190>
 		Thread_Sleep_m71DE163765BF465EC4A0163F2ED4D43143094549(((int32_t)500), NULL);
 	}
 
 IL_0043:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2117>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2182>
 		int32_t L_3 = __this->___paramIntrinsic;
 		if ((!(((uint32_t)L_3) == ((uint32_t)(-1)))))
 		{
@@ -16530,11 +17005,11 @@ IL_0043:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2127>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2192>
 		return;
 	}
 }
-// Method Definition Index: 12754
+// Method Definition Index: 12755
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CheckAutoIntrinsic_m573C62018E7A1D78D2B3F055D1419FC800E30EC2 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, String_t* ___0_info, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16558,7 +17033,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CheckAutoIntrinsic_m573C62018E7A
 	String_t* V_2 = NULL;
 	int32_t V_3 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2131>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2196>
 		String_t* L_0 = ___0_info;
 		NullCheck(L_0);
 		bool L_1;
@@ -16569,12 +17044,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CheckAutoIntrinsic_m573C62018E7A
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2133>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2198>
 		String_t* L_2 = ___0_info;
 		NullCheck(L_2);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3;
 		L_3 = String_Split_m15EB0AE498D606D2ABC49FC5F1EC3E29121F8AFB(L_2, _stringLiteral20E39C3AB7068FAFD9E4B868E16D2E5BC64D4952, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2134>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2199>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = L_3;
 		NullCheck(L_4);
 		int32_t L_5 = 0;
@@ -16583,7 +17058,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CheckAutoIntrinsic_m573C62018E7A
 		String_t* L_7;
 		L_7 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_6, NULL);
 		V_0 = L_7;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2136>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2201>
 		NullCheck(L_4);
 		int32_t L_8 = 1;
 		String_t* L_9 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
@@ -16601,7 +17076,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CheckAutoIntrinsic_m573C62018E7A
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2138>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2203>
 		String_t* L_14 = __this->___curSelectIntrinsic;
 		String_t* L_15 = V_0;
 		bool L_16;
@@ -16620,7 +17095,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CheckAutoIntrinsic_m573C62018E7A
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2140>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2205>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_19 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_20 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
@@ -16647,12 +17122,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CheckAutoIntrinsic_m573C62018E7A
 		L_29 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_28, NULL);
 		NullCheck(L_19);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_19, L_29, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2141>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2206>
 		__this->___paramIntrinsic = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2142>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2207>
 		__this->___curSelectIntrinsic = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___curSelectIntrinsic), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2143>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2208>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_30 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_31 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
@@ -16663,11 +17138,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CheckAutoIntrinsic_m573C62018E7A
 		L_33 = MyVector_size_mF025A05E2021611BFB9E107342658AEB05222BA9(L_32, NULL);
 		NullCheck(L_30);
 		L_30->___menuSelectedItem = ((int32_t)il2cpp_codegen_subtract(L_33, 1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2144>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2209>
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_34 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		NullCheck(L_34);
 		Menu_performSelect_m71CAE7671FDB5371496130A6DE3D4CE83783C823(L_34, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2145>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2210>
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_35 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		NullCheck(L_35);
 		Menu_doCloseMenu_mDF2F074B6CA23C86EE851DD2BB0E0D2A779D7EE4(L_35, NULL);
@@ -16676,7 +17151,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_CheckAutoIntrinsic_m573C62018E7A
 
 IL_00e4:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2149>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2214>
 		String_t* L_36 = ___0_info;
 		NullCheck(L_36);
 		bool L_37;
@@ -16687,12 +17162,12 @@ IL_00e4:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2151>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2216>
 		String_t* L_38 = ___0_info;
 		NullCheck(L_38);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_39;
 		L_39 = String_Split_m15EB0AE498D606D2ABC49FC5F1EC3E29121F8AFB(L_38, _stringLiteral1BD410B0F180CD7A1A46C5C681C554D171971E01, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2152>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2217>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_40 = L_39;
 		NullCheck(L_40);
 		int32_t L_41 = 0;
@@ -16701,7 +17176,7 @@ IL_00e4:
 		String_t* L_43;
 		L_43 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_42, NULL);
 		V_2 = L_43;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2154>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2219>
 		NullCheck(L_40);
 		int32_t L_44 = 1;
 		String_t* L_45 = (L_40)->GetAt(static_cast<il2cpp_array_size_t>(L_44));
@@ -16719,7 +17194,7 @@ IL_00e4:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2156>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2221>
 		String_t* L_50 = __this->___curSelectIntrinsic;
 		String_t* L_51 = V_2;
 		bool L_52;
@@ -16738,7 +17213,7 @@ IL_00e4:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2158>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2223>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_55 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_56 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
@@ -16765,12 +17240,12 @@ IL_00e4:
 		L_65 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_64, NULL);
 		NullCheck(L_55);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_55, L_65, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2159>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2224>
 		__this->___paramIntrinsic = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2160>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2225>
 		__this->___curSelectIntrinsic = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___curSelectIntrinsic), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2161>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2226>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_66 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_67 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
@@ -16781,11 +17256,11 @@ IL_00e4:
 		L_69 = MyVector_size_mF025A05E2021611BFB9E107342658AEB05222BA9(L_68, NULL);
 		NullCheck(L_66);
 		L_66->___menuSelectedItem = ((int32_t)il2cpp_codegen_subtract(L_69, 1));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2162>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2227>
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_70 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		NullCheck(L_70);
 		Menu_performSelect_m71CAE7671FDB5371496130A6DE3D4CE83783C823(L_70, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2163>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2228>
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_71 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		NullCheck(L_71);
 		Menu_doCloseMenu_mDF2F074B6CA23C86EE851DD2BB0E0D2A779D7EE4(L_71, NULL);
@@ -16794,12 +17269,12 @@ IL_00e4:
 
 IL_01c8:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2169>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2234>
 		__this->___paramIntrinsic = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2170>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2235>
 		__this->___curSelectIntrinsic = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___curSelectIntrinsic), (void*)_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2171>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2236>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_72 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		NullCheck(L_72);
@@ -16808,11 +17283,11 @@ IL_01c8:
 
 IL_01e4:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2173>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2238>
 		return;
 	}
 }
-// Method Definition Index: 12755
+// Method Definition Index: 12756
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetIncreasePoint_m4391488753CA9E115CCBAA2B4DBD8185A622916E (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, String_t* ___0_strPoint, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16830,11 +17305,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetIncreasePoint_m4391488753CA9E
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2177>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2242>
 		String_t* L_0 = ___0_strPoint;
 		bool L_1;
 		L_1 = Int32_TryParse_mC928DE2FEC1C35ED5298BDDCA9868076E94B8A21(L_0, (&V_0), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2178>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2243>
 		if (!L_1)
 		{
 			goto IL_005f;
@@ -16856,18 +17331,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetIncreasePoint_m4391488753CA9E
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2180>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2245>
 		int32_t L_4 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___pointIncrease = L_4;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2181>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2246>
 		ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2* L_5 = (ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2*)il2cpp_codegen_object_new(ThreadStart_t7662D98F1793EDE90192D7304D1C3C44119328A2_il2cpp_TypeInfo_var);
 		ThreadStart__ctor_m35CE51F76358F20E4A0C8F2963C3AE14E5FF7E71(L_5, __this, (intptr_t)((void*)ModFunc_DoAutoIncreasePoint_m00548D28FAC30FE605C67D10D32895146C684B0C_RuntimeMethod_var), NULL);
 		Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* L_6 = (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F*)il2cpp_codegen_object_new(Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F_il2cpp_TypeInfo_var);
 		Thread__ctor_m1FA23A179DF4F5B659689D6FA40DE903086212E2(L_6, L_5, NULL);
 		NullCheck(L_6);
 		Thread_Start_m2230799AA331CA9ACEF49D5500281D0C1A9F72FA(L_6, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2182>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2247>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_7 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strPointTypes;
@@ -16886,16 +17361,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetIncreasePoint_m4391488753CA9E
 
 IL_005f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2187>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2252>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_14 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_14);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_14, _stringLiteralB3774709F3C1DCFAD25C2998452B3EC93599432D, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2189>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2254>
 		return;
 	}
 }
-// Method Definition Index: 12756
+// Method Definition Index: 12757
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoAutoIncreasePoint_m00548D28FAC30FE605C67D10D32895146C684B0C (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16917,7 +17392,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoAutoIncreasePoint_m00548D28FAC
 
 IL_0005:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2195>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2260>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___autoPointForPet;
 		if (L_0)
@@ -16944,15 +17419,15 @@ IL_0013:
 IL_0018:
 	{
 		V_0 = G_B4_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2196>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2197>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2198>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2199>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2200>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2201>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2202>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2203>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2204>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2261>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2262>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2263>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2264>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2265>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2266>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2267>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2268>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2269>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		int32_t L_3 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___indexAutoPoint;
 		V_2 = L_3;
@@ -16987,7 +17462,7 @@ IL_0018:
 
 IL_003b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2198>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2263>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_5 = V_0;
 		NullCheck(L_5);
 		int64_t L_6 = L_5->___cHPGoc;
@@ -16997,7 +17472,7 @@ IL_003b:
 
 IL_0044:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2199>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2264>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_7 = V_0;
 		NullCheck(L_7);
 		int64_t L_8 = L_7->___cMPGoc;
@@ -17007,7 +17482,7 @@ IL_0044:
 
 IL_004d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2200>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2265>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_9 = V_0;
 		NullCheck(L_9);
 		int64_t L_10 = L_9->___cDamGoc;
@@ -17017,7 +17492,7 @@ IL_004d:
 
 IL_0056:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2201>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2266>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_11 = V_0;
 		NullCheck(L_11);
 		int32_t L_12 = L_11->___cDefGoc;
@@ -17027,7 +17502,7 @@ IL_0056:
 
 IL_0060:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2202>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2267>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_13 = V_0;
 		NullCheck(L_13);
 		int32_t L_14 = L_13->___cCriticalGoc;
@@ -17037,14 +17512,14 @@ IL_0060:
 
 IL_006a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2203>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2268>
 		V_1 = ((int64_t)0);
 	}
 
 IL_006d:
 	{
 		int64_t L_15 = V_1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2205>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2270>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		int32_t L_16 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___pointIncrease;
 		if ((((int64_t)L_15) < ((int64_t)((int64_t)L_16))))
@@ -17053,23 +17528,23 @@ IL_006d:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2207>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2272>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___indexAutoPoint = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2208>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2273>
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___pointIncrease = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2209>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2274>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_17 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_17);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_17, _stringLiteral7DA974BBFBBCB30ABC57DC4AABE220EBD345ECBD, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2210>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2275>
 		return;
 	}
 
 IL_0093:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2212>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2277>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_18;
 		L_18 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
@@ -17077,13 +17552,13 @@ IL_0093:
 		int32_t L_20 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___indexAutoPoint;
 		NullCheck(L_18);
 		Service_upPotential_m6A6EED4E9C50CCCF391B645F8F8F4AFBD6FCC9F6(L_18, L_19, L_20, ((int32_t)100), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2213>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2278>
 		Thread_Sleep_m71DE163765BF465EC4A0163F2ED4D43143094549(((int32_t)500), NULL);
 	}
 
 IL_00b3:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2193>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2258>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		int32_t L_21 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___indexAutoPoint;
 		if ((((int32_t)L_21) == ((int32_t)(-1))))
@@ -17102,11 +17577,11 @@ IL_00b3:
 
 IL_00c6:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2215>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2280>
 		return;
 	}
 }
-// Method Definition Index: 12757
+// Method Definition Index: 12758
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LoadAcc_mD2DCC6987370789AB0CC8829B0062227FEF7380E (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17133,11 +17608,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LoadAcc_mD2DCC6987370789AB0CC882
 	Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* V_5 = NULL;
 	Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* V_6 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2219>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2284>
 		String_t* L_0;
 		L_0 = Rms_loadRMSString_m0458A147654E191A49B2C1D9CDBCCE38636ED187(_stringLiteralC2DE8210AB1350CC66EFBF6C0DA197FA70AF871E, NULL);
 		V_0 = L_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2220>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2285>
 		String_t* L_1 = V_0;
 		if (!L_1)
 		{
@@ -17160,26 +17635,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LoadAcc_mD2DCC6987370789AB0CC882
 
 IL_0022:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2220>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2285>
 		return;
 	}
 
 IL_0023:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2222>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2287>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_6 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
 		NullCheck(L_6);
 		List_1_Clear_m14F35C288725923A555E70F9689384B11E0211CA_inline(L_6, List_1_Clear_m14F35C288725923A555E70F9689384B11E0211CA_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2223>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2288>
 		List_1_t8337980368BFC9B09A91E682F7CC78117A3E3D1E* L_7 = __this->___cmdsChooseAcc;
 		NullCheck(L_7);
 		List_1_Clear_m43ADF5590C496FA0DE525EFB724DA5DA8B9F9B75_inline(L_7, List_1_Clear_m43ADF5590C496FA0DE525EFB724DA5DA8B9F9B75_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2224>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2289>
 		List_1_t8337980368BFC9B09A91E682F7CC78117A3E3D1E* L_8 = __this->___cmdsDelAcc;
 		NullCheck(L_8);
 		List_1_Clear_m43ADF5590C496FA0DE525EFB724DA5DA8B9F9B75_inline(L_8, List_1_Clear_m43ADF5590C496FA0DE525EFB724DA5DA8B9F9B75_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2226>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2291>
 		String_t* L_9 = V_0;
 		NullCheck(L_9);
 		String_t* L_10;
@@ -17188,14 +17663,14 @@ IL_0023:
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11;
 		L_11 = String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4(L_10, ((int32_t)124), 0, NULL);
 		V_1 = L_11;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2227>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2292>
 		V_2 = 0;
 		goto IL_00d7;
 	}
 
 IL_0058:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2229>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2294>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_12 = V_1;
 		int32_t L_13 = V_2;
 		NullCheck(L_12);
@@ -17205,7 +17680,7 @@ IL_0058:
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_16;
 		L_16 = String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4(L_15, ((int32_t)36), 0, NULL);
 		V_3 = L_16;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2231>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2296>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_17 = V_3;
 		NullCheck(L_17);
 		int32_t L_18 = 0;
@@ -17215,13 +17690,13 @@ IL_0058:
 		int32_t L_21 = 1;
 		String_t* L_22 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_21));
 		Account__ctor_mE9F7EB5DD348B4FCC26A70F042C752A77820F3A2((&V_4), L_19, L_22, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2232>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2297>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_23 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
 		Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 L_24 = V_4;
 		NullCheck(L_23);
 		List_1_Add_m9E6E3732E686CE0CE6551FB12C6ACF603CA8DB85_inline(L_23, L_24, List_1_Add_m9E6E3732E686CE0CE6551FB12C6ACF603CA8DB85_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2234>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2299>
 		String_t* L_25;
 		L_25 = Account_getUsername_mFE66E47C7863EDBE45431918B074E7D96AA6FDDB_inline((&V_4), NULL);
 		Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 L_26 = V_4;
@@ -17230,39 +17705,39 @@ IL_0058:
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_29 = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)il2cpp_codegen_object_new(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1_il2cpp_TypeInfo_var);
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_29, L_25, __this, ((int32_t)102), L_28, NULL);
 		V_5 = L_29;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2235>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2300>
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_30 = V_5;
 		NullCheck(L_30);
 		Command_setType_m9DA724F6F27B9E1A9880B77E1FD27A9372320013(L_30, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2236>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2301>
 		List_1_t8337980368BFC9B09A91E682F7CC78117A3E3D1E* L_31 = __this->___cmdsChooseAcc;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_32 = V_5;
 		NullCheck(L_31);
 		List_1_Add_mCBF9E1BC2F1310151B091495A073BDA5D434E8C1_inline(L_31, L_32, List_1_Add_mCBF9E1BC2F1310151B091495A073BDA5D434E8C1_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2238>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2303>
 		Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 L_33 = V_4;
 		Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 L_34 = L_33;
 		RuntimeObject* L_35 = Box(Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4_il2cpp_TypeInfo_var, &L_34);
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_36 = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)il2cpp_codegen_object_new(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1_il2cpp_TypeInfo_var);
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_36, _stringLiteral46C2A25E65CDD4212D18123D3843744DADAD9475, __this, ((int32_t)103), L_35, NULL);
 		V_6 = L_36;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2239>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2304>
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_37 = V_6;
 		NullCheck(L_37);
 		Command_setTypeDelete_mE9152D8913D3BCFA9218FDD1F1176BED72409F52(L_37, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2240>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2305>
 		List_1_t8337980368BFC9B09A91E682F7CC78117A3E3D1E* L_38 = __this->___cmdsDelAcc;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_39 = V_6;
 		NullCheck(L_38);
 		List_1_Add_mCBF9E1BC2F1310151B091495A073BDA5D434E8C1_inline(L_38, L_39, List_1_Add_mCBF9E1BC2F1310151B091495A073BDA5D434E8C1_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2227>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2292>
 		int32_t L_40 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_40, 1));
 	}
 
 IL_00d7:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2227>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2292>
 		int32_t L_41 = V_2;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_42 = V_1;
 		NullCheck(L_42);
@@ -17272,11 +17747,11 @@ IL_00d7:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2242>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2307>
 		return;
 	}
 }
-// Method Definition Index: 12758
+// Method Definition Index: 12759
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddAccount_m6CAA86A4A24FEE3DC504C8C4CA2C1FE2F4969F9B (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, String_t* ___0_user, String_t* ___1_pass, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17294,11 +17769,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddAccount_m6CAA86A4A24FEE3DC504
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2246>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2311>
 		String_t* L_0 = ___0_user;
 		String_t* L_1 = ___1_pass;
 		Account__ctor_mE9F7EB5DD348B4FCC26A70F042C752A77820F3A2((&V_0), L_0, L_1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2248>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2313>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_2 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
 		Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 L_3 = V_0;
@@ -17306,7 +17781,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddAccount_m6CAA86A4A24FEE3DC504
 		int32_t L_4;
 		L_4 = List_1_IndexOf_m2C1EF98BFC8E7012F55DECA4C3EB350E727F4582(L_2, L_3, List_1_IndexOf_m2C1EF98BFC8E7012F55DECA4C3EB350E727F4582_RuntimeMethod_var);
 		V_1 = L_4;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2249>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2314>
 		int32_t L_5 = V_1;
 		if ((((int32_t)L_5) == ((int32_t)(-1))))
 		{
@@ -17314,7 +17789,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddAccount_m6CAA86A4A24FEE3DC504
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2251>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2316>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_6 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
 		int32_t L_7 = V_1;
@@ -17324,33 +17799,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AddAccount_m6CAA86A4A24FEE3DC504
 
 IL_0024:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2253>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2318>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_8 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
 		Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 L_9 = V_0;
 		NullCheck(L_8);
 		List_1_Insert_mFEACD13E8D91547E819BF4C158D7CA3AC39595C2(L_8, 0, L_9, List_1_Insert_mFEACD13E8D91547E819BF4C158D7CA3AC39595C2_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2255>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2320>
 		V_2 = 5;
 		goto IL_0043;
 	}
 
 IL_0034:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2257>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2322>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_10 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
 		int32_t L_11 = V_2;
 		NullCheck(L_10);
 		List_1_RemoveAt_mB3195B0D4338FD1D05A148ADF7485D0074F12439(L_10, L_11, List_1_RemoveAt_mB3195B0D4338FD1D05A148ADF7485D0074F12439_RuntimeMethod_var);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2255>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2320>
 		int32_t L_12 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_12, 1));
 	}
 
 IL_0043:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2255>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2320>
 		int32_t L_13 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_14 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
@@ -17363,13 +17838,13 @@ IL_0043:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2259>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2324>
 		ModFunc_SaveAcc_mBCC20298D9B1D0BA226BA4F6638D6DD4C1AC1246(__this, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2260>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2325>
 		return;
 	}
 }
-// Method Definition Index: 12759
+// Method Definition Index: 12760
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SaveAcc_mBCC20298D9B1D0BA226BA4F6638D6DD4C1AC1246 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17392,9 +17867,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SaveAcc_mBCC20298D9B1D0BA226BA4F
 	Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2264>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2329>
 		V_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2265>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2330>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		List_1_t723435D1B08108CBF9B00CD415ACCC22F6CA4051* L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___accounts;
 		NullCheck(L_0);
@@ -17420,11 +17895,11 @@ FINALLY_005a:
 
 IL_0013_1:
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2265>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2330>
 				Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4 L_2;
 				L_2 = Enumerator_get_Current_m7C71F3D09A79761BF6504CB599B65E7902E18749_inline((&V_1), Enumerator_get_Current_m7C71F3D09A79761BF6504CB599B65E7902E18749_RuntimeMethod_var);
 				V_2 = L_2;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2267>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2332>
 				String_t* L_3 = V_0;
 				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)2);
 				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = L_4;
@@ -17442,7 +17917,7 @@ IL_0013_1:
 				String_t* L_10;
 				L_10 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_3, L_9, NULL);
 				V_0 = L_10;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2268>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2333>
 				String_t* L_11 = V_0;
 				String_t* L_12;
 				L_12 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_11, _stringLiteralA42779B09629BCE81B76EF626A57A0B40F2AD827, NULL);
@@ -17451,7 +17926,7 @@ IL_0013_1:
 
 IL_004f_1:
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2265>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2330>
 				bool L_13;
 				L_13 = Enumerator_MoveNext_m3DC9BB762661144543FB2410B63CAFD2A372DC61((&V_1), Enumerator_MoveNext_m3DC9BB762661144543FB2410B63CAFD2A372DC61_RuntimeMethod_var);
 				if (L_13)
@@ -17471,17 +17946,17 @@ IL_004f_1:
 
 IL_0068:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2270>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2335>
 		String_t* L_14 = V_0;
 		NullCheck(L_14);
 		String_t* L_15;
 		L_15 = String_Trim_mF5081365E55C31B636F8145F42AEF61868175A5A(L_14, ((int32_t)124), NULL);
 		Rms_saveRMSString_m5CC2A73B0F9A79E8FB75301D183725DE3A880C7A(_stringLiteralC2DE8210AB1350CC66EFBF6C0DA197FA70AF871E, L_15, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2271>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2336>
 		return;
 	}
 }
-// Method Definition Index: 12760
+// Method Definition Index: 12761
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoChat_mA8DA9DAAB1BAF4E212DA861A0B46BF5065A9693A (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17493,7 +17968,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoChat_mA8DA9DAAB1BAF4E212DA86
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2288>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2353>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		String_t* L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___textAutoChat;
 		bool L_1;
@@ -17504,7 +17979,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoChat_mA8DA9DAAB1BAF4E212DA86
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2290>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2355>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_2 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_2);
@@ -17514,18 +17989,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoChat_mA8DA9DAAB1BAF4E212DA86
 
 IL_001d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2294>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2359>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_3;
 		L_3 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		String_t* L_4 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___textAutoChat;
 		NullCheck(L_3);
 		Service_chat_m4686CB63DF092E51F66AF120DC128298323D777D(L_3, L_4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2296>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2361>
 		return;
 	}
 }
-// Method Definition Index: 12761
+// Method Definition Index: 12762
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoChatTG_m4E02184190131D09A99CC64E6CD25A09292307CA (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17537,7 +18012,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoChatTG_m4E02184190131D09A99C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2300>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2365>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		String_t* L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___textAutoChatTG;
 		bool L_1;
@@ -17548,7 +18023,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoChatTG_m4E02184190131D09A99C
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2302>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2367>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_2 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_2);
@@ -17558,18 +18033,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_AutoChatTG_m4E02184190131D09A99C
 
 IL_001d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2306>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2371>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_3;
 		L_3 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		String_t* L_4 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___textAutoChatTG;
 		NullCheck(L_3);
 		Service_chatGlobal_mDF3C1613737D997D4F2B056C25A2DA31822C7ECA(L_3, L_4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2308>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2373>
 		return;
 	}
 }
-// Method Definition Index: 12762
+// Method Definition Index: 12763
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_EncodeStringToByteArrayString_mAF8A87F944BEA85FCF63FDDD0716FE4F11395ED1 (String_t* ___0_inputString, String_t* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17582,20 +18057,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_EncodeStringToByteArrayStri
 	}
 	String_t* V_0 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2312>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2377>
 		String_t* L_0 = ___0_inputString;
 		String_t* L_1 = ___1_key;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2;
 		L_2 = ModFunc_EncodeToBytes_m72B5CA273F12266704794780414A295A60DCD81B(L_0, L_1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2313>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2378>
 		String_t* L_3;
 		L_3 = BitConverter_ToString_m5F1B0DD98D477249671A51379388B4A09B35B420(L_2, NULL);
 		NullCheck(L_3);
 		String_t* L_4;
 		L_4 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_3, _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
 		V_0 = L_4;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2315>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2380>
 		String_t* L_5 = V_0;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6;
 		L_6 = ModFunc_SplitByLength_mFFDF01CC0DC71BD8437FC61A6AFD54715E7B948A(L_5, 2, NULL);
@@ -17604,7 +18079,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_EncodeStringToByteArrayStri
 		return L_7;
 	}
 }
-// Method Definition Index: 12763
+// Method Definition Index: 12764
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ModFunc_EncodeToBytes_m72B5CA273F12266704794780414A295A60DCD81B (String_t* ___0_inputString, String_t* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17618,7 +18093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_2 = NULL;
 	int32_t V_3 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2320>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2385>
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_0;
 		L_0 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		String_t* L_1 = ___0_inputString;
@@ -17626,7 +18101,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2;
 		L_2 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17, L_0, L_1);
 		V_0 = L_2;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2321>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2386>
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_3;
 		L_3 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		String_t* L_4 = ___1_key;
@@ -17634,19 +18109,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5;
 		L_5 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17, L_3, L_4);
 		V_1 = L_5;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2322>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2387>
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = V_0;
 		NullCheck(L_6);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)(((RuntimeArray*)L_6)->max_length)));
 		V_2 = L_7;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2324>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2389>
 		V_3 = 0;
 		goto IL_0038;
 	}
 
 IL_0025:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2326>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2391>
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8 = V_2;
 		int32_t L_9 = V_3;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_10 = V_0;
@@ -17663,14 +18138,14 @@ IL_0025:
 		uint8_t L_18 = (L_14)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
 		NullCheck(L_8);
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(L_9), (uint8_t)((int32_t)(uint8_t)((int32_t)((int32_t)L_13^(int32_t)L_18))));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2324>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2389>
 		int32_t L_19 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_19, 1));
 	}
 
 IL_0038:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2324>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2389>
 		int32_t L_20 = V_3;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_21 = V_0;
 		NullCheck(L_21);
@@ -17680,12 +18155,12 @@ IL_0038:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2329>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2394>
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_22 = V_2;
 		return L_22;
 	}
 }
-// Method Definition Index: 12764
+// Method Definition Index: 12765
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ModFunc_SplitByLength_mFFDF01CC0DC71BD8437FC61A6AFD54715E7B948A (String_t* ___0_str, int32_t ___1_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17701,40 +18176,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 	int32_t V_4 = 0;
 	int32_t V_5 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2334>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2399>
 		String_t* L_0 = ___0_str;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2335>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2400>
 		int32_t L_2 = V_0;
 		int32_t L_3 = ___1_length;
 		int32_t L_4 = ___1_length;
 		V_1 = ((int32_t)(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_2, L_3)), 1))/L_4));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2336>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2401>
 		int32_t L_5 = V_1;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)L_5);
 		V_2 = L_6;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2338>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2403>
 		V_3 = 0;
 		goto IL_003c;
 	}
 
 IL_001a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2340>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2405>
 		int32_t L_7 = V_3;
 		int32_t L_8 = ___1_length;
 		V_4 = ((int32_t)il2cpp_codegen_multiply(L_7, L_8));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2341>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2406>
 		int32_t L_9 = ___1_length;
 		int32_t L_10 = V_0;
 		int32_t L_11 = V_4;
 		int32_t L_12;
 		L_12 = Math_min_m018759DE478C64F1D2FF6B688038608C55636A3B(L_9, ((int32_t)il2cpp_codegen_subtract(L_10, L_11)), NULL);
 		V_5 = L_12;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2342>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2407>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_13 = V_2;
 		int32_t L_14 = V_3;
 		String_t* L_15 = ___0_str;
@@ -17745,14 +18220,14 @@ IL_001a:
 		L_18 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_15, L_16, L_17, NULL);
 		NullCheck(L_13);
 		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(L_14), (String_t*)L_18);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2338>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2403>
 		int32_t L_19 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_19, 1));
 	}
 
 IL_003c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2338>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2403>
 		int32_t L_20 = V_3;
 		int32_t L_21 = V_1;
 		if ((((int32_t)L_20) < ((int32_t)L_21)))
@@ -17761,12 +18236,12 @@ IL_003c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2345>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2410>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = V_2;
 		return L_22;
 	}
 }
-// Method Definition Index: 12765
+// Method Definition Index: 12766
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_DecodeByteArrayString_m440A3366A108FCB5463F246B16B4512E54D21FD3 (String_t* ___0_byteArrayString, String_t* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17787,32 +18262,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_DecodeByteArrayString_m440A
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2353>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2418>
 			String_t* L_0 = ___0_byteArrayString;
 			NullCheck(L_0);
 			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1;
 			L_1 = String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4(L_0, ((int32_t)45), 0, NULL);
 			V_0 = L_1;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2354>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2419>
 			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = V_0;
 			String_t* L_3;
 			L_3 = String_Join_m557B6B554B87C1742FA0B128500073B421ED0BFD(_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, L_2, NULL);
 			V_1 = L_3;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2355>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2420>
 			String_t* L_4 = V_1;
 			NullCheck(L_4);
 			int32_t L_5;
 			L_5 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_4, NULL);
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)(L_5/2)));
 			V_2 = L_6;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2357>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2422>
 			V_3 = 0;
 			goto IL_0040_1;
 		}
 
 IL_0028_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2359>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2424>
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = V_2;
 			int32_t L_8 = V_3;
 			String_t* L_9 = V_1;
@@ -17825,14 +18300,14 @@ IL_0028_1:
 			L_12 = Convert_ToByte_mC835E3C6004C07A7828640861C7E57DF6F42D0E9(L_11, ((int32_t)16), NULL);
 			NullCheck(L_7);
 			(L_7)->SetAt(static_cast<il2cpp_array_size_t>(L_8), (uint8_t)L_12);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2357>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2422>
 			int32_t L_13 = V_3;
 			V_3 = ((int32_t)il2cpp_codegen_add(L_13, 1));
 		}
 
 IL_0040_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2357>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2422>
 			int32_t L_14 = V_3;
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15 = V_2;
 			NullCheck(L_15);
@@ -17842,13 +18317,13 @@ IL_0040_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2362>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2427>
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_16 = V_2;
 			String_t* L_17 = ___1_key;
 			il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 			String_t* L_18;
 			L_18 = ModFunc_DecodeToString_m0DFF11817D68A9B936ADA64D4E09DB01621548B3(L_16, L_17, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2363>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2428>
 			V_4 = L_18;
 			goto IL_005b;
 		}
@@ -17866,8 +18341,8 @@ IL_0040_1:
 CATCH_0051:
 	{
 		Exception_t* L_19 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2365>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2367>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2430>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2432>
 		String_t* L_20 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&String_t_il2cpp_TypeInfo_var))))->___Empty;
 		V_4 = L_20;
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
@@ -17876,12 +18351,12 @@ CATCH_0051:
 
 IL_005b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2369>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2434>
 		String_t* L_21 = V_4;
 		return L_21;
 	}
 }
-// Method Definition Index: 12766
+// Method Definition Index: 12767
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_DecodeToString_m0DFF11817D68A9B936ADA64D4E09DB01621548B3 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_encodedBytes, String_t* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17894,7 +18369,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_DecodeToString_m0DFF11817D6
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_1 = NULL;
 	int32_t V_2 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2373>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2438>
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_0;
 		L_0 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		String_t* L_1 = ___1_key;
@@ -17902,19 +18377,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_DecodeToString_m0DFF11817D6
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2;
 		L_2 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17, L_0, L_1);
 		V_0 = L_2;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2374>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2439>
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___0_encodedBytes;
 		NullCheck(L_3);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)(((RuntimeArray*)L_3)->max_length)));
 		V_1 = L_4;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2376>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2441>
 		V_2 = 0;
 		goto IL_002c;
 	}
 
 IL_0019:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2378>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2443>
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = V_1;
 		int32_t L_6 = V_2;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = ___0_encodedBytes;
@@ -17931,14 +18406,14 @@ IL_0019:
 		uint8_t L_15 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
 		NullCheck(L_5);
 		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(L_6), (uint8_t)((int32_t)(uint8_t)((int32_t)((int32_t)L_10^(int32_t)L_15))));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2376>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2441>
 		int32_t L_16 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_16, 1));
 	}
 
 IL_002c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2376>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2441>
 		int32_t L_17 = V_2;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18 = ___0_encodedBytes;
 		NullCheck(L_18);
@@ -17948,7 +18423,7 @@ IL_002c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2381>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2446>
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_19;
 		L_19 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_20 = V_1;
@@ -17958,7 +18433,7 @@ IL_002c:
 		return L_21;
 	}
 }
-// Method Definition Index: 12767
+// Method Definition Index: 12768
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Log_m0661A71F9A626B3DE2A116BE64FD773B5A941DB4 (String_t* ___0_text, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17969,7 +18444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Log_m0661A71F9A626B3DE2A116BE64F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2386>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2451>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isDebugEnable;
 		if (L_0)
@@ -17978,21 +18453,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_Log_m0661A71F9A626B3DE2A116BE64F
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2388>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2453>
 		return;
 	}
 
 IL_0008:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2390>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2455>
 		String_t* L_1 = ___0_text;
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2391>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2456>
 		return;
 	}
 }
-// Method Definition Index: 12768
+// Method Definition Index: 12769
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LogSlow_m5072B1E696D673ED551AF713F383EB387A86B69F (String_t* ___0_text, int64_t ___1_millis, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18004,7 +18479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LogSlow_m5072B1E696D673ED551AF71
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2395>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2460>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isDebugEnable;
 		if (L_0)
@@ -18013,13 +18488,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LogSlow_m5072B1E696D673ED551AF71
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2397>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2462>
 		return;
 	}
 
 IL_0008:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2399>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2464>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_1;
 		L_1 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -18032,13 +18507,13 @@ IL_0008:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2401>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2466>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_4;
 		L_4 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___lastTimeLog = L_4;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2402>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2467>
 		String_t* L_5 = ___0_text;
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_5, NULL);
@@ -18046,11 +18521,11 @@ IL_0008:
 
 IL_0026:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2404>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2469>
 		return;
 	}
 }
-// Method Definition Index: 12769
+// Method Definition Index: 12770
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_WriteLog_m9EE254A52B28935A668FE8ED9E5C0052BDED3307 (String_t* ___0_message, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18071,7 +18546,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_WriteLog_m9EE254A52B28935A668FE8
 	memset((&V_0), 0, sizeof(V_0));
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2408>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2473>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isDebugEnable;
 		if (L_0)
@@ -18080,7 +18555,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_WriteLog_m9EE254A52B28935A668FE8
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2410>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2475>
 		return;
 	}
 
@@ -18089,7 +18564,7 @@ IL_0008:
 	}
 	try
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2414>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2479>
 		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_1;
 		L_1 = DateTime_get_Today_m35DCF7D5049604AC424A99B7B225BDD067D0D22A(NULL);
@@ -18098,13 +18573,13 @@ IL_0008:
 		L_2 = DateTime_ToString_m6963A84785C320DA776C9FCFFEDAF26C8F1A8D78((&V_0), _stringLiteral381B7C83B74E5866B084D94F2F697986A6FD36A8, NULL);
 		String_t* L_3;
 		L_3 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral50DDE308AADB2A69E2E33757F8E01345887FC1A6, L_2, _stringLiteral6D2D60FB81DB361B60B9512761B3ED9FF250BB96, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2416>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2481>
 		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_4 = (FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8*)il2cpp_codegen_object_new(FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_il2cpp_TypeInfo_var);
 		FileStream__ctor_m78499F9BE2BE31DA34F123B4399AA457716BD6E6(L_4, L_3, 4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2418>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2483>
 		StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* L_5 = (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4*)il2cpp_codegen_object_new(StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4_il2cpp_TypeInfo_var);
 		StreamWriter__ctor_m54CE9C47ED974C0589400DA9BC2AB3F7F481595B(L_5, L_4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2419>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2484>
 		StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* L_6 = L_5;
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_7;
 		L_7 = DateTime_get_Today_m35DCF7D5049604AC424A99B7B225BDD067D0D22A(NULL);
@@ -18116,14 +18591,14 @@ IL_0008:
 		L_10 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_8, _stringLiteral1168E92C164109D6220480DEDA987085B2A21155, L_9, NULL);
 		NullCheck(L_6);
 		VirtualActionInvoker1< String_t* >::Invoke(16, L_6, L_10);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2420>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2485>
 		StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* L_11 = L_6;
 		NullCheck(L_11);
 		VirtualActionInvoker0::Invoke(10, L_11);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2421>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2486>
 		NullCheck(L_11);
 		VirtualActionInvoker0::Invoke(8, L_11);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2422>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2487>
 		goto IL_0071;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -18139,24 +18614,24 @@ IL_0008:
 CATCH_0065:
 	{
 		Exception_t* L_12 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2425>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2490>
 		NullCheck(L_12);
 		String_t* L_13;
 		L_13 = VirtualFuncInvoker0< String_t* >::Invoke(5, L_12);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var)));
 		ModFunc_Log_m0661A71F9A626B3DE2A116BE64FD773B5A941DB4(L_13, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2426>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2491>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0071;
 	}
 
 IL_0071:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2427>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2492>
 		return;
 	}
 }
-// Method Definition Index: 12770
+// Method Definition Index: 12771
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LoadSkillToScreen_m25261E97590FC2F46865772B35C2DB61074E8BD4 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18174,14 +18649,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LoadSkillToScreen_m25261E97590FC
 	int32_t V_2 = 0;
 	int32_t V_3 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2431>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2496>
 		V_0 = 0;
 		goto IL_009d;
 	}
 
 IL_0007:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2433>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2498>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18192,7 +18667,7 @@ IL_0007:
 		RuntimeObject* L_3;
 		L_3 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_1, L_2, NULL);
 		V_1 = ((Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)CastclassClass((RuntimeObject*)L_3, Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2435>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2500>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 		if (!L_4)
@@ -18209,14 +18684,14 @@ IL_0007:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2437>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2502>
 		V_2 = 0;
 		goto IL_0045;
 	}
 
 IL_002f:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2439>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2504>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_6 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___onScreenSkill;
 		int32_t L_7 = V_2;
@@ -18230,7 +18705,7 @@ IL_002f:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2441>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2506>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_11 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___onScreenSkill;
 		int32_t L_12 = V_2;
@@ -18241,14 +18716,14 @@ IL_002f:
 
 IL_0041:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2437>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2502>
 		int32_t L_13 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_13, 1));
 	}
 
 IL_0045:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2437>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2502>
 		int32_t L_14 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_15 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___onScreenSkill;
@@ -18259,7 +18734,7 @@ IL_0045:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2444>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2509>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_16 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___onScreenSkill;
 		int32_t L_17 = V_0;
@@ -18267,7 +18742,7 @@ IL_0045:
 		NullCheck(L_16);
 		ArrayElementTypeCheck (L_16, L_18);
 		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(L_17), (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_18);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2445>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2510>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_19;
 		L_19 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_19);
@@ -18277,14 +18752,14 @@ IL_0045:
 
 IL_0063:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2449>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2514>
 		V_3 = 0;
 		goto IL_007d;
 	}
 
 IL_0067:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2451>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2516>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_20 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___keySkill;
 		int32_t L_21 = V_3;
@@ -18298,7 +18773,7 @@ IL_0067:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2453>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2518>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_25 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___keySkill;
 		int32_t L_26 = V_3;
@@ -18309,14 +18784,14 @@ IL_0067:
 
 IL_0079:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2449>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2514>
 		int32_t L_27 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_27, 1));
 	}
 
 IL_007d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2449>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2514>
 		int32_t L_28 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_29 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___keySkill;
@@ -18327,7 +18802,7 @@ IL_007d:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2456>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2521>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_30 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___keySkill;
 		int32_t L_31 = V_0;
@@ -18335,7 +18810,7 @@ IL_007d:
 		NullCheck(L_30);
 		ArrayElementTypeCheck (L_30, L_32);
 		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(L_31), (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_32);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2457>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2522>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_33;
 		L_33 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_33);
@@ -18344,14 +18819,14 @@ IL_007d:
 
 IL_0099:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2431>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2496>
 		int32_t L_34 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_34, 1));
 	}
 
 IL_009d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2431>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2496>
 		int32_t L_35 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_36;
@@ -18367,11 +18842,11 @@ IL_009d:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2460>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2525>
 		return;
 	}
 }
-// Method Definition Index: 12771
+// Method Definition Index: 12772
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_DecodeByteArrayString_m466F6BFCC6CBCE78645526E0C57B4AF36589BDEE (String_t* ___0_byteArrayString, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18393,32 +18868,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ModFunc_DecodeByteArrayString_m466F
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2466>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2531>
 			String_t* L_0 = ___0_byteArrayString;
 			NullCheck(L_0);
 			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1;
 			L_1 = String_Split_m9530B73D02054692283BF35C3A27C8F2230946F4(L_0, ((int32_t)45), 0, NULL);
 			V_0 = L_1;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2467>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2532>
 			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = V_0;
 			String_t* L_3;
 			L_3 = String_Join_m557B6B554B87C1742FA0B128500073B421ED0BFD(_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, L_2, NULL);
 			V_1 = L_3;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2468>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2533>
 			String_t* L_4 = V_1;
 			NullCheck(L_4);
 			int32_t L_5;
 			L_5 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_4, NULL);
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)(L_5/2)));
 			V_2 = L_6;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2470>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2535>
 			V_3 = 0;
 			goto IL_0040_1;
 		}
 
 IL_0028_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2472>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2537>
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = V_2;
 			int32_t L_8 = V_3;
 			String_t* L_9 = V_1;
@@ -18431,14 +18906,14 @@ IL_0028_1:
 			L_12 = Convert_ToByte_mC835E3C6004C07A7828640861C7E57DF6F42D0E9(L_11, ((int32_t)16), NULL);
 			NullCheck(L_7);
 			(L_7)->SetAt(static_cast<il2cpp_array_size_t>(L_8), (uint8_t)L_12);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2470>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2535>
 			int32_t L_13 = V_3;
 			V_3 = ((int32_t)il2cpp_codegen_add(L_13, 1));
 		}
 
 IL_0040_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2470>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2535>
 			int32_t L_14 = V_3;
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15 = V_2;
 			NullCheck(L_15);
@@ -18448,7 +18923,7 @@ IL_0040_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2475>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2540>
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_16 = V_2;
 			V_4 = ((int32_t)69);
 			String_t* L_17;
@@ -18456,7 +18931,7 @@ IL_0040_1:
 			il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 			String_t* L_18;
 			L_18 = ModFunc_DecodeToString_m0DFF11817D68A9B936ADA64D4E09DB01621548B3(L_16, L_17, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2476>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2541>
 			V_5 = L_18;
 			goto IL_0065;
 		}
@@ -18474,8 +18949,8 @@ IL_0040_1:
 CATCH_005b:
 	{
 		Exception_t* L_19 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2478>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2480>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2543>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2545>
 		String_t* L_20 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&String_t_il2cpp_TypeInfo_var))))->___Empty;
 		V_5 = L_20;
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
@@ -18484,12 +18959,12 @@ CATCH_005b:
 
 IL_0065:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2482>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2547>
 		String_t* L_21 = V_5;
 		return L_21;
 	}
 }
-// Method Definition Index: 12772
+// Method Definition Index: 12773
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoChatGlobal_mB6E0A57EC5709D452EECCEBFBDE7ED05918D364E (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18505,10 +18980,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoChatGlobal_mB6E0A57EC5709D452E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2486>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2551>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2487>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2552>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18521,18 +18996,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_DoChatGlobal_mB6E0A57EC5709D452E
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2489>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2554>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_2 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___not_enough_luong_world_channel;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_2, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2490>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2555>
 		return;
 	}
 
 IL_001d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2492>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2557>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_3 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_3);
@@ -18543,7 +19018,7 @@ IL_001d:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2494>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2559>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_5 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_6 = (ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529*)il2cpp_codegen_object_new(ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529_il2cpp_TypeInfo_var);
@@ -18551,7 +19026,7 @@ IL_001d:
 		NullCheck(L_5);
 		L_5->___chatTField = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___chatTField), (void*)L_6);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2495>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2560>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_7);
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_8 = L_7->___chatTField;
@@ -18566,13 +19041,13 @@ IL_001d:
 		int32_t L_13 = L_12->___height;
 		NullCheck(L_9);
 		L_9->___y = ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_10, ((int32_t)35))), L_13));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2496>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2561>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_14 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_14);
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_15 = L_14->___chatTField;
 		NullCheck(L_15);
 		ChatTextField_initChatTextField_mB0E8F55C54D3888E1C5ED9827D5099D54978299F(L_15, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2497>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2562>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_16 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_16);
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_17 = L_16->___chatTField;
@@ -18584,7 +19059,7 @@ IL_001d:
 
 IL_0087:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2499>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2564>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_19 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_19);
@@ -18594,7 +19069,7 @@ IL_0087:
 		NullCheck(L_20);
 		L_20->___strChat = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&L_20->___strChat), (void*)L_21);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2500>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2565>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_22 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_22);
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_23 = L_22->___chatTField;
@@ -18604,7 +19079,7 @@ IL_0087:
 		NullCheck(L_24);
 		L_24->___name = L_25;
 		Il2CppCodeGenWriteBarrier((void**)(&L_24->___name), (void*)L_25);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2501>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2566>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_26 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_26);
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_27 = L_26->___chatTField;
@@ -18612,13 +19087,13 @@ IL_0087:
 		NullCheck(L_27);
 		L_27->___to = L_28;
 		Il2CppCodeGenWriteBarrier((void**)(&L_27->___to), (void*)L_28);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2502>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2567>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_29 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_29);
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_30 = L_29->___chatTField;
 		NullCheck(L_30);
 		L_30->___isShow = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2503>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2568>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_31 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_31);
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_32 = L_31->___chatTField;
@@ -18626,7 +19101,7 @@ IL_0087:
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_33 = L_32->___tfChat;
 		NullCheck(L_33);
 		L_33->___isFocus = (bool)1;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2504>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2569>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_34 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_34);
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_35 = L_34->___chatTField;
@@ -18636,7 +19111,7 @@ IL_0087:
 		int32_t L_37 = ((TField_t56E19AE85CA63279C53042EF348814217A9F0E70_StaticFields*)il2cpp_codegen_static_fields_for(TField_t56E19AE85CA63279C53042EF348814217A9F0E70_il2cpp_TypeInfo_var))->___INPUT_TYPE_ANY;
 		NullCheck(L_36);
 		TField_setIputType_m72F29E07E1F1F559628ABB8FFC773EDB68298B46(L_36, L_37, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2505>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2570>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_38 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isWindowsPhone;
 		if (!L_38)
@@ -18645,7 +19120,7 @@ IL_0087:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2507>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2572>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_39 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_39);
@@ -18664,7 +19139,7 @@ IL_0087:
 
 IL_0130:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2509>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2574>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_45 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isPC;
 		if (L_45)
@@ -18673,7 +19148,7 @@ IL_0130:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2511>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2576>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_46 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_46);
@@ -18687,7 +19162,7 @@ IL_0130:
 
 IL_0151:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2513>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2578>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_50 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 		if (!L_50)
@@ -18696,7 +19171,7 @@ IL_0151:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2515>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2580>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_51 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_51);
@@ -18709,11 +19184,11 @@ IL_0151:
 
 IL_016c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2517>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2582>
 		return;
 	}
 }
-// Method Definition Index: 12773
+// Method Definition Index: 12774
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_GoToBoss_mC07391655277AE6B93E56F9D0A53687E66A53126 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, int32_t ___0_mapId, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18728,11 +19203,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_GoToBoss_mC07391655277AE6B93E56F
 	}
 	MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* V_0 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2521>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2586>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = (MyVector_t5E551DE127AB217F3BF51644B186993381C11E30*)il2cpp_codegen_object_new(MyVector_t5E551DE127AB217F3BF51644B186993381C11E30_il2cpp_TypeInfo_var);
 		MyVector__ctor_m9CAA74C33B5605E7806E3F1C9E1D78A97AE10692(L_0, NULL);
 		V_0 = L_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2522>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2587>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_1 = V_0;
 		String_t* L_2;
 		L_2 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___0_mapId), NULL);
@@ -18744,23 +19219,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_GoToBoss_mC07391655277AE6B93E56F
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_5, L_3, __this, 1, L_4, NULL);
 		NullCheck(L_1);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_1, L_5, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2523>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2588>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_6 = V_0;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_7 = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)il2cpp_codegen_object_new(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1_il2cpp_TypeInfo_var);
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_7, _stringLiteralCA6D62F67F2F3D05E7F66D1DDDA8CDB69EAB6E2B, __this, 2, NULL, NULL);
 		NullCheck(L_6);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_6, L_7, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2525>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2590>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_9 = V_0;
 		NullCheck(L_8);
 		Menu_startAt_m9AB27F670086B8C14AF718BCD403BC93A0465623(L_8, L_9, 4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2526>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2591>
 		return;
 	}
 }
-// Method Definition Index: 12774
+// Method Definition Index: 12775
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_ChangeFPSTarget_mA7231C0A8C3AE2841A327D3FF6EA78C6B1754AB5 (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18775,7 +19250,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_ChangeFPSTarget_mA7231C0A8C3AE28
 	int32_t G_B3_0 = 0;
 	String_t* G_B3_1 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2530>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2595>
 		bool L_0 = __this->___isHighFps;
 		if (L_0)
 		{
@@ -18799,7 +19274,7 @@ IL_0010:
 IL_0011:
 	{
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(G_B3_1, G_B3_0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2531>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2596>
 		bool L_1 = __this->___isHighFps;
 		if (!L_1)
 		{
@@ -18807,7 +19282,7 @@ IL_0011:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2533>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2598>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		Application_set_targetFrameRate_mB90EEA60DAE55CD71C38D4B7DFDBE2B34EA6B46F(((int32_t)60), NULL);
 		return;
@@ -18815,14 +19290,14 @@ IL_0011:
 
 IL_0026:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2537>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2602>
 		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
 		Application_set_targetFrameRate_mB90EEA60DAE55CD71C38D4B7DFDBE2B34EA6B46F(((int32_t)30), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2539>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2604>
 		return;
 	}
 }
-// Method Definition Index: 12775
+// Method Definition Index: 12776
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A* ModFunc_GetNpcByTempId_m6143B049CB401F5DB6B5DD14D9E18FC1E22D871B (int32_t ___0_tempId, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18835,14 +19310,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A
 	int32_t V_0 = 0;
 	Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A* V_1 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2543>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2608>
 		V_0 = 0;
 		goto IL_0029;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2545>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2610>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vNpc;
 		int32_t L_1 = V_0;
@@ -18850,7 +19325,7 @@ IL_0004:
 		RuntimeObject* L_2;
 		L_2 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_0, L_1, NULL);
 		V_1 = ((Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A*)CastclassClass((RuntimeObject*)L_2, Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A_il2cpp_TypeInfo_var));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2546>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2611>
 		Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A* L_3 = V_1;
 		NullCheck(L_3);
 		NpcTemplate_t4BCAB7769F75C09CF80C60EBED26F50156A79FC4* L_4 = L_3->___template;
@@ -18863,21 +19338,21 @@ IL_0004:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2548>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2613>
 		Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A* L_7 = V_1;
 		return L_7;
 	}
 
 IL_0025:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2543>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2608>
 		int32_t L_8 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_8, 1));
 	}
 
 IL_0029:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2543>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2608>
 		int32_t L_9 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_10 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vNpc;
@@ -18890,11 +19365,11 @@ IL_0029:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2551>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2616>
 		return (Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A*)NULL;
 	}
 }
-// Method Definition Index: 12776
+// Method Definition Index: 12777
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LoadLogoImages_m30C6D393649CDF509DA8ECA535ACEF4BA0BF841C (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18910,14 +19385,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LoadLogoImages_m30C6D393649CDF50
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2557>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2622>
 		V_0 = 0;
 		goto IL_002a;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2559>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2624>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___logos;
 		int32_t L_1 = V_0;
@@ -18931,14 +19406,14 @@ IL_0004:
 		NullCheck(L_0);
 		ArrayElementTypeCheck (L_0, L_4);
 		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_1), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_4);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2557>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2622>
 		int32_t L_5 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_5, 1));
 	}
 
 IL_002a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2557>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2622>
 		int32_t L_6 = V_0;
 		if ((((int32_t)L_6) < ((int32_t)((int32_t)60))))
 		{
@@ -18946,23 +19421,23 @@ IL_002a:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2563>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2628>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_7;
 		L_7 = GameCanvas_LoadImageFromRoot_m2CEA2F934966F9A56F97E3251B846C303BE3325D(_stringLiteral980EB0B9EA303F670AAF9BC5B68E0380DD10824D, NULL);
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___imgBg = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___imgBg), (void*)L_7);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2564>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2629>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_8;
 		L_8 = GameCanvas_LoadImageFromRoot_m2CEA2F934966F9A56F97E3251B846C303BE3325D(_stringLiteralD9E954C62D643D6D5EE761F2A8641937B693A959, NULL);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___imgLogoBig = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___imgLogoBig), (void*)L_8);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2566>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2631>
 		return;
 	}
 }
-// Method Definition Index: 12777
+// Method Definition Index: 12778
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LoadTickImages_m4F6AE8B30B50D64AB04DC4F2825FE691ED54745B (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18975,14 +19450,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_LoadTickImages_m4F6AE8B30B50D64A
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2570>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2635>
 		V_0 = 0;
 		goto IL_0025;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2572>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2637>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___ticks;
 		int32_t L_1 = V_0;
@@ -18996,14 +19471,14 @@ IL_0004:
 		NullCheck(L_0);
 		ArrayElementTypeCheck (L_0, L_4);
 		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_1), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_4);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2570>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2635>
 		int32_t L_5 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_5, 1));
 	}
 
 IL_0025:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2570>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2635>
 		int32_t L_6 = V_0;
 		if ((((int32_t)L_6) < ((int32_t)((int32_t)20))))
 		{
@@ -19011,11 +19486,11 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2574>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2639>
 		return;
 	}
 }
-// Method Definition Index: 12778
+// Method Definition Index: 12779
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintTicks_m94D85AAB5C5680E4BB24864D70ECA64E83E845B7 (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_x, int32_t ___2_y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19027,11 +19502,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintTicks_m94D85AAB5C5680E4BB24
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2578>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2643>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___gameTick;
 		V_0 = ((int32_t)(((int32_t)(L_0/4))%((int32_t)20)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2579>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2644>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_1 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___ticks;
 		int32_t L_2 = V_0;
@@ -19044,7 +19519,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintTicks_m94D85AAB5C5680E4BB24
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2581>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2646>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_5 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_6 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___ticks;
@@ -19060,11 +19535,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_PaintTicks_m94D85AAB5C5680E4BB24
 
 IL_0023:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2583>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2648>
 		return;
 	}
 }
-// Method Definition Index: 12779
+// Method Definition Index: 12780
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ModFunc_LoadFile_m37B9A29D508804B8A6ED8A151BD0E231386A5E94 (String_t* ___0_fullPath, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19084,7 +19559,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ModFunc_LoadFile_m37B9A29D5088
 		return L_1;
 	}
 }
-// Method Definition Index: 12780
+// Method Definition Index: 12781
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_InitMusic_m28A91AADE1C8C6E644A4807451C46D91E2B490B9 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19103,11 +19578,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_InitMusic_m28A91AADE1C8C6E644A48
 	String_t* V_2 = NULL;
 	int32_t G_B3_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2607>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2672>
 		int32_t L_0;
 		L_0 = Rms_loadRMSInt_m04A406BD0AF69D19BBFC366FD1CE49E74B26BC86(_stringLiteralB9C321975D7C606C06E82C3A37BD0753799902D5, NULL);
 		V_0 = L_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2608>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2673>
 		int32_t L_1 = V_0;
 		if ((((int32_t)L_1) == ((int32_t)(-1))))
 		{
@@ -19129,14 +19604,14 @@ IL_0013:
 	{
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___musicCount = G_B3_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2609>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2674>
 		V_1 = 0;
 		goto IL_0066;
 	}
 
 IL_001c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2611>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2676>
 		String_t* L_3;
 		L_3 = Rms_GetiPhoneDocumentsPath_m49EB93EBB70D1E5FBBE783C9089CC0F481CF6354(NULL);
 		String_t* L_4;
@@ -19144,7 +19619,7 @@ IL_001c:
 		String_t* L_5;
 		L_5 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(L_3, _stringLiteral48D894A48D8DAD3B8D17D338362380081758F1CD, L_4, _stringLiteralF0EC54FD9493DD95C328894C9CC1F35DEB57EC2F, NULL);
 		V_2 = L_5;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2612>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2677>
 		String_t* L_6 = V_2;
 		bool L_7;
 		L_7 = File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A(L_6, NULL);
@@ -19154,7 +19629,7 @@ IL_001c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2614>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2679>
 		CoroutineRunner_t8847927DF73692C6AD756F9D0DE661D9CDA14D6A* L_8;
 		L_8 = CoroutineRunner_get_Instance_m5E6C38F8FBE0EB48DA54D55B30FD76347F1B9E08(NULL);
 		String_t* L_9 = V_2;
@@ -19168,7 +19643,7 @@ IL_001c:
 
 IL_0052:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2618>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2683>
 		String_t* L_11 = V_2;
 		String_t* L_12;
 		L_12 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral99F9CDE948F716A4DDFA6FB68F1304E44204098B, L_11, NULL);
@@ -19178,14 +19653,14 @@ IL_0052:
 
 IL_0062:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2609>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2674>
 		int32_t L_13 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_13, 1));
 	}
 
 IL_0066:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2609>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2674>
 		int32_t L_14 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		int32_t L_15 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___musicCount;
@@ -19195,11 +19670,11 @@ IL_0066:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2621>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2686>
 		return;
 	}
 }
-// Method Definition Index: 12781
+// Method Definition Index: 12782
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc__ctor_m1E929AA255EEEEFCDC844783C15E1E50D7EDC67B (ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19263,7 +19738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc__ctor_m1E929AA255EEEEFCDC844783C
 		return;
 	}
 }
-// Method Definition Index: 12782
+// Method Definition Index: 12783
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc__cctor_m3C3AFEB34C5D775112A0FE0187EECDD74ADE447B (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19494,7 +19969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc__cctor_m3C3AFEB34C5D775112A0FE01
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12783
+// Method Definition Index: 12784
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m1CB2F984658767F8F2314C325E4EA3B96A0FE6FC (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19511,7 +19986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m1CB2F984658767F8F2314C32
 		return;
 	}
 }
-// Method Definition Index: 12784
+// Method Definition Index: 12785
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mDBB81407B59699079117C94F4B3BA87DDC1D61A9 (U3CU3Ec_tEEB636811741899E5E16E926F0C6B47F73BA99A0* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19519,7 +19994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mDBB81407B59699079117C94F4
 		return;
 	}
 }
-// Method Definition Index: 12785
+// Method Definition Index: 12786
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CUseItemAutoU3Eb__119_0_m77B104515103847EB635B177E2CE9568C31E0D91 (U3CU3Ec_tEEB636811741899E5E16E926F0C6B47F73BA99A0* __this, Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___0_t, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19544,7 +20019,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CUseItemAutoU3Eb__119_0_m77B10
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12786
+// Method Definition Index: 12787
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass136_0__ctor_m551DF30BA70CFF053F923FD5F76A51238690F848 (U3CU3Ec__DisplayClass136_0_tC157A7605B31E17A9FB1C7610929795F58641CF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19552,7 +20027,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass136_0__ctor_m551DF3
 		return;
 	}
 }
-// Method Definition Index: 12787
+// Method Definition Index: 12788
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass136_0_U3CAutoBuyItemU3Eb__0_m828A51CBFA41294249D5E3B93ACEA77DCC1647DF (U3CU3Ec__DisplayClass136_0_tC157A7605B31E17A9FB1C7610929795F58641CF1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19565,14 +20040,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass136_0_U3CAutoBuyIte
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1945>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2010>
 		V_0 = 0;
 		goto IL_002e;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1947>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2012>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_0;
 		L_0 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_1 = __this->___itemBuy;
@@ -19582,16 +20057,16 @@ IL_0004:
 		int16_t L_3 = L_2->___id;
 		NullCheck(L_0);
 		Service_buyItem_mF16F19853F25120CA31EE508251E1396A92E5C2D(L_0, (int8_t)3, L_3, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1948>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2013>
 		Thread_Sleep_m71DE163765BF465EC4A0163F2ED4D43143094549(((int32_t)200), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1945>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2010>
 		int32_t L_4 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_4, 1));
 	}
 
 IL_002e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1945>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2010>
 		int32_t L_5 = V_0;
 		int32_t L_6 = __this->___num;
 		if ((((int32_t)L_5) < ((int32_t)L_6)))
@@ -19600,7 +20075,7 @@ IL_002e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1950>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2015>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_7 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		int32_t* L_8 = (int32_t*)(&__this->___num);
@@ -19615,7 +20090,7 @@ IL_002e:
 		L_13 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteralD6AE506D9C50B77BD641E5E6B90327AFFDF95B38, L_9, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745, L_12, NULL);
 		NullCheck(L_7);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_7, L_13, 0, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:1951>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2016>
 		return;
 	}
 }
@@ -19627,7 +20102,7 @@ IL_002e:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12788
+// Method Definition Index: 12789
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadFileU3Ed__172__ctor_mEE836F48BF237FAAB2DF9415BE46642D19E405AC (U3CLoadFileU3Ed__172_tC7649BEE87F90F6E07EA3F3267D3E877488F49A4* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -19637,7 +20112,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadFileU3Ed__172__ctor_mEE836F48BF23
 		return;
 	}
 }
-// Method Definition Index: 12789
+// Method Definition Index: 12790
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadFileU3Ed__172_System_IDisposable_Dispose_m8791FF7174710D8FC3F9B9B3DDC7D37E59430325 (U3CLoadFileU3Ed__172_tC7649BEE87F90F6E07EA3F3267D3E877488F49A4* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -19686,7 +20161,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 12790
+// Method Definition Index: 12791
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CLoadFileU3Ed__172_MoveNext_mEB27664BAE2A1A1114CDDAD276E0F7CCE9AA2B8A (U3CLoadFileU3Ed__172_tC7649BEE87F90F6E07EA3F3267D3E877488F49A4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19739,25 +20214,25 @@ FAULT_00b8:
 IL_0015_1:
 			{
 				__this->___U3CU3E1__state = (-1);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2587>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2652>
 				String_t* L_3 = __this->___fullPath;
 				String_t* L_4;
 				L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral218F5A08519088A96BE3C1074984C53EA49F1CCA, L_3, NULL);
 				V_2 = L_4;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2589>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2654>
 				String_t* L_5 = V_2;
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_6;
 				L_6 = UnityWebRequestMultimedia_GetAudioClip_mADB031D0B0B718A0459E69114922128C35846F7B(L_5, ((int32_t)14), NULL);
 				__this->___U3CwwwU3E5__2 = L_6;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwwwU3E5__2), (void*)L_6);
 				__this->___U3CU3E1__state = ((int32_t)-3);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2590>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2655>
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_7 = __this->___U3CwwwU3E5__2;
 				BypassCertificateHandler_tF0F7F150BA328B6CEF00477A8801E13370373B4D* L_8 = (BypassCertificateHandler_tF0F7F150BA328B6CEF00477A8801E13370373B4D*)il2cpp_codegen_object_new(BypassCertificateHandler_tF0F7F150BA328B6CEF00477A8801E13370373B4D_il2cpp_TypeInfo_var);
 				BypassCertificateHandler__ctor_mEB58A4564A9E93DDF91F7ADB4BA1802216B12E91(L_8, NULL);
 				NullCheck(L_7);
 				UnityWebRequest_set_certificateHandler_m4B4FA1E2F5FD0394D079CB711EB612F6A62458E2(L_7, L_8, NULL);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2592>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2657>
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_9 = __this->___U3CwwwU3E5__2;
 				NullCheck(L_9);
 				UnityWebRequestAsyncOperation_t14BE94558FF3A2CFC2EFBE2511A3A88252042B8C* L_10;
@@ -19772,7 +20247,7 @@ IL_0015_1:
 IL_006f_1:
 			{
 				__this->___U3CU3E1__state = ((int32_t)-3);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2594>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2659>
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_11 = __this->___U3CwwwU3E5__2;
 				NullCheck(L_11);
 				int32_t L_12;
@@ -19783,7 +20258,7 @@ IL_006f_1:
 				}
 			}
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2596>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2661>
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_13 = __this->___U3CwwwU3E5__2;
 				NullCheck(L_13);
 				String_t* L_14;
@@ -19795,12 +20270,12 @@ IL_006f_1:
 
 IL_0097_1:
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2600>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2665>
 				UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* L_15 = __this->___U3CwwwU3E5__2;
 				AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_16;
 				L_16 = DownloadHandlerAudioClip_GetContent_mF38CB6EDB5CE453D7C2A783560BCBEA924FA2EC9(L_15, NULL);
 				V_3 = L_16;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2601>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2666>
 				il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 				List_1_t33C1B21871505CF0516B63C148CD83EDA452BB5F* L_17 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___musics;
 				AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* L_18 = V_3;
@@ -19810,7 +20285,7 @@ IL_0097_1:
 
 IL_00ae_1:
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2603>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Mod/ModFunc.cs:2668>
 				V_0 = (bool)0;
 				U3CLoadFileU3Ed__172_U3CU3Em__Finally1_mB769372CDE9F14C0D7B7E793BB4B1D92F91E4F84(__this, NULL);
 				goto IL_00bf;
@@ -19828,7 +20303,7 @@ IL_00bf:
 		return L_19;
 	}
 }
-// Method Definition Index: 12791
+// Method Definition Index: 12792
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadFileU3Ed__172_U3CU3Em__Finally1_mB769372CDE9F14C0D7B7E793BB4B1D92F91E4F84 (U3CLoadFileU3Ed__172_tC7649BEE87F90F6E07EA3F3267D3E877488F49A4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19856,7 +20331,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 12792
+// Method Definition Index: 12793
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadFileU3Ed__172_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA4525DA15502BA38110377A6540178BA340D281D (U3CLoadFileU3Ed__172_tC7649BEE87F90F6E07EA3F3267D3E877488F49A4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19864,7 +20339,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadFileU3Ed__172_System_Co
 		return L_0;
 	}
 }
-// Method Definition Index: 12793
+// Method Definition Index: 12794
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadFileU3Ed__172_System_Collections_IEnumerator_Reset_m232892AF6ABA2C40B5A8889637EE770AAD2AF3BB (U3CLoadFileU3Ed__172_tC7649BEE87F90F6E07EA3F3267D3E877488F49A4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19873,7 +20348,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadFileU3Ed__172_System_Collections_
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CLoadFileU3Ed__172_System_Collections_IEnumerator_Reset_m232892AF6ABA2C40B5A8889637EE770AAD2AF3BB_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 12794
+// Method Definition Index: 12795
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadFileU3Ed__172_System_Collections_IEnumerator_get_Current_m334C9EEA295BB486C2128419225F6362ED5D4B66 (U3CLoadFileU3Ed__172_tC7649BEE87F90F6E07EA3F3267D3E877488F49A4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -19889,7 +20364,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CLoadFileU3Ed__172_System_Co
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12795
+// Method Definition Index: 12796
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Util_CanDoWithTime_mB343D03D833CF1B8DF246C2C9116B64BE9B012EF (int64_t ___0_lastTime, int64_t ___1_waitTime, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19916,7 +20391,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Util_CanDoWithTime_mB343D03D833CF1B8DF24
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12796
+// Method Definition Index: 12797
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge__ctor_mB11084D3A3ABF57C7203A0E4A0706E3A843B83ED (MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20254,7 +20729,7 @@ IL_02d8:
 		return;
 	}
 }
-// Method Definition Index: 12797
+// Method Definition Index: 12798
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* MoneyCharge_gI_m27B74FCFE09577E5CA9856F1DA0AC1673BCE7023 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20286,7 +20761,7 @@ IL_0011:
 		return L_2;
 	}
 }
-// Method Definition Index: 12798
+// Method Definition Index: 12799
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_switchToMe_m9009EF5D7B5A1CE687AD6E52F6DB569DC93BE7FB (MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20298,7 +20773,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_switchToMe_m9009EF5D7B5A1CE6
 		return;
 	}
 }
-// Method Definition Index: 12799
+// Method Definition Index: 12800
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_updateTfWhenOpenKb_m728E1E1F0D97999823EA85104C1D691257628C6E (MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20306,7 +20781,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_updateTfWhenOpenKb_m728E1E1F
 		return;
 	}
 }
-// Method Definition Index: 12800
+// Method Definition Index: 12801
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_paint_m0422390E77A7B8E46B1A6EAEE9B9DF2518501A38 (MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20392,7 +20867,7 @@ IL_0060:
 		return;
 	}
 }
-// Method Definition Index: 12801
+// Method Definition Index: 12802
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_update_mE5130DE12047A36968F42D7DF47FE0BE9B87B161 (MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20436,7 +20911,7 @@ IL_002d:
 		return;
 	}
 }
-// Method Definition Index: 12802
+// Method Definition Index: 12803
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_keyPress_m678CA5A41A72A68678E2C87D3AFE69C62558A363 (MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* __this, int32_t ___0_keyCode, const RuntimeMethod* method) 
 {
 	{
@@ -20488,7 +20963,7 @@ IL_0036:
 		return;
 	}
 }
-// Method Definition Index: 12803
+// Method Definition Index: 12804
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_updateKey_m1E10C7422709A5D066A063638C973F3CFF7F56D3 (MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20853,7 +21328,7 @@ IL_01a0:
 		return;
 	}
 }
-// Method Definition Index: 12804
+// Method Definition Index: 12805
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_clearScreen_mC61C2CF125FBFC5C5D13CF75E8C25D3B4A033619 (MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20870,7 +21345,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_clearScreen_mC61C2CF125FBFC5
 		return;
 	}
 }
-// Method Definition Index: 12805
+// Method Definition Index: 12806
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MoneyCharge_perform_mAF5C33110FEE2EBFCBD0AF7EDAB63BABB44817DD (MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* __this, int32_t ___0_idAction, RuntimeObject* ___1_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21022,7 +21497,7 @@ IL_00a9:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12806
+// Method Definition Index: 12807
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart__ctor_mB184364EE7A4FC9C2793B4497E24E730DCA15C45 (MonsterDart_tACF7D6B19BA4BCD9533EDB00BDCC7D60DDFA7775* __this, int32_t ___0_x, int32_t ___1_y, bool ___2_isBoss, int32_t ___3_dame, int32_t ___4_dameMp, Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* ___5_c, int32_t ___6_dartType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21126,7 +21601,7 @@ IL_009c:
 		return;
 	}
 }
-// Method Definition Index: 12807
+// Method Definition Index: 12808
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart__ctor_m4DB833D10104B0DDF6E5C56329F3C51DE9EE5C43 (MonsterDart_tACF7D6B19BA4BCD9533EDB00BDCC7D60DDFA7775* __this, int32_t ___0_x, int32_t ___1_y, bool ___2_isBoss, int32_t ___3_dame, int32_t ___4_dameMp, int32_t ___5_xTo, int32_t ___6_yTo, int32_t ___7_dartType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21231,7 +21706,7 @@ IL_009a:
 		return;
 	}
 }
-// Method Definition Index: 12808
+// Method Definition Index: 12809
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart_setAngle_m5E731AA7600304C203726F788FC84E99400B0F08 (MonsterDart_tACF7D6B19BA4BCD9533EDB00BDCC7D60DDFA7775* __this, int32_t ___0_angle, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21261,7 +21736,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart_setAngle_m5E731AA7600304C203
 		return;
 	}
 }
-// Method Definition Index: 12809
+// Method Definition Index: 12810
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart_addMonsterDart_m8184DEF8AD6EC44CEF0A83400DC212A0241C6E0A (int32_t ___0_x, int32_t ___1_y, bool ___2_isBoss, int32_t ___3_dame, int32_t ___4_dameMp, Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* ___5_c, int32_t ___6_dartType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21290,7 +21765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart_addMonsterDart_m8184DEF8AD6E
 		return;
 	}
 }
-// Method Definition Index: 12810
+// Method Definition Index: 12811
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart_addMonsterDart_m888B776697DC9A50247610EB9B20D28410A4035F (int32_t ___0_x, int32_t ___1_y, bool ___2_isBoss, int32_t ___3_dame, int32_t ___4_dameMp, int32_t ___5_xTo, int32_t ___6_yTo, int32_t ___7_dartType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21320,7 +21795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart_addMonsterDart_m888B776697DC
 		return;
 	}
 }
-// Method Definition Index: 12811
+// Method Definition Index: 12812
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart_update_mBF99B96D3796C0E9EB723A74929B4556A00C03BE (MonsterDart_tACF7D6B19BA4BCD9533EDB00BDCC7D60DDFA7775* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21960,7 +22435,7 @@ IL_03e7:
 		return;
 	}
 }
-// Method Definition Index: 12812
+// Method Definition Index: 12813
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MonsterDart_findDirIndexFromAngle_mCA14B54D48BE17E2D5DA0FCAC978D6866BAB2C32 (int32_t ___0_angle, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22048,7 +22523,7 @@ IL_0027:
 		return 0;
 	}
 }
-// Method Definition Index: 12813
+// Method Definition Index: 12814
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart_paint_m8CB89AC26934BB6D9B0002DF176715262F88C95A (MonsterDart_tACF7D6B19BA4BCD9533EDB00BDCC7D60DDFA7775* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22358,7 +22833,7 @@ IL_01ba:
 		return;
 	}
 }
-// Method Definition Index: 12814
+// Method Definition Index: 12815
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart_addMonsterDart_m48F30D2243795E9DFB2DAEAD9B6227547EF1B244 (int32_t ___0_x2, int32_t ___1_y2, bool ___2_checkIsBoss, int32_t ___3_dame2, int32_t ___4_dameMp2, Mob_t394900507F39725FA57379059AA703E63166F45F* ___5_mobToAttack, int8_t ___6_dartType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22387,7 +22862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart_addMonsterDart_m48F30D224379
 		return;
 	}
 }
-// Method Definition Index: 12815
+// Method Definition Index: 12816
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart__cctor_m30E82BE83E72795FC7D4B214CF69908593FBBEC4 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22453,7 +22928,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonsterDart__cctor_m30E82BE83E72795FC7D4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12816
+// Method Definition Index: 12817
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas__ctor_mADA6C99AE7BF4425FC375968B101750373C06E12 (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, const RuntimeMethod* method) 
 {
 	{
@@ -22473,7 +22948,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas__ctor_mADA6C99AE7BF4425FC37
 		return;
 	}
 }
-// Method Definition Index: 12817
+// Method Definition Index: 12818
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_checkZoomLevel_m646531743FA44F34AF2632A86578B4EC852B10F4 (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, int32_t ___0_w, int32_t ___1_h, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22640,7 +23115,7 @@ IL_0094:
 		return;
 	}
 }
-// Method Definition Index: 12818
+// Method Definition Index: 12819
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MotherCanvas_getWidth_m4324F814C4E687CEBF87B8CB12E5A6949ED43069 (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22656,7 +23131,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MotherCanvas_getWidth_m4324F814C4E687
 		return il2cpp_codegen_cast_double_to_int<int32_t>(L_0);
 	}
 }
-// Method Definition Index: 12819
+// Method Definition Index: 12820
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MotherCanvas_getHeight_m7140CC528D6A605EFCA8BE51C719841DCADDDEE7 (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22672,7 +23147,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MotherCanvas_getHeight_m7140CC528D6A6
 		return il2cpp_codegen_cast_double_to_int<int32_t>(L_0);
 	}
 }
-// Method Definition Index: 12820
+// Method Definition Index: 12821
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_setChildCanvas_m352D816D6DEB9C2E72E2B8137453762BE3832005 (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* ___0_tCanvas, const RuntimeMethod* method) 
 {
 	{
@@ -22684,7 +23159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_setChildCanvas_m352D816D6DE
 		return;
 	}
 }
-// Method Definition Index: 12821
+// Method Definition Index: 12822
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_paint_mA78D91783816009ACEDAC2F32AE97754FF75CD4B (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, const RuntimeMethod* method) 
 {
 	{
@@ -22697,7 +23172,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_paint_mA78D91783816009ACEDA
 		return;
 	}
 }
-// Method Definition Index: 12822
+// Method Definition Index: 12823
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_keyPressed_mEF65B37B6560A7B4E8D8156BDF04A880B0C82E76 (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, int32_t ___0_keyCode, const RuntimeMethod* method) 
 {
 	{
@@ -22710,7 +23185,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_keyPressed_mEF65B37B6560A7B
 		return;
 	}
 }
-// Method Definition Index: 12823
+// Method Definition Index: 12824
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_keyReleased_m0B130C6F84B53455133F20CD186C2ED56E621A2B (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, int32_t ___0_keyCode, const RuntimeMethod* method) 
 {
 	{
@@ -22723,7 +23198,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_keyReleased_m0B130C6F84B534
 		return;
 	}
 }
-// Method Definition Index: 12824
+// Method Definition Index: 12825
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_pointerDragged_mD44990F51F7DCA8AB91DC44CD7A59F6B0A963A88 (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22752,7 +23227,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_pointerDragged_mD44990F51F7
 		return;
 	}
 }
-// Method Definition Index: 12825
+// Method Definition Index: 12826
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_pointerPressed_mCADCBDF47EFD2088A0E009BE18FD68BDD4C1E89C (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22781,7 +23256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_pointerPressed_mCADCBDF47EF
 		return;
 	}
 }
-// Method Definition Index: 12826
+// Method Definition Index: 12827
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_pointerReleased_m7B8F5F9FC959EA6BE0B3C44209F42F9807D4522B (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22810,7 +23285,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotherCanvas_pointerReleased_m7B8F5F9FC9
 		return;
 	}
 }
-// Method Definition Index: 12827
+// Method Definition Index: 12828
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MotherCanvas_getWidthz_m0A351ECAEC79EBBA471C8C02F14F16B3FFD304BF (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22834,7 +23309,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MotherCanvas_getWidthz_m0A351ECAEC79E
 		return ((int32_t)il2cpp_codegen_add(((int32_t)(L_1/L_2)), ((int32_t)(L_3%L_4))));
 	}
 }
-// Method Definition Index: 12828
+// Method Definition Index: 12829
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MotherCanvas_getHeightz_m9C0B7BB5F874726E80A056678117E4130E6D4A87 (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22866,7 +23341,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MotherCanvas_getHeightz_m9C0B7BB5F874
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12829
+// Method Definition Index: 12830
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovePoint__ctor_m4DD4DB204D4EEB1721137E93488B2806F5F8C2F9 (MovePoint_t935B2561B2469906D762963068D2E58357E88159* __this, int32_t ___0_xEnd, int32_t ___1_yEnd, int32_t ___2_act, int32_t ___3_dir, const RuntimeMethod* method) 
 {
 	{
@@ -22888,7 +23363,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovePoint__ctor_m4DD4DB204D4EEB1721137E9
 		return;
 	}
 }
-// Method Definition Index: 12830
+// Method Definition Index: 12831
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovePoint__ctor_mA1C158FD605ABA8506D92DD8F8CA98F28F07024F (MovePoint_t935B2561B2469906D762963068D2E58357E88159* __this, int32_t ___0_xEnd, int32_t ___1_yEnd, const RuntimeMethod* method) 
 {
 	{
@@ -22912,7 +23387,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MovePoint__ctor_mA1C158FD605ABA8506D92DD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 12831
+// Method Definition Index: 12832
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mResources_loadLanguague_m8924CBD3DBEBBFCB6A04C014E8A7D10EE70A90E7 (int8_t ___0_newLanguage, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22936,7 +23411,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mResources_loadLanguague_m8924CBD3DBEBBF
 		return;
 	}
 }
-// Method Definition Index: 12832
+// Method Definition Index: 12833
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* mResources_replace_m5644B86B973D7BD12102697FDB130CCCAF6A9EB1 (String_t* ___0_str, String_t* ___1_replacement, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22954,7 +23429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* mResources_replace_m5644B86B973D7BD
 		return L_2;
 	}
 }
-// Method Definition Index: 12833
+// Method Definition Index: 12834
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mResources__ctor_m9A4369B41F59FA0AF5AA99E61B95DE132C40BFF0 (mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -22962,7 +23437,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mResources__ctor_m9A4369B41F59FA0AF5AA99
 		return;
 	}
 }
-// Method Definition Index: 12834
+// Method Definition Index: 12835
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mResources__cctor_m84B15E5AE69BEABDFE15FB41B7343C9409D103E7 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25353,7 +25828,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mResources__cctor_m84B15E5AE69BEABDFE15F
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 12694
+// Method Definition Index: 12695
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Account_getUsername_mFE66E47C7863EDBE45431918B074E7D96AA6FDDB_inline (Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25362,7 +25837,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Account_getUsername_mFE
 		return L_0;
 	}
 }
-// Method Definition Index: 12695
+// Method Definition Index: 12696
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Account_getPassword_m25A2190AE12E99B800B25891DBD00FC35C76B21B_inline (Account_tEEC69E981115B22CFB24D4EE23BCC01309F318F4* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25379,7 +25854,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-// Method Definition Index: 18654
+// Method Definition Index: 18657
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline (const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -25398,7 +25873,7 @@ IL_001d:
 		return L_1;
 	}
 }
-// Method Definition Index: 13975
+// Method Definition Index: 13976
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TField_setMaxTextLenght_m61EBFB02EBBFD04345FCF29A2FE30D03120575FD_inline (TField_t56E19AE85CA63279C53042EF348814217A9F0E70* __this, int32_t ___0_maxTextLenght, const RuntimeMethod* method) 
 {
 	{
@@ -25409,7 +25884,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TField_setMaxTextLenght_m61E
 		return;
 	}
 }
-// Method Definition Index: 13970
+// Method Definition Index: 13971
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TField_getText_mFCD7D323EF26FC195005BA96783EE50137C5A47A_inline (TField_t56E19AE85CA63279C53042EF348814217A9F0E70* __this, const RuntimeMethod* method) 
 {
 	{
@@ -25710,7 +26185,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m3A88186
 		return L_0;
 	}
 }
-// Method Definition Index: 18644
+// Method Definition Index: 18647
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
 {
 	{

@@ -24978,7 +24978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Effect_End__cctor_m8EFC56514703F39BEAEC3
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 13970
+// Method Definition Index: 13971
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TField_getText_mFCD7D323EF26FC195005BA96783EE50137C5A47A_inline (TField_t56E19AE85CA63279C53042EF348814217A9F0E70* __this, const RuntimeMethod* method) 
 {
 	{

@@ -49551,7 +49551,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameScr__cctor_m61AD2CB16E26C5BEE22401FF
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 12584
+// Method Definition Index: 12585
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t mGraphics_getClipX_mAEC2A88B86DFFC09833D8C24035EB2487CD2A7DE_inline (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -49561,13 +49561,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t mGraphics_getClipX_mAEC2A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:163>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:177>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx;
 		return L_0;
 	}
 }
-// Method Definition Index: 12585
+// Method Definition Index: 12586
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t mGraphics_getClipY_m74A9FAAB5AE7CAE9ABD9C76A5374A74B7E5F224F_inline (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -49577,13 +49577,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t mGraphics_getClipY_m74A9F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:168>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:182>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 		return L_0;
 	}
 }
-// Method Definition Index: 12586
+// Method Definition Index: 12587
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t mGraphics_getClipWidth_m566972B63DB4A50DBEC54243A57B0BE377340331_inline (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -49593,13 +49593,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t mGraphics_getClipWidth_m5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:173>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:187>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 		return L_0;
 	}
 }
-// Method Definition Index: 12587
+// Method Definition Index: 12588
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t mGraphics_getClipHeight_m2B66689983ECE1DCCC782A65FD1819942D701554_inline (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -49609,13 +49609,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t mGraphics_getClipHeight_m
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:178>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:192>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gH;
 		return L_0;
 	}
 }
-// Method Definition Index: 12676
+// Method Definition Index: 12677
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mob_getX_m1CC00E11E7CB8DE77BF585C8EA276ABB2674C7F6_inline (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -49624,7 +49624,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mob_getX_m1CC00E11E7CB8DE
 		return L_0;
 	}
 }
-// Method Definition Index: 12677
+// Method Definition Index: 12678
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mob_getY_m92B02CDAC377B677066D33C174010E25AD7CF8E0_inline (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -49644,7 +49644,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InfoMe_doClick_m2473C034A48F
 		return;
 	}
 }
-// Method Definition Index: 12679
+// Method Definition Index: 12680
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mob_getW_mFCBA5FBB9465E8C74D92B3BD309A7D8F7D96AA0F_inline (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -49653,7 +49653,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mob_getW_mFCBA5FBB9465E8C
 		return L_0;
 	}
 }
-// Method Definition Index: 12678
+// Method Definition Index: 12679
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mob_getH_mFDEBA69523E13822BDD058A40293841F39F8C0A2_inline (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -49662,7 +49662,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mob_getH_mFDEBA69523E1382
 		return L_0;
 	}
 }
-// Method Definition Index: 13392
+// Method Definition Index: 13393
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PopUp_doClick_m0CC85728F77D68EC2F4C94C9CD405CBFD26EB78B_inline (PopUp_tF630E983A261AEA5134879E41F79FB0CDE9D32DF* __this, int32_t ___0_timeDelay, const RuntimeMethod* method) 
 {
 	{

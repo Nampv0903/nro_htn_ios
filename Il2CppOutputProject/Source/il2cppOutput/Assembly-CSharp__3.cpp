@@ -6016,6 +6016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BgItem_isExistKeyNews_m07293379D689BDADA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BgItem_changeColor_mEFA6FD6487C4B3D67989D402C17450C72EF199BB (BgItem_t126DB32D124852BF117B0DBB06D8A744125A5279* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MyHashTable_remove_m0B97F3C9A622D918B9F91F84CCB088A21A1BD6CF (MyHashTable_t03FB795CF8B8588EB81514182487084E49CD03E7* __this, RuntimeObject* ___0_k, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_keyValueAction_m51042C137B9DDE1C661F13CA49ABC121B9EF573A (Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9* __this, String_t* ___0_key, String_t* ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void mGraphics_ClearCache_m33D31A43F493F9076647570A79E6E92BD6A50237 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_loadCurrMap_m09E324E54A35B12FC7C3C4C10204604CD52495C8 (Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9* __this, int8_t ___0_teleport3, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoXmap_FixBlackScreen_mBA88DA3E175150C5BEC7AF2B38060331371F261A (const RuntimeMethod* method) ;
@@ -14794,26 +14795,29 @@ IL_0c67_1:
 			int8_t L_597;
 			L_597 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_596, NULL);
 			V_2 = L_597;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5269>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5270>
+			il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
+			mGraphics_ClearCache_m33D31A43F493F9076647570A79E6E92BD6A50237(NULL);
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5271>
 			int8_t L_598 = V_2;
 			Controller_loadCurrMap_m09E324E54A35B12FC7C3C4C10204604CD52495C8(__this, L_598, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5270>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5272>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isLoadingMap = (bool)0;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5271>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5273>
 			AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* L_599;
 			L_599 = Resources_UnloadUnusedAssets_m4003CD3EBC3AC2738DE9F2960D5BC45818C1F12B(NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5272>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5274>
 			il2cpp_codegen_runtime_class_init_inline(GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
 			GC_Collect_m43D435501E4B72E382DB08A0431DE01D550F76A7(NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5273>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5275>
 			il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 			ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_600;
 			L_600 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
 			NullCheck(L_600);
 			L_600->___canUpdate = (bool)1;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5274>
-			goto IL_0cb0;
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5276>
+			goto IL_0cb5;
 		}
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -14821,26 +14825,26 @@ IL_0c67_1:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_0ca8;
+			goto CATCH_0cad;
 		}
 		throw e;
 	}
 
-CATCH_0ca8:
+CATCH_0cad:
 	{
 		Exception_t* L_601 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5275>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5277>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5279>
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AutoXmap_t8E1CFA1491EB9591C813694535929855E5892AB1_il2cpp_TypeInfo_var)));
 		AutoXmap_FixBlackScreen_mBA88DA3E175150C5BEC7AF2B38060331371F261A(NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5278>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5280>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
-		goto IL_0cb0;
+		goto IL_0cb5;
 	}
 
-IL_0cb0:
+IL_0cb5:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5279>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5281>
 		return;
 	}
 }
@@ -14858,7 +14862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_LoadAuraNpcs_m0B31AB642F11954
 	int16_t V_2 = 0;
 	Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A* V_3 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5283>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5285>
 		Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_0 = ___0_msg;
 		NullCheck(L_0);
 		myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1;
@@ -14867,14 +14871,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_LoadAuraNpcs_m0B31AB642F11954
 		int8_t L_2;
 		L_2 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_1, NULL);
 		V_0 = L_2;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5284>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5286>
 		V_1 = (int8_t)0;
 		goto IL_003c;
 	}
 
 IL_0010:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5286>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5288>
 		Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_3 = ___0_msg;
 		NullCheck(L_3);
 		myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_4;
@@ -14882,7 +14886,7 @@ IL_0010:
 		NullCheck(L_4);
 		int8_t L_5;
 		L_5 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_4, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5287>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5289>
 		Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_6 = ___0_msg;
 		NullCheck(L_6);
 		myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_7;
@@ -14891,12 +14895,12 @@ IL_0010:
 		int16_t L_8;
 		L_8 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_7, NULL);
 		V_2 = L_8;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5288>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5290>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A* L_9;
 		L_9 = ModFunc_GetNpcByTempId_m6143B049CB401F5DB6B5DD14D9E18FC1E22D871B(L_5, NULL);
 		V_3 = L_9;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5289>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5291>
 		Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A* L_10 = V_3;
 		if (!L_10)
 		{
@@ -14904,7 +14908,7 @@ IL_0010:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5291>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5293>
 		Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A* L_11 = V_3;
 		int16_t L_12 = V_2;
 		NullCheck(L_11);
@@ -14913,14 +14917,14 @@ IL_0010:
 
 IL_0037:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5284>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5286>
 		int8_t L_13 = V_1;
 		V_1 = ((int8_t)((int32_t)il2cpp_codegen_add((int32_t)L_13, 1)));
 	}
 
 IL_003c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5284>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5286>
 		int8_t L_14 = V_1;
 		int8_t L_15 = V_0;
 		if ((((int32_t)L_14) < ((int32_t)L_15)))
@@ -14929,7 +14933,7 @@ IL_003c:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5294>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5296>
 		return;
 	}
 }
@@ -14960,7 +14964,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_keyValueAction_m51042C137B9DD
 	int32_t G_B4_0 = 0;
 	int32_t G_B6_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5298>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5300>
 		String_t* L_0 = ___0_key;
 		NullCheck(L_0);
 		bool L_1;
@@ -14971,7 +14975,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_keyValueAction_m51042C137B9DD
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5300>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5302>
 		il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___graphics;
 		if ((((int32_t)L_2) <= ((int32_t)0)))
@@ -14980,26 +14984,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_keyValueAction_m51042C137B9DD
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5302>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5304>
 		return;
 	}
 
 IL_0019:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5304>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5306>
 		String_t* L_3 = ___1_value;
 		il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4;
 		L_4 = Res_split_m2045920D16E70F48BC3F71B37E42244B39F6282E(L_3, _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D, 0, NULL);
 		V_0 = L_4;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5305>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5307>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = V_0;
 		NullCheck(L_5);
 		int32_t L_6 = 0;
 		String_t* L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		int32_t L_8;
 		L_8 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_7, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5306>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5308>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = V_0;
 		NullCheck(L_9);
 		int32_t L_10 = 1;
@@ -15007,7 +15011,7 @@ IL_0019:
 		int32_t L_12;
 		L_12 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_11, NULL);
 		V_1 = L_12;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5307>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5309>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_13 = V_0;
 		NullCheck(L_13);
 		int32_t L_14 = 2;
@@ -15015,7 +15019,7 @@ IL_0019:
 		int32_t L_16;
 		L_16 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_15, NULL);
 		V_2 = L_16;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5308>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5310>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_17 = V_0;
 		NullCheck(L_17);
 		int32_t L_18 = 3;
@@ -15023,7 +15027,7 @@ IL_0019:
 		int32_t L_20;
 		L_20 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_19, NULL);
 		V_3 = L_20;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5311>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5313>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = V_0;
 		NullCheck(L_21);
 		if ((((int32_t)((int32_t)(((RuntimeArray*)L_21)->max_length))) > ((int32_t)4)))
@@ -15034,9 +15038,9 @@ IL_0019:
 		G_B4_0 = L_8;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5313>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5315>
 		V_4 = (-1);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5314>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5316>
 		V_5 = 1;
 		G_B6_0 = G_B4_0;
 		goto IL_006b;
@@ -15044,7 +15048,7 @@ IL_0019:
 
 IL_0057:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5318>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5320>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = V_0;
 		NullCheck(L_22);
 		int32_t L_23 = 4;
@@ -15052,7 +15056,7 @@ IL_0057:
 		int32_t L_25;
 		L_25 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_24, NULL);
 		V_4 = L_25;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5319>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5321>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_26 = V_0;
 		NullCheck(L_26);
 		int32_t L_27 = 5;
@@ -15065,7 +15069,7 @@ IL_0057:
 
 IL_006b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5321>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5323>
 		int32_t L_30 = V_2;
 		int32_t L_31 = V_3;
 		int32_t L_32 = V_1;
@@ -15074,7 +15078,7 @@ IL_006b:
 		Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09* L_35 = (Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09*)il2cpp_codegen_object_new(Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09_il2cpp_TypeInfo_var);
 		Effect__ctor_m92BD7CF350C28AB9363DB4DB8C4B4BC04287937A(L_35, G_B6_0, L_30, L_31, L_32, L_33, L_34, NULL);
 		V_6 = L_35;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5322>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5324>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_36 = V_0;
 		NullCheck(L_36);
 		if ((((int32_t)((int32_t)(((RuntimeArray*)L_36)->max_length))) <= ((int32_t)6)))
@@ -15083,7 +15087,7 @@ IL_006b:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5324>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5326>
 		Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09* L_37 = V_6;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_38 = V_0;
 		NullCheck(L_38);
@@ -15093,7 +15097,7 @@ IL_006b:
 		L_41 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_40, NULL);
 		NullCheck(L_37);
 		L_37->___typeEff = L_41;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5325>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5327>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_42 = V_0;
 		NullCheck(L_42);
 		if ((((int32_t)((int32_t)(((RuntimeArray*)L_42)->max_length))) <= ((int32_t)7)))
@@ -15102,7 +15106,7 @@ IL_006b:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5327>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5329>
 		Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09* L_43 = V_6;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_44 = V_0;
 		NullCheck(L_44);
@@ -15112,7 +15116,7 @@ IL_006b:
 		L_47 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_46, NULL);
 		NullCheck(L_43);
 		L_43->___indexFrom = L_47;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5328>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5330>
 		Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09* L_48 = V_6;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_49 = V_0;
 		NullCheck(L_49);
@@ -15126,7 +15130,7 @@ IL_006b:
 
 IL_00b2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5331>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5333>
 		Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09* L_53 = V_6;
 		il2cpp_codegen_runtime_class_init_inline(EffecMn_t7BBBF6893ECE79ED57FD347042288DBB9258D4AB_il2cpp_TypeInfo_var);
 		EffecMn_addEff_m47082784DD785FA1D9C75668618BE4A8B26B09A7(L_53, NULL);
@@ -15135,7 +15139,7 @@ IL_00b2:
 
 IL_00ba:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5333>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5335>
 		String_t* L_54 = ___0_key;
 		NullCheck(L_54);
 		bool L_55;
@@ -15154,7 +15158,7 @@ IL_00ba:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5335>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5337>
 		String_t* L_57 = ___1_value;
 		int32_t L_58;
 		L_58 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_57, NULL);
@@ -15164,7 +15168,7 @@ IL_00ba:
 
 IL_00da:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5337>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5339>
 		return;
 	}
 }
@@ -15240,7 +15244,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_messageNotMap_m3490B16246AF64
 FINALLY_081e:
 			{
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5606>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5608>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_0 = ___0_msg;
 					if (!L_0)
 					{
@@ -15255,7 +15259,7 @@ FINALLY_081e:
 
 IL_0827:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5607>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5609>
 					return;
 				}
 			}
@@ -15265,7 +15269,7 @@ IL_0827:
 			try
 			{
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5343>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5345>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_2 = ___0_msg;
 					NullCheck(L_2);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_3;
@@ -15367,35 +15371,35 @@ IL_0827:
 
 IL_006d_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5347>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5349>
 					MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* L_8;
 					L_8 = MoneyCharge_gI_m27B74FCFE09577E5CA9856F1DA0AC1673BCE7023(NULL);
 					NullCheck(L_8);
 					VirtualActionInvoker0::Invoke(4, L_8);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5348>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5350>
 					goto IL_07ff_2;
 				}
 
 IL_007c_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5350>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5352>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_9;
 					L_9 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_9);
 					Char_clearTask_mA10A930C6C6159EC0CBBDF4EE82B4B29CB1136AB(L_9, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5351>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5353>
 					goto IL_07ff_2;
 				}
 
 IL_008b_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5354>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5356>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isLoading = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5355>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5357>
 					GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5356>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5358>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_10 = ___0_msg;
 					NullCheck(L_10);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_11;
@@ -15404,7 +15408,7 @@ IL_008b_2:
 					int32_t L_12;
 					L_12 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_11, NULL);
 					V_1 = L_12;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5357>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5359>
 					InputDlg_t6F73BE4C724386EBC959FAF67DC93E27990D4C83* L_13 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___inputDlg;
 					il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 					String_t* L_14 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___changeNameChar;
@@ -15419,13 +15423,13 @@ IL_008b_2:
 					int32_t L_21 = ((TField_t56E19AE85CA63279C53042EF348814217A9F0E70_StaticFields*)il2cpp_codegen_static_fields_for(TField_t56E19AE85CA63279C53042EF348814217A9F0E70_il2cpp_TypeInfo_var))->___INPUT_TYPE_ANY;
 					NullCheck(L_13);
 					InputDlg_show_m83EC1651520EB88F91ED1B67B423DA507B5F63CE(L_13, L_14, L_20, L_21, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5358>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5360>
 					goto IL_07ff_2;
 				}
 
 IL_00d5_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5361>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5363>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_22;
 					L_22 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -15438,7 +15442,7 @@ IL_00d5_2:
 					L_25 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_24, NULL);
 					NullCheck(L_22);
 					L_22->___cPk = L_25;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5362>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5364>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_26 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 					il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -15453,22 +15457,22 @@ IL_00d5_2:
 					L_31 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_27, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745, L_30, NULL);
 					NullCheck(L_26);
 					InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_26, L_31, 0, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5363>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5365>
 					goto IL_07ff_2;
 				}
 
 IL_0118_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5365>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5367>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5366>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5368>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_32;
 					L_32 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_32);
 					GameScr_resetButton_m3F017A5DDDE60AD62484115168B9A9E469975DDC(L_32, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5367>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5369>
 					InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_33 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_34 = ___0_msg;
 					NullCheck(L_34);
@@ -15479,13 +15483,13 @@ IL_0118_2:
 					L_36 = myReader_readUTF_m7BDB6B0B2C3063B93376A208946519E334B482F4(L_35, NULL);
 					NullCheck(L_33);
 					InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_33, L_36, 0, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5368>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5370>
 					goto IL_07ff_2;
 				}
 
 IL_0142_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5370>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5372>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_37 = ___0_msg;
 					NullCheck(L_37);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_38;
@@ -15495,34 +15499,34 @@ IL_0142_2:
 					L_39 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_38, NULL);
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___typeActive = L_39;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5371>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5373>
 					goto IL_07ff_2;
 				}
 
 IL_0157_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5374>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5376>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_40 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 					NullCheck(L_40);
 					LoginScr_savePass_mFF83EF552DE0706A4E5C4C1A121E0183036BA50C(L_40, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5375>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5377>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isAutoPlay = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5376>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5378>
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___canAutoPlay = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5377>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5379>
 					il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateAll = (bool)1;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5378>
-					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateData = (bool)1;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5379>
-					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateMap = (bool)1;
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5380>
-					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateSkill = (bool)1;
+					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateData = (bool)1;
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5381>
-					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateItem = (bool)1;
+					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateMap = (bool)1;
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5382>
+					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateSkill = (bool)1;
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5383>
+					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateItem = (bool)1;
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5384>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_41 = ___0_msg;
 					NullCheck(L_41);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_42;
@@ -15531,7 +15535,7 @@ IL_0157_2:
 					int8_t L_43;
 					L_43 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_42, NULL);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsData = L_43;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5383>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5385>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_44 = ___0_msg;
 					NullCheck(L_44);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_45;
@@ -15540,7 +15544,7 @@ IL_0157_2:
 					int8_t L_46;
 					L_46 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_45, NULL);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsMap = L_46;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5384>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5386>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_47 = ___0_msg;
 					NullCheck(L_47);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_48;
@@ -15549,7 +15553,7 @@ IL_0157_2:
 					int8_t L_49;
 					L_49 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_48, NULL);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsSkill = L_49;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5385>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5387>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_50 = ___0_msg;
 					NullCheck(L_50);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_51;
@@ -15558,7 +15562,7 @@ IL_0157_2:
 					int8_t L_52;
 					L_52 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_51, NULL);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsItem = L_52;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5386>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5388>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_53 = ___0_msg;
 					NullCheck(L_53);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_54;
@@ -15566,7 +15570,7 @@ IL_0157_2:
 					NullCheck(L_54);
 					int8_t L_55;
 					L_55 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_54, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5387>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5389>
 					LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_56 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 					NullCheck(L_56);
 					bool L_57 = L_56->___isLogin2;
@@ -15576,10 +15580,10 @@ IL_0157_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5389>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5391>
 					String_t* L_58 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 					Rms_saveRMSString_m5CC2A73B0F9A79E8FB75301D183725DE3A880C7A(_stringLiteralB944D324E89341142404BAF3FB1FD652E176C9E4, L_58, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5390>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5392>
 					String_t* L_59 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 					Rms_saveRMSString_m5CC2A73B0F9A79E8FB75301D183725DE3A880C7A(_stringLiteral3E3E2C4B66DB6B3A06FE6C4CBD32853713E7CB70, L_59, NULL);
 					goto IL_0221_2;
@@ -15587,7 +15591,7 @@ IL_0157_2:
 
 IL_0203_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5394>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5396>
 					il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 					String_t* L_60;
 					L_60 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect), NULL);
@@ -15599,7 +15603,7 @@ IL_0203_2:
 
 IL_0221_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5396>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5398>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					int8_t L_63 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsData;
 					int8_t L_64 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vcData;
@@ -15609,10 +15613,10 @@ IL_0221_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5398>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5400>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isLoadAllData = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5399>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5401>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_65;
 					L_65 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_65);
@@ -15625,10 +15629,10 @@ IL_023f_2:
 				}
 				try
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5405>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5407>
 					il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateData = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5406>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5408>
 					goto IL_025b_2;
 				}
 				catch(Il2CppExceptionWrapper& e)
@@ -15644,23 +15648,23 @@ IL_023f_2:
 CATCH_0248_2:
 				{
 					Exception_t* L_66 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5407>
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5409>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5411>
 					il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)));
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))))->___vcData = (int8_t)(-1);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5410>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5412>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_67;
 					L_67 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_67);
 					Service_updateData_m51C96DE2686D23EA24FFC7444B6949A24EB1699C(L_67, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5411>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5413>
 					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_025b_2;
 				}
 
 IL_025b_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5413>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5415>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					int8_t L_68 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsMap;
 					int8_t L_69 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vcMap;
@@ -15670,10 +15674,10 @@ IL_025b_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5415>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5417>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isLoadAllData = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5416>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5418>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_70;
 					L_70 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_70);
@@ -15687,7 +15691,7 @@ IL_0279_2:
 				try
 				{
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5422>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5424>
 						il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 						bool L_71 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isLoadAllData;
 						if (L_71)
@@ -15696,13 +15700,13 @@ IL_0279_2:
 						}
 					}
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5424>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5426>
 						SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_72;
 						L_72 = Rms_loadRMS_m99C8DC9373B72F46873B7E6A81E133CF8CB7560B(_stringLiteralB8FF0949A8476E25C5B7EBC0C9B88EB013A6AE9D, NULL);
 						DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_73 = (DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE*)il2cpp_codegen_object_new(DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE_il2cpp_TypeInfo_var);
 						DataInputStream__ctor_m1808A69F7798F0F7739F0892534292A768FE8036(L_73, L_72, NULL);
 						V_2 = L_73;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5425>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5427>
 						DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_74 = V_2;
 						NullCheck(L_74);
 						myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_75 = L_74->___r;
@@ -15711,10 +15715,10 @@ IL_0279_2:
 
 IL_029d_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5427>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5429>
 						il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 						((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateMap = (bool)0;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5428>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5430>
 						goto IL_02b8_2;
 					}
 				}
@@ -15731,23 +15735,23 @@ IL_029d_3:
 CATCH_02a5_2:
 				{
 					Exception_t* L_76 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5429>
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5431>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5433>
 					il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)));
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))))->___vcMap = (int8_t)(-1);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5432>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5434>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_77;
 					L_77 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_77);
 					Service_updateMap_m417012C6E54B6FCFBBB2D30E41EB2442C51EF1DA(L_77, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5433>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5435>
 					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_02b8_2;
 				}
 
 IL_02b8_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5435>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5437>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					int8_t L_78 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsSkill;
 					int8_t L_79 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vcSkill;
@@ -15757,10 +15761,10 @@ IL_02b8_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5437>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5439>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isLoadAllData = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5438>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5440>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_80;
 					L_80 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_80);
@@ -15774,7 +15778,7 @@ IL_02d6_2:
 				try
 				{
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5444>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5446>
 						il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 						bool L_81 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isLoadAllData;
 						if (L_81)
@@ -15783,13 +15787,13 @@ IL_02d6_2:
 						}
 					}
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5446>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5448>
 						SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_82;
 						L_82 = Rms_loadRMS_m99C8DC9373B72F46873B7E6A81E133CF8CB7560B(_stringLiteral64CAAE08586A0F5029EBC935C41399802B8ECBAC, NULL);
 						DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_83 = (DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE*)il2cpp_codegen_object_new(DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE_il2cpp_TypeInfo_var);
 						DataInputStream__ctor_m1808A69F7798F0F7739F0892534292A768FE8036(L_83, L_82, NULL);
 						V_3 = L_83;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5447>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5449>
 						DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_84 = V_3;
 						NullCheck(L_84);
 						myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_85 = L_84->___r;
@@ -15798,10 +15802,10 @@ IL_02d6_2:
 
 IL_02fa_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5449>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5451>
 						il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 						((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateSkill = (bool)0;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5450>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5452>
 						goto IL_0315_2;
 					}
 				}
@@ -15818,23 +15822,23 @@ IL_02fa_3:
 CATCH_0302_2:
 				{
 					Exception_t* L_86 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5451>
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5453>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5455>
 					il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)));
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))))->___vcSkill = (int8_t)(-1);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5454>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5456>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_87;
 					L_87 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_87);
 					Service_updateSkill_m6BFB0996F2720CFFD6EF0666B9DD116C06ADB993(L_87, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5455>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5457>
 					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_0315_2;
 				}
 
 IL_0315_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5457>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5459>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					int8_t L_88 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsItem;
 					int8_t L_89 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vcItem;
@@ -15844,10 +15848,10 @@ IL_0315_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5459>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5461>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isLoadAllData = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5460>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5462>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_90;
 					L_90 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_90);
@@ -15860,54 +15864,54 @@ IL_0336_2:
 				}
 				try
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5466>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5468>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_91;
 					L_91 = Rms_loadRMS_m99C8DC9373B72F46873B7E6A81E133CF8CB7560B(_stringLiteralF4544C49FAF838E61873A3D265F1CE10B2F8D3B2, NULL);
 					DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_92 = (DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE*)il2cpp_codegen_object_new(DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE_il2cpp_TypeInfo_var);
 					DataInputStream__ctor_m1808A69F7798F0F7739F0892534292A768FE8036(L_92, L_91, NULL);
 					V_4 = L_92;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5467>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5469>
 					DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_93 = V_4;
 					NullCheck(L_93);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_94 = L_93->___r;
 					Controller_loadItemNew_m95DD6A7658A92F7A82842E28047A8BF53BC412AA(__this, L_94, (int8_t)0, (bool)0, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5468>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5470>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_95;
 					L_95 = Rms_loadRMS_m99C8DC9373B72F46873B7E6A81E133CF8CB7560B(_stringLiteral9F9645E27BB5BE3E2574461FFBCE7D7194345271, NULL);
 					DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_96 = (DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE*)il2cpp_codegen_object_new(DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE_il2cpp_TypeInfo_var);
 					DataInputStream__ctor_m1808A69F7798F0F7739F0892534292A768FE8036(L_96, L_95, NULL);
 					V_5 = L_96;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5469>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5471>
 					DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_97 = V_5;
 					NullCheck(L_97);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_98 = L_97->___r;
 					Controller_loadItemNew_m95DD6A7658A92F7A82842E28047A8BF53BC412AA(__this, L_98, (int8_t)1, (bool)0, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5470>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5472>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_99;
 					L_99 = Rms_loadRMS_m99C8DC9373B72F46873B7E6A81E133CF8CB7560B(_stringLiteral46577FE089D2F62D757261087430E3BDD3399C4A, NULL);
 					DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_100 = (DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE*)il2cpp_codegen_object_new(DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE_il2cpp_TypeInfo_var);
 					DataInputStream__ctor_m1808A69F7798F0F7739F0892534292A768FE8036(L_100, L_99, NULL);
 					V_6 = L_100;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5471>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5473>
 					DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_101 = V_6;
 					NullCheck(L_101);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_102 = L_101->___r;
 					Controller_loadItemNew_m95DD6A7658A92F7A82842E28047A8BF53BC412AA(__this, L_102, (int8_t)2, (bool)0, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5472>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5474>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_103;
 					L_103 = Rms_loadRMS_m99C8DC9373B72F46873B7E6A81E133CF8CB7560B(_stringLiteralA2303A7FB9B729A69AA4F469992C8797E9BF277F, NULL);
 					DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_104 = (DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE*)il2cpp_codegen_object_new(DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE_il2cpp_TypeInfo_var);
 					DataInputStream__ctor_m1808A69F7798F0F7739F0892534292A768FE8036(L_104, L_103, NULL);
 					V_7 = L_104;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5473>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5475>
 					DataInputStream_t5BE6AD55145A3D280F94B2DC1EAE4EBCD8F2F9AE* L_105 = V_7;
 					NullCheck(L_105);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_106 = L_105->___r;
 					Controller_loadItemNew_m95DD6A7658A92F7A82842E28047A8BF53BC412AA(__this, L_106, (int8_t)((int32_t)100), (bool)0, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5474>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5476>
 					il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateItem = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5475>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5477>
 					goto IL_03d3_2;
 				}
 				catch(Il2CppExceptionWrapper& e)
@@ -15923,23 +15927,23 @@ IL_0336_2:
 CATCH_03c0_2:
 				{
 					Exception_t* L_107 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5476>
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5478>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5480>
 					il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)));
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))))->___vcItem = (int8_t)(-1);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5479>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5481>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_108;
 					L_108 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_108);
 					Service_updateItem_mCB45A72F50F30D8EEA92446EC4DDA4732CA852A8(L_108, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5480>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5482>
 					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_03d3_2;
 				}
 
 IL_03d3_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5482>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5484>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					int8_t L_109 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsData;
 					int8_t L_110 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vcData;
@@ -15976,7 +15980,7 @@ IL_03d3_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5484>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5486>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					bool L_117 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isLoadAllData;
 					if (L_117)
@@ -15985,23 +15989,23 @@ IL_03d3_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5486>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5488>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_118;
 					L_118 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_118);
 					GameScr_readDart_m2D93C4F764F2D3A12514E32BD2DD01C784653639(L_118, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5487>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5489>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_119;
 					L_119 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_119);
 					GameScr_readEfect_m3BA036650AD8C4C8CE2A18B1B8D7BCCB76DF0613(L_119, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5488>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5490>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_120;
 					L_120 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_120);
 					GameScr_readArrow_mAB37B1966B5209FF1FE1346819855BE07F46BD12(L_120, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5489>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5491>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_121;
 					L_121 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_121);
@@ -16010,7 +16014,7 @@ IL_03d3_2:
 
 IL_0432_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5491>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5493>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_122;
 					L_122 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_122);
@@ -16019,7 +16023,7 @@ IL_0432_2:
 
 IL_043c_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5493>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5495>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_123 = ___0_msg;
 					NullCheck(L_123);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_124;
@@ -16027,19 +16031,19 @@ IL_043c_2:
 					NullCheck(L_124);
 					int8_t L_125;
 					L_125 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_124, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5494>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5496>
 					Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D* L_126 = (Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D*)(Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D*)SZArrayNew(Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D_il2cpp_TypeInfo_var, (uint32_t)L_125);
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___exps = L_126;
 					Il2CppCodeGenWriteBarrier((void**)(&((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___exps), (void*)L_126);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5495>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5497>
 					V_8 = 0;
 					goto IL_046f_2;
 				}
 
 IL_0456_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5497>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5499>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D* L_127 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___exps;
 					int32_t L_128 = V_8;
@@ -16052,14 +16056,14 @@ IL_0456_2:
 					L_131 = myReader_readLong_m28B988A2CB27F61C2796A34DAD3DE686D9940C14(L_130, NULL);
 					NullCheck(L_127);
 					(L_127)->SetAt(static_cast<il2cpp_array_size_t>(L_128), (int64_t)L_131);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5495>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5497>
 					int32_t L_132 = V_8;
 					V_8 = ((int32_t)il2cpp_codegen_add(L_132, 1));
 				}
 
 IL_046f_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5495>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5497>
 					int32_t L_133 = V_8;
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D* L_134 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___exps;
@@ -16070,33 +16074,33 @@ IL_046f_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5499>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5501>
 					goto IL_07ff_2;
 				}
 
 IL_047f_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5503>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5505>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_135 = ___0_msg;
 					NullCheck(L_135);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_136;
 					L_136 = Message_reader_m566A30463A7272FB56AC9213AB3B3DAC08F30518_inline(L_135, NULL);
 					NullCheck(L_136);
 					myReader_mark_m4F9318EB449A2E9082286F91799EE9E8CF7E762D(L_136, ((int32_t)100000), NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5504>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5506>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_137 = ___0_msg;
 					NullCheck(L_137);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_138;
 					L_138 = Message_reader_m566A30463A7272FB56AC9213AB3B3DAC08F30518_inline(L_137, NULL);
 					Controller_createMap_m38A6765412CC49AA365B19087CADE26975A39D76(__this, L_138, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5505>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5507>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_139 = ___0_msg;
 					NullCheck(L_139);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_140;
 					L_140 = Message_reader_m566A30463A7272FB56AC9213AB3B3DAC08F30518_inline(L_139, NULL);
 					NullCheck(L_140);
 					myReader_reset_mE7E30C18E65522895CB8842EDF245B9D89EF744D(L_140, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5506>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5508>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_141 = ___0_msg;
 					NullCheck(L_141);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_142;
@@ -16106,17 +16110,17 @@ IL_047f_2:
 					L_143 = myReader_available_m929F700B0FC5E5BEB2883E2F0161368D14DB3879(L_142, NULL);
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_144 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)SZArrayNew(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_il2cpp_TypeInfo_var, (uint32_t)L_143);
 					V_9 = L_144;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5507>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5509>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_145 = ___0_msg;
 					NullCheck(L_145);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_146;
 					L_146 = Message_reader_m566A30463A7272FB56AC9213AB3B3DAC08F30518_inline(L_145, NULL);
 					NullCheck(L_146);
 					myReader_readFully_m8608417048EE24F48B0E1E760D131963204F563C(L_146, (&V_9), NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5508>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5510>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_147 = V_9;
 					Rms_saveRMS_mF7CE60C507D5896622CA43DB7367F4A174BC62C6(_stringLiteralB8FF0949A8476E25C5B7EBC0C9B88EB013A6AE9D, L_147, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5509>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5511>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_148 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)SZArrayNew(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_il2cpp_TypeInfo_var, (uint32_t)1);
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_149 = L_148;
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
@@ -16124,13 +16128,13 @@ IL_047f_2:
 					NullCheck(L_149);
 					(L_149)->SetAt(static_cast<il2cpp_array_size_t>(0), (int8_t)L_150);
 					V_10 = L_149;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5510>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5512>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_151 = V_10;
 					Rms_saveRMS_mF7CE60C507D5896622CA43DB7367F4A174BC62C6(_stringLiteralB7C84B1FBC19098E01321A54DDE79D8876683422, L_151, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5511>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5513>
 					il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateMap = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5512>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5514>
 					int8_t L_152 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsData;
 					int8_t L_153 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vcData;
 					if ((!(((uint32_t)L_152) == ((uint32_t)L_153))))
@@ -16166,59 +16170,59 @@ IL_047f_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5514>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5516>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_160;
 					L_160 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_160);
 					GameScr_readDart_m2D93C4F764F2D3A12514E32BD2DD01C784653639(L_160, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5515>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5517>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_161;
 					L_161 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_161);
 					GameScr_readEfect_m3BA036650AD8C4C8CE2A18B1B8D7BCCB76DF0613(L_161, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5516>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5518>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_162;
 					L_162 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_162);
 					GameScr_readArrow_mAB37B1966B5209FF1FE1346819855BE07F46BD12(L_162, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5517>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5519>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_163;
 					L_163 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_163);
 					GameScr_readSkill_mDFD850C3FCA30BE3A1FB1B5372D9787B78AC60B6(L_163, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5518>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5520>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_164;
 					L_164 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_164);
 					Service_clientOk_m3031A357B047673B6293253105C1BA731766FAC7(L_164, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5520>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5522>
 					goto IL_07ff_2;
 				}
 
 IL_0566_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5524>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5526>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_165 = ___0_msg;
 					NullCheck(L_165);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_166;
 					L_166 = Message_reader_m566A30463A7272FB56AC9213AB3B3DAC08F30518_inline(L_165, NULL);
 					NullCheck(L_166);
 					myReader_mark_m4F9318EB449A2E9082286F91799EE9E8CF7E762D(L_166, ((int32_t)100000), NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5525>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5527>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_167 = ___0_msg;
 					NullCheck(L_167);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_168;
 					L_168 = Message_reader_m566A30463A7272FB56AC9213AB3B3DAC08F30518_inline(L_167, NULL);
 					Controller_createSkill_mB365E848B5D27D560EEE2B0DAD4426D14A19BAF9(__this, L_168, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5526>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5528>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_169 = ___0_msg;
 					NullCheck(L_169);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_170;
 					L_170 = Message_reader_m566A30463A7272FB56AC9213AB3B3DAC08F30518_inline(L_169, NULL);
 					NullCheck(L_170);
 					myReader_reset_mE7E30C18E65522895CB8842EDF245B9D89EF744D(L_170, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5527>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5529>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_171 = ___0_msg;
 					NullCheck(L_171);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_172;
@@ -16228,17 +16232,17 @@ IL_0566_2:
 					L_173 = myReader_available_m929F700B0FC5E5BEB2883E2F0161368D14DB3879(L_172, NULL);
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_174 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)SZArrayNew(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_il2cpp_TypeInfo_var, (uint32_t)L_173);
 					V_11 = L_174;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5528>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5530>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_175 = ___0_msg;
 					NullCheck(L_175);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_176;
 					L_176 = Message_reader_m566A30463A7272FB56AC9213AB3B3DAC08F30518_inline(L_175, NULL);
 					NullCheck(L_176);
 					myReader_readFully_m8608417048EE24F48B0E1E760D131963204F563C(L_176, (&V_11), NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5529>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5531>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_177 = V_11;
 					Rms_saveRMS_mF7CE60C507D5896622CA43DB7367F4A174BC62C6(_stringLiteral64CAAE08586A0F5029EBC935C41399802B8ECBAC, L_177, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5530>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5532>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_178 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)SZArrayNew(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_il2cpp_TypeInfo_var, (uint32_t)1);
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_179 = L_178;
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
@@ -16246,13 +16250,13 @@ IL_0566_2:
 					NullCheck(L_179);
 					(L_179)->SetAt(static_cast<il2cpp_array_size_t>(0), (int8_t)L_180);
 					V_12 = L_179;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5531>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5533>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_181 = V_12;
 					Rms_saveRMS_mF7CE60C507D5896622CA43DB7367F4A174BC62C6(_stringLiteralF086FF82D90954D8045B5CEB7D698FC6DDB74CC5, L_181, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5532>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5534>
 					il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 					((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateSkill = (bool)0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5533>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5535>
 					int8_t L_182 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsData;
 					int8_t L_183 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vcData;
 					if ((!(((uint32_t)L_182) == ((uint32_t)L_183))))
@@ -16288,39 +16292,39 @@ IL_0566_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5535>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5537>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_190;
 					L_190 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_190);
 					GameScr_readDart_m2D93C4F764F2D3A12514E32BD2DD01C784653639(L_190, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5536>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5538>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_191;
 					L_191 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_191);
 					GameScr_readEfect_m3BA036650AD8C4C8CE2A18B1B8D7BCCB76DF0613(L_191, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5537>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5539>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_192;
 					L_192 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_192);
 					GameScr_readArrow_mAB37B1966B5209FF1FE1346819855BE07F46BD12(L_192, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5538>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5540>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_193;
 					L_193 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_193);
 					GameScr_readSkill_mDFD850C3FCA30BE3A1FB1B5372D9787B78AC60B6(L_193, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5539>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5541>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_194;
 					L_194 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_194);
 					Service_clientOk_m3031A357B047673B6293253105C1BA731766FAC7(L_194, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5541>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5543>
 					goto IL_07ff_2;
 				}
 
 IL_064d_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5544>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5546>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_195 = ___0_msg;
 					NullCheck(L_195);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_196;
@@ -16335,13 +16339,13 @@ IL_064d_2:
 					L_199 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteralFDDE0E187CBE5578A5606D152D7214DD44161CF6, L_198, _stringLiteral9F954BE9FD9E999DA1677DADC6D2CAB27412A282, NULL);
 					il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 					Res_outz_mF51EC000D16B49E001011B2C1BAD2F66E72C33D3(L_199, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5545>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5547>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_200 = ___0_msg;
 					NullCheck(L_200);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_201;
 					L_201 = Message_reader_m566A30463A7272FB56AC9213AB3B3DAC08F30518_inline(L_200, NULL);
 					Controller_createItemNew_m599A9D818340C766E38E4449D24E45EF0C7FB69D(__this, L_201, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5546>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5548>
 					goto IL_07ff_2;
 				}
 
@@ -16351,28 +16355,28 @@ IL_0686_2:
 				try
 				{
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5550>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5552>
 						il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 						((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isLoadingMap = (bool)1;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5551>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5553>
 						il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 						Res_outz_mF51EC000D16B49E001011B2C1BAD2F66E72C33D3(_stringLiteral33A6A0EDE4F8B1DAE53448ED982959F511354476, NULL);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5552>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5554>
 						il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 						((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isLoading = (bool)1;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5553>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5555>
 						il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 						((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___maps = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)NULL;
 						Il2CppCodeGenWriteBarrier((void**)(&((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___maps), (void*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)NULL);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5554>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5556>
 						((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___types = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)NULL;
 						Il2CppCodeGenWriteBarrier((void**)(&((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___types), (void*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)NULL);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5555>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5557>
 						il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 						mSystem_gcc_m54AAF2EA79CA21C076A0602C47E00A39C3C3C6D5(NULL);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5556>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5558>
 						GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral0220BE97386685426802C8D6F58AB82043EA5C36, 2, NULL);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5557>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5559>
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_202 = ___0_msg;
 						NullCheck(L_202);
 						myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_203;
@@ -16381,7 +16385,7 @@ IL_0686_2:
 						int8_t L_204;
 						L_204 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_203, NULL);
 						((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___tmw = L_204;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5558>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5560>
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_205 = ___0_msg;
 						NullCheck(L_205);
 						myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_206;
@@ -16390,13 +16394,13 @@ IL_0686_2:
 						int8_t L_207;
 						L_207 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_206, NULL);
 						((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___tmh = L_207;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5559>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5561>
 						int32_t L_208 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___tmw;
 						int32_t L_209 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___tmh;
 						Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_210 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)il2cpp_codegen_multiply(L_208, L_209)));
 						((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___maps = L_210;
 						Il2CppCodeGenWriteBarrier((void**)(&((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___maps), (void*)L_210);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5560>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5562>
 						int32_t L_211 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___tmw;
 						int32_t L_212 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___tmh;
 						V_13 = ((int32_t)il2cpp_codegen_multiply(L_211, L_212));
@@ -16405,14 +16409,14 @@ IL_0686_2:
 						String_t* L_214;
 						L_214 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral0F748BF37EAB0D815BF6A1C194420EF88721C69A, L_213, NULL);
 						Res_err_m74352C93584905389E2A1A448A5CBC49C1599F42(L_214, NULL);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5561>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5563>
 						V_14 = 0;
 						goto IL_0743_3;
 					}
 
 IL_0716_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5563>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5565>
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_215 = ___0_msg;
 						NullCheck(L_215);
 						myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_216;
@@ -16421,7 +16425,7 @@ IL_0716_3:
 						int8_t L_217;
 						L_217 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_216, NULL);
 						V_15 = L_217;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5564>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5566>
 						int32_t L_218 = V_15;
 						if ((((int32_t)L_218) >= ((int32_t)0)))
 						{
@@ -16429,28 +16433,28 @@ IL_0716_3:
 						}
 					}
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5566>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5568>
 						int32_t L_219 = V_15;
 						V_15 = ((int32_t)il2cpp_codegen_add(L_219, ((int32_t)256)));
 					}
 
 IL_0732_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5568>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5570>
 						il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 						Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_220 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___maps;
 						int32_t L_221 = V_14;
 						int32_t L_222 = V_15;
 						NullCheck(L_220);
 						(L_220)->SetAt(static_cast<il2cpp_array_size_t>(L_221), (int32_t)((int32_t)(uint16_t)L_222));
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5561>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5563>
 						int32_t L_223 = V_14;
 						V_14 = ((int32_t)il2cpp_codegen_add(L_223, 1));
 					}
 
 IL_0743_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5561>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5563>
 						int32_t L_224 = V_14;
 						il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 						Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_225 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___maps;
@@ -16461,24 +16465,24 @@ IL_0743_3:
 						}
 					}
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5570>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5572>
 						il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 						Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_226 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___maps;
 						NullCheck(L_226);
 						Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_227 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)(((RuntimeArray*)L_226)->max_length)));
 						((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___types = L_227;
 						Il2CppCodeGenWriteBarrier((void**)(&((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___types), (void*)L_227);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5571>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5573>
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_228 = __this->___messWait;
 						___0_msg = L_228;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5572>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5574>
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_229 = ___0_msg;
 						Controller_loadInfoMap_mA1BCF873F55585E2BF25B85C55EBF781AFE595D3(__this, L_229, NULL);
 					}
 					try
 					{
 						{
-							//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5575>
+							//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5577>
 							Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_230 = ___0_msg;
 							NullCheck(L_230);
 							myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_231;
@@ -16486,7 +16490,7 @@ IL_0743_3:
 							NullCheck(L_231);
 							int8_t L_232;
 							L_232 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_231, NULL);
-							//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5576>
+							//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5578>
 							if (L_232)
 							{
 								goto IL_077e_4;
@@ -16506,7 +16510,7 @@ IL_077f_4:
 						{
 							il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 							((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___isMapDouble = (bool)G_B69_0;
-							//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5577>
+							//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5579>
 							goto IL_07a0_3;
 						}
 					}
@@ -16523,9 +16527,9 @@ IL_077f_4:
 CATCH_0786_3:
 					{
 						Exception_t* L_233 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5578>
-						V_16 = L_233;
 						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5580>
+						V_16 = L_233;
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5582>
 						Exception_t* L_234 = V_16;
 						NullCheck(L_234);
 						String_t* L_235;
@@ -16534,14 +16538,14 @@ CATCH_0786_3:
 						L_236 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral1E861B876B939C604D772C273E1979C9D0909FB9)), L_235, NULL);
 						il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var)));
 						Res_err_m74352C93584905389E2A1A448A5CBC49C1599F42(L_236, NULL);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5581>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5583>
 						IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 						goto IL_07a0_3;
 					}
 
 IL_07a0_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5582>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5584>
 						goto IL_07bc_2;
 					}
 				}
@@ -16558,9 +16562,9 @@ IL_07a0_3:
 CATCH_07a2_2:
 				{
 					Exception_t* L_237 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5583>
-					V_17 = L_237;
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5585>
+					V_17 = L_237;
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5587>
 					Exception_t* L_238 = V_17;
 					NullCheck(L_238);
 					String_t* L_239;
@@ -16569,56 +16573,56 @@ CATCH_07a2_2:
 					L_240 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEA66951AFE2782FF46B2E9FFFD08ACE61BE84171)), L_239, NULL);
 					il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var)));
 					Res_err_m74352C93584905389E2A1A448A5CBC49C1599F42(L_240, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5586>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5588>
 					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_07bc_2;
 				}
 
 IL_07bc_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5587>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5589>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_241 = ___0_msg;
 					NullCheck(L_241);
 					Message_cleanup_m4839694DFD6A299D3BD3F45B3E4471D7229CA3A5(L_241, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5588>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5590>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_242 = __this->___messWait;
 					NullCheck(L_242);
 					Message_cleanup_m4839694DFD6A299D3BD3F45B3E4471D7229CA3A5(L_242, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5589>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5591>
 					V_18 = (Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640*)NULL;
 					__this->___messWait = (Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640*)NULL;
 					Il2CppCodeGenWriteBarrier((void**)(&__this->___messWait), (void*)(Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640*)NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_243 = V_18;
 					___0_msg = L_243;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5590>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5592>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_244;
 					L_244 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_244);
 					VirtualActionInvoker0::Invoke(4, L_244);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5591>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5593>
 					goto IL_07ff_2;
 				}
 
 IL_07e7_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5593>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5595>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral9F55B64CB899276FF27132585A054BA62926A868, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5594>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5596>
 					goto IL_07ff_2;
 				}
 
 IL_07f4_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5596>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5598>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral631720987BD27E2811EC5CC8BE273BD27EF96AFA, 2, NULL);
 				}
 
 IL_07ff_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5599>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5601>
 					goto IL_0828;
 				}
 			}
@@ -16635,8 +16639,8 @@ IL_07ff_2:
 CATCH_0801_1:
 			{
 				Exception_t* L_245 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5600>
 				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5602>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5604>
 				Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_246 = ___0_msg;
 				NullCheck(L_246);
 				int8_t* L_247 = (int8_t*)(&L_246->___command);
@@ -16645,7 +16649,7 @@ CATCH_0801_1:
 				String_t* L_249;
 				L_249 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralFA3210DB240AB02756C1E10722B824FAC4C7DB2B)), L_248, NULL);
 				Cout_LogError_m76D25E80FED10E31F38A00D4C6A10C91BDC2879A(L_249, NULL);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5603>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5605>
 				IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 				goto IL_0828;
 			}
@@ -16658,7 +16662,7 @@ CATCH_0801_1:
 
 IL_0828:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5608>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5610>
 		return;
 	}
 }
@@ -16684,7 +16688,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_messageNotLogin_m48536D2D4950
 FINALLY_0084:
 			{
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5650>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5652>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_0 = ___0_msg;
 					if (!L_0)
 					{
@@ -16699,7 +16703,7 @@ FINALLY_0084:
 
 IL_008d:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5651>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5653>
 					return;
 				}
 			}
@@ -16709,7 +16713,7 @@ IL_008d:
 			try
 			{
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5614>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5616>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_2 = ___0_msg;
 					NullCheck(L_2);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_3;
@@ -16717,20 +16721,20 @@ IL_008d:
 					NullCheck(L_3);
 					int8_t L_4;
 					L_4 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_3, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5615>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5617>
 					if ((((int32_t)L_4) == ((int32_t)2)))
 					{
 						goto IL_0010_2;
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5617>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5619>
 					goto IL_008e;
 				}
 
 IL_0010_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5619>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5621>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_5 = ___0_msg;
 					NullCheck(L_5);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_6;
@@ -16739,7 +16743,7 @@ IL_0010_2:
 					String_t* L_7;
 					L_7 = myReader_readUTF_m7BDB6B0B2C3063B93376A208946519E334B482F4(L_6, NULL);
 					V_0 = L_7;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5620>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5622>
 					int32_t L_8;
 					L_8 = Rms_loadRMSInt_m04A406BD0AF69D19BBFC366FD1CE49E74B26BC86(_stringLiteralFEBBCEC4DA8C26D619A6C8ED0E810DDB3B68BD7A, NULL);
 					if ((!(((uint32_t)L_8) == ((uint32_t)1))))
@@ -16748,13 +16752,13 @@ IL_0010_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5622>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5624>
 					goto IL_008e;
 				}
 
 IL_002b_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5624>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5626>
 					il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 					int32_t L_9 = ((mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_StaticFields*)il2cpp_codegen_static_fields_for(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var))->___clientType;
 					if ((!(((uint32_t)L_9) == ((uint32_t)1))))
@@ -16763,7 +16767,7 @@ IL_002b_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5626>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5628>
 					String_t* L_10 = V_0;
 					il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 					((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___linkDefault = L_10;
@@ -16773,7 +16777,7 @@ IL_002b_2:
 
 IL_003b_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5630>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5632>
 					String_t* L_11 = V_0;
 					il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 					((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___linkDefault = L_11;
@@ -16782,17 +16786,17 @@ IL_003b_2:
 
 IL_0041_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5632>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5634>
 					il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 					mSystem_AddIpTest_m62BB329FD4CB82071872ADDF1A384D8E0A632AD0(NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5633>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5635>
 					il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 					String_t* L_12 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___linkDefault;
 					ServerListScreen_GetServerList_m3679060F3C065D6490B47C5A5FE5DB17E1C6DCCB(L_12, NULL);
 				}
 				try
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5636>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5638>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_13 = ___0_msg;
 					NullCheck(L_13);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_14;
@@ -16800,10 +16804,10 @@ IL_0041_2:
 					NullCheck(L_14);
 					int8_t L_15;
 					L_15 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_14, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5637>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5639>
 					il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 					((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___CanNapTien = (bool)((((int32_t)L_15) == ((int32_t)1))? 1 : 0);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5638>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5640>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_16 = ___0_msg;
 					NullCheck(L_16);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_17;
@@ -16812,10 +16816,10 @@ IL_0041_2:
 					int8_t L_18;
 					L_18 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_17, NULL);
 					V_1 = L_18;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5639>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5641>
 					int8_t L_19 = V_1;
 					Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteralFEBBCEC4DA8C26D619A6C8ED0E810DDB3B68BD7A, L_19, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5640>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5642>
 					goto IL_007f_2;
 				}
 				catch(Il2CppExceptionWrapper& e)
@@ -16831,15 +16835,15 @@ IL_0041_2:
 CATCH_007c_2:
 				{
 					Exception_t* L_20 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5641>
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5643>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5645>
 					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_007f_2;
 				}
 
 IL_007f_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5644>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5646>
 					goto IL_008e;
 				}
 			}
@@ -16856,8 +16860,8 @@ IL_007f_2:
 CATCH_0081_1:
 			{
 				Exception_t* L_21 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5645>
 				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5647>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5649>
 				IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 				goto IL_008e;
 			}
@@ -16870,7 +16874,7 @@ CATCH_0081_1:
 
 IL_008e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5652>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5654>
 		return;
 	}
 }
@@ -17010,7 +17014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_messageSubCommand_m25D5597A1A
 FINALLY_17c7:
 			{
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6253>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6255>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_0 = ___0_msg;
 					if (!L_0)
 					{
@@ -17025,7 +17029,7 @@ FINALLY_17c7:
 
 IL_17d0:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6254>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6256>
 					return;
 				}
 			}
@@ -17035,7 +17039,7 @@ IL_17d0:
 			try
 			{
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5658>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5660>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_2 = ___0_msg;
 					NullCheck(L_2);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_3;
@@ -17044,7 +17048,7 @@ IL_17d0:
 					int8_t L_4;
 					L_4 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_3, NULL);
 					V_0 = L_4;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5659>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5661>
 					String_t* L_5;
 					L_5 = SByte_ToString_mAA885F58F9F739E25623423A059C735017A92708((&V_0), NULL);
 					String_t* L_6;
@@ -17224,15 +17228,15 @@ IL_17d0:
 
 IL_00d2_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5664>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5666>
 					InfoDlg_hide_m814AC3464EB8EF2DB1324DDD359DD8CF01A864B8(NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5665>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5667>
 					goto IL_17ab_2;
 				}
 
 IL_00dc_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5668>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5670>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_9 = ___0_msg;
 					NullCheck(L_9);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_10;
@@ -17241,7 +17245,7 @@ IL_00dc_2:
 					int8_t L_11;
 					L_11 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_10, NULL);
 					V_1 = L_11;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5669>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5671>
 					int8_t L_12 = V_1;
 					if ((((int32_t)L_12) <= ((int32_t)0)))
 					{
@@ -17249,28 +17253,28 @@ IL_00dc_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5671>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5673>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					Panel_t49349297CB778B2219539905F16B94090BD93138* L_13 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 					NullCheck(L_13);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_14 = L_13->___vPlayerMenu_id;
 					NullCheck(L_14);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_14, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5672>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5674>
 					InfoDlg_showWait_m5671B6DDD1A8D769CD88E92006B12D1CF646B252(NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5673>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5675>
 					Panel_t49349297CB778B2219539905F16B94090BD93138* L_15 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 					NullCheck(L_15);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_16 = L_15->___vPlayerMenu;
 					V_2 = L_16;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5674>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5676>
 					V_3 = 0;
 					goto IL_0196_2;
 				}
 
 IL_0115_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5676>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5678>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_17 = ___0_msg;
 					NullCheck(L_17);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_18;
@@ -17278,7 +17282,7 @@ IL_0115_2:
 					NullCheck(L_18);
 					String_t* L_19;
 					L_19 = myReader_readUTF_m7BDB6B0B2C3063B93376A208946519E334B482F4(L_18, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5677>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5679>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_20 = ___0_msg;
 					NullCheck(L_20);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_21;
@@ -17287,7 +17291,7 @@ IL_0115_2:
 					String_t* L_22;
 					L_22 = myReader_readUTF_m7BDB6B0B2C3063B93376A208946519E334B482F4(L_21, NULL);
 					V_4 = L_22;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5678>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5680>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_23 = ___0_msg;
 					NullCheck(L_23);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_24;
@@ -17296,7 +17300,7 @@ IL_0115_2:
 					int16_t L_25;
 					L_25 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_24, NULL);
 					V_5 = L_25;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5679>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5681>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					Panel_t49349297CB778B2219539905F16B94090BD93138* L_26 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 					NullCheck(L_26);
@@ -17308,7 +17312,7 @@ IL_0115_2:
 					L_30 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_28, L_29, NULL);
 					NullCheck(L_27);
 					MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_27, L_30, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5680>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5682>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_31;
 					L_31 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -17317,7 +17321,7 @@ IL_0115_2:
 					int16_t L_33 = V_5;
 					NullCheck(L_32);
 					L_32->___menuSelect = L_33;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5681>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5683>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_34;
 					L_34 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_34);
@@ -17325,25 +17329,25 @@ IL_0115_2:
 					Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_36 = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)il2cpp_codegen_object_new(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1_il2cpp_TypeInfo_var);
 					Command__ctor_m2F9E5E134E7D48AAB7113F2DBB0C6E51ABE5B546(L_36, L_19, ((int32_t)11115), L_35, NULL);
 					V_6 = L_36;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5682>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5684>
 					Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_37 = V_6;
 					String_t* L_38 = V_4;
 					NullCheck(L_37);
 					L_37->___caption2 = L_38;
 					Il2CppCodeGenWriteBarrier((void**)(&L_37->___caption2), (void*)L_38);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5683>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5685>
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_39 = V_2;
 					Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_40 = V_6;
 					NullCheck(L_39);
 					MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_39, L_40, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5674>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5676>
 					int32_t L_41 = V_3;
 					V_3 = ((int32_t)il2cpp_codegen_add(L_41, 1));
 				}
 
 IL_0196_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5674>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5676>
 					int32_t L_42 = V_3;
 					int8_t L_43 = V_1;
 					if ((((int32_t)L_42) < ((int32_t)L_43)))
@@ -17352,23 +17356,23 @@ IL_0196_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5685>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5687>
 					InfoDlg_hide_m814AC3464EB8EF2DB1324DDD359DD8CF01A864B8(NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5686>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5688>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					Panel_t49349297CB778B2219539905F16B94090BD93138* L_44 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 					NullCheck(L_44);
 					Panel_setTabPlayerMenu_m2FE3E1B7CB2068C55C6DBBC14994C9C876460E1F(L_44, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5688>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5690>
 					goto IL_17ab_2;
 				}
 
 IL_01b1_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5691>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5693>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteralEF70E510285101FA570546DDA9F48B9D612E1F3F, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5692>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5694>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_45;
 					L_45 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -17387,7 +17391,7 @@ IL_01b1_2:
 					NullCheck(L_45);
 					L_45->___nClass = L_51;
 					Il2CppCodeGenWriteBarrier((void**)(&L_45->___nClass), (void*)L_51);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5693>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5695>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_52;
 					L_52 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_53 = ___0_msg;
@@ -17399,36 +17403,36 @@ IL_01b1_2:
 					L_55 = myReader_readLong_m28B988A2CB27F61C2796A34DAD3DE686D9940C14(L_54, NULL);
 					NullCheck(L_52);
 					L_52->___cTiemNang = L_55;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5694>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5696>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_56;
 					L_56 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_56);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_57 = L_56->___vSkill;
 					NullCheck(L_57);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_57, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5695>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5697>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_58;
 					L_58 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_58);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_59 = L_58->___vSkillFight;
 					NullCheck(L_59);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_59, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5696>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5698>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_60;
 					L_60 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_60);
 					L_60->___myskill = (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)NULL;
 					Il2CppCodeGenWriteBarrier((void**)(&L_60->___myskill), (void*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5697>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5699>
 					goto IL_17ab_2;
 				}
 
 IL_021a_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5700>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5702>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteralA302733E8F1ADAF2216ACED0CD1E76A93C40AD35, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5701>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5703>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_61;
 					L_61 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -17451,7 +17455,7 @@ IL_021a_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5703>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5705>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_65;
 					L_65 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -17461,7 +17465,7 @@ IL_021a_2:
 					int64_t L_67 = L_66->___cHPFull;
 					NullCheck(L_65);
 					L_65->___cHP = L_67;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5704>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5706>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_68;
 					L_68 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_69;
@@ -17470,13 +17474,13 @@ IL_021a_2:
 					int64_t L_70 = L_69->___cMPFull;
 					NullCheck(L_68);
 					L_68->___cMP = L_70;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5705>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5707>
 					Cout_LogError2_mB157EAB3FDA033582552621DE510EB72CAAB38DB(_stringLiteral37A907E49A1D00D4DF09D24A185588A9ACC8623A, NULL);
 				}
 
 IL_0272_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5707>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5709>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_71;
 					L_71 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -17484,14 +17488,14 @@ IL_0272_2:
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_72 = L_71->___vSkill;
 					NullCheck(L_72);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_72, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5708>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5710>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_73;
 					L_73 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_73);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_74 = L_73->___vSkillFight;
 					NullCheck(L_74);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_74, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5709>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5711>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_75 = ___0_msg;
 					NullCheck(L_75);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_76;
@@ -17500,14 +17504,14 @@ IL_0272_2:
 					int8_t L_77;
 					L_77 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_76, NULL);
 					V_7 = L_77;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5710>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5712>
 					V_8 = (int8_t)0;
 					goto IL_02c3_2;
 				}
 
 IL_02a2_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5712>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5714>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_78 = ___0_msg;
 					NullCheck(L_78);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_79;
@@ -17515,22 +17519,22 @@ IL_02a2_2:
 					NullCheck(L_79);
 					int16_t L_80;
 					L_80 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_79, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5713>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5715>
 					il2cpp_codegen_runtime_class_init_inline(Skills_t2A3EE3C5187C3318D24EB1211EF4AF5A653D69B8_il2cpp_TypeInfo_var);
 					Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_81;
 					L_81 = Skills_get_m685C03D39DFEE6EFBB334FC562659D9DB00AC765(L_80, NULL);
 					V_9 = L_81;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5714>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5716>
 					Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_82 = V_9;
 					Controller_useSkill_m7302C7853277E73961EEEC6A42931499F316B629(__this, L_82, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5710>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5712>
 					int8_t L_83 = V_8;
 					V_8 = ((int8_t)((int32_t)il2cpp_codegen_add((int32_t)L_83, 1)));
 				}
 
 IL_02c3_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5710>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5712>
 					int8_t L_84 = V_8;
 					int8_t L_85 = V_7;
 					if ((((int32_t)L_84) < ((int32_t)L_85)))
@@ -17539,13 +17543,13 @@ IL_02c3_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5716>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5718>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_86;
 					L_86 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_86);
 					GameScr_sortSkill_m277E01AF4C5471B2810C02ACBE7D2C515703185B(L_86, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5717>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5719>
 					bool L_87 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isPaintInfoMe;
 					if (!L_87)
 					{
@@ -17553,10 +17557,10 @@ IL_02c3_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5719>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5721>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___indexRow = (-1);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5720>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5722>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_88;
 					L_88 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_89;
@@ -17569,28 +17573,28 @@ IL_02c3_2:
 					NullCheck(L_88);
 					((mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_88)->___left = L_90;
 					Il2CppCodeGenWriteBarrier((void**)(&((mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_88)->___left), (void*)L_90);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5722>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5724>
 					goto IL_17ab_2;
 				}
 
 IL_0302_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5725>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5727>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral16222C3C97B5EE503848FB038EE22DD1054D97A5, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5726>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5728>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_91;
 					L_91 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_91);
 					Char_boxSort_m8BB44094A5FC531E4A65E63FA814D14695423F69(L_91, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5727>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5729>
 					goto IL_17ab_2;
 				}
 
 IL_031c_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5730>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5732>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_92 = ___0_msg;
 					NullCheck(L_92);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_93;
@@ -17599,7 +17603,7 @@ IL_031c_2:
 					int32_t L_94;
 					L_94 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_93, NULL);
 					V_11 = L_94;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5731>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5733>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_95;
 					L_95 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -17609,7 +17613,7 @@ IL_031c_2:
 					int32_t L_98 = V_11;
 					NullCheck(L_96);
 					L_96->___xuInBox = ((int32_t)il2cpp_codegen_subtract(L_97, L_98));
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5732>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5734>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_99;
 					L_99 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_100 = L_99;
@@ -17618,7 +17622,7 @@ IL_031c_2:
 					int32_t L_102 = V_11;
 					NullCheck(L_100);
 					L_100->___xu = ((int64_t)il2cpp_codegen_add(L_101, ((int64_t)L_102)));
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5733>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5735>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_103;
 					L_103 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_104;
@@ -17631,45 +17635,45 @@ IL_031c_2:
 					NullCheck(L_103);
 					L_103->___xuStr = L_106;
 					Il2CppCodeGenWriteBarrier((void**)(&L_103->___xuStr), (void*)L_106);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5734>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5736>
 					goto IL_17ab_2;
 				}
 
 IL_036e_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5738>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5740>
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_107 = (MyVector_t5E551DE127AB217F3BF51644B186993381C11E30*)il2cpp_codegen_object_new(MyVector_t5E551DE127AB217F3BF51644B186993381C11E30_il2cpp_TypeInfo_var);
 					MyVector__ctor_m9CAA74C33B5605E7806E3F1C9E1D78A97AE10692(L_107, NULL);
 					il2cpp_codegen_runtime_class_init_inline(RadarScr_t833F3EA7266E98EEE2F949DDFF10C752D27766B0_il2cpp_TypeInfo_var);
 					((RadarScr_t833F3EA7266E98EEE2F949DDFF10C752D27766B0_StaticFields*)il2cpp_codegen_static_fields_for(RadarScr_t833F3EA7266E98EEE2F949DDFF10C752D27766B0_il2cpp_TypeInfo_var))->___list = L_107;
 					Il2CppCodeGenWriteBarrier((void**)(&((RadarScr_t833F3EA7266E98EEE2F949DDFF10C752D27766B0_StaticFields*)il2cpp_codegen_static_fields_for(RadarScr_t833F3EA7266E98EEE2F949DDFF10C752D27766B0_il2cpp_TypeInfo_var))->___list), (void*)L_107);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5739>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5741>
 					il2cpp_codegen_runtime_class_init_inline(Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_il2cpp_TypeInfo_var);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_108 = ((Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_StaticFields*)il2cpp_codegen_static_fields_for(Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_il2cpp_TypeInfo_var))->___vTeleport;
 					NullCheck(L_108);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_108, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5740>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5742>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_109 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vCharInMap;
 					NullCheck(L_109);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_109, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5741>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5743>
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_110 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vItemMap;
 					NullCheck(L_110);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_110, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5742>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5744>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_111 = ((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___vItemTime;
 					NullCheck(L_111);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_111, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5743>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5745>
 					GameScr_loadImg_m40A12F439F1243CDC630A1A4E732828D84FF791C(NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5744>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5746>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_112;
 					L_112 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___currentCharViewInfo = L_112;
 					Il2CppCodeGenWriteBarrier((void**)(&((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___currentCharViewInfo), (void*)L_112);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5745>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5747>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_113;
 					L_113 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_114 = ___0_msg;
@@ -17681,7 +17685,7 @@ IL_036e_2:
 					L_116 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_115, NULL);
 					NullCheck(L_113);
 					L_113->___charID = L_116;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5746>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5748>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_117;
 					L_117 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_118 = ___0_msg;
@@ -17693,7 +17697,7 @@ IL_036e_2:
 					L_120 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_119, NULL);
 					NullCheck(L_117);
 					L_117->___ctaskId = L_120;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5747>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5749>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_121;
 					L_121 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_122 = ___0_msg;
@@ -17705,7 +17709,7 @@ IL_036e_2:
 					L_124 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_123, NULL);
 					NullCheck(L_121);
 					L_121->___cgender = L_124;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5748>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5750>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_125;
 					L_125 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_126 = ___0_msg;
@@ -17717,7 +17721,7 @@ IL_036e_2:
 					L_128 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_127, NULL);
 					NullCheck(L_125);
 					L_125->___head = L_128;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5749>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5751>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_129;
 					L_129 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_130 = ___0_msg;
@@ -17730,7 +17734,7 @@ IL_036e_2:
 					NullCheck(L_129);
 					L_129->___cName = L_132;
 					Il2CppCodeGenWriteBarrier((void**)(&L_129->___cName), (void*)L_132);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5750>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5752>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_133;
 					L_133 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_134 = ___0_msg;
@@ -17742,7 +17746,7 @@ IL_036e_2:
 					L_136 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_135, NULL);
 					NullCheck(L_133);
 					L_133->___cPk = L_136;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5751>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5753>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_137;
 					L_137 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_138 = ___0_msg;
@@ -17754,7 +17758,7 @@ IL_036e_2:
 					L_140 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_139, NULL);
 					NullCheck(L_137);
 					L_137->___cTypePk = L_140;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5752>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5754>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_141;
 					L_141 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_142 = ___0_msg;
@@ -17766,12 +17770,12 @@ IL_036e_2:
 					L_144 = myReader_readLong_m28B988A2CB27F61C2796A34DAD3DE686D9940C14(L_143, NULL);
 					NullCheck(L_141);
 					L_141->___cPower = L_144;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5753>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5755>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_145;
 					L_145 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_145);
 					Char_applyCharLevelPercent_m5A90FDADD67DA71D6930E9EAAF0ACDA7C1D50CD5(L_145, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5754>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5756>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_146;
 					L_146 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_147 = ___0_msg;
@@ -17783,7 +17787,7 @@ IL_036e_2:
 					L_149 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_148, NULL);
 					NullCheck(L_146);
 					L_146->___eff5BuffHp = L_149;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5755>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5757>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_150;
 					L_150 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_151 = ___0_msg;
@@ -17795,7 +17799,7 @@ IL_036e_2:
 					L_153 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_152, NULL);
 					NullCheck(L_150);
 					L_150->___eff5BuffMp = L_153;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5756>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5758>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_154;
 					L_154 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NClassU5BU5D_t8B6BB220755070BCDDAC0AFCA543390F3A4AE352* L_155 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___nClasss;
@@ -17812,21 +17816,21 @@ IL_036e_2:
 					NullCheck(L_154);
 					L_154->___nClass = L_160;
 					Il2CppCodeGenWriteBarrier((void**)(&L_154->___nClass), (void*)L_160);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5757>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5759>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_161;
 					L_161 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_161);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_162 = L_161->___vSkill;
 					NullCheck(L_162);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_162, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5758>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5760>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_163;
 					L_163 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_163);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_164 = L_163->___vSkillFight;
 					NullCheck(L_164);
 					MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_164, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5759>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5761>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_165;
 					L_165 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_166;
@@ -17835,7 +17839,7 @@ IL_036e_2:
 					int64_t L_167 = L_166->___cHP;
 					NullCheck(L_165);
 					L_165->___dHP = L_167;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5760>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5762>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_168;
 					L_168 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_169;
@@ -17844,7 +17848,7 @@ IL_036e_2:
 					int64_t L_170 = L_169->___cMP;
 					NullCheck(L_168);
 					L_168->___dMP = L_170;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5761>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5763>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_171 = ___0_msg;
 					NullCheck(L_171);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_172;
@@ -17853,14 +17857,14 @@ IL_036e_2:
 					int8_t L_173;
 					L_173 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_172, NULL);
 					V_12 = L_173;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5762>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5764>
 					V_14 = (int8_t)0;
 					goto IL_051f_2;
 				}
 
 IL_04fe_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5764>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5766>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_174 = ___0_msg;
 					NullCheck(L_174);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_175;
@@ -17872,17 +17876,17 @@ IL_04fe_2:
 					Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_177;
 					L_177 = Skills_get_m685C03D39DFEE6EFBB334FC562659D9DB00AC765(L_176, NULL);
 					V_15 = L_177;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5765>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5767>
 					Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_178 = V_15;
 					Controller_useSkill_m7302C7853277E73961EEEC6A42931499F316B629(__this, L_178, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5762>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5764>
 					int8_t L_179 = V_14;
 					V_14 = ((int8_t)((int32_t)il2cpp_codegen_add((int32_t)L_179, 1)));
 				}
 
 IL_051f_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5762>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5764>
 					int8_t L_180 = V_14;
 					int8_t L_181 = V_12;
 					if ((((int32_t)L_180) < ((int32_t)L_181)))
@@ -17891,18 +17895,18 @@ IL_051f_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5767>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5769>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_182;
 					L_182 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_182);
 					GameScr_sortSkill_m277E01AF4C5471B2810C02ACBE7D2C515703185B(L_182, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5768>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5770>
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_183;
 					L_183 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					NullCheck(L_183);
 					GameScr_loadSkillShortcut_m15E7D6916EBC435BE27E07F05E0FE1B5FAE37B07(L_183, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5769>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5771>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_184;
 					L_184 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -17915,7 +17919,7 @@ IL_051f_2:
 					L_187 = myReader_readLong_m28B988A2CB27F61C2796A34DAD3DE686D9940C14(L_186, NULL);
 					NullCheck(L_184);
 					L_184->___xu = L_187;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5770>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5772>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_188;
 					L_188 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_189 = ___0_msg;
@@ -17927,7 +17931,7 @@ IL_051f_2:
 					L_191 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_190, NULL);
 					NullCheck(L_188);
 					L_188->___luongKhoa = L_191;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5771>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5773>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_192;
 					L_192 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_193 = ___0_msg;
@@ -17939,7 +17943,7 @@ IL_051f_2:
 					L_195 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_194, NULL);
 					NullCheck(L_192);
 					L_192->___luong = L_195;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5772>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5774>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_196;
 					L_196 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_197;
@@ -17952,7 +17956,7 @@ IL_051f_2:
 					NullCheck(L_196);
 					L_196->___xuStr = L_199;
 					Il2CppCodeGenWriteBarrier((void**)(&L_196->___xuStr), (void*)L_199);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5773>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5775>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_200;
 					L_200 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_201;
@@ -17964,7 +17968,7 @@ IL_051f_2:
 					NullCheck(L_200);
 					L_200->___luongStr = L_203;
 					Il2CppCodeGenWriteBarrier((void**)(&L_200->___luongStr), (void*)L_203);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5774>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5776>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_204;
 					L_204 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_205;
@@ -17976,7 +17980,7 @@ IL_051f_2:
 					NullCheck(L_204);
 					L_204->___luongKhoaStr = L_207;
 					Il2CppCodeGenWriteBarrier((void**)(&L_204->___luongKhoaStr), (void*)L_207);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5775>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5777>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_208;
 					L_208 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_209 = ___0_msg;
@@ -17994,20 +17998,20 @@ IL_051f_2:
 				try
 				{
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5778>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5780>
 						il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_213;
 						L_213 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 						NullCheck(L_213);
 						Char_setDefaultPart_mFA19633DDC14D5E9811012A4E49B931BADACFD72(L_213, NULL);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5779>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5781>
 						V_16 = 0;
 						goto IL_0774_3;
 					}
 
 IL_05f1_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5781>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5783>
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_214 = ___0_msg;
 						NullCheck(L_214);
 						myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_215;
@@ -18016,7 +18020,7 @@ IL_05f1_3:
 						int16_t L_216;
 						L_216 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_215, NULL);
 						V_17 = L_216;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5782>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5784>
 						int16_t L_217 = V_17;
 						if ((((int32_t)L_217) == ((int32_t)(-1))))
 						{
@@ -18024,18 +18028,18 @@ IL_05f1_3:
 						}
 					}
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5786>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5788>
 						int16_t L_218 = V_17;
 						il2cpp_codegen_runtime_class_init_inline(ItemTemplates_t74FBB6ADFE8FFC5AA6B2D7D731E933833ECC2745_il2cpp_TypeInfo_var);
 						ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_219;
 						L_219 = ItemTemplates_get_m018D099AE496B5A88FA91C8F44E751B9704351E4(L_218, NULL);
 						V_18 = L_219;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5787>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5789>
 						ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_220 = V_18;
 						NullCheck(L_220);
 						int8_t L_221 = L_220->___type;
 						V_19 = L_221;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5788>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5790>
 						il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_222;
 						L_222 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18047,7 +18051,7 @@ IL_05f1_3:
 						NullCheck(L_223);
 						ArrayElementTypeCheck (L_223, L_225);
 						(L_223)->SetAt(static_cast<il2cpp_array_size_t>(L_224), (Item_tFAF77888D49883A321EB596A7D93CB5615D37E95*)L_225);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5789>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5791>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_226;
 						L_226 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 						NullCheck(L_226);
@@ -18060,7 +18064,7 @@ IL_05f1_3:
 						NullCheck(L_230);
 						L_230->___template = L_231;
 						Il2CppCodeGenWriteBarrier((void**)(&L_230->___template), (void*)L_231);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5790>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5792>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_232;
 						L_232 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 						NullCheck(L_232);
@@ -18078,7 +18082,7 @@ IL_05f1_3:
 						L_239 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_238, NULL);
 						NullCheck(L_236);
 						L_236->___quantity = L_239;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5791>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5793>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_240;
 						L_240 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 						NullCheck(L_240);
@@ -18097,7 +18101,7 @@ IL_05f1_3:
 						NullCheck(L_244);
 						L_244->___info = L_247;
 						Il2CppCodeGenWriteBarrier((void**)(&L_244->___info), (void*)L_247);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5792>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5794>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_248;
 						L_248 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 						NullCheck(L_248);
@@ -18116,7 +18120,7 @@ IL_05f1_3:
 						NullCheck(L_252);
 						L_252->___content = L_255;
 						Il2CppCodeGenWriteBarrier((void**)(&L_252->___content), (void*)L_255);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5793>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5795>
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_256 = ___0_msg;
 						NullCheck(L_256);
 						myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_257;
@@ -18125,7 +18129,7 @@ IL_05f1_3:
 						uint8_t L_258;
 						L_258 = myReader_readUnsignedByte_mF9CF4F40864C78BA0D2A8C19E427A6C50B1E4A36(L_257, NULL);
 						V_20 = L_258;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5794>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5796>
 						int32_t L_259 = V_20;
 						if (!L_259)
 						{
@@ -18133,7 +18137,7 @@ IL_05f1_3:
 						}
 					}
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5796>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5798>
 						il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_260;
 						L_260 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18148,14 +18152,14 @@ IL_05f1_3:
 						NullCheck(L_264);
 						L_264->___itemOption = L_266;
 						Il2CppCodeGenWriteBarrier((void**)(&L_264->___itemOption), (void*)L_266);
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5797>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5799>
 						V_21 = 0;
 						goto IL_0707_3;
 					}
 
 IL_06c4_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5799>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5801>
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_267 = ___0_msg;
 						NullCheck(L_267);
 						myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_268;
@@ -18164,7 +18168,7 @@ IL_06c4_3:
 						uint8_t L_269;
 						L_269 = myReader_readUnsignedByte_mF9CF4F40864C78BA0D2A8C19E427A6C50B1E4A36(L_268, NULL);
 						V_22 = L_269;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5800>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5802>
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_270 = ___0_msg;
 						NullCheck(L_270);
 						myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_271;
@@ -18173,7 +18177,7 @@ IL_06c4_3:
 						uint16_t L_272;
 						L_272 = myReader_readUnsignedShort_mA15D5FC6AC695E964D4E491124752261C00D5834(L_271, NULL);
 						V_23 = L_272;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5801>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5803>
 						int32_t L_273 = V_22;
 						if ((((int32_t)L_273) == ((int32_t)(-1))))
 						{
@@ -18181,7 +18185,7 @@ IL_06c4_3:
 						}
 					}
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5803>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5805>
 						il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_274;
 						L_274 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18205,14 +18209,14 @@ IL_06c4_3:
 
 IL_0701_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5797>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5799>
 						int32_t L_284 = V_21;
 						V_21 = ((int32_t)il2cpp_codegen_add(L_284, 1));
 					}
 
 IL_0707_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5797>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5799>
 						int32_t L_285 = V_21;
 						il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_286;
@@ -18253,7 +18257,7 @@ IL_071f_3:
 
 IL_072a_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5810>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5812>
 						il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_294;
 						L_294 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18271,13 +18275,13 @@ IL_072a_3:
 						int16_t L_301 = L_300->___part;
 						NullCheck(L_294);
 						L_294->___body = L_301;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5811>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5813>
 						goto IL_076e_3;
 					}
 
 IL_074d_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5813>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5815>
 						il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_302;
 						L_302 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18299,14 +18303,14 @@ IL_074d_3:
 
 IL_076e_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5779>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5781>
 						int32_t L_310 = V_16;
 						V_16 = ((int32_t)il2cpp_codegen_add(L_310, 1));
 					}
 
 IL_0774_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5779>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5781>
 						int32_t L_311 = V_16;
 						il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_312;
@@ -18320,7 +18324,7 @@ IL_0774_3:
 						}
 					}
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5817>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5819>
 						goto IL_078c_2;
 					}
 				}
@@ -18337,15 +18341,15 @@ IL_0774_3:
 CATCH_0789_2:
 				{
 					Exception_t* L_314 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5818>
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5820>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5822>
 					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_078c_2;
 				}
 
 IL_078c_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5821>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5823>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_315;
 					L_315 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18360,17 +18364,17 @@ IL_078c_2:
 					NullCheck(L_315);
 					L_315->___arrItemBag = L_319;
 					Il2CppCodeGenWriteBarrier((void**)(&L_315->___arrItemBag), (void*)L_319);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5822>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5824>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___hpPotion = 0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5823>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5825>
 					V_24 = 0;
 					goto IL_093b_2;
 				}
 
 IL_07b4_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5825>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5827>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_320 = ___0_msg;
 					NullCheck(L_320);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_321;
@@ -18379,7 +18383,7 @@ IL_07b4_2:
 					int16_t L_322;
 					L_322 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_321, NULL);
 					V_25 = L_322;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5826>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5828>
 					int16_t L_323 = V_25;
 					if ((((int32_t)L_323) == ((int32_t)(-1))))
 					{
@@ -18387,7 +18391,7 @@ IL_07b4_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5830>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5832>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_324;
 					L_324 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18399,7 +18403,7 @@ IL_07b4_2:
 					NullCheck(L_325);
 					ArrayElementTypeCheck (L_325, L_327);
 					(L_325)->SetAt(static_cast<il2cpp_array_size_t>(L_326), (Item_tFAF77888D49883A321EB596A7D93CB5615D37E95*)L_327);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5831>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5833>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_328;
 					L_328 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_328);
@@ -18415,7 +18419,7 @@ IL_07b4_2:
 					NullCheck(L_332);
 					L_332->___template = L_334;
 					Il2CppCodeGenWriteBarrier((void**)(&L_332->___template), (void*)L_334);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5832>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5834>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_335;
 					L_335 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_335);
@@ -18433,7 +18437,7 @@ IL_07b4_2:
 					L_342 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_341, NULL);
 					NullCheck(L_339);
 					L_339->___quantity = L_342;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5833>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5835>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_343;
 					L_343 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_343);
@@ -18452,7 +18456,7 @@ IL_07b4_2:
 					NullCheck(L_347);
 					L_347->___info = L_350;
 					Il2CppCodeGenWriteBarrier((void**)(&L_347->___info), (void*)L_350);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5834>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5836>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_351;
 					L_351 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_351);
@@ -18471,7 +18475,7 @@ IL_07b4_2:
 					NullCheck(L_355);
 					L_355->___content = L_358;
 					Il2CppCodeGenWriteBarrier((void**)(&L_355->___content), (void*)L_358);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5835>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5837>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_359;
 					L_359 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_359);
@@ -18483,7 +18487,7 @@ IL_07b4_2:
 					int32_t L_364 = V_24;
 					NullCheck(L_363);
 					L_363->___indexUI = L_364;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5836>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5838>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_365 = ___0_msg;
 					NullCheck(L_365);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_366;
@@ -18492,7 +18496,7 @@ IL_07b4_2:
 					int8_t L_367;
 					L_367 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_366, NULL);
 					V_26 = L_367;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5837>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5839>
 					int8_t L_368 = V_26;
 					if (!L_368)
 					{
@@ -18500,7 +18504,7 @@ IL_07b4_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5839>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5841>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_369;
 					L_369 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18515,14 +18519,14 @@ IL_07b4_2:
 					NullCheck(L_373);
 					L_373->___itemOption = L_375;
 					Il2CppCodeGenWriteBarrier((void**)(&L_373->___itemOption), (void*)L_375);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5840>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5842>
 					V_27 = 0;
 					goto IL_08e6_2;
 				}
 
 IL_0891_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5842>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5844>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_376 = ___0_msg;
 					NullCheck(L_376);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_377;
@@ -18531,7 +18535,7 @@ IL_0891_2:
 					uint8_t L_378;
 					L_378 = myReader_readUnsignedByte_mF9CF4F40864C78BA0D2A8C19E427A6C50B1E4A36(L_377, NULL);
 					V_28 = L_378;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5843>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5845>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_379 = ___0_msg;
 					NullCheck(L_379);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_380;
@@ -18540,7 +18544,7 @@ IL_0891_2:
 					uint16_t L_381;
 					L_381 = myReader_readUnsignedShort_mA15D5FC6AC695E964D4E491124752261C00D5834(L_380, NULL);
 					V_29 = L_381;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5844>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5846>
 					int32_t L_382 = V_28;
 					if ((((int32_t)L_382) == ((int32_t)(-1))))
 					{
@@ -18548,7 +18552,7 @@ IL_0891_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5846>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5848>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_383;
 					L_383 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18568,7 +18572,7 @@ IL_0891_2:
 					NullCheck(L_388);
 					ArrayElementTypeCheck (L_388, L_392);
 					(L_388)->SetAt(static_cast<il2cpp_array_size_t>(L_389), (ItemOption_t55E2BB3A2E1FEE141E08C9C55EC6A994D1A5A963*)L_392);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5847>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5849>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_393;
 					L_393 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_393);
@@ -18583,14 +18587,14 @@ IL_0891_2:
 
 IL_08e0_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5840>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5842>
 					int32_t L_398 = V_27;
 					V_27 = ((int32_t)il2cpp_codegen_add(L_398, 1));
 				}
 
 IL_08e6_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5840>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5842>
 					int32_t L_399 = V_27;
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_400;
@@ -18612,7 +18616,7 @@ IL_08e6_2:
 
 IL_08fe_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5851>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5853>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_406;
 					L_406 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18632,7 +18636,7 @@ IL_08fe_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5853>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5855>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					int32_t L_413 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___hpPotion;
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
@@ -18651,14 +18655,14 @@ IL_08fe_2:
 
 IL_0935_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5823>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5825>
 					int32_t L_420 = V_24;
 					V_24 = ((int32_t)il2cpp_codegen_add(L_420, 1));
 				}
 
 IL_093b_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5823>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5825>
 					int32_t L_421 = V_24;
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_422;
@@ -18672,7 +18676,7 @@ IL_093b_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5856>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5858>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_424;
 					L_424 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18687,19 +18691,19 @@ IL_093b_2:
 					NullCheck(L_424);
 					L_424->___arrItemBox = L_428;
 					Il2CppCodeGenWriteBarrier((void**)(&L_424->___arrItemBox), (void*)L_428);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5857>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5859>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					Panel_t49349297CB778B2219539905F16B94090BD93138* L_429 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 					NullCheck(L_429);
 					L_429->___hasUse = 0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5858>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5860>
 					V_30 = 0;
 					goto IL_0abe_2;
 				}
 
 IL_097b_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5860>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5862>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_430 = ___0_msg;
 					NullCheck(L_430);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_431;
@@ -18708,7 +18712,7 @@ IL_097b_2:
 					int16_t L_432;
 					L_432 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_431, NULL);
 					V_31 = L_432;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5861>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5863>
 					int16_t L_433 = V_31;
 					if ((((int32_t)L_433) == ((int32_t)(-1))))
 					{
@@ -18716,7 +18720,7 @@ IL_097b_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5865>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5867>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_434;
 					L_434 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18728,7 +18732,7 @@ IL_097b_2:
 					NullCheck(L_435);
 					ArrayElementTypeCheck (L_435, L_437);
 					(L_435)->SetAt(static_cast<il2cpp_array_size_t>(L_436), (Item_tFAF77888D49883A321EB596A7D93CB5615D37E95*)L_437);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5866>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5868>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_438;
 					L_438 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_438);
@@ -18744,7 +18748,7 @@ IL_097b_2:
 					NullCheck(L_442);
 					L_442->___template = L_444;
 					Il2CppCodeGenWriteBarrier((void**)(&L_442->___template), (void*)L_444);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5867>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5869>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_445;
 					L_445 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_445);
@@ -18762,7 +18766,7 @@ IL_097b_2:
 					L_452 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_451, NULL);
 					NullCheck(L_449);
 					L_449->___quantity = L_452;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5868>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5870>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_453;
 					L_453 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_453);
@@ -18781,7 +18785,7 @@ IL_097b_2:
 					NullCheck(L_457);
 					L_457->___info = L_460;
 					Il2CppCodeGenWriteBarrier((void**)(&L_457->___info), (void*)L_460);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5869>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5871>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_461;
 					L_461 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_461);
@@ -18800,7 +18804,7 @@ IL_097b_2:
 					NullCheck(L_465);
 					L_465->___content = L_468;
 					Il2CppCodeGenWriteBarrier((void**)(&L_465->___content), (void*)L_468);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5870>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5872>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_469;
 					L_469 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_469);
@@ -18820,14 +18824,14 @@ IL_097b_2:
 					NullCheck(L_473);
 					L_473->___itemOption = L_477;
 					Il2CppCodeGenWriteBarrier((void**)(&L_473->___itemOption), (void*)L_477);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5871>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5873>
 					V_32 = 0;
 					goto IL_0a8e_2;
 				}
 
 IL_0a39_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5873>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5875>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_478 = ___0_msg;
 					NullCheck(L_478);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_479;
@@ -18836,7 +18840,7 @@ IL_0a39_2:
 					uint8_t L_480;
 					L_480 = myReader_readUnsignedByte_mF9CF4F40864C78BA0D2A8C19E427A6C50B1E4A36(L_479, NULL);
 					V_33 = L_480;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5874>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5876>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_481 = ___0_msg;
 					NullCheck(L_481);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_482;
@@ -18845,7 +18849,7 @@ IL_0a39_2:
 					uint16_t L_483;
 					L_483 = myReader_readUnsignedShort_mA15D5FC6AC695E964D4E491124752261C00D5834(L_482, NULL);
 					V_34 = L_483;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5875>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5877>
 					int32_t L_484 = V_33;
 					if ((((int32_t)L_484) == ((int32_t)(-1))))
 					{
@@ -18853,7 +18857,7 @@ IL_0a39_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5877>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5879>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_485;
 					L_485 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -18873,7 +18877,7 @@ IL_0a39_2:
 					NullCheck(L_490);
 					ArrayElementTypeCheck (L_490, L_494);
 					(L_490)->SetAt(static_cast<il2cpp_array_size_t>(L_491), (ItemOption_t55E2BB3A2E1FEE141E08C9C55EC6A994D1A5A963*)L_494);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5878>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5880>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_495;
 					L_495 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_495);
@@ -18888,14 +18892,14 @@ IL_0a39_2:
 
 IL_0a88_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5871>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5873>
 					int32_t L_500 = V_32;
 					V_32 = ((int32_t)il2cpp_codegen_add(L_500, 1));
 				}
 
 IL_0a8e_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5871>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5873>
 					int32_t L_501 = V_32;
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_502;
@@ -18915,7 +18919,7 @@ IL_0a8e_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5881>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5883>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					Panel_t49349297CB778B2219539905F16B94090BD93138* L_508 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 					Panel_t49349297CB778B2219539905F16B94090BD93138* L_509 = L_508;
@@ -18927,14 +18931,14 @@ IL_0a8e_2:
 
 IL_0ab8_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5858>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5860>
 					int32_t L_511 = V_30;
 					V_30 = ((int32_t)il2cpp_codegen_add(L_511, 1));
 				}
 
 IL_0abe_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5858>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5860>
 					int32_t L_512 = V_30;
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_513;
@@ -18948,13 +18952,13 @@ IL_0abe_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5883>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5885>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_515;
 					L_515 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_515);
 					L_515->___statusMe = 4;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5884>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5886>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_516;
 					L_516 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_516);
@@ -18963,14 +18967,14 @@ IL_0abe_2:
 					L_518 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_517, _stringLiteral6093972ACDCD32425310F5B521A0112DC0F8B29B, NULL);
 					int32_t L_519;
 					L_519 = Rms_loadRMSInt_m04A406BD0AF69D19BBFC366FD1CE49E74B26BC86(L_518, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5885>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5887>
 					if ((((int32_t)L_519) >= ((int32_t)1)))
 					{
 						goto IL_0b00_2;
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5887>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5889>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isViewClanInvite = (bool)0;
 					goto IL_0b06_2;
@@ -18978,14 +18982,14 @@ IL_0abe_2:
 
 IL_0b00_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5891>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5893>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isViewClanInvite = (bool)1;
 				}
 
 IL_0b06_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5893>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5895>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_520 = ___0_msg;
 					NullCheck(L_520);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_521;
@@ -18994,25 +18998,25 @@ IL_0b06_2:
 					int16_t L_522;
 					L_522 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_521, NULL);
 					V_13 = L_522;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5894>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5896>
 					int16_t L_523 = V_13;
 					Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_524 = (Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB*)(Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB*)SZArrayNew(Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB_il2cpp_TypeInfo_var, (uint32_t)L_523);
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___idHead = L_524;
 					Il2CppCodeGenWriteBarrier((void**)(&((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___idHead), (void*)L_524);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5895>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5897>
 					int16_t L_525 = V_13;
 					Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_526 = (Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB*)(Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB*)SZArrayNew(Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB_il2cpp_TypeInfo_var, (uint32_t)L_525);
 					((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___idAvatar = L_526;
 					Il2CppCodeGenWriteBarrier((void**)(&((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___idAvatar), (void*)L_526);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5896>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5898>
 					V_35 = 0;
 					goto IL_0b5c_2;
 				}
 
 IL_0b30_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5898>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5900>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_527 = ((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___idHead;
 					int32_t L_528 = V_35;
@@ -19025,7 +19029,7 @@ IL_0b30_2:
 					L_531 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_530, NULL);
 					NullCheck(L_527);
 					(L_527)->SetAt(static_cast<il2cpp_array_size_t>(L_528), (int16_t)L_531);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5899>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5901>
 					Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_532 = ((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___idAvatar;
 					int32_t L_533 = V_35;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_534 = ___0_msg;
@@ -19037,14 +19041,14 @@ IL_0b30_2:
 					L_536 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_535, NULL);
 					NullCheck(L_532);
 					(L_532)->SetAt(static_cast<il2cpp_array_size_t>(L_533), (int16_t)L_536);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5896>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5898>
 					int32_t L_537 = V_35;
 					V_35 = ((int32_t)il2cpp_codegen_add(L_537, 1));
 				}
 
 IL_0b5c_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5896>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5898>
 					int32_t L_538 = V_35;
 					int16_t L_539 = V_13;
 					if ((((int32_t)L_538) < ((int32_t)L_539)))
@@ -19053,14 +19057,14 @@ IL_0b5c_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5901>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5903>
 					V_36 = 0;
 					goto IL_0b80_2;
 				}
 
 IL_0b67_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5903>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5905>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_540 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 					NullCheck(L_540);
@@ -19069,14 +19073,14 @@ IL_0b67_2:
 					Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_543 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)3);
 					NullCheck(L_541);
 					(L_541)->SetAt(static_cast<il2cpp_array_size_t>(L_542), (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)L_543);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5901>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5903>
 					int32_t L_544 = V_36;
 					V_36 = ((int32_t)il2cpp_codegen_add(L_544, 1));
 				}
 
 IL_0b80_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5901>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5903>
 					int32_t L_545 = V_36;
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_546 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
@@ -19089,7 +19093,7 @@ IL_0b80_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5905>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5907>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_548 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 					NullCheck(L_548);
@@ -19111,7 +19115,7 @@ IL_0b80_2:
 					L_556 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_555, NULL);
 					NullCheck(L_553);
 					(L_553)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)L_556);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5906>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5908>
 					InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_557 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 					NullCheck(L_557);
 					Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_558 = L_557->___charId;
@@ -19131,7 +19135,7 @@ IL_0b80_2:
 					L_565 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_564, NULL);
 					NullCheck(L_562);
 					(L_562)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)L_565);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5907>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5909>
 					InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_566 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 					NullCheck(L_566);
 					Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_567 = L_566->___charId;
@@ -19151,7 +19155,7 @@ IL_0b80_2:
 					L_574 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_573, NULL);
 					NullCheck(L_571);
 					(L_571)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)L_574);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5908>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5910>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_575;
 					L_575 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_576 = ___0_msg;
@@ -19163,7 +19167,7 @@ IL_0b80_2:
 					L_578 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_577, NULL);
 					NullCheck(L_575);
 					L_575->___isNhapThe = (bool)((((int32_t)L_578) == ((int32_t)1))? 1 : 0);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5909>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5911>
 					il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 					int64_t L_579;
 					L_579 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -19175,7 +19179,7 @@ IL_0b80_2:
 					int32_t L_582;
 					L_582 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_581, NULL);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___deltaTime = ((int64_t)il2cpp_codegen_subtract(L_579, ((int64_t)il2cpp_codegen_multiply(((int64_t)L_582), ((int64_t)((int32_t)1000))))));
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5910>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5912>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_583 = ___0_msg;
 					NullCheck(L_583);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_584;
@@ -19184,13 +19188,13 @@ IL_0b80_2:
 					int8_t L_585;
 					L_585 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_584, NULL);
 					((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isNewMember = L_585;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5911>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5913>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_586;
 					L_586 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					int8_t L_587 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isNewMember;
 					NullCheck(L_586);
 					L_586->___isTichXanh = (bool)((((int32_t)L_587) == ((int32_t)1))? 1 : 0);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5912>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5914>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_588;
 					L_588 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_589;
@@ -19199,7 +19203,7 @@ IL_0b80_2:
 					int32_t L_590 = L_589->___cgender;
 					NullCheck(L_588);
 					Service_updateCaption_m9986AD0850A9854B05F9BE1323F1807BD1919747(L_588, ((int8_t)L_590), NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5913>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5915>
 					Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_591;
 					L_591 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 					NullCheck(L_591);
@@ -19207,7 +19211,7 @@ IL_0b80_2:
 				}
 				try
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5916>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5918>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_592;
 					L_592 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -19220,7 +19224,7 @@ IL_0b80_2:
 					L_595 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_594, NULL);
 					NullCheck(L_592);
 					L_592->___idAuraEff = L_595;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5917>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5919>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_596;
 					L_596 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_597 = ___0_msg;
@@ -19232,7 +19236,7 @@ IL_0b80_2:
 					L_599 = myReader_readSByte_mB2F3C8A75A44E2BF33C2BCA1E2DF5155987C6772(L_598, NULL);
 					NullCheck(L_596);
 					L_596->___idEff_Set_Item = L_599;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5918>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5920>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_600;
 					L_600 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_601 = ___0_msg;
@@ -19244,7 +19248,7 @@ IL_0b80_2:
 					L_603 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_602, NULL);
 					NullCheck(L_600);
 					L_600->___idHat = L_603;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5919>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5921>
 					goto IL_17ab_2;
 				}
 				catch(Il2CppExceptionWrapper& e)
@@ -19260,15 +19264,15 @@ IL_0b80_2:
 CATCH_0cb1_2:
 				{
 					Exception_t* L_604 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5921>
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5923>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5925>
 					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_17ab_2;
 				}
 
 IL_0cb7_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5927>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5929>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_605;
 					L_605 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -19281,7 +19285,7 @@ IL_0cb7_2:
 					L_608 = myReader_readLong_m28B988A2CB27F61C2796A34DAD3DE686D9940C14(L_607, NULL);
 					NullCheck(L_605);
 					L_605->___xu = L_608;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5928>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5930>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_609;
 					L_609 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_610 = ___0_msg;
@@ -19293,7 +19297,7 @@ IL_0cb7_2:
 					L_612 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_611, NULL);
 					NullCheck(L_609);
 					L_609->___luong = L_612;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5929>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5931>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_613;
 					L_613 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_614 = ___0_msg;
@@ -19302,7 +19306,7 @@ IL_0cb7_2:
 					L_615 = Message_readLong_mEB1E7332EB5234AAA70F60CDAC6D9B5BA511B9A0(L_614, NULL);
 					NullCheck(L_613);
 					L_613->___cHP = L_615;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5930>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5932>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_616;
 					L_616 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_617 = ___0_msg;
@@ -19311,7 +19315,7 @@ IL_0cb7_2:
 					L_618 = Message_readLong_mEB1E7332EB5234AAA70F60CDAC6D9B5BA511B9A0(L_617, NULL);
 					NullCheck(L_616);
 					L_616->___cMP = L_618;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5931>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5933>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_619;
 					L_619 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_620 = ___0_msg;
@@ -19323,7 +19327,7 @@ IL_0cb7_2:
 					L_622 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_621, NULL);
 					NullCheck(L_619);
 					L_619->___luongKhoa = L_622;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5932>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5934>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_623;
 					L_623 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_624;
@@ -19336,7 +19340,7 @@ IL_0cb7_2:
 					NullCheck(L_623);
 					L_623->___xuStr = L_626;
 					Il2CppCodeGenWriteBarrier((void**)(&L_623->___xuStr), (void*)L_626);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5933>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5935>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_627;
 					L_627 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_628;
@@ -19348,7 +19352,7 @@ IL_0cb7_2:
 					NullCheck(L_627);
 					L_627->___luongStr = L_630;
 					Il2CppCodeGenWriteBarrier((void**)(&L_627->___luongStr), (void*)L_630);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5934>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5936>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_631;
 					L_631 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_632;
@@ -19360,20 +19364,20 @@ IL_0cb7_2:
 					NullCheck(L_631);
 					L_631->___luongKhoaStr = L_634;
 					Il2CppCodeGenWriteBarrier((void**)(&L_631->___luongKhoaStr), (void*)L_634);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5935>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5937>
 					goto IL_17ab_2;
 				}
 
 IL_0d68_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5938>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5940>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_635;
 					L_635 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_635);
 					int64_t L_636 = L_635->___cHP;
 					V_37 = L_636;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5939>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5941>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_637;
 					L_637 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_638 = ___0_msg;
@@ -19382,7 +19386,7 @@ IL_0d68_2:
 					L_639 = Message_readLong_mEB1E7332EB5234AAA70F60CDAC6D9B5BA511B9A0(L_638, NULL);
 					NullCheck(L_637);
 					L_637->___cHP = L_639;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5940>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5942>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_640;
 					L_640 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_640);
@@ -19405,7 +19409,7 @@ IL_0d68_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5942>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5944>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_645;
 					L_645 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -19435,13 +19439,13 @@ IL_0d68_2:
 					int32_t L_657 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___HP;
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_startFlyText_m8E749193F6988EA5C5CEF85FD88BD0072AF7E9AB(L_650, L_652, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_654, L_656)), ((int32_t)20))), 0, (-1), L_657, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5943>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5945>
 					il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 					SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_658;
 					L_658 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
 					NullCheck(L_658);
 					SoundMn_HP_MPup_mFFC6A00C78D5AD172F3DDDA4D45C1C25CA58F988(L_658, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5944>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5946>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_659;
 					L_659 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_659);
@@ -19465,7 +19469,7 @@ IL_0d68_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5946>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5948>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_664;
 					L_664 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -19515,7 +19519,7 @@ IL_0e50_2:
 
 IL_0e72_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5949>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5951>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_674;
 					L_674 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -19528,7 +19532,7 @@ IL_0e72_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5951>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5953>
 					int64_t L_677 = V_37;
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_678;
@@ -19562,7 +19566,7 @@ IL_0e72_2:
 
 IL_0ed8_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5953>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5955>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_690;
 					L_690 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -19573,7 +19577,7 @@ IL_0ed8_2:
 					int64_t L_692 = L_691->___cHP;
 					NullCheck(L_690);
 					L_690->___dHP = L_692;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5954>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5956>
 					bool L_693 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isPaintInfoMe;
 					if (!L_693)
 					{
@@ -19581,13 +19585,13 @@ IL_0ed8_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5957>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5959>
 					goto IL_17ab_2;
 				}
 
 IL_0efb_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5961>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5963>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_694;
 					L_694 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -19610,14 +19614,14 @@ IL_0efb_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5965>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5967>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_698;
 					L_698 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_698);
 					int64_t L_699 = L_698->___cMP;
 					V_39 = L_699;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5966>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5968>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_700;
 					L_700 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_701 = ___0_msg;
@@ -19626,7 +19630,7 @@ IL_0efb_2:
 					L_702 = Message_readLong_mEB1E7332EB5234AAA70F60CDAC6D9B5BA511B9A0(L_701, NULL);
 					NullCheck(L_700);
 					L_700->___cMP = L_702;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5967>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5969>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_703;
 					L_703 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_703);
@@ -19638,7 +19642,7 @@ IL_0efb_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5969>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5971>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_706;
 					L_706 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -19668,13 +19672,13 @@ IL_0efb_2:
 					int32_t L_718 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___MP;
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_startFlyText_m8E749193F6988EA5C5CEF85FD88BD0072AF7E9AB(L_711, L_713, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_715, L_717)), ((int32_t)23))), 0, ((int32_t)-2), L_718, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5970>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5972>
 					il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 					SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_719;
 					L_719 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
 					NullCheck(L_719);
 					SoundMn_HP_MPup_mFFC6A00C78D5AD172F3DDDA4D45C1C25CA58F988(L_719, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5971>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5973>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_720;
 					L_720 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_720);
@@ -19698,7 +19702,7 @@ IL_0efb_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5973>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5975>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_725;
 					L_725 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -19748,7 +19752,7 @@ IL_0ff5_2:
 
 IL_1017_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5976>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5978>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_735;
 					L_735 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -19761,7 +19765,7 @@ IL_1017_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5978>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5980>
 					int64_t L_738 = V_39;
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_739;
@@ -19795,7 +19799,7 @@ IL_1017_2:
 
 IL_107e_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5980>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5982>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_751;
 					L_751 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -19806,7 +19810,7 @@ IL_107e_2:
 					int64_t L_753 = L_752->___cMP;
 					NullCheck(L_751);
 					L_751->___dMP = L_753;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5981>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5983>
 					bool L_754 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isPaintInfoMe;
 					if (!L_754)
 					{
@@ -19814,13 +19818,13 @@ IL_107e_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5984>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5986>
 					goto IL_17ab_2;
 				}
 
 IL_10a1_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5988>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5990>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_755 = ___0_msg;
 					NullCheck(L_755);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_756;
@@ -19832,7 +19836,7 @@ IL_10a1_2:
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_758;
 					L_758 = GameScr_findCharInMap_m0262EBA2719D49024FC8AA4B9BC70DA4FB27D844(L_757, NULL);
 					V_40 = L_758;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5989>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5991>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_759 = V_40;
 					if (!L_759)
 					{
@@ -19840,7 +19844,7 @@ IL_10a1_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5993>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5995>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_760 = V_40;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_761 = ___0_msg;
 					NullCheck(L_761);
@@ -19851,7 +19855,7 @@ IL_10a1_2:
 					L_763 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_762, NULL);
 					NullCheck(L_760);
 					L_760->___clanID = L_763;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5994>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5996>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_764 = V_40;
 					NullCheck(L_764);
 					int32_t L_765 = L_764->___clanID;
@@ -19861,7 +19865,7 @@ IL_10a1_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5996>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5998>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_766 = V_40;
 					NullCheck(L_766);
 					L_766->___isCopy = (bool)1;
@@ -19869,7 +19873,7 @@ IL_10a1_2:
 
 IL_10df_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:5998>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6000>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_767 = V_40;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_768 = ___0_msg;
 					bool L_769;
@@ -19878,7 +19882,7 @@ IL_10df_2:
 				try
 				{
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6001>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6003>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_770 = V_40;
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_771 = ___0_msg;
 						NullCheck(L_771);
@@ -19889,7 +19893,7 @@ IL_10df_2:
 						L_773 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_772, NULL);
 						NullCheck(L_770);
 						L_770->___idAuraEff = L_773;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6002>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6004>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_774 = V_40;
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_775 = ___0_msg;
 						NullCheck(L_775);
@@ -19900,7 +19904,7 @@ IL_10df_2:
 						L_777 = myReader_readSByte_mB2F3C8A75A44E2BF33C2BCA1E2DF5155987C6772(L_776, NULL);
 						NullCheck(L_774);
 						L_774->___idEff_Set_Item = L_777;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6003>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6005>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_778 = V_40;
 						Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_779 = ___0_msg;
 						NullCheck(L_779);
@@ -19911,7 +19915,7 @@ IL_10df_2:
 						L_781 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_780, NULL);
 						NullCheck(L_778);
 						L_778->___idHat = L_781;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6004>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6006>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_782 = V_40;
 						NullCheck(L_782);
 						int32_t L_783 = L_782->___bag;
@@ -19921,7 +19925,7 @@ IL_10df_2:
 						}
 					}
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6006>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6008>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_784 = V_40;
 						NullCheck(L_784);
 						int32_t L_785 = L_784->___bag;
@@ -19929,11 +19933,11 @@ IL_10df_2:
 						Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09* L_787 = (Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09*)il2cpp_codegen_object_new(Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09_il2cpp_TypeInfo_var);
 						Effect__ctor_mACF58613F214AD61740A5098B23C849511C0F602(L_787, L_785, L_786, 2, (-1), ((int32_t)10), (int8_t)1, NULL);
 						V_41 = L_787;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6007>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6009>
 						Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09* L_788 = V_41;
 						NullCheck(L_788);
 						L_788->___typeEff = 5;
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6008>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6010>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_789 = V_40;
 						Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09* L_790 = V_41;
 						NullCheck(L_789);
@@ -19943,7 +19947,7 @@ IL_10df_2:
 
 IL_1155_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6012>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6014>
 						Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_791 = V_40;
 						NullCheck(L_791);
 						Char_removeEffChar_mD8E412985A0220648A6700C043A52CB77E2DA327(L_791, 0, ((int32_t)201), NULL);
@@ -19951,7 +19955,7 @@ IL_1155_3:
 
 IL_1162_3:
 					{
-						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6014>
+						//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6016>
 						goto IL_17ab_2;
 					}
 				}
@@ -19968,18 +19972,18 @@ IL_1162_3:
 CATCH_1167_2:
 				{
 					Exception_t* L_792 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6016>
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6018>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6020>
 					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_17ab_2;
 				}
 
 IL_116d_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6023>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6025>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral1BBC2CC4DAE28E4CE1052AF89C9A6A2433793D5E, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6024>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6026>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_793 = ___0_msg;
 					NullCheck(L_793);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_794;
@@ -19991,7 +19995,7 @@ IL_116d_2:
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_796;
 					L_796 = GameScr_findCharInMap_m0262EBA2719D49024FC8AA4B9BC70DA4FB27D844(L_795, NULL);
 					V_42 = L_796;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6025>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6027>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_797 = V_42;
 					if (!L_797)
 					{
@@ -19999,7 +20003,7 @@ IL_116d_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6027>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6029>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_798 = V_42;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_799 = ___0_msg;
 					NullCheck(L_799);
@@ -20010,16 +20014,16 @@ IL_116d_2:
 					L_801 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_800, NULL);
 					NullCheck(L_798);
 					L_798->___cspeed = L_801;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6029>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6031>
 					goto IL_17ab_2;
 				}
 
 IL_11a8_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6033>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6035>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral5CE114635EC67F00E1CEA6C373BC2EE467285112, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6034>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6036>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_802 = ___0_msg;
 					NullCheck(L_802);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_803;
@@ -20031,7 +20035,7 @@ IL_11a8_2:
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_805;
 					L_805 = GameScr_findCharInMap_m0262EBA2719D49024FC8AA4B9BC70DA4FB27D844(L_804, NULL);
 					V_43 = L_805;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6035>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6037>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_806 = V_43;
 					if (!L_806)
 					{
@@ -20039,7 +20043,7 @@ IL_11a8_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6037>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6039>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_807 = V_43;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_808 = ___0_msg;
 					NullCheck(L_808);
@@ -20047,7 +20051,7 @@ IL_11a8_2:
 					L_809 = Message_readInt3Byte_mBE7C3337B1D276AF34D660A4452A3BD271CF22B4(L_808, NULL);
 					NullCheck(L_807);
 					L_807->___cHP = ((int64_t)L_809);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6038>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6040>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_810 = V_43;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_811 = ___0_msg;
 					NullCheck(L_811);
@@ -20055,16 +20059,16 @@ IL_11a8_2:
 					L_812 = Message_readInt3Byte_mBE7C3337B1D276AF34D660A4452A3BD271CF22B4(L_811, NULL);
 					NullCheck(L_810);
 					L_810->___cHPFull = ((int64_t)L_812);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6040>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6042>
 					goto IL_17ab_2;
 				}
 
 IL_11ed_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6044>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6046>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteralC10D6E8BF982F7DEF940FE84C36E6C4777942A08, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6045>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6047>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_813 = ___0_msg;
 					NullCheck(L_813);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_814;
@@ -20076,7 +20080,7 @@ IL_11ed_2:
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_816;
 					L_816 = GameScr_findCharInMap_m0262EBA2719D49024FC8AA4B9BC70DA4FB27D844(L_815, NULL);
 					V_44 = L_816;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6046>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6048>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_817 = V_44;
 					if (!L_817)
 					{
@@ -20084,7 +20088,7 @@ IL_11ed_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6048>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6050>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_818 = V_44;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_819 = ___0_msg;
 					NullCheck(L_819);
@@ -20092,7 +20096,7 @@ IL_11ed_2:
 					L_820 = Message_readInt3Byte_mBE7C3337B1D276AF34D660A4452A3BD271CF22B4(L_819, NULL);
 					NullCheck(L_818);
 					L_818->___cHP = ((int64_t)L_820);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6049>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6051>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_821 = V_44;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_822 = ___0_msg;
 					NullCheck(L_822);
@@ -20100,7 +20104,7 @@ IL_11ed_2:
 					L_823 = Message_readInt3Byte_mBE7C3337B1D276AF34D660A4452A3BD271CF22B4(L_822, NULL);
 					NullCheck(L_821);
 					L_821->___cHPFull = ((int64_t)L_823);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6050>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6052>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_824 = V_44;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_825 = ___0_msg;
 					NullCheck(L_825);
@@ -20111,7 +20115,7 @@ IL_11ed_2:
 					L_827 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_826, NULL);
 					NullCheck(L_824);
 					L_824->___eff5BuffHp = L_827;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6051>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6053>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_828 = V_44;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_829 = ___0_msg;
 					NullCheck(L_829);
@@ -20122,7 +20126,7 @@ IL_11ed_2:
 					L_831 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_830, NULL);
 					NullCheck(L_828);
 					L_828->___eff5BuffMp = L_831;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6052>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6054>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_832 = V_44;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_833 = ___0_msg;
 					NullCheck(L_833);
@@ -20133,7 +20137,7 @@ IL_11ed_2:
 					L_835 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_834, NULL);
 					NullCheck(L_832);
 					L_832->___wp = L_835;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6053>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6055>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_836 = V_44;
 					NullCheck(L_836);
 					int32_t L_837 = L_836->___wp;
@@ -20143,20 +20147,20 @@ IL_11ed_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6055>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6057>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_838 = V_44;
 					NullCheck(L_838);
 					Char_setDefaultWeapon_m45A0EA57B65D7D668ABB5382B4DDEB69B8FBF843(L_838, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6058>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6060>
 					goto IL_17ab_2;
 				}
 
 IL_127c_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6062>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6064>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral25D412F9C1649E887FD7A7D648DE7C3A29CFB2A9, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6063>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6065>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_839 = ___0_msg;
 					NullCheck(L_839);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_840;
@@ -20168,7 +20172,7 @@ IL_127c_2:
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_842;
 					L_842 = GameScr_findCharInMap_m0262EBA2719D49024FC8AA4B9BC70DA4FB27D844(L_841, NULL);
 					V_45 = L_842;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6064>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6066>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_843 = V_45;
 					if (!L_843)
 					{
@@ -20176,7 +20180,7 @@ IL_127c_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6066>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6068>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_844 = V_45;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_845 = ___0_msg;
 					NullCheck(L_845);
@@ -20184,7 +20188,7 @@ IL_127c_2:
 					L_846 = Message_readInt3Byte_mBE7C3337B1D276AF34D660A4452A3BD271CF22B4(L_845, NULL);
 					NullCheck(L_844);
 					L_844->___cHP = ((int64_t)L_846);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6067>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6069>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_847 = V_45;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_848 = ___0_msg;
 					NullCheck(L_848);
@@ -20192,7 +20196,7 @@ IL_127c_2:
 					L_849 = Message_readInt3Byte_mBE7C3337B1D276AF34D660A4452A3BD271CF22B4(L_848, NULL);
 					NullCheck(L_847);
 					L_847->___cHPFull = ((int64_t)L_849);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6068>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6070>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_850 = V_45;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_851 = ___0_msg;
 					NullCheck(L_851);
@@ -20203,7 +20207,7 @@ IL_127c_2:
 					L_853 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_852, NULL);
 					NullCheck(L_850);
 					L_850->___eff5BuffHp = L_853;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6069>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6071>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_854 = V_45;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_855 = ___0_msg;
 					NullCheck(L_855);
@@ -20214,7 +20218,7 @@ IL_127c_2:
 					L_857 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_856, NULL);
 					NullCheck(L_854);
 					L_854->___eff5BuffMp = L_857;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6070>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6072>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_858 = V_45;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_859 = ___0_msg;
 					NullCheck(L_859);
@@ -20225,7 +20229,7 @@ IL_127c_2:
 					L_861 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_860, NULL);
 					NullCheck(L_858);
 					L_858->___body = L_861;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6071>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6073>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_862 = V_45;
 					NullCheck(L_862);
 					int32_t L_863 = L_862->___body;
@@ -20235,20 +20239,20 @@ IL_127c_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6073>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6075>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_864 = V_45;
 					NullCheck(L_864);
 					Char_setDefaultBody_m572D9B7D5592999E40D45C817E764F0F21C671F0(L_864, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6076>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6078>
 					goto IL_17ab_2;
 				}
 
 IL_130b_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6080>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6082>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral580ECDB91599CCE4FEEF3CF571FB7789FB1286CA, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6081>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6083>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_865 = ___0_msg;
 					NullCheck(L_865);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_866;
@@ -20260,7 +20264,7 @@ IL_130b_2:
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_868;
 					L_868 = GameScr_findCharInMap_m0262EBA2719D49024FC8AA4B9BC70DA4FB27D844(L_867, NULL);
 					V_46 = L_868;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6082>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6084>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_869 = V_46;
 					if (!L_869)
 					{
@@ -20268,7 +20272,7 @@ IL_130b_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6084>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6086>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_870 = V_46;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_871 = ___0_msg;
 					NullCheck(L_871);
@@ -20276,7 +20280,7 @@ IL_130b_2:
 					L_872 = Message_readInt3Byte_mBE7C3337B1D276AF34D660A4452A3BD271CF22B4(L_871, NULL);
 					NullCheck(L_870);
 					L_870->___cHP = ((int64_t)L_872);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6085>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6087>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_873 = V_46;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_874 = ___0_msg;
 					NullCheck(L_874);
@@ -20284,7 +20288,7 @@ IL_130b_2:
 					L_875 = Message_readInt3Byte_mBE7C3337B1D276AF34D660A4452A3BD271CF22B4(L_874, NULL);
 					NullCheck(L_873);
 					L_873->___cHPFull = ((int64_t)L_875);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6086>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6088>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_876 = V_46;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_877 = ___0_msg;
 					NullCheck(L_877);
@@ -20295,7 +20299,7 @@ IL_130b_2:
 					L_879 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_878, NULL);
 					NullCheck(L_876);
 					L_876->___eff5BuffHp = L_879;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6087>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6089>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_880 = V_46;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_881 = ___0_msg;
 					NullCheck(L_881);
@@ -20306,7 +20310,7 @@ IL_130b_2:
 					L_883 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_882, NULL);
 					NullCheck(L_880);
 					L_880->___eff5BuffMp = L_883;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6088>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6090>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_884 = V_46;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_885 = ___0_msg;
 					NullCheck(L_885);
@@ -20317,7 +20321,7 @@ IL_130b_2:
 					L_887 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_886, NULL);
 					NullCheck(L_884);
 					L_884->___leg = L_887;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6089>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6091>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_888 = V_46;
 					NullCheck(L_888);
 					int32_t L_889 = L_888->___leg;
@@ -20327,20 +20331,20 @@ IL_130b_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6091>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6093>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_890 = V_46;
 					NullCheck(L_890);
 					Char_setDefaultLeg_mBF8EA6811B935E83B85956498E8EDF60FD5A748D(L_890, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6094>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6096>
 					goto IL_17ab_2;
 				}
 
 IL_139a_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6098>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6100>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteralB913C0909A3FEC44A8A33D0C8F363E0395500884, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6099>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6101>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_891 = ___0_msg;
 					NullCheck(L_891);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_892;
@@ -20349,7 +20353,7 @@ IL_139a_2:
 					int32_t L_893;
 					L_893 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_892, NULL);
 					V_47 = L_893;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6100>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6102>
 					int32_t L_894 = V_47;
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_895;
@@ -20381,7 +20385,7 @@ IL_13c7_2:
 IL_13ce_2:
 				{
 					V_48 = G_B126_0;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6101>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6103>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_900 = V_48;
 					if (!L_900)
 					{
@@ -20389,7 +20393,7 @@ IL_13ce_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6103>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6105>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_901 = V_48;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_902 = ___0_msg;
 					NullCheck(L_902);
@@ -20397,7 +20401,7 @@ IL_13ce_2:
 					L_903 = Message_readInt3Byte_mBE7C3337B1D276AF34D660A4452A3BD271CF22B4(L_902, NULL);
 					NullCheck(L_901);
 					L_901->___cHP = ((int64_t)L_903);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6104>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6106>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_904 = V_48;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_905 = ___0_msg;
 					NullCheck(L_905);
@@ -20405,7 +20409,7 @@ IL_13ce_2:
 					L_906 = Message_readInt3Byte_mBE7C3337B1D276AF34D660A4452A3BD271CF22B4(L_905, NULL);
 					NullCheck(L_904);
 					L_904->___cHPFull = ((int64_t)L_906);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6105>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6107>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_907 = V_48;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_908 = ___0_msg;
 					NullCheck(L_908);
@@ -20416,7 +20420,7 @@ IL_13ce_2:
 					L_910 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_909, NULL);
 					NullCheck(L_907);
 					L_907->___eff5BuffHp = L_910;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6106>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6108>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_911 = V_48;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_912 = ___0_msg;
 					NullCheck(L_912);
@@ -20427,13 +20431,13 @@ IL_13ce_2:
 					L_914 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_913, NULL);
 					NullCheck(L_911);
 					L_911->___eff5BuffMp = L_914;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6108>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6110>
 					goto IL_17ab_2;
 				}
 
 IL_141c_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6112>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6114>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_915 = ___0_msg;
 					NullCheck(L_915);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_916;
@@ -20445,7 +20449,7 @@ IL_141c_2:
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_918;
 					L_918 = GameScr_findCharInMap_m0262EBA2719D49024FC8AA4B9BC70DA4FB27D844(L_917, NULL);
 					V_49 = L_918;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6113>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6115>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_919 = V_49;
 					if (!L_919)
 					{
@@ -20453,7 +20457,7 @@ IL_141c_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6117>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6119>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_920 = V_49;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_921 = ___0_msg;
 					NullCheck(L_921);
@@ -20461,7 +20465,7 @@ IL_141c_2:
 					L_922 = Message_readLong_mEB1E7332EB5234AAA70F60CDAC6D9B5BA511B9A0(L_921, NULL);
 					NullCheck(L_920);
 					L_920->___cHP = L_922;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6118>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6120>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_923 = ___0_msg;
 					NullCheck(L_923);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_924;
@@ -20469,7 +20473,7 @@ IL_141c_2:
 					NullCheck(L_924);
 					int8_t L_925;
 					L_925 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_924, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6119>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6121>
 					int8_t L_926 = L_925;
 					if ((!(((uint32_t)L_926) == ((uint32_t)1))))
 					{
@@ -20479,10 +20483,10 @@ IL_141c_2:
 					G_B130_0 = L_926;
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6121>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6123>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_927 = V_49;
 					ServerEffect_addServerEffect_m86AC5F547CB6DA0642AD0BB64686B815A6BA3483(((int32_t)11), L_927, 5, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6122>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6124>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_928 = V_49;
 					ServerEffect_addServerEffect_m86AC5F547CB6DA0642AD0BB64686B815A6BA3483(((int32_t)104), L_928, 4, NULL);
 					G_B131_0 = G_B130_0;
@@ -20490,14 +20494,14 @@ IL_141c_2:
 
 IL_1465_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6124>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6126>
 					if ((!(((uint32_t)G_B131_0) == ((uint32_t)2))))
 					{
 						goto IL_146f_2;
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6126>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6128>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_929 = V_49;
 					NullCheck(L_929);
 					Char_doInjure_mBFC92925337D302218727616E1C3DF141B1CE3FF(L_929, NULL);
@@ -20508,7 +20512,7 @@ IL_146f_2:
 				}
 				try
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6130>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6132>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_930 = V_49;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_931 = ___0_msg;
 					NullCheck(L_931);
@@ -20516,7 +20520,7 @@ IL_146f_2:
 					L_932 = Message_readLong_mEB1E7332EB5234AAA70F60CDAC6D9B5BA511B9A0(L_931, NULL);
 					NullCheck(L_930);
 					L_930->___cHPFull = L_932;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6131>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6133>
 					goto IL_17ab_2;
 				}
 				catch(Il2CppExceptionWrapper& e)
@@ -20532,15 +20536,15 @@ IL_146f_2:
 CATCH_1482_2:
 				{
 					Exception_t* L_933 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6133>
 					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6135>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6137>
 					IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 					goto IL_17ab_2;
 				}
 
 IL_1488_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6140>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6142>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_934 = ___0_msg;
 					NullCheck(L_934);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_935;
@@ -20552,7 +20556,7 @@ IL_1488_2:
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_937;
 					L_937 = GameScr_findCharInMap_m0262EBA2719D49024FC8AA4B9BC70DA4FB27D844(L_936, NULL);
 					V_50 = L_937;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6141>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6143>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_938 = V_50;
 					if (!L_938)
 					{
@@ -20560,7 +20564,7 @@ IL_1488_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6143>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6145>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_939 = V_50;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_940 = ___0_msg;
 					NullCheck(L_940);
@@ -20568,7 +20572,7 @@ IL_1488_2:
 					L_941 = Message_readLong_mEB1E7332EB5234AAA70F60CDAC6D9B5BA511B9A0(L_940, NULL);
 					NullCheck(L_939);
 					L_939->___cHP = L_941;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6144>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6146>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_942 = V_50;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_943 = ___0_msg;
 					NullCheck(L_943);
@@ -20576,7 +20580,7 @@ IL_1488_2:
 					L_944 = Message_readLong_mEB1E7332EB5234AAA70F60CDAC6D9B5BA511B9A0(L_943, NULL);
 					NullCheck(L_942);
 					L_942->___cHPFull = L_944;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6145>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6147>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_945 = V_50;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_946 = ___0_msg;
 					NullCheck(L_946);
@@ -20587,7 +20591,7 @@ IL_1488_2:
 					L_948 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_947, NULL);
 					NullCheck(L_945);
 					L_945->___cx = L_948;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6146>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6148>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_949 = V_50;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_950 = ___0_msg;
 					NullCheck(L_950);
@@ -20598,27 +20602,27 @@ IL_1488_2:
 					L_952 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_951, NULL);
 					NullCheck(L_949);
 					L_949->___cy = L_952;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6147>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6149>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_953 = V_50;
 					NullCheck(L_953);
 					L_953->___statusMe = 1;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6148>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6150>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_954 = V_50;
 					NullCheck(L_954);
 					L_954->___cp3 = 3;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6149>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6151>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_955 = V_50;
 					ServerEffect_addServerEffect_m86AC5F547CB6DA0642AD0BB64686B815A6BA3483(((int32_t)109), L_955, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6151>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6153>
 					goto IL_17ab_2;
 				}
 
 IL_14fe_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6155>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6157>
 					il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 					GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteralF9376D6F9DDB7A212147323E62DED7DB7A099A58, 2, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6156>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6158>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_956 = ___0_msg;
 					NullCheck(L_956);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_957;
@@ -20627,14 +20631,14 @@ IL_14fe_2:
 					int32_t L_958;
 					L_958 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_957, NULL);
 					V_51 = L_958;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6157>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6159>
 					String_t* L_959;
 					L_959 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_51), NULL);
 					String_t* L_960;
 					L_960 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralF031F2AB6A6F9063C40AC660B5CE25C3E12DBC49, L_959, NULL);
 					il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 					Res_outz_mF51EC000D16B49E001011B2C1BAD2F66E72C33D3(L_960, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6158>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6160>
 					il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 					int32_t L_961 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___mapID;
 					if ((!(((uint32_t)L_961) == ((uint32_t)((int32_t)130)))))
@@ -20643,7 +20647,7 @@ IL_14fe_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6160>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6162>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_962;
 					L_962 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -20653,7 +20657,7 @@ IL_14fe_2:
 
 IL_1542_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6162>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6164>
 					int32_t L_963 = V_51;
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_964;
@@ -20666,7 +20670,7 @@ IL_1542_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6164>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6166>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_966;
 					L_966 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -20679,7 +20683,7 @@ IL_1542_2:
 					L_969 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_968, NULL);
 					NullCheck(L_966);
 					L_966->___cTypePk = L_969;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6165>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6167>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_970;
 					L_970 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -20703,7 +20707,7 @@ IL_1542_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6167>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6169>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_974;
 					L_974 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -20713,7 +20717,7 @@ IL_1542_2:
 
 IL_158a_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6169>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6171>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_975;
 					L_975 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -20725,13 +20729,13 @@ IL_158a_2:
 					L_978 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral7A28DC79B5B02A5E948EF207464B8959DE99A07E, L_977, NULL);
 					il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 					Res_outz_mF51EC000D16B49E001011B2C1BAD2F66E72C33D3(L_978, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6170>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6172>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_979;
 					L_979 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_979);
 					L_979->___npcFocus = (Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A*)NULL;
 					Il2CppCodeGenWriteBarrier((void**)(&L_979->___npcFocus), (void*)(Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A*)NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6171>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6173>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_980;
 					L_980 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -20748,7 +20752,7 @@ IL_158a_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6173>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6175>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_984;
 					L_984 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -20759,7 +20763,7 @@ IL_158a_2:
 
 IL_15d4_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6175>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6177>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_985;
 					L_985 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -20771,13 +20775,13 @@ IL_15d4_2:
 
 IL_15e1_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6179>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6181>
 					int32_t L_986 = V_51;
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_987;
 					L_987 = GameScr_findCharInMap_m0262EBA2719D49024FC8AA4B9BC70DA4FB27D844(L_986, NULL);
 					V_52 = L_987;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6180>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6182>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_988 = V_52;
 					if (!L_988)
 					{
@@ -20785,7 +20789,7 @@ IL_15e1_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6182>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6184>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_989 = V_52;
 					NullCheck(L_989);
 					int8_t* L_990 = (int8_t*)(&L_989->___cTypePk);
@@ -20795,7 +20799,7 @@ IL_15e1_2:
 					L_992 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral7A28DC79B5B02A5E948EF207464B8959DE99A07E, L_991, NULL);
 					il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 					Res_outz_mF51EC000D16B49E001011B2C1BAD2F66E72C33D3(L_992, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6183>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6185>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_993 = V_52;
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_994 = ___0_msg;
 					NullCheck(L_994);
@@ -20806,7 +20810,7 @@ IL_15e1_2:
 					L_996 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_995, NULL);
 					NullCheck(L_993);
 					L_993->___cTypePk = L_996;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6184>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6186>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_997 = V_52;
 					NullCheck(L_997);
 					bool L_998;
@@ -20817,7 +20821,7 @@ IL_15e1_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6186>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6188>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_999;
 					L_999 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -20829,20 +20833,20 @@ IL_15e1_2:
 
 IL_1630_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6190>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6192>
 					V_53 = 0;
 					goto IL_1698_2;
 				}
 
 IL_1635_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6192>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6194>
 					int32_t L_1001 = V_53;
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1002;
 					L_1002 = GameScr_findCharInMap_m0262EBA2719D49024FC8AA4B9BC70DA4FB27D844(L_1001, NULL);
 					V_54 = L_1002;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6193>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6195>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1003 = V_54;
 					if (!L_1003)
 					{
@@ -20873,7 +20877,7 @@ IL_1635_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6195>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6197>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1010;
 					L_1010 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -20887,7 +20891,7 @@ IL_1635_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6197>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6199>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1013;
 					L_1013 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -20898,33 +20902,33 @@ IL_1635_2:
 
 IL_167a_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6199>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6201>
 					il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1014;
 					L_1014 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_1014);
 					L_1014->___npcFocus = (Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A*)NULL;
 					Il2CppCodeGenWriteBarrier((void**)(&L_1014->___npcFocus), (void*)(Npc_t72985E5728337FF5B823BA9EBBB59C7E8FC2348A*)NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6200>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6202>
 					Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1015;
 					L_1015 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 					NullCheck(L_1015);
 					L_1015->___itemFocus = (ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38*)NULL;
 					Il2CppCodeGenWriteBarrier((void**)(&L_1015->___itemFocus), (void*)(ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38*)NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6201>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6203>
 					goto IL_16a6_2;
 				}
 
 IL_1692_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6190>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6192>
 					int32_t L_1016 = V_53;
 					V_53 = ((int32_t)il2cpp_codegen_add(L_1016, 1));
 				}
 
 IL_1698_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6190>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6192>
 					int32_t L_1017 = V_53;
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_1018 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vCharInMap;
@@ -20939,16 +20943,16 @@ IL_1698_2:
 
 IL_16a6_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6204>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6206>
 					il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 					Res_outz_mF51EC000D16B49E001011B2C1BAD2F66E72C33D3(_stringLiteral2BC42955FE34847666D4D5650F59D97B2A95D040, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6205>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6207>
 					goto IL_17ab_2;
 				}
 
 IL_16b5_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6209>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6211>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_1020 = ___0_msg;
 					NullCheck(L_1020);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1021;
@@ -20957,7 +20961,7 @@ IL_16b5_2:
 					String_t* L_1022;
 					L_1022 = myReader_readUTF_m7BDB6B0B2C3063B93376A208946519E334B482F4(L_1021, NULL);
 					V_55 = L_1022;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6210>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6212>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_1023 = ___0_msg;
 					NullCheck(L_1023);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1024;
@@ -20967,7 +20971,7 @@ IL_16b5_2:
 					L_1025 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_1024, NULL);
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_1026 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)SZArrayNew(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_il2cpp_TypeInfo_var, (uint32_t)L_1025);
 					V_56 = L_1026;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6211>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6213>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_1027 = ___0_msg;
 					NullCheck(L_1027);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1028;
@@ -20975,7 +20979,7 @@ IL_16b5_2:
 					NullCheck(L_1028);
 					int32_t L_1029;
 					L_1029 = myReader_read_mDA9ABBC0D5E3718551F04D617286646EEBB49384(L_1028, (&V_56), NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6212>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6214>
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_1030 = V_56;
 					NullCheck(L_1030);
 					if ((((RuntimeArray*)L_1030)->max_length))
@@ -20984,13 +20988,13 @@ IL_16b5_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6214>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6216>
 					V_56 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)NULL;
 				}
 
 IL_16ea_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6216>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6218>
 					String_t* L_1031 = V_55;
 					NullCheck(L_1031);
 					bool L_1032;
@@ -21001,7 +21005,7 @@ IL_16ea_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6218>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6220>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_1033;
 					L_1033 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -21013,7 +21017,7 @@ IL_16ea_2:
 
 IL_1709_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6220>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6222>
 					String_t* L_1035 = V_55;
 					NullCheck(L_1035);
 					bool L_1036;
@@ -21024,7 +21028,7 @@ IL_1709_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6222>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6224>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_1037;
 					L_1037 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -21036,7 +21040,7 @@ IL_1709_2:
 
 IL_1728_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6224>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6226>
 					String_t* L_1039 = V_55;
 					NullCheck(L_1039);
 					bool L_1040;
@@ -21047,20 +21051,20 @@ IL_1728_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6226>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6228>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_1041;
 					L_1041 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 					SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_1042 = V_56;
 					NullCheck(L_1041);
 					GameScr_onCSkill_m93058CC313D9087439703C01C3856291A27D14FA(L_1041, L_1042, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6228>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6230>
 					goto IL_17ab_2;
 				}
 
 IL_1744_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6232>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6234>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_1043 = ___0_msg;
 					NullCheck(L_1043);
 					myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1044;
@@ -21069,16 +21073,16 @@ IL_1744_2:
 					int16_t L_1045;
 					L_1045 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_1044, NULL);
 					V_57 = L_1045;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6233>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6235>
 					int16_t L_1046 = V_57;
 					il2cpp_codegen_runtime_class_init_inline(Skills_t2A3EE3C5187C3318D24EB1211EF4AF5A653D69B8_il2cpp_TypeInfo_var);
 					Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_1047;
 					L_1047 = Skills_get_m685C03D39DFEE6EFBB334FC562659D9DB00AC765(L_1046, NULL);
 					V_58 = L_1047;
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6234>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6236>
 					Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_1048 = V_58;
 					Controller_useSkill_m7302C7853277E73961EEEC6A42931499F316B629(__this, L_1048, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6235>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6237>
 					int16_t L_1049 = V_57;
 					if (!L_1049)
 					{
@@ -21100,7 +21104,7 @@ IL_1744_2:
 					}
 				}
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6237>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6239>
 					il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 					InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_1052 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 					il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -21114,23 +21118,23 @@ IL_1744_2:
 					L_1057 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_1053, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745, L_1056, NULL);
 					NullCheck(L_1052);
 					InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_1052, L_1057, 0, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6239>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6241>
 					goto IL_17ab_2;
 				}
 
 IL_179a_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6242>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6244>
 					il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 					Res_outz_mF51EC000D16B49E001011B2C1BAD2F66E72C33D3(_stringLiteral56B627DB938FF823DAEB93813B22BF6B3EA316A9, NULL);
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6243>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6245>
 					Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_1058 = ___0_msg;
 					Controller_read_UpdateSkill_m903883F113BC14ABFDFE05B974ADB4BE3B626ACD(__this, L_1058, NULL);
 				}
 
 IL_17ab_2:
 				{
-					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6246>
+					//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6248>
 					goto IL_17d1;
 				}
 			}
@@ -21147,9 +21151,9 @@ IL_17ab_2:
 CATCH_17ad_1:
 			{
 				Exception_t* L_1059 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6247>
-				V_59 = L_1059;
 				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6249>
+				V_59 = L_1059;
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6251>
 				Exception_t* L_1060 = V_59;
 				NullCheck(L_1060);
 				String_t* L_1061;
@@ -21157,7 +21161,7 @@ CATCH_17ad_1:
 				String_t* L_1062;
 				L_1062 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral94337602F6A12533EC7F86A05492DA697202411F)), L_1061, NULL);
 				Cout_println_m0A635C7677DEEFAE9B526557274A125FEBCFC801(L_1062, NULL);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6250>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6252>
 				IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 				goto IL_17d1;
 			}
@@ -21170,7 +21174,7 @@ CATCH_17ad_1:
 
 IL_17d1:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6255>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6257>
 		return;
 	}
 }
@@ -21184,7 +21188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_useSkill_m7302C7853277E73961E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6259>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6261>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -21196,7 +21200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_useSkill_m7302C7853277E73961E
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6261>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6263>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_2;
 		L_2 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -21209,7 +21213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_useSkill_m7302C7853277E73961E
 
 IL_0019:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6263>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6265>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_4 = ___0_skill;
 		NullCheck(L_4);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_5 = L_4->___template;
@@ -21229,7 +21233,7 @@ IL_0019:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6265>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6267>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_10;
 		L_10 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -21241,7 +21245,7 @@ IL_0019:
 
 IL_0040:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6267>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6269>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_12;
 		L_12 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -21250,10 +21254,10 @@ IL_0040:
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_14 = ___0_skill;
 		NullCheck(L_13);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_13, L_14, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6268>
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6269>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6270>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6271>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6272>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6273>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_15 = ___0_skill;
 		NullCheck(L_15);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_16 = L_15->___template;
@@ -21333,7 +21337,7 @@ IL_0088:
 
 IL_00ac:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6273>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6275>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_35 = ___0_skill;
 		NullCheck(L_35);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_36 = L_35->___template;
@@ -21350,7 +21354,7 @@ IL_00ac:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6275>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6277>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_40;
 		L_40 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
@@ -21364,7 +21368,7 @@ IL_00ac:
 
 IL_00d7:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6277>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6279>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_43;
 		L_43 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -21377,7 +21381,7 @@ IL_00d7:
 
 IL_00e7:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6279>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6281>
 		return;
 	}
 }
@@ -21400,7 +21404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6285>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6287>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_1 = ___1_msg;
 			NullCheck(L_1);
@@ -21411,7 +21415,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 			L_3 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_2, NULL);
 			NullCheck(L_0);
 			L_0->___clevel = L_3;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6286>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6288>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_4 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_5 = ___1_msg;
 			NullCheck(L_5);
@@ -21422,7 +21426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 			L_7 = myReader_readBoolean_m741F3BFB46800E08CF79B6E514F34DE1E248819B(L_6, NULL);
 			NullCheck(L_4);
 			L_4->___isInvisiblez = L_7;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6287>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6289>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_8 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_9 = ___1_msg;
 			NullCheck(L_9);
@@ -21433,7 +21437,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 			L_11 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_10, NULL);
 			NullCheck(L_8);
 			L_8->___cTypePk = L_11;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6288>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6290>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_12 = ___0_c;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			NClassU5BU5D_t8B6BB220755070BCDDAC0AFCA543390F3A4AE352* L_13 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___nClasss;
@@ -21450,7 +21454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 			NullCheck(L_12);
 			L_12->___nClass = L_18;
 			Il2CppCodeGenWriteBarrier((void**)(&L_12->___nClass), (void*)L_18);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6289>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6291>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_19 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_20 = ___1_msg;
 			NullCheck(L_20);
@@ -21461,7 +21465,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 			L_22 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_21, NULL);
 			NullCheck(L_19);
 			L_19->___cgender = L_22;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6290>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6292>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_23 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_24 = ___1_msg;
 			NullCheck(L_24);
@@ -21472,7 +21476,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 			L_26 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_25, NULL);
 			NullCheck(L_23);
 			L_23->___head = L_26;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6291>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6293>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_27 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_28 = ___1_msg;
 			NullCheck(L_28);
@@ -21484,7 +21488,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 			NullCheck(L_27);
 			L_27->___cName = L_30;
 			Il2CppCodeGenWriteBarrier((void**)(&L_27->___cName), (void*)L_30);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6292>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6294>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_31 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_32 = ___1_msg;
 			NullCheck(L_32);
@@ -21492,14 +21496,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 			L_33 = Message_readLong_mEB1E7332EB5234AAA70F60CDAC6D9B5BA511B9A0(L_32, NULL);
 			NullCheck(L_31);
 			L_31->___cHP = L_33;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6293>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6295>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_34 = ___0_c;
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_35 = ___0_c;
 			NullCheck(L_35);
 			int64_t L_36 = L_35->___cHP;
 			NullCheck(L_34);
 			L_34->___dHP = L_36;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6294>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6296>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_37 = ___0_c;
 			NullCheck(L_37);
 			int64_t L_38 = L_37->___cHP;
@@ -21509,7 +21513,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6296>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6298>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_39 = ___0_c;
 			NullCheck(L_39);
 			L_39->___statusMe = ((int32_t)14);
@@ -21517,7 +21521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Controller_readCharInfo_m256D7D3F9A0315C
 
 IL_00a5_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6298>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6300>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_40 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_41 = ___1_msg;
 			NullCheck(L_41);
@@ -21525,7 +21529,7 @@ IL_00a5_1:
 			L_42 = Message_readLong_mEB1E7332EB5234AAA70F60CDAC6D9B5BA511B9A0(L_41, NULL);
 			NullCheck(L_40);
 			L_40->___cHPFull = L_42;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6299>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6301>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_43 = ___0_c;
 			NullCheck(L_43);
 			int32_t L_44 = L_43->___cy;
@@ -21537,7 +21541,7 @@ IL_00a5_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6301>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6303>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_46 = ___0_c;
 			NullCheck(L_46);
 			L_46->___isFlyUp = (bool)1;
@@ -21545,7 +21549,7 @@ IL_00a5_1:
 
 IL_00c8_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6303>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6305>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_47 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_48 = ___1_msg;
 			NullCheck(L_48);
@@ -21556,7 +21560,7 @@ IL_00c8_1:
 			L_50 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_49, NULL);
 			NullCheck(L_47);
 			L_47->___body = L_50;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6304>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6306>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_51 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_52 = ___1_msg;
 			NullCheck(L_52);
@@ -21567,7 +21571,7 @@ IL_00c8_1:
 			L_54 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_53, NULL);
 			NullCheck(L_51);
 			L_51->___leg = L_54;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6305>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6307>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_55 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_56 = ___1_msg;
 			NullCheck(L_56);
@@ -21578,11 +21582,11 @@ IL_00c8_1:
 			L_58 = myReader_readUnsignedByte_mF9CF4F40864C78BA0D2A8C19E427A6C50B1E4A36(L_57, NULL);
 			NullCheck(L_55);
 			L_55->___bag = L_58;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6306>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6308>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_59 = ___0_c;
 			NullCheck(L_59);
 			L_59->___isShadown = (bool)1;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6307>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6309>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_60 = ___1_msg;
 			NullCheck(L_60);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_61;
@@ -21590,7 +21594,7 @@ IL_00c8_1:
 			NullCheck(L_61);
 			int8_t L_62;
 			L_62 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_61, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6308>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6310>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_63 = ___0_c;
 			NullCheck(L_63);
 			int32_t L_64 = L_63->___wp;
@@ -21600,7 +21604,7 @@ IL_00c8_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6310>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6312>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_65 = ___0_c;
 			NullCheck(L_65);
 			Char_setDefaultWeapon_m45A0EA57B65D7D668ABB5382B4DDEB69B8FBF843(L_65, NULL);
@@ -21608,7 +21612,7 @@ IL_00c8_1:
 
 IL_011d_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6312>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6314>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_66 = ___0_c;
 			NullCheck(L_66);
 			int32_t L_67 = L_66->___body;
@@ -21618,7 +21622,7 @@ IL_011d_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6314>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6316>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_68 = ___0_c;
 			NullCheck(L_68);
 			Char_setDefaultBody_m572D9B7D5592999E40D45C817E764F0F21C671F0(L_68, NULL);
@@ -21626,7 +21630,7 @@ IL_011d_1:
 
 IL_012c_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6316>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6318>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_69 = ___0_c;
 			NullCheck(L_69);
 			int32_t L_70 = L_69->___leg;
@@ -21636,7 +21640,7 @@ IL_012c_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6318>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6320>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_71 = ___0_c;
 			NullCheck(L_71);
 			Char_setDefaultLeg_mBF8EA6811B935E83B85956498E8EDF60FD5A748D(L_71, NULL);
@@ -21644,7 +21648,7 @@ IL_012c_1:
 
 IL_013b_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6320>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6322>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_72 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_73 = ___1_msg;
 			NullCheck(L_73);
@@ -21655,7 +21659,7 @@ IL_013b_1:
 			L_75 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_74, NULL);
 			NullCheck(L_72);
 			L_72->___cx = L_75;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6321>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6323>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_76 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_77 = ___1_msg;
 			NullCheck(L_77);
@@ -21666,21 +21670,21 @@ IL_013b_1:
 			L_79 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_78, NULL);
 			NullCheck(L_76);
 			L_76->___cy = L_79;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6322>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6324>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_80 = ___0_c;
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_81 = ___0_c;
 			NullCheck(L_81);
 			int32_t L_82 = L_81->___cx;
 			NullCheck(L_80);
 			L_80->___xSd = L_82;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6323>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6325>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_83 = ___0_c;
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_84 = ___0_c;
 			NullCheck(L_84);
 			int32_t L_85 = L_84->___cy;
 			NullCheck(L_83);
 			L_83->___ySd = L_85;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6324>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6326>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_86 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_87 = ___1_msg;
 			NullCheck(L_87);
@@ -21691,7 +21695,7 @@ IL_013b_1:
 			L_89 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_88, NULL);
 			NullCheck(L_86);
 			L_86->___eff5BuffHp = L_89;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6325>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6327>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_90 = ___0_c;
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_91 = ___1_msg;
 			NullCheck(L_91);
@@ -21702,7 +21706,7 @@ IL_013b_1:
 			L_93 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_92, NULL);
 			NullCheck(L_90);
 			L_90->___eff5BuffMp = L_93;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6326>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6328>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_94 = ___1_msg;
 			NullCheck(L_94);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_95;
@@ -21711,14 +21715,14 @@ IL_013b_1:
 			int8_t L_96;
 			L_96 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_95, NULL);
 			V_0 = L_96;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6327>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6329>
 			V_1 = 0;
 			goto IL_020e_1;
 		}
 
 IL_01a7_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6329>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6331>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_97 = ___1_msg;
 			NullCheck(L_97);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_98;
@@ -21750,14 +21754,14 @@ IL_01a7_1:
 			EffectChar_t2BBC21FBE5724AE3CC11E906401C2D39601C4494* L_109 = (EffectChar_t2BBC21FBE5724AE3CC11E906401C2D39601C4494*)il2cpp_codegen_object_new(EffectChar_t2BBC21FBE5724AE3CC11E906401C2D39601C4494_il2cpp_TypeInfo_var);
 			EffectChar__ctor_m48F8F78E989DFE2763A088EDE21DD0C571CE0A9F(L_109, L_99, L_102, L_105, L_108, NULL);
 			V_2 = L_109;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6330>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6332>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_110 = ___0_c;
 			NullCheck(L_110);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_111 = L_110->___vEff;
 			EffectChar_t2BBC21FBE5724AE3CC11E906401C2D39601C4494* L_112 = V_2;
 			NullCheck(L_111);
 			MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_111, L_112, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6331>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6333>
 			EffectChar_t2BBC21FBE5724AE3CC11E906401C2D39601C4494* L_113 = V_2;
 			NullCheck(L_113);
 			EffectTemplate_t6DE06D7DAB420408A442CFB9112AF03567303B67* L_114 = L_113->___template;
@@ -21782,7 +21786,7 @@ IL_01a7_1:
 
 IL_0203_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6333>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6335>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_119 = ___0_c;
 			NullCheck(L_119);
 			L_119->___isInvisiblez = (bool)1;
@@ -21790,14 +21794,14 @@ IL_0203_1:
 
 IL_020a_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6327>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6329>
 			int32_t L_120 = V_1;
 			V_1 = ((int32_t)il2cpp_codegen_add(L_120, 1));
 		}
 
 IL_020e_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6327>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6329>
 			int32_t L_121 = V_1;
 			int32_t L_122 = V_0;
 			if ((((int32_t)L_121) < ((int32_t)L_122)))
@@ -21806,7 +21810,7 @@ IL_020e_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6336>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6338>
 			V_3 = (bool)1;
 			goto IL_0225;
 		}
@@ -21824,27 +21828,27 @@ IL_020e_1:
 CATCH_0216:
 	{
 		Exception_t* L_123 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6340>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6342>
 		NullCheck(L_123);
 		String_t* L_124;
 		L_124 = VirtualFuncInvoker0< String_t* >::Invoke(8, L_123);
 		NullCheck(L_124);
 		String_t* L_125;
 		L_125 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_124);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6341>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6343>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0223;
 	}
 
 IL_0223:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6342>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6344>
 		return (bool)0;
 	}
 
 IL_0225:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6343>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6345>
 		bool L_126 = V_3;
 		return L_126;
 	}
@@ -21866,7 +21870,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readGetImgByName_m9D7A78C718A
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6349>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6351>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_0 = ___0_msg;
 			NullCheck(L_0);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1;
@@ -21875,7 +21879,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readGetImgByName_m9D7A78C718A
 			String_t* L_2;
 			L_2 = myReader_readUTF_m7BDB6B0B2C3063B93376A208946519E334B482F4(L_1, NULL);
 			V_0 = L_2;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6350>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6352>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_3 = ___0_msg;
 			NullCheck(L_3);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_4;
@@ -21884,25 +21888,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readGetImgByName_m9D7A78C718A
 			int8_t L_5;
 			L_5 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_4, NULL);
 			V_1 = L_5;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6351>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6353>
 			V_2 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)NULL;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6352>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6354>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_6 = ___0_msg;
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_7;
 			L_7 = NinjaUtil_readByteArray_mD4A17FD1B58933CBDE4BC4C9F11F9428E1F074AA(L_6, NULL);
 			V_2 = L_7;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6353>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6355>
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_8 = V_2;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_9;
 			L_9 = Controller_createImage_mF18FA0A69BF860562435EB579A7702896FE1ED22(__this, L_8, NULL);
 			V_3 = L_9;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6354>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6356>
 			String_t* L_10 = V_0;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_11 = V_3;
 			int8_t L_12 = V_1;
 			il2cpp_codegen_runtime_class_init_inline(ImgByName_tB2852356CEF58CCBF41517940CBD9983F87A8D6F_il2cpp_TypeInfo_var);
 			ImgByName_SetImage_m83D55419A74876C038830F609624B081D4FE477E(L_10, L_11, L_12, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6355>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6357>
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_13 = V_2;
 			if (!L_13)
 			{
@@ -21910,7 +21914,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readGetImgByName_m9D7A78C718A
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6357>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6359>
 			String_t* L_14 = V_0;
 			int8_t L_15 = V_1;
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_16 = V_2;
@@ -21920,7 +21924,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readGetImgByName_m9D7A78C718A
 
 IL_003c_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6359>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6361>
 			goto IL_0041;
 		}
 	}
@@ -21937,15 +21941,15 @@ IL_003c_1:
 CATCH_003e:
 	{
 		Exception_t* L_17 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6360>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6362>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6364>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0041;
 	}
 
 IL_0041:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6363>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6365>
 		return;
 	}
 }
@@ -21980,13 +21984,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6370>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6372>
 			String_t* L_0 = ___1_key;
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 			String_t* L_1;
 			L_1 = Controller_DecryptString_mB48AA35E52C0C3700F42F2651ABCEC35A532D50C(L_0, NULL);
 			V_0 = L_1;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6371>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6373>
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_2 = ___0_arr;
 			il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tAED9C6D4075550BFCEFA2B83138C2EA7F725C1C4_il2cpp_TypeInfo_var);
 			Converter_2_t562A04B50F9BBCD10478E278AAC92D9BA8A4A2C4* L_3 = ((U3CU3Ec_tAED9C6D4075550BFCEFA2B83138C2EA7F725C1C4_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tAED9C6D4075550BFCEFA2B83138C2EA7F725C1C4_il2cpp_TypeInfo_var))->___U3CU3E9__44_0;
@@ -22049,7 +22053,7 @@ IL_0051_1:
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_16;
 			L_16 = Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisSByte_tFEFFEF5D2FEBF5207950AE6FAC150FC53B668DB5_m9F17C320A4C3C3DCB8C4CF4A3A5D6537491E5420(G_B4_1, G_B4_0, Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisSByte_tFEFFEF5D2FEBF5207950AE6FAC150FC53B668DB5_m9F17C320A4C3C3DCB8C4CF4A3A5D6537491E5420_RuntimeMethod_var);
 			V_1 = L_16;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6372>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6374>
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_17 = V_1;
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_18 = V_1;
 			NullCheck(L_18);
@@ -22072,21 +22076,21 @@ IL_0051_1:
 CATCH_0064:
 	{
 		Exception_t* L_20 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6374>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6376>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6378>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0067;
 	}
 
 IL_0067:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6377>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6379>
 		return (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 	}
 
 IL_0069:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6378>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6380>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_21 = V_2;
 		return L_21;
 	}
@@ -22111,7 +22115,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Controller_DecryptString_mB48AA35E5
 	int32_t V_4 = 0;
 	String_t* V_5 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6381>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6383>
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_0;
 		L_0 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
@@ -22120,7 +22124,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Controller_DecryptString_mB48AA35E5
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2;
 		L_2 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(17, L_0, L_1);
 		V_0 = L_2;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6383>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6385>
 		il2cpp_codegen_runtime_class_init_inline(Aes_tC72E711D7751C8AEAF59C51CA0E61A3857068047_il2cpp_TypeInfo_var);
 		Aes_tC72E711D7751C8AEAF59C51CA0E61A3857068047* L_3;
 		L_3 = Aes_Create_m8E61A098683C7BBB8ADF0D030CA032317AE6F890(NULL);
@@ -22154,20 +22158,20 @@ IL_0079:
 		try
 		{
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6385>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6387>
 				Aes_tC72E711D7751C8AEAF59C51CA0E61A3857068047* L_6 = V_1;
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = V_0;
 				NullCheck(L_6);
 				VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(12, L_6, L_7);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6386>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6388>
 				Aes_tC72E711D7751C8AEAF59C51CA0E61A3857068047* L_8 = V_1;
 				NullCheck(L_8);
 				VirtualActionInvoker1< int32_t >::Invoke(17, L_8, 2);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6387>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6389>
 				Aes_tC72E711D7751C8AEAF59C51CA0E61A3857068047* L_9 = V_1;
 				NullCheck(L_9);
 				VirtualActionInvoker1< int32_t >::Invoke(19, L_9, 2);
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6389>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6391>
 				Aes_tC72E711D7751C8AEAF59C51CA0E61A3857068047* L_10 = V_1;
 				Aes_tC72E711D7751C8AEAF59C51CA0E61A3857068047* L_11 = V_1;
 				NullCheck(L_11);
@@ -22181,20 +22185,20 @@ IL_0079:
 				RuntimeObject* L_15;
 				L_15 = VirtualFuncInvoker2< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(23, L_10, L_12, L_14);
 				V_2 = L_15;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6391>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6393>
 				String_t* L_16 = ___0_encryptedText;
 				il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_17;
 				L_17 = Convert_FromBase64String_m267327B074B41D93C9622D142B95CFAA4ACCCA9C(L_16, NULL);
 				V_3 = L_17;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6392>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6394>
 				V_4 = 0;
 				goto IL_005c_1;
 			}
 
 IL_004a_1:
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6394>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6396>
 				RuntimeObject* L_18 = V_2;
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_19 = V_3;
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_20 = V_3;
@@ -22203,14 +22207,14 @@ IL_004a_1:
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_21;
 				L_21 = InterfaceFuncInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(4, ICryptoTransform_tE6DA9E01069FDC62AB562B589C8E43EEC53B2377_il2cpp_TypeInfo_var, L_18, L_19, 0, ((int32_t)(((RuntimeArray*)L_20)->max_length)));
 				V_3 = L_21;
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6392>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6394>
 				int32_t L_22 = V_4;
 				V_4 = ((int32_t)il2cpp_codegen_add(L_22, 1));
 			}
 
 IL_005c_1:
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6392>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6394>
 				int32_t L_23 = V_4;
 				if ((((int32_t)L_23) < ((int32_t)4)))
 				{
@@ -22218,7 +22222,7 @@ IL_005c_1:
 				}
 			}
 			{
-				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6397>
+				//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6399>
 				Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_24;
 				L_24 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_25 = V_3;
@@ -22237,7 +22241,7 @@ IL_005c_1:
 
 IL_007a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6399>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6401>
 		String_t* L_27 = V_5;
 		return L_27;
 	}
@@ -22273,62 +22277,62 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	int32_t V_15 = 0;
 	int32_t V_16 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6404>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6406>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_0 = (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)il2cpp_codegen_object_new(Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var);
 		Texture2D__ctor_m3BA82E87442B7F69E118477069AE11101B9DF796(L_0, 1, 1, NULL);
 		V_0 = L_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6405>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6407>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_1 = V_0;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2 = ___0_dataImage;
 		bool L_3;
 		L_3 = ImageConversion_LoadImage_m1797365F78319B68638DE8BB02836F8D60760041(L_1, L_2, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6406>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6408>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_4 = V_0;
 		NullCheck(L_4);
 		int32_t L_5;
 		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_4);
 		V_1 = L_5;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6407>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6409>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_6 = V_0;
 		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_6);
 		V_2 = L_7;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6408>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6410>
 		String_t* L_8 = ___1_key;
 		il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 		int32_t L_9;
 		L_9 = Controller_JavaHashCode_mB742F0A3A8DAB0E130F026BD0E6CCDF76963114D(L_8, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6409>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6411>
 		Random_t5011E360E42E2C7AE2CC0A6EC8495087EB0059E1* L_10 = (Random_t5011E360E42E2C7AE2CC0A6EC8495087EB0059E1*)il2cpp_codegen_object_new(Random_t5011E360E42E2C7AE2CC0A6EC8495087EB0059E1_il2cpp_TypeInfo_var);
 		Random__ctor_m13ED49368FFD705FD4157CFCDCC8A7F28F288865(L_10, ((int64_t)L_9), NULL);
 		V_3 = L_10;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6411>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6413>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_11 = V_0;
 		NullCheck(L_11);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_12;
 		L_12 = Texture2D_GetPixels32_m48230192E7543765C1A517F251D1D9BFCFB58C3D(L_11, NULL);
 		V_4 = L_12;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6412>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6414>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_13 = V_4;
 		NullCheck(L_13);
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_14 = (Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259*)(Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259*)SZArrayNew(Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259_il2cpp_TypeInfo_var, (uint32_t)((int32_t)(((RuntimeArray*)L_13)->max_length)));
 		V_5 = L_14;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6413>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6415>
 		V_6 = 0;
 		goto IL_0079;
 	}
 
 IL_0043:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6415>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6417>
 		V_7 = 0;
 		goto IL_006e;
 	}
 
 IL_0048:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6417>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6419>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_15 = V_5;
 		int32_t L_16 = V_2;
 		int32_t L_17 = V_6;
@@ -22343,14 +22347,14 @@ IL_0048:
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_25 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
 		NullCheck(L_15);
 		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_16, L_17)), 1)), L_18)), L_19))), (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B)L_25);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6415>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6417>
 		int32_t L_26 = V_7;
 		V_7 = ((int32_t)il2cpp_codegen_add(L_26, 1));
 	}
 
 IL_006e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6415>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6417>
 		int32_t L_27 = V_7;
 		int32_t L_28 = V_1;
 		if ((((int32_t)L_27) < ((int32_t)L_28)))
@@ -22359,14 +22363,14 @@ IL_006e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6413>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6415>
 		int32_t L_29 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_29, 1));
 	}
 
 IL_0079:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6413>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6415>
 		int32_t L_30 = V_6;
 		int32_t L_31 = V_2;
 		if ((((int32_t)L_30) < ((int32_t)L_31)))
@@ -22375,21 +22379,21 @@ IL_0079:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6420>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6422>
 		V_8 = 0;
 		goto IL_0124;
 	}
 
 IL_0086:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6422>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6424>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_32 = V_5;
 		int32_t L_33 = V_8;
 		NullCheck(L_32);
 		int32_t L_34 = L_33;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_35 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_34));
 		V_9 = L_35;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6423>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6425>
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_36 = V_9;
 		uint8_t L_37 = L_36.___a;
 		if (!L_37)
@@ -22398,7 +22402,7 @@ IL_0086:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6425>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6427>
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_38 = V_9;
 		uint8_t L_39 = L_38.___r;
 		Random_t5011E360E42E2C7AE2CC0A6EC8495087EB0059E1* L_40 = V_3;
@@ -22406,7 +22410,7 @@ IL_0086:
 		int32_t L_41;
 		L_41 = Random_NextInt_mEFA04A7179CBB2D3CA8E7CB9743EFE0C9F26E83E(L_40, ((int32_t)256), NULL);
 		V_10 = ((int32_t)(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract((int32_t)L_39, L_41)), ((int32_t)256)))%((int32_t)256)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6426>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6428>
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_42 = V_9;
 		uint8_t L_43 = L_42.___g;
 		Random_t5011E360E42E2C7AE2CC0A6EC8495087EB0059E1* L_44 = V_3;
@@ -22414,7 +22418,7 @@ IL_0086:
 		int32_t L_45;
 		L_45 = Random_NextInt_mEFA04A7179CBB2D3CA8E7CB9743EFE0C9F26E83E(L_44, ((int32_t)256), NULL);
 		V_11 = ((int32_t)(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract((int32_t)L_43, L_45)), ((int32_t)256)))%((int32_t)256)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6427>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6429>
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_46 = V_9;
 		uint8_t L_47 = L_46.___b;
 		Random_t5011E360E42E2C7AE2CC0A6EC8495087EB0059E1* L_48 = V_3;
@@ -22422,7 +22426,7 @@ IL_0086:
 		int32_t L_49;
 		L_49 = Random_NextInt_mEFA04A7179CBB2D3CA8E7CB9743EFE0C9F26E83E(L_48, ((int32_t)256), NULL);
 		V_12 = ((int32_t)(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract((int32_t)L_47, L_49)), ((int32_t)256)))%((int32_t)256)));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6428>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6430>
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_50 = V_5;
 		int32_t L_51 = V_8;
 		int32_t L_52 = V_10;
@@ -22439,14 +22443,14 @@ IL_0086:
 
 IL_011e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6420>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6422>
 		int32_t L_58 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add(L_58, 1));
 	}
 
 IL_0124:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6420>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6422>
 		int32_t L_59 = V_8;
 		Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* L_60 = V_5;
 		NullCheck(L_60);
@@ -22456,21 +22460,21 @@ IL_0124:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6431>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6433>
 		V_13 = 0;
 		goto IL_016b;
 	}
 
 IL_0134:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6433>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6435>
 		V_14 = 0;
 		goto IL_0160;
 	}
 
 IL_0139:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6435>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6437>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_61 = V_0;
 		int32_t L_62 = V_14;
 		int32_t L_63 = V_13;
@@ -22486,14 +22490,14 @@ IL_0139:
 		L_71 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_70, NULL);
 		NullCheck(L_61);
 		Texture2D_SetPixel_m2CCFC5F729135D59DC4A697C2605A3FC5C8574DB(L_61, L_62, L_63, L_71, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6433>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6435>
 		int32_t L_72 = V_14;
 		V_14 = ((int32_t)il2cpp_codegen_add(L_72, 1));
 	}
 
 IL_0160:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6433>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6435>
 		int32_t L_73 = V_14;
 		int32_t L_74 = V_1;
 		if ((((int32_t)L_73) < ((int32_t)L_74)))
@@ -22502,14 +22506,14 @@ IL_0160:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6431>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6433>
 		int32_t L_75 = V_13;
 		V_13 = ((int32_t)il2cpp_codegen_add(L_75, 1));
 	}
 
 IL_016b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6431>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6433>
 		int32_t L_76 = V_13;
 		int32_t L_77 = V_2;
 		if ((((int32_t)L_76) < ((int32_t)L_77)))
@@ -22518,21 +22522,21 @@ IL_016b:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6438>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6440>
 		V_15 = 0;
 		goto IL_01ac;
 	}
 
 IL_0175:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6440>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6442>
 		V_16 = 0;
 		goto IL_01a1;
 	}
 
 IL_017a:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6442>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6444>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_78 = V_0;
 		int32_t L_79 = V_16;
 		int32_t L_80 = V_2;
@@ -22548,14 +22552,14 @@ IL_017a:
 		L_88 = Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline(L_87, NULL);
 		NullCheck(L_78);
 		Texture2D_SetPixel_m2CCFC5F729135D59DC4A697C2605A3FC5C8574DB(L_78, L_79, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_80, 1)), L_81)), L_88, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6440>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6442>
 		int32_t L_89 = V_16;
 		V_16 = ((int32_t)il2cpp_codegen_add(L_89, 1));
 	}
 
 IL_01a1:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6440>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6442>
 		int32_t L_90 = V_16;
 		int32_t L_91 = V_1;
 		if ((((int32_t)L_90) < ((int32_t)L_91)))
@@ -22564,14 +22568,14 @@ IL_01a1:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6438>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6440>
 		int32_t L_92 = V_15;
 		V_15 = ((int32_t)il2cpp_codegen_add(L_92, 1));
 	}
 
 IL_01ac:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6438>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6440>
 		int32_t L_93 = V_15;
 		int32_t L_94 = V_2;
 		if ((((int32_t)L_93) < ((int32_t)L_94)))
@@ -22580,11 +22584,11 @@ IL_01ac:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6445>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6447>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_95 = V_0;
 		NullCheck(L_95);
 		Texture2D_Apply_mA014182C9EE0BBF6EEE3B286854F29E50EB972DC(L_95, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6446>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6448>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_96 = V_0;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_97;
 		L_97 = ImageConversion_EncodeToPNG_m0804AD31B83C653AEBB234F6CC31A02D4FA7C945(L_96, NULL);
@@ -22595,7 +22599,7 @@ IL_01ac:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Controller_ConvertToUnityColor_m84132E287E253EB084660D39B86AA96896E0D58C (Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9* __this, Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___0_color32, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6450>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6452>
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_0 = ___0_color32;
 		uint8_t L_1 = L_0.___r;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_2 = ___0_color32;
@@ -22618,16 +22622,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Controller_JavaHashCode_mB742F0A3A8DA
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6455>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6457>
 		V_0 = 0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6456>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6458>
 		V_1 = 0;
 		goto IL_0017;
 	}
 
 IL_0006:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6456>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6458>
 		int32_t L_0 = V_0;
 		String_t* L_1 = ___0_str;
 		int32_t L_2 = V_1;
@@ -22635,14 +22639,14 @@ IL_0006:
 		Il2CppChar L_3;
 		L_3 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_1, L_2, NULL);
 		V_0 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(((int32_t)31), L_0)), (int32_t)L_3));
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6456>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6458>
 		int32_t L_4 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_4, 1));
 	}
 
 IL_0017:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6456>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6458>
 		int32_t L_5 = V_1;
 		String_t* L_6 = ___0_str;
 		NullCheck(L_6);
@@ -22654,7 +22658,7 @@ IL_0017:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6457>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6459>
 		int32_t L_8 = V_0;
 		return L_8;
 	}
@@ -22665,10 +22669,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_createItemNew_m599A9D818340C7
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	try
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6465>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6467>
 		myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_0 = ___0_d;
 		Controller_loadItemNew_m95DD6A7658A92F7A82842E28047A8BF53BC412AA(__this, L_0, (int8_t)(-1), (bool)1, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6466>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6468>
 		goto IL_000e;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -22684,15 +22688,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_createItemNew_m599A9D818340C7
 CATCH_000b:
 	{
 		Exception_t* L_1 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6467>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6469>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6471>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_000e;
 	}
 
 IL_000e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6470>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6472>
 		return;
 	}
 }
@@ -22731,24 +22735,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_loadItemNew_m95DD6A7658A92F7A
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6476>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6478>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_0 = ___0_d;
 			NullCheck(L_0);
 			myReader_mark_m4F9318EB449A2E9082286F91799EE9E8CF7E762D(L_0, ((int32_t)100000), NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6477>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6479>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1 = ___0_d;
 			NullCheck(L_1);
 			int8_t L_2;
 			L_2 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_1, NULL);
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vcItem = L_2;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6478>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6480>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_3 = ___0_d;
 			NullCheck(L_3);
 			int8_t L_4;
 			L_4 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_3, NULL);
 			___1_type = L_4;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6479>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6481>
 			int8_t L_5 = ___1_type;
 			if (L_5)
 			{
@@ -22756,7 +22760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_loadItemNew_m95DD6A7658A92F7A
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6481>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6483>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_6;
 			L_6 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -22768,14 +22772,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_loadItemNew_m95DD6A7658A92F7A
 			NullCheck(L_6);
 			L_6->___iOptionTemplates = L_9;
 			Il2CppCodeGenWriteBarrier((void**)(&L_6->___iOptionTemplates), (void*)L_9);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6482>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6484>
 			V_0 = 0;
 			goto IL_0092_1;
 		}
 
 IL_003d_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6484>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6486>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_10;
 			L_10 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -22787,7 +22791,7 @@ IL_003d_1:
 			NullCheck(L_11);
 			ArrayElementTypeCheck (L_11, L_13);
 			(L_11)->SetAt(static_cast<il2cpp_array_size_t>(L_12), (ItemOptionTemplate_t12451A946B040C397E1C7625C6239578F1539DB0*)L_13);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6485>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6487>
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_14;
 			L_14 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 			NullCheck(L_14);
@@ -22799,7 +22803,7 @@ IL_003d_1:
 			int32_t L_19 = V_0;
 			NullCheck(L_18);
 			L_18->___id = L_19;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6486>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6488>
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_20;
 			L_20 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 			NullCheck(L_20);
@@ -22815,7 +22819,7 @@ IL_003d_1:
 			NullCheck(L_24);
 			L_24->___name = L_26;
 			Il2CppCodeGenWriteBarrier((void**)(&L_24->___name), (void*)L_26);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6487>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6489>
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_27;
 			L_27 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 			NullCheck(L_27);
@@ -22830,14 +22834,14 @@ IL_003d_1:
 			L_33 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_32, NULL);
 			NullCheck(L_31);
 			L_31->___type = L_33;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6482>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6484>
 			int32_t L_34 = V_0;
 			V_0 = ((int32_t)il2cpp_codegen_add(L_34, 1));
 		}
 
 IL_0092_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6482>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6484>
 			int32_t L_35 = V_0;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_36;
@@ -22851,7 +22855,7 @@ IL_0092_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6489>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6491>
 			bool L_38 = ___2_isSave;
 			if (!L_38)
 			{
@@ -22859,22 +22863,22 @@ IL_0092_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6491>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6493>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_39 = ___0_d;
 			NullCheck(L_39);
 			myReader_reset_mE7E30C18E65522895CB8842EDF245B9D89EF744D(L_39, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6492>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6494>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_40 = ___0_d;
 			NullCheck(L_40);
 			int32_t L_41;
 			L_41 = myReader_available_m929F700B0FC5E5BEB2883E2F0161368D14DB3879(L_40, NULL);
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_42 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)SZArrayNew(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_il2cpp_TypeInfo_var, (uint32_t)L_41);
 			V_1 = L_42;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6493>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6495>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_43 = ___0_d;
 			NullCheck(L_43);
 			myReader_readFully_m8608417048EE24F48B0E1E760D131963204F563C(L_43, (&V_1), NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6494>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6496>
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_44 = V_1;
 			Rms_saveRMS_mF7CE60C507D5896622CA43DB7367F4A174BC62C6(_stringLiteralF4544C49FAF838E61873A3D265F1CE10B2F8D3B2, L_44, NULL);
 			goto IL_02c5_1;
@@ -22882,7 +22886,7 @@ IL_0092_1:
 
 IL_00d1_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6497>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6499>
 			int8_t L_45 = ___1_type;
 			if ((!(((uint32_t)L_45) == ((uint32_t)1))))
 			{
@@ -22890,25 +22894,25 @@ IL_00d1_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6499>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6501>
 			il2cpp_codegen_runtime_class_init_inline(ItemTemplates_t74FBB6ADFE8FFC5AA6B2D7D731E933833ECC2745_il2cpp_TypeInfo_var);
 			MyHashTable_t03FB795CF8B8588EB81514182487084E49CD03E7* L_46 = ((ItemTemplates_t74FBB6ADFE8FFC5AA6B2D7D731E933833ECC2745_StaticFields*)il2cpp_codegen_static_fields_for(ItemTemplates_t74FBB6ADFE8FFC5AA6B2D7D731E933833ECC2745_il2cpp_TypeInfo_var))->___itemTemplates;
 			NullCheck(L_46);
 			MyHashTable_clear_m615337853061CBF2B6758A0FD7FFA1AF23969C1A(L_46, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6500>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6502>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_47 = ___0_d;
 			NullCheck(L_47);
 			int16_t L_48;
 			L_48 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_47, NULL);
 			V_2 = L_48;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6501>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6503>
 			V_3 = 0;
 			goto IL_0133_1;
 		}
 
 IL_00ed_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6503>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6505>
 			int32_t L_49 = V_3;
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_50 = ___0_d;
 			NullCheck(L_50);
@@ -22948,17 +22952,17 @@ IL_00ed_1:
 			L_67 = myReader_readBoolean_m741F3BFB46800E08CF79B6E514F34DE1E248819B(L_66, NULL);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_68 = (ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF*)il2cpp_codegen_object_new(ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF_il2cpp_TypeInfo_var);
 			ItemTemplate__ctor_mB883843703599C198217B6DFAFFD2A78D370B74E(L_68, ((int16_t)L_49), L_51, L_53, L_55, L_57, L_59, L_61, L_63, L_65, L_67, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6504>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6506>
 			il2cpp_codegen_runtime_class_init_inline(ItemTemplates_t74FBB6ADFE8FFC5AA6B2D7D731E933833ECC2745_il2cpp_TypeInfo_var);
 			ItemTemplates_add_m2C632E5A3B429B3C54F95DB3AD0C586014A28844(L_68, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6501>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6503>
 			int32_t L_69 = V_3;
 			V_3 = ((int32_t)il2cpp_codegen_add(L_69, 1));
 		}
 
 IL_0133_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6501>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6503>
 			int32_t L_70 = V_3;
 			int32_t L_71 = V_2;
 			if ((((int32_t)L_70) < ((int32_t)L_71)))
@@ -22967,7 +22971,7 @@ IL_0133_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6506>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6508>
 			bool L_72 = ___2_isSave;
 			if (!L_72)
 			{
@@ -22975,22 +22979,22 @@ IL_0133_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6508>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6510>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_73 = ___0_d;
 			NullCheck(L_73);
 			myReader_reset_mE7E30C18E65522895CB8842EDF245B9D89EF744D(L_73, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6509>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6511>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_74 = ___0_d;
 			NullCheck(L_74);
 			int32_t L_75;
 			L_75 = myReader_available_m929F700B0FC5E5BEB2883E2F0161368D14DB3879(L_74, NULL);
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_76 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)SZArrayNew(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_il2cpp_TypeInfo_var, (uint32_t)L_75);
 			V_4 = L_76;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6510>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6512>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_77 = ___0_d;
 			NullCheck(L_77);
 			myReader_readFully_m8608417048EE24F48B0E1E760D131963204F563C(L_77, (&V_4), NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6511>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6513>
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_78 = V_4;
 			Rms_saveRMS_mF7CE60C507D5896622CA43DB7367F4A174BC62C6(_stringLiteral9F9645E27BB5BE3E2574461FFBCE7D7194345271, L_78, NULL);
 			goto IL_02c5_1;
@@ -22998,7 +23002,7 @@ IL_0133_1:
 
 IL_0169_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6514>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6516>
 			int8_t L_79 = ___1_type;
 			if ((!(((uint32_t)L_79) == ((uint32_t)2))))
 			{
@@ -23006,25 +23010,25 @@ IL_0169_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6516>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6518>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_80 = ___0_d;
 			NullCheck(L_80);
 			int16_t L_81;
 			L_81 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_80, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6517>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6519>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_82 = ___0_d;
 			NullCheck(L_82);
 			int16_t L_83;
 			L_83 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_82, NULL);
 			V_5 = L_83;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6518>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6520>
 			V_6 = L_81;
 			goto IL_01cb_1;
 		}
 
 IL_0182_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6520>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6522>
 			int32_t L_84 = V_6;
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_85 = ___0_d;
 			NullCheck(L_85);
@@ -23064,17 +23068,17 @@ IL_0182_1:
 			L_102 = myReader_readBoolean_m741F3BFB46800E08CF79B6E514F34DE1E248819B(L_101, NULL);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_103 = (ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF*)il2cpp_codegen_object_new(ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF_il2cpp_TypeInfo_var);
 			ItemTemplate__ctor_mB883843703599C198217B6DFAFFD2A78D370B74E(L_103, ((int16_t)L_84), L_86, L_88, L_90, L_92, L_94, L_96, L_98, L_100, L_102, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6521>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6523>
 			il2cpp_codegen_runtime_class_init_inline(ItemTemplates_t74FBB6ADFE8FFC5AA6B2D7D731E933833ECC2745_il2cpp_TypeInfo_var);
 			ItemTemplates_add_m2C632E5A3B429B3C54F95DB3AD0C586014A28844(L_103, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6518>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6520>
 			int32_t L_104 = V_6;
 			V_6 = ((int32_t)il2cpp_codegen_add(L_104, 1));
 		}
 
 IL_01cb_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6518>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6520>
 			int32_t L_105 = V_6;
 			int32_t L_106 = V_5;
 			if ((((int32_t)L_105) < ((int32_t)L_106)))
@@ -23083,7 +23087,7 @@ IL_01cb_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6523>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6525>
 			bool L_107 = ___2_isSave;
 			if (!L_107)
 			{
@@ -23091,25 +23095,25 @@ IL_01cb_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6525>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6527>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_108 = ___0_d;
 			NullCheck(L_108);
 			myReader_reset_mE7E30C18E65522895CB8842EDF245B9D89EF744D(L_108, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6526>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6528>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_109 = ___0_d;
 			NullCheck(L_109);
 			int32_t L_110;
 			L_110 = myReader_available_m929F700B0FC5E5BEB2883E2F0161368D14DB3879(L_109, NULL);
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_111 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)SZArrayNew(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_il2cpp_TypeInfo_var, (uint32_t)L_110);
 			V_7 = L_111;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6527>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6529>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_112 = ___0_d;
 			NullCheck(L_112);
 			myReader_readFully_m8608417048EE24F48B0E1E760D131963204F563C(L_112, (&V_7), NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6528>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6530>
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_113 = V_7;
 			Rms_saveRMS_mF7CE60C507D5896622CA43DB7367F4A174BC62C6(_stringLiteral46577FE089D2F62D757261087430E3BDD3399C4A, L_113, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6529>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6531>
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_114 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)SZArrayNew(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_il2cpp_TypeInfo_var, (uint32_t)1);
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_115 = L_114;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
@@ -23117,13 +23121,13 @@ IL_01cb_1:
 			NullCheck(L_115);
 			(L_115)->SetAt(static_cast<il2cpp_array_size_t>(0), (int8_t)L_116);
 			V_8 = L_115;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6530>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6532>
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_117 = V_8;
 			Rms_saveRMS_mF7CE60C507D5896622CA43DB7367F4A174BC62C6(_stringLiteralE791D6F7FAD85D48D99EE546F1E4D6922E067F43, L_117, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6531>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6533>
 			il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 			((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isUpdateItem = (bool)0;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6532>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6534>
 			int8_t L_118 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vsData;
 			int8_t L_119 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vcData;
 			if ((!(((uint32_t)L_118) == ((uint32_t)L_119))))
@@ -23159,28 +23163,28 @@ IL_01cb_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6534>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6536>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_126;
 			L_126 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 			NullCheck(L_126);
 			GameScr_readDart_m2D93C4F764F2D3A12514E32BD2DD01C784653639(L_126, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6535>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6537>
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_127;
 			L_127 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 			NullCheck(L_127);
 			GameScr_readEfect_m3BA036650AD8C4C8CE2A18B1B8D7BCCB76DF0613(L_127, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6536>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6538>
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_128;
 			L_128 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 			NullCheck(L_128);
 			GameScr_readArrow_mAB37B1966B5209FF1FE1346819855BE07F46BD12(L_128, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6537>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6539>
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_129;
 			L_129 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 			NullCheck(L_129);
 			GameScr_readSkill_mDFD850C3FCA30BE3A1FB1B5372D9787B78AC60B6(L_129, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6538>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6540>
 			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_130;
 			L_130 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 			NullCheck(L_130);
@@ -23190,7 +23194,7 @@ IL_01cb_1:
 
 IL_028a_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6542>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6544>
 			int8_t L_131 = ___1_type;
 			if ((!(((uint32_t)L_131) == ((uint32_t)((int32_t)100)))))
 			{
@@ -23198,14 +23202,14 @@ IL_028a_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6544>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6546>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_132 = ___0_d;
 			Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_133;
 			L_133 = Controller_readArrHead_m1C3848EF5F2AC54743625F00EB4A9D0766BAD55E(__this, L_132, NULL);
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___Arr_Head_2Fr = L_133;
 			Il2CppCodeGenWriteBarrier((void**)(&((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___Arr_Head_2Fr), (void*)L_133);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6545>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6547>
 			bool L_134 = ___2_isSave;
 			if (!L_134)
 			{
@@ -23213,29 +23217,29 @@ IL_028a_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6547>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6549>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_135 = ___0_d;
 			NullCheck(L_135);
 			myReader_reset_mE7E30C18E65522895CB8842EDF245B9D89EF744D(L_135, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6548>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6550>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_136 = ___0_d;
 			NullCheck(L_136);
 			int32_t L_137;
 			L_137 = myReader_available_m929F700B0FC5E5BEB2883E2F0161368D14DB3879(L_136, NULL);
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_138 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)SZArrayNew(SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913_il2cpp_TypeInfo_var, (uint32_t)L_137);
 			V_9 = L_138;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6549>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6551>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_139 = ___0_d;
 			NullCheck(L_139);
 			myReader_readFully_m8608417048EE24F48B0E1E760D131963204F563C(L_139, (&V_9), NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6550>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6552>
 			SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_140 = V_9;
 			Rms_saveRMS_mF7CE60C507D5896622CA43DB7367F4A174BC62C6(_stringLiteralA2303A7FB9B729A69AA4F469992C8797E9BF277F, L_140, NULL);
 		}
 
 IL_02c5_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6553>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6555>
 			goto IL_02cf;
 		}
 	}
@@ -23252,18 +23256,18 @@ IL_02c5_1:
 CATCH_02c7:
 	{
 		Exception_t* L_141 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6556>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6558>
 		NullCheck(L_141);
 		String_t* L_142;
 		L_142 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_141);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6557>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6559>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_02cf;
 	}
 
 IL_02cf:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6558>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6560>
 		return;
 	}
 }
@@ -23288,7 +23292,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readFrameBoss_m2ABB01C57886AA
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6564>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6566>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_0 = ___0_msg;
 			NullCheck(L_0);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1;
@@ -23297,18 +23301,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readFrameBoss_m2ABB01C57886AA
 			int8_t L_2;
 			L_2 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_1, NULL);
 			V_0 = L_2;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6565>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6567>
 			int32_t L_3 = V_0;
 			Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_4 = (Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E*)(Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E*)SZArrayNew(Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E_il2cpp_TypeInfo_var, (uint32_t)L_3);
 			V_1 = L_4;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6566>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6568>
 			V_2 = 0;
 			goto IL_0051_1;
 		}
 
 IL_0017_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6568>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6570>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_5 = ___0_msg;
 			NullCheck(L_5);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_6;
@@ -23317,21 +23321,21 @@ IL_0017_1:
 			int8_t L_7;
 			L_7 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_6, NULL);
 			V_3 = L_7;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6569>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6571>
 			Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_8 = V_1;
 			int32_t L_9 = V_2;
 			int32_t L_10 = V_3;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_11 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_10);
 			NullCheck(L_8);
 			(L_8)->SetAt(static_cast<il2cpp_array_size_t>(L_9), (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)L_11);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6570>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6572>
 			V_4 = 0;
 			goto IL_0048_1;
 		}
 
 IL_0031_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6572>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6574>
 			Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_12 = V_1;
 			int32_t L_13 = V_2;
 			NullCheck(L_12);
@@ -23347,14 +23351,14 @@ IL_0031_1:
 			L_19 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_18, NULL);
 			NullCheck(L_15);
 			(L_15)->SetAt(static_cast<il2cpp_array_size_t>(L_16), (int32_t)L_19);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6570>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6572>
 			int32_t L_20 = V_4;
 			V_4 = ((int32_t)il2cpp_codegen_add(L_20, 1));
 		}
 
 IL_0048_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6570>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6572>
 			int32_t L_21 = V_4;
 			int32_t L_22 = V_3;
 			if ((((int32_t)L_21) < ((int32_t)L_22)))
@@ -23363,14 +23367,14 @@ IL_0048_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6566>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6568>
 			int32_t L_23 = V_2;
 			V_2 = ((int32_t)il2cpp_codegen_add(L_23, 1));
 		}
 
 IL_0051_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6566>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6568>
 			int32_t L_24 = V_2;
 			int32_t L_25 = V_0;
 			if ((((int32_t)L_24) < ((int32_t)L_25)))
@@ -23379,7 +23383,7 @@ IL_0051_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6575>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6577>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 			MyHashTable_t03FB795CF8B8588EB81514182487084E49CD03E7* L_26 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___frameHT_NEWBOSS;
 			String_t* L_27;
@@ -23390,7 +23394,7 @@ IL_0051_1:
 			Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_30 = V_1;
 			NullCheck(L_26);
 			MyHashTable_put_m4724A71ED1B4C97C1F054D5F77AF40CA040C7442(L_26, L_29, (RuntimeObject*)L_30, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6576>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6578>
 			goto IL_0076;
 		}
 	}
@@ -23407,15 +23411,15 @@ IL_0051_1:
 CATCH_0073:
 	{
 		Exception_t* L_31 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6577>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6579>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6581>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0076;
 	}
 
 IL_0076:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6580>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6582>
 		return;
 	}
 }
@@ -23435,7 +23439,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C977
 	int32_t V_3 = 0;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6584>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6586>
 		Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_0 = (Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E*)(Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E*)SZArrayNew(Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E_il2cpp_TypeInfo_var, (uint32_t)1);
 		Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_1 = L_0;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)2);
@@ -23452,42 +23456,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C977
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6587>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6589>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_5 = ___0_d;
 			NullCheck(L_5);
 			int16_t L_6;
 			L_6 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_5, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6588>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6590>
 			Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_7 = (Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E*)(Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E*)SZArrayNew(Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E_il2cpp_TypeInfo_var, (uint32_t)L_6);
 			V_0 = L_7;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6589>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6591>
 			V_1 = 0;
 			goto IL_005b_1;
 		}
 
 IL_0030_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6591>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6593>
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_8 = ___0_d;
 			NullCheck(L_8);
 			int8_t L_9;
 			L_9 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_8, NULL);
 			V_2 = L_9;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6592>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6594>
 			Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_10 = V_0;
 			int32_t L_11 = V_1;
 			int32_t L_12 = V_2;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_13 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_12);
 			NullCheck(L_10);
 			(L_10)->SetAt(static_cast<il2cpp_array_size_t>(L_11), (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)L_13);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6593>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6595>
 			V_3 = 0;
 			goto IL_0053_1;
 		}
 
 IL_0044_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6595>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6597>
 			Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_14 = V_0;
 			int32_t L_15 = V_1;
 			NullCheck(L_14);
@@ -23500,14 +23504,14 @@ IL_0044_1:
 			L_20 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_19, NULL);
 			NullCheck(L_17);
 			(L_17)->SetAt(static_cast<il2cpp_array_size_t>(L_18), (int32_t)L_20);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6593>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6595>
 			int32_t L_21 = V_3;
 			V_3 = ((int32_t)il2cpp_codegen_add(L_21, 1));
 		}
 
 IL_0053_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6593>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6595>
 			int32_t L_22 = V_3;
 			int32_t L_23 = V_2;
 			if ((((int32_t)L_22) < ((int32_t)L_23)))
@@ -23516,14 +23520,14 @@ IL_0053_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6589>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6591>
 			int32_t L_24 = V_1;
 			V_1 = ((int32_t)il2cpp_codegen_add(L_24, 1));
 		}
 
 IL_005b_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6589>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6591>
 			int32_t L_25 = V_1;
 			Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_26 = V_0;
 			NullCheck(L_26);
@@ -23533,7 +23537,7 @@ IL_005b_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6598>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6600>
 			goto IL_0066;
 		}
 	}
@@ -23550,15 +23554,15 @@ IL_005b_1:
 CATCH_0063:
 	{
 		Exception_t* L_27 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6599>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6601>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6603>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0066;
 	}
 
 IL_0066:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6602>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6604>
 		Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_28 = V_0;
 		return L_28;
 	}
@@ -23571,7 +23575,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_phuban_Info_m9F939930DF81CAA2
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6609>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6611>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_0 = ___0_msg;
 			NullCheck(L_0);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1;
@@ -23580,7 +23584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_phuban_Info_m9F939930DF81CAA2
 			int8_t L_2;
 			L_2 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_1, NULL);
 			V_0 = L_2;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6610>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6612>
 			int8_t L_3 = V_0;
 			if (L_3)
 			{
@@ -23588,7 +23592,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_phuban_Info_m9F939930DF81CAA2
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6612>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6614>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_4 = ___0_msg;
 			int8_t L_5 = V_0;
 			Controller_readPhuBan_CHIENTRUONGNAMEK_mBF3B99476272DBFCF98306ECA21758DC63E2B840(__this, L_4, L_5, NULL);
@@ -23596,7 +23600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_phuban_Info_m9F939930DF81CAA2
 
 IL_0017_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6614>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6616>
 			goto IL_001c;
 		}
 	}
@@ -23613,15 +23617,15 @@ IL_0017_1:
 CATCH_0019:
 	{
 		Exception_t* L_6 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6615>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6617>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6619>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_001c;
 	}
 
 IL_001c:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6618>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6620>
 		return;
 	}
 }
@@ -23655,7 +23659,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6624>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6626>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_0 = ___0_msg;
 			NullCheck(L_0);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1;
@@ -23664,7 +23668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 			int8_t L_2;
 			L_2 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_1, NULL);
 			V_0 = L_2;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6625>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6627>
 			int8_t L_3 = V_0;
 			if (L_3)
 			{
@@ -23672,7 +23676,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6627>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6629>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_4 = ___0_msg;
 			NullCheck(L_4);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_5;
@@ -23681,7 +23685,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 			int16_t L_6;
 			L_6 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_5, NULL);
 			V_1 = L_6;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6628>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6630>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_7 = ___0_msg;
 			NullCheck(L_7);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_8;
@@ -23690,7 +23694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 			String_t* L_9;
 			L_9 = myReader_readUTF_m7BDB6B0B2C3063B93376A208946519E334B482F4(L_8, NULL);
 			V_2 = L_9;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6629>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6631>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_10 = ___0_msg;
 			NullCheck(L_10);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_11;
@@ -23699,7 +23703,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 			String_t* L_12;
 			L_12 = myReader_readUTF_m7BDB6B0B2C3063B93376A208946519E334B482F4(L_11, NULL);
 			V_3 = L_12;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6630>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6632>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_13 = ___0_msg;
 			NullCheck(L_13);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_14;
@@ -23708,7 +23712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 			int32_t L_15;
 			L_15 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_14, NULL);
 			V_4 = L_15;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6631>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6633>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_16 = ___0_msg;
 			NullCheck(L_16);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_17;
@@ -23717,7 +23721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 			int16_t L_18;
 			L_18 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_17, NULL);
 			V_5 = L_18;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6632>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6634>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_19 = ___0_msg;
 			NullCheck(L_19);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_20;
@@ -23726,7 +23730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 			int8_t L_21;
 			L_21 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_20, NULL);
 			V_6 = L_21;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6633>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6635>
 			int32_t L_22 = ___1_type_PB;
 			int16_t L_23 = V_1;
 			String_t* L_24 = V_2;
@@ -23738,12 +23742,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info = L_28;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info), (void*)L_28);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6634>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6636>
 			InfoPhuBan_tFA2E1B35B5ADA9FFDDBB204BADB6C533213C5F3A* L_29 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info;
 			int32_t L_30 = V_6;
 			NullCheck(L_29);
 			L_29->___maxLife = L_30;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6635>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6637>
 			InfoPhuBan_tFA2E1B35B5ADA9FFDDBB204BADB6C533213C5F3A* L_31 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info;
 			int32_t L_32 = ___1_type_PB;
 			NullCheck(L_31);
@@ -23753,7 +23757,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_readPhuBan_CHIENTRUONGNAMEK_m
 
 IL_008a_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6637>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6639>
 			int8_t L_33 = V_0;
 			if ((!(((uint32_t)L_33) == ((uint32_t)1))))
 			{
@@ -23761,7 +23765,7 @@ IL_008a_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6639>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6641>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_34 = ___0_msg;
 			NullCheck(L_34);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_35;
@@ -23770,7 +23774,7 @@ IL_008a_1:
 			int32_t L_36;
 			L_36 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_35, NULL);
 			V_7 = L_36;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6640>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6642>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_37 = ___0_msg;
 			NullCheck(L_37);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_38;
@@ -23779,7 +23783,7 @@ IL_008a_1:
 			int32_t L_39;
 			L_39 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_38, NULL);
 			V_8 = L_39;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6641>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6643>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			InfoPhuBan_tFA2E1B35B5ADA9FFDDBB204BADB6C533213C5F3A* L_40 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info;
 			if (!L_40)
@@ -23788,7 +23792,7 @@ IL_008a_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6643>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6645>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			InfoPhuBan_tFA2E1B35B5ADA9FFDDBB204BADB6C533213C5F3A* L_41 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info;
 			int32_t L_42 = ___1_type_PB;
@@ -23801,7 +23805,7 @@ IL_008a_1:
 
 IL_00c6_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6646>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6648>
 			int8_t L_45 = V_0;
 			if ((!(((uint32_t)L_45) == ((uint32_t)2))))
 			{
@@ -23809,7 +23813,7 @@ IL_00c6_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6648>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6650>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_46 = ___0_msg;
 			NullCheck(L_46);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_47;
@@ -23818,11 +23822,11 @@ IL_00c6_1:
 			int8_t L_48;
 			L_48 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_47, NULL);
 			V_9 = L_48;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6649>
-			V_10 = (int16_t)0;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6650>
-			V_11 = (int16_t)(-1);
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6651>
+			V_10 = (int16_t)0;
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6652>
+			V_11 = (int16_t)(-1);
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6653>
 			int8_t L_49 = V_9;
 			if ((!(((uint32_t)L_49) == ((uint32_t)1))))
 			{
@@ -23830,16 +23834,16 @@ IL_00c6_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6653>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6655>
 			V_10 = (int16_t)1;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6654>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6656>
 			V_11 = (int16_t)3;
 			goto IL_00f2_1;
 		}
 
 IL_00ea_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6656>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6658>
 			int8_t L_50 = V_9;
 			if ((!(((uint32_t)L_50) == ((uint32_t)2))))
 			{
@@ -23847,19 +23851,19 @@ IL_00ea_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6658>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6660>
 			V_10 = (int16_t)2;
 		}
 
 IL_00f2_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6660>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6662>
 			V_11 = (int16_t)(-1);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6661>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6663>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info = (InfoPhuBan_tFA2E1B35B5ADA9FFDDBB204BADB6C533213C5F3A*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info), (void*)(InfoPhuBan_tFA2E1B35B5ADA9FFDDBB204BADB6C533213C5F3A*)NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6662>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6664>
 			int16_t L_51 = V_10;
 			int16_t L_52 = V_11;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -23871,7 +23875,7 @@ IL_00f2_1:
 
 IL_0115_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6664>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6666>
 			int8_t L_55 = V_0;
 			if ((!(((uint32_t)L_55) == ((uint32_t)5))))
 			{
@@ -23879,7 +23883,7 @@ IL_0115_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6666>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6668>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_56 = ___0_msg;
 			NullCheck(L_56);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_57;
@@ -23888,7 +23892,7 @@ IL_0115_1:
 			int16_t L_58;
 			L_58 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_57, NULL);
 			V_12 = L_58;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6667>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6669>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			InfoPhuBan_tFA2E1B35B5ADA9FFDDBB204BADB6C533213C5F3A* L_59 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info;
 			if (!L_59)
@@ -23897,7 +23901,7 @@ IL_0115_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6669>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6671>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			InfoPhuBan_tFA2E1B35B5ADA9FFDDBB204BADB6C533213C5F3A* L_60 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info;
 			int32_t L_61 = ___1_type_PB;
@@ -23909,7 +23913,7 @@ IL_0115_1:
 
 IL_013c_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6672>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6674>
 			int8_t L_63 = V_0;
 			if ((!(((uint32_t)L_63) == ((uint32_t)4))))
 			{
@@ -23917,7 +23921,7 @@ IL_013c_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6674>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6676>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_64 = ___0_msg;
 			NullCheck(L_64);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_65;
@@ -23926,7 +23930,7 @@ IL_013c_1:
 			int8_t L_66;
 			L_66 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_65, NULL);
 			V_13 = L_66;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6675>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6677>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_67 = ___0_msg;
 			NullCheck(L_67);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_68;
@@ -23935,7 +23939,7 @@ IL_013c_1:
 			int8_t L_69;
 			L_69 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_68, NULL);
 			V_14 = L_69;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6676>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6678>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			InfoPhuBan_tFA2E1B35B5ADA9FFDDBB204BADB6C533213C5F3A* L_70 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info;
 			if (!L_70)
@@ -23944,7 +23948,7 @@ IL_013c_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6678>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6680>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			InfoPhuBan_tFA2E1B35B5ADA9FFDDBB204BADB6C533213C5F3A* L_71 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___phuban_Info;
 			int32_t L_72 = ___1_type_PB;
@@ -23956,7 +23960,7 @@ IL_013c_1:
 
 IL_0170_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6681>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6683>
 			goto IL_0175;
 		}
 	}
@@ -23973,15 +23977,15 @@ IL_0170_1:
 CATCH_0172:
 	{
 		Exception_t* L_75 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6682>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6684>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6686>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0175;
 	}
 
 IL_0175:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6685>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6687>
 		return;
 	}
 }
@@ -24013,7 +24017,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_read_opt_mF52C5FA0D2EA33E1D8C
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6691>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6693>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_0 = ___0_msg;
 			NullCheck(L_0);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1;
@@ -24022,7 +24026,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_read_opt_mF52C5FA0D2EA33E1D8C
 			int8_t L_2;
 			L_2 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_1, NULL);
 			V_0 = L_2;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6692>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6694>
 			int8_t L_3 = V_0;
 			if (L_3)
 			{
@@ -24030,7 +24034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_read_opt_mF52C5FA0D2EA33E1D8C
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6694>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6696>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_4 = ___0_msg;
 			NullCheck(L_4);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_5;
@@ -24039,14 +24043,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_read_opt_mF52C5FA0D2EA33E1D8C
 			int16_t L_6;
 			L_6 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_5, NULL);
 			V_1 = L_6;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6695>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6697>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_7;
 			L_7 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 			int16_t L_8 = V_1;
 			NullCheck(L_7);
 			L_7->___idHat = L_8;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6696>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6698>
 			il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 			SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_9;
 			L_9 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
@@ -24057,7 +24061,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_read_opt_mF52C5FA0D2EA33E1D8C
 
 IL_0035_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6698>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6700>
 			int8_t L_10 = V_0;
 			if ((!(((uint32_t)L_10) == ((uint32_t)2))))
 			{
@@ -24065,7 +24069,7 @@ IL_0035_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6700>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6702>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_11 = ___0_msg;
 			NullCheck(L_11);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_12;
@@ -24074,7 +24078,7 @@ IL_0035_1:
 			int32_t L_13;
 			L_13 = myReader_readInt_mBBE3D6B1C73B3F9EA32C3CEACD7E5686DCDDB1C5(L_12, NULL);
 			V_2 = L_13;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6701>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6703>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_14 = ___0_msg;
 			NullCheck(L_14);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_15;
@@ -24083,7 +24087,7 @@ IL_0035_1:
 			int8_t L_16;
 			L_16 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_15, NULL);
 			V_3 = L_16;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6702>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6704>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_17 = ___0_msg;
 			NullCheck(L_17);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_18;
@@ -24092,7 +24096,7 @@ IL_0035_1:
 			int16_t L_19;
 			L_19 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_18, NULL);
 			V_4 = L_19;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6703>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6705>
 			String_t* L_20;
 			L_20 = Int16_ToString_mD65153B762673B865D4F8FF9B567BECC1ABF6D23((&V_4), NULL);
 			String_t* L_21;
@@ -24100,7 +24104,7 @@ IL_0035_1:
 			String_t* L_22;
 			L_22 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_20, _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB, L_21, NULL);
 			V_5 = L_22;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6704>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6706>
 			String_t* L_23;
 			L_23 = Int16_ToString_mD65153B762673B865D4F8FF9B567BECC1ABF6D23((&V_4), NULL);
 			String_t* L_24;
@@ -24109,7 +24113,7 @@ IL_0035_1:
 			MyHashTable_t03FB795CF8B8588EB81514182487084E49CD03E7* L_25 = ((ImgByName_tB2852356CEF58CCBF41517940CBD9983F87A8D6F_StaticFields*)il2cpp_codegen_static_fields_for(ImgByName_tB2852356CEF58CCBF41517940CBD9983F87A8D6F_il2cpp_TypeInfo_var))->___hashImagePath;
 			MainImage_t8049AA30C1B9993884CA66CAF39C764C24E20738* L_26;
 			L_26 = ImgByName_getImagePath_mB09C25AE5D06CF299CBC5528D8D813DA520DA1F7(L_24, L_25, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6705>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6707>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			MyHashTable_t03FB795CF8B8588EB81514182487084E49CD03E7* L_27 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___danhHieu;
 			String_t* L_28;
@@ -24125,7 +24129,7 @@ IL_0035_1:
 
 IL_00b3_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6707>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6709>
 			int8_t L_32 = V_0;
 			if ((!(((uint32_t)L_32) == ((uint32_t)3))))
 			{
@@ -24133,7 +24137,7 @@ IL_00b3_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6709>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6711>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_33 = ___0_msg;
 			NullCheck(L_33);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_34;
@@ -24141,11 +24145,11 @@ IL_00b3_1:
 			NullCheck(L_34);
 			int16_t L_35;
 			L_35 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_34, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6710>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6712>
 			int16_t L_36 = L_35;
 			il2cpp_codegen_runtime_class_init_inline(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var);
 			SmallImage_createImage_m219FD11CFBA1F02DC690FD0F6A16D6E66BA77340(L_36, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6711>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6713>
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___id_water1 = L_36;
 			goto IL_00ec_1;
@@ -24153,7 +24157,7 @@ IL_00b3_1:
 
 IL_00cf_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6713>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6715>
 			int8_t L_37 = V_0;
 			if ((!(((uint32_t)L_37) == ((uint32_t)4))))
 			{
@@ -24161,7 +24165,7 @@ IL_00cf_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6715>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6717>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_38 = ___0_msg;
 			NullCheck(L_38);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_39;
@@ -24170,7 +24174,7 @@ IL_00cf_1:
 			String_t* L_40;
 			L_40 = myReader_readUTF_m7BDB6B0B2C3063B93376A208946519E334B482F4(L_39, NULL);
 			V_6 = L_40;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6716>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6718>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_41 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___messageServer;
 			String_t* L_42 = V_6;
@@ -24180,7 +24184,7 @@ IL_00cf_1:
 
 IL_00ec_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6718>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6720>
 			goto IL_00f1;
 		}
 	}
@@ -24197,15 +24201,15 @@ IL_00ec_1:
 CATCH_00ee:
 	{
 		Exception_t* L_43 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6719>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6721>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6723>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_00f1;
 	}
 
 IL_00f1:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6722>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6724>
 		return;
 	}
 }
@@ -24244,7 +24248,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_read_UpdateSkill_m903883F113B
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6728>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6730>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_0 = ___0_msg;
 			NullCheck(L_0);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_1;
@@ -24253,12 +24257,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_read_UpdateSkill_m903883F113B
 			int16_t L_2;
 			L_2 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_1, NULL);
 			V_0 = L_2;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6729>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6731>
 			V_1 = (int8_t)(-1);
 		}
 		try
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6732>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6734>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_3 = ___0_msg;
 			NullCheck(L_3);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_4;
@@ -24267,7 +24271,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_read_UpdateSkill_m903883F113B
 			int8_t L_5;
 			L_5 = myReader_readSByte_mB2F3C8A75A44E2BF33C2BCA1E2DF5155987C6772(L_4, NULL);
 			V_1 = L_5;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6733>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6735>
 			goto IL_001f_1;
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -24283,15 +24287,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Controller_read_UpdateSkill_m903883F113B
 CATCH_001c_1:
 		{
 			Exception_t* L_6 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6734>
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6736>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6738>
 			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_001f_1;
 		}
 
 IL_001f_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6737>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6739>
 			int8_t L_7 = V_1;
 			if (L_7)
 			{
@@ -24299,7 +24303,7 @@ IL_001f_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6739>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6741>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_8 = ___0_msg;
 			NullCheck(L_8);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_9;
@@ -24308,14 +24312,14 @@ IL_001f_1:
 			int16_t L_10;
 			L_10 = myReader_readShort_m5A4EA10949618178F9479EE630222339309CD2AF(L_9, NULL);
 			V_2 = L_10;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6740>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6742>
 			V_3 = 0;
 			goto IL_0064_1;
 		}
 
 IL_0032_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6742>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6744>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_11;
 			L_11 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -24326,7 +24330,7 @@ IL_0032_1:
 			RuntimeObject* L_14;
 			L_14 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_12, L_13, NULL);
 			V_4 = ((Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)CastclassClass((RuntimeObject*)L_14, Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE_il2cpp_TypeInfo_var));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6743>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6745>
 			Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_15 = V_4;
 			NullCheck(L_15);
 			int16_t L_16 = L_15->___skillId;
@@ -24337,25 +24341,25 @@ IL_0032_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6745>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6747>
 			Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_18 = V_4;
 			int16_t L_19 = V_2;
 			NullCheck(L_18);
 			L_18->___curExp = L_19;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6746>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6748>
 			goto IL_0311_1;
 		}
 
 IL_0060_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6740>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6742>
 			int32_t L_20 = V_3;
 			V_3 = ((int32_t)il2cpp_codegen_add(L_20, 1));
 		}
 
 IL_0064_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6740>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6742>
 			int32_t L_21 = V_3;
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_22;
@@ -24376,7 +24380,7 @@ IL_0064_1:
 
 IL_007b_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6750>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6752>
 			int8_t L_25 = V_1;
 			if ((!(((uint32_t)L_25) == ((uint32_t)1))))
 			{
@@ -24384,7 +24388,7 @@ IL_007b_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6752>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6754>
 			Message_t6F0607127E5920A1C18E3FA5FDE1CDB7C3F10640* L_26 = ___0_msg;
 			NullCheck(L_26);
 			myReader_tFB44890E0114AFA52E240744EE618ED908B4BB56* L_27;
@@ -24393,14 +24397,14 @@ IL_007b_1:
 			int8_t L_28;
 			L_28 = myReader_readByte_mCDDF6ED5E0EB397901E6243495AAFF1897771C74(L_27, NULL);
 			V_5 = L_28;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6753>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6755>
 			V_6 = 0;
 			goto IL_012b_1;
 		}
 
 IL_0097_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6755>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6757>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_29;
 			L_29 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -24411,7 +24415,7 @@ IL_0097_1:
 			RuntimeObject* L_32;
 			L_32 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_30, L_31, NULL);
 			V_7 = ((Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)CastclassClass((RuntimeObject*)L_32, Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE_il2cpp_TypeInfo_var));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6756>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6758>
 			Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_33 = V_7;
 			NullCheck(L_33);
 			int16_t L_34 = L_33->___skillId;
@@ -24422,14 +24426,14 @@ IL_0097_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6758>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6760>
 			V_8 = 0;
 			goto IL_011a_1;
 		}
 
 IL_00be_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6760>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6762>
 			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_36 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)6);
 			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_37 = L_36;
 			NullCheck(L_37);
@@ -24462,19 +24466,19 @@ IL_00be_1:
 			(L_47)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_48);
 			String_t* L_49;
 			L_49 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_47, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6761>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6763>
 			il2cpp_codegen_runtime_class_init_inline(ImgByName_tB2852356CEF58CCBF41517940CBD9983F87A8D6F_il2cpp_TypeInfo_var);
 			MyHashTable_t03FB795CF8B8588EB81514182487084E49CD03E7* L_50 = ((ImgByName_tB2852356CEF58CCBF41517940CBD9983F87A8D6F_StaticFields*)il2cpp_codegen_static_fields_for(ImgByName_tB2852356CEF58CCBF41517940CBD9983F87A8D6F_il2cpp_TypeInfo_var))->___hashImagePath;
 			MainImage_t8049AA30C1B9993884CA66CAF39C764C24E20738* L_51;
 			L_51 = ImgByName_getImagePath_mB09C25AE5D06CF299CBC5528D8D813DA520DA1F7(L_49, L_50, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6758>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6760>
 			int32_t L_52 = V_8;
 			V_8 = ((int32_t)il2cpp_codegen_add(L_52, 1));
 		}
 
 IL_011a_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6758>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6760>
 			int32_t L_53 = V_8;
 			if ((((int32_t)L_53) < ((int32_t)((int32_t)20))))
 			{
@@ -24482,20 +24486,20 @@ IL_011a_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6763>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6765>
 			goto IL_0311_1;
 		}
 
 IL_0125_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6753>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6755>
 			int32_t L_54 = V_6;
 			V_6 = ((int32_t)il2cpp_codegen_add(L_54, 1));
 		}
 
 IL_012b_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6753>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6755>
 			int32_t L_55 = V_6;
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_56;
@@ -24516,7 +24520,7 @@ IL_012b_1:
 
 IL_0146_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6769>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6771>
 			int8_t L_59 = V_1;
 			if ((((int32_t)L_59) == ((int32_t)(-1))))
 			{
@@ -24524,26 +24528,26 @@ IL_0146_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6771>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6773>
 			goto IL_0316;
 		}
 
 IL_014f_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6773>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6775>
 			int16_t L_60 = V_0;
 			il2cpp_codegen_runtime_class_init_inline(Skills_t2A3EE3C5187C3318D24EB1211EF4AF5A653D69B8_il2cpp_TypeInfo_var);
 			Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_61;
 			L_61 = Skills_get_m685C03D39DFEE6EFBB334FC562659D9DB00AC765(L_60, NULL);
 			V_9 = L_61;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6774>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6776>
 			V_10 = 0;
 			goto IL_01a5_1;
 		}
 
 IL_015c_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6776>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6778>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_62;
 			L_62 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -24553,7 +24557,7 @@ IL_015c_1:
 			NullCheck(L_63);
 			RuntimeObject* L_65;
 			L_65 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_63, L_64, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6777>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6779>
 			NullCheck(((Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)CastclassClass((RuntimeObject*)L_65, Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE_il2cpp_TypeInfo_var)));
 			SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_66 = ((Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)CastclassClass((RuntimeObject*)L_65, Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE_il2cpp_TypeInfo_var))->___template;
 			NullCheck(L_66);
@@ -24569,7 +24573,7 @@ IL_015c_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6779>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6781>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_71;
 			L_71 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -24579,20 +24583,20 @@ IL_015c_1:
 			int32_t L_74 = V_10;
 			NullCheck(L_72);
 			MyVector_setElementAt_m2AFDBF259BD0018FC2D8FBFD4748C58719927231(L_72, L_73, L_74, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6780>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6782>
 			goto IL_01b8_1;
 		}
 
 IL_019f_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6774>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6776>
 			int32_t L_75 = V_10;
 			V_10 = ((int32_t)il2cpp_codegen_add(L_75, 1));
 		}
 
 IL_01a5_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6774>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6776>
 			int32_t L_76 = V_10;
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_77;
@@ -24610,14 +24614,14 @@ IL_01a5_1:
 
 IL_01b8_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6783>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6785>
 			V_11 = 0;
 			goto IL_0206_1;
 		}
 
 IL_01bd_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6785>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6787>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_80;
 			L_80 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -24627,7 +24631,7 @@ IL_01bd_1:
 			NullCheck(L_81);
 			RuntimeObject* L_83;
 			L_83 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_81, L_82, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6786>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6788>
 			NullCheck(((Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)CastclassClass((RuntimeObject*)L_83, Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE_il2cpp_TypeInfo_var)));
 			SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_84 = ((Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)CastclassClass((RuntimeObject*)L_83, Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE_il2cpp_TypeInfo_var))->___template;
 			NullCheck(L_84);
@@ -24643,7 +24647,7 @@ IL_01bd_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6788>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6790>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_89;
 			L_89 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -24653,20 +24657,20 @@ IL_01bd_1:
 			int32_t L_92 = V_11;
 			NullCheck(L_90);
 			MyVector_setElementAt_m2AFDBF259BD0018FC2D8FBFD4748C58719927231(L_90, L_91, L_92, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6789>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6791>
 			goto IL_0219_1;
 		}
 
 IL_0200_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6783>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6785>
 			int32_t L_93 = V_11;
 			V_11 = ((int32_t)il2cpp_codegen_add(L_93, 1));
 		}
 
 IL_0206_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6783>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6785>
 			int32_t L_94 = V_11;
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_95;
@@ -24684,14 +24688,14 @@ IL_0206_1:
 
 IL_0219_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6792>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6794>
 			V_12 = 0;
 			goto IL_025a_1;
 		}
 
 IL_021e_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6794>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6796>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_98 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___onScreenSkill;
 			int32_t L_99 = V_12;
@@ -24725,7 +24729,7 @@ IL_021e_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6796>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6798>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_111 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___onScreenSkill;
 			int32_t L_112 = V_12;
@@ -24733,20 +24737,20 @@ IL_021e_1:
 			NullCheck(L_111);
 			ArrayElementTypeCheck (L_111, L_113);
 			(L_111)->SetAt(static_cast<il2cpp_array_size_t>(L_112), (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_113);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6797>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6799>
 			goto IL_0265_1;
 		}
 
 IL_0254_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6792>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6794>
 			int32_t L_114 = V_12;
 			V_12 = ((int32_t)il2cpp_codegen_add(L_114, 1));
 		}
 
 IL_025a_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6792>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6794>
 			int32_t L_115 = V_12;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_116 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___onScreenSkill;
@@ -24759,14 +24763,14 @@ IL_025a_1:
 
 IL_0265_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6800>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6802>
 			V_13 = 0;
 			goto IL_02a6_1;
 		}
 
 IL_026a_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6802>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6804>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_117 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___keySkill;
 			int32_t L_118 = V_13;
@@ -24800,7 +24804,7 @@ IL_026a_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6804>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6806>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_130 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___keySkill;
 			int32_t L_131 = V_13;
@@ -24808,20 +24812,20 @@ IL_026a_1:
 			NullCheck(L_130);
 			ArrayElementTypeCheck (L_130, L_132);
 			(L_130)->SetAt(static_cast<il2cpp_array_size_t>(L_131), (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_132);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6805>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6807>
 			goto IL_02b1_1;
 		}
 
 IL_02a0_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6800>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6802>
 			int32_t L_133 = V_13;
 			V_13 = ((int32_t)il2cpp_codegen_add(L_133, 1));
 		}
 
 IL_02a6_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6800>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6802>
 			int32_t L_134 = V_13;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_135 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___keySkill;
@@ -24834,7 +24838,7 @@ IL_02a6_1:
 
 IL_02b1_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6808>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6810>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_136;
 			L_136 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -24855,7 +24859,7 @@ IL_02b1_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6810>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6812>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_143;
 			L_143 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -24867,7 +24871,7 @@ IL_02b1_1:
 
 IL_02df_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6812>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6814>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_145 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 			il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -24891,7 +24895,7 @@ IL_02df_1:
 
 IL_0311_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6814>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6816>
 			goto IL_0316;
 		}
 	}
@@ -24908,15 +24912,15 @@ IL_0311_1:
 CATCH_0313:
 	{
 		Exception_t* L_155 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6815>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6817>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6819>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0316;
 	}
 
 IL_0316:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6818>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6820>
 		return;
 	}
 }
@@ -24986,7 +24990,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m6511CC08FA7D8B3659017547E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t U3CU3Ec_U3CcreateImageU3Eb__44_0_m196FC30C9DEA94CDCB3581B8134A9CB5B2E6DDD1 (U3CU3Ec_tAED9C6D4075550BFCEFA2B83138C2EA7F725C1C4* __this, int8_t ___0_a, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6371>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6373>
 		int8_t L_0 = ___0_a;
 		return (uint8_t)((int32_t)(uint8_t)L_0);
 	}
@@ -24995,7 +24999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t U3CU3Ec_U3CcreateImageU3Eb__44_0_m196
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t U3CU3Ec_U3CcreateImageU3Eb__44_1_mAC70D268DFB4C7597ECCDAB1E532E49AAB6128F8 (U3CU3Ec_tAED9C6D4075550BFCEFA2B83138C2EA7F725C1C4* __this, uint8_t ___0_a, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6371>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/Controller.cs:6373>
 		uint8_t L_0 = ___0_a;
 		return ((int8_t)L_0);
 	}
@@ -29445,7 +29449,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Char_setMabuHold_m4A816FAD02
 		return;
 	}
 }
-// Method Definition Index: 18664
+// Method Definition Index: 18667
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* __this, uint8_t ___0_r, uint8_t ___1_g, uint8_t ___2_b, uint8_t ___3_a, const RuntimeMethod* method) 
 {
 	{
@@ -29461,7 +29465,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color32__ctor_mC9C6B443F0C7C
 		return;
 	}
 }
-// Method Definition Index: 18665
+// Method Definition Index: 18668
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color32_op_Implicit_m47CBB138122B400E0B1F4BFD7C30A6C2C00FCA3E_inline (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___0_c, const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -29496,7 +29500,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-// Method Definition Index: 18644
+// Method Definition Index: 18647
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
 {
 	{

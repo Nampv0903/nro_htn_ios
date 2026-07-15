@@ -2826,6 +2826,8 @@ struct ScaleGUI_tAC0F093B231E7B5B21591E227A94BCC5F3BBF8A6_StaticFields
 	float ___WIDTH;
 	float ___HEIGHT;
 	List_1_tCFA270E118B873F542F52B1DD58F21D0AF4D1452* ___stack;
+	float ___offsetX;
+	float ___offsetY;
 };
 struct Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields
 {
@@ -24754,7 +24756,7 @@ IL_005c:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 12820
+// Method Definition Index: 12821
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MotherCanvas_setChildCanvas_m352D816D6DEB9C2E72E2B8137453762BE3832005_inline (MotherCanvas_t658D029B0205D7209A98271D0A5A0CCF3C494913* __this, GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* ___0_tCanvas, const RuntimeMethod* method) 
 {
 	{
@@ -24766,7 +24768,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MotherCanvas_setChildCanvas_
 		return;
 	}
 }
-// Method Definition Index: 18327
+// Method Definition Index: 18328
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_x, float ___1_y, float ___2_width, float ___3_height, const RuntimeMethod* method) 
 {
 	{
@@ -24781,22 +24783,22 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BE
 		return;
 	}
 }
-// Method Definition Index: 12629
+// Method Definition Index: 12630
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t mGraphics_getRealImageWidth_m95DBB7D6ADA744F17A88039901CEBABE375ED43B_inline (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_img, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1206>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1220>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_img;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___w;
 		return L_1;
 	}
 }
-// Method Definition Index: 12630
+// Method Definition Index: 12631
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t mGraphics_getRealImageHeight_m77ADF099A530A4EA9D01A4F0DD440D0CAC524884_inline (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_img, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1211>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/mGraphics.cs:1225>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_img;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___h;
@@ -24819,7 +24821,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GameCanvas_t3C221610BEBCBA21285DC
 		return L_0;
 	}
 }
-// Method Definition Index: 13975
+// Method Definition Index: 13976
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TField_setMaxTextLenght_m61EBFB02EBBFD04345FCF29A2FE30D03120575FD_inline (TField_t56E19AE85CA63279C53042EF348814217A9F0E70* __this, int32_t ___0_maxTextLenght, const RuntimeMethod* method) 
 {
 	{
@@ -24830,7 +24832,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TField_setMaxTextLenght_m61E
 		return;
 	}
 }
-// Method Definition Index: 13970
+// Method Definition Index: 13971
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TField_getText_mFCD7D323EF26FC195005BA96783EE50137C5A47A_inline (TField_t56E19AE85CA63279C53042EF348814217A9F0E70* __this, const RuntimeMethod* method) 
 {
 	{

@@ -28960,6 +28960,8 @@ struct ScaleGUI_tAC0F093B231E7B5B21591E227A94BCC5F3BBF8A6_StaticFields
 	float ___WIDTH;
 	float ___HEIGHT;
 	List_1_tCFA270E118B873F542F52B1DD58F21D0AF4D1452* ___stack;
+	float ___offsetX;
+	float ___offsetY;
 };
 struct SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_StaticFields
 {

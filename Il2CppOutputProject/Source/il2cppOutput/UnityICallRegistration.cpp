@@ -1090,6 +1090,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Object_ToString();
 		Register_UnityEngine_Object_ToString();
 
+		//System.Void UnityEngine.Object::Destroy(UnityEngine.Object,System.Single)
+		void Register_UnityEngine_Object_Destroy();
+		Register_UnityEngine_Object_Destroy();
+
 		//System.Void UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)
 		void Register_UnityEngine_Object_DontDestroyOnLoad();
 		Register_UnityEngine_Object_DontDestroyOnLoad();
@@ -1313,6 +1317,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Screen::SetResolution_Injected(System.Int32,System.Int32,UnityEngine.FullScreenMode,UnityEngine.RefreshRate&)
 		void Register_UnityEngine_Screen_SetResolution_Injected();
 		Register_UnityEngine_Screen_SetResolution_Injected();
+
+		//System.Void UnityEngine.Screen::get_safeArea_Injected(UnityEngine.Rect&)
+		void Register_UnityEngine_Screen_get_safeArea_Injected();
+		Register_UnityEngine_Screen_get_safeArea_Injected();
 
 		//System.Void UnityEngine.Screen::set_fullScreen(System.Boolean)
 		void Register_UnityEngine_Screen_set_fullScreen();
