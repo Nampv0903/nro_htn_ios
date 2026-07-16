@@ -1318,10 +1318,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Screen_SetResolution_Injected();
 		Register_UnityEngine_Screen_SetResolution_Injected();
 
-		//System.Void UnityEngine.Screen::get_safeArea_Injected(UnityEngine.Rect&)
-		void Register_UnityEngine_Screen_get_safeArea_Injected();
-		Register_UnityEngine_Screen_get_safeArea_Injected();
-
 		//System.Void UnityEngine.Screen::set_fullScreen(System.Boolean)
 		void Register_UnityEngine_Screen_set_fullScreen();
 		Register_UnityEngine_Screen_set_fullScreen();
