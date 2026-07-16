@@ -42641,7 +42641,7 @@ IL_0035:
 		Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
 		if (L_7)
 		{
-			goto IL_0063;
+			goto IL_006a;
 		}
 	}
 	{
@@ -42649,7 +42649,7 @@ IL_0035:
 		ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_8 = ((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___currChatPopup;
 		if (L_8)
 		{
-			goto IL_0063;
+			goto IL_006a;
 		}
 	}
 	{
@@ -42659,35 +42659,45 @@ IL_0035:
 		bool L_10 = L_9->___showMenu;
 		if (L_10)
 		{
-			goto IL_0063;
+			goto IL_006a;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_11 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
-		NullCheck(L_11);
-		bool L_12 = L_11->___isShow;
-		if (L_12)
+		if (!L_11)
 		{
-			goto IL_0063;
+			goto IL_0062;
 		}
 	}
 	{
-		bool L_13;
-		L_13 = GameScr_isPaintPopup_m56141D54C134255F4C1DB4FC39E1710E8E18F24E(__this, NULL);
-		if (!L_13)
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		Panel_t49349297CB778B2219539905F16B94090BD93138* L_12 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
+		NullCheck(L_12);
+		bool L_13 = L_12->___isShow;
+		if (L_13)
 		{
-			goto IL_0065;
+			goto IL_006a;
 		}
 	}
 
-IL_0063:
+IL_0062:
+	{
+		bool L_14;
+		L_14 = GameScr_isPaintPopup_m56141D54C134255F4C1DB4FC39E1710E8E18F24E(__this, NULL);
+		if (!L_14)
+		{
+			goto IL_006c;
+		}
+	}
+
+IL_006a:
 	{
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/GameScr.cs:6436>
 		return (bool)1;
 	}
 
-IL_0065:
+IL_006c:
 	{
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/GameScr.cs:6438>
 		return (bool)0;
