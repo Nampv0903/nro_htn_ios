@@ -1,22 +1,45 @@
 workflows:
-  ios-unsigned-workflow:
-    name: iOS Unsigned Build Workflow
+  ios-testflight-workflow:
+    name: iOS TestFlight Build Workflow
     max_build_duration: 60
     instance_type: mac_mini_m1
+    
+    integrations:
+      app_store_connect: nrohtn
+      
     environment:
       xcode: latest
       cocoapods: default
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.nrohtn.nrohtn
+        
     triggering:
       events:
         - push
+        
     scripts:
       - name: CocoaPods installation
         script: | 
           cd $CM_BUILD_DIR
           pod install --repo-update || true
-      - name: Building iOS App without Signing
+          
+      - name: Set up code signing settings on Xcode project
+        script: | 
+          xcode-project use-profiles
+          
+      - name: Building iOS App for TestFlight
         script: | 
           cd $CM_BUILD_DIR
-          xcodebuild build -project "Unity-iPhone.xcodeproj" -scheme "Unity-iPhone" -configuration Release -sdk iphoneos CODE_SIGNING_ALLOWED=NO
+          xcode-project build-ipa \
+            --project "Unity-iPhone.xcodeproj" \
+            --scheme "Unity-iPhone" \
+            --config Release
+            
     artifacts:
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/Products/Release-iphoneos/*.app
+      - build/ios/ipa/*.ipa
+      
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
