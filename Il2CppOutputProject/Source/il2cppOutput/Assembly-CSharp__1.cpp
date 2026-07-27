@@ -11271,19 +11271,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_update_mBCEC0BCDB7BA96B9
 	int32_t G_B36_0 = 0;
 	int32_t G_B36_1 = 0;
 	int32_t G_B36_2 = 0;
-	int32_t G_B51_0 = 0;
-	int32_t* G_B51_1 = NULL;
 	int32_t G_B50_0 = 0;
 	int32_t* G_B50_1 = NULL;
-	int32_t G_B52_0 = 0;
-	int32_t G_B52_1 = 0;
-	int32_t* G_B52_2 = NULL;
-	int32_t G_B58_0 = 0;
+	int32_t G_B49_0 = 0;
+	int32_t* G_B49_1 = NULL;
+	int32_t G_B51_0 = 0;
+	int32_t G_B51_1 = 0;
+	int32_t* G_B51_2 = NULL;
+	int32_t G_B57_0 = 0;
+	int32_t G_B60_0 = 0;
+	int32_t G_B62_0 = 0;
 	int32_t G_B61_0 = 0;
 	int32_t G_B63_0 = 0;
-	int32_t G_B62_0 = 0;
-	int32_t G_B64_0 = 0;
-	int32_t G_B64_1 = 0;
+	int32_t G_B63_1 = 0;
 	try
 	{
 		{
@@ -11307,11 +11307,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_update_mBCEC0BCDB7BA96B9
 				}
 				case 3:
 				{
-					goto IL_06dc_1;
+					goto IL_06ed_1;
 				}
 				case 4:
 				{
-					goto IL_052d_1;
+					goto IL_053e_1;
 				}
 				case 5:
 				{
@@ -11327,7 +11327,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_update_mBCEC0BCDB7BA96B9
 				}
 				case 8:
 				{
-					goto IL_05b1_1;
+					goto IL_05c2_1;
 				}
 				case 9:
 				{
@@ -11347,11 +11347,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_update_mBCEC0BCDB7BA96B9
 				}
 				case 13:
 				{
-					goto IL_06dc_1;
+					goto IL_06ed_1;
 				}
 				case 14:
 				{
-					goto IL_06d7_1;
+					goto IL_06e8_1;
 				}
 				case 15:
 				{
@@ -11360,7 +11360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_update_mBCEC0BCDB7BA96B9
 			}
 		}
 		{
-			goto IL_06dc_1;
+			goto IL_06ed_1;
 		}
 
 IL_0052_1:
@@ -11438,7 +11438,7 @@ IL_00a7_1:
 		}
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:570>
-			goto IL_06dc_1;
+			goto IL_06ed_1;
 		}
 
 IL_00b5_1:
@@ -11533,7 +11533,7 @@ IL_0120_1:
 		}
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:584>
-			goto IL_06dc_1;
+			goto IL_06ed_1;
 		}
 
 IL_012e_1:
@@ -11783,14 +11783,14 @@ IL_028f_1:
 		}
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:625>
-			goto IL_06dc_1;
+			goto IL_06ed_1;
 		}
 
 IL_02a0_1:
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:635>
 			V_4 = 0;
-			goto IL_051b_1;
+			goto IL_052c_1;
 		}
 
 IL_02a8_1:
@@ -11859,717 +11859,720 @@ IL_02ce_1:
 IL_02e1_1:
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:641>
-			int32_t L_167 = V_4;
-			if (((int32_t)(L_167%3)))
-			{
-				goto IL_0320_1;
-			}
-		}
-		{
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_168 = __this->___y;
-			int32_t L_169 = V_4;
-			NullCheck(L_168);
-			int32_t L_170 = L_169;
-			int32_t L_171 = (L_168)->GetAt(static_cast<il2cpp_array_size_t>(L_170));
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_167 = __this->___y;
+			int32_t L_168 = V_4;
+			NullCheck(L_167);
+			int32_t L_169 = L_168;
+			int32_t L_170 = (L_167)->GetAt(static_cast<il2cpp_array_size_t>(L_169));
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
-			int32_t L_172 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxh;
-			if ((((int32_t)L_171) <= ((int32_t)L_172)))
+			int32_t L_171 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxh;
+			if ((((int32_t)L_170) <= ((int32_t)((int32_t)il2cpp_codegen_add(L_171, ((int32_t)20))))))
 			{
-				goto IL_0320_1;
+				goto IL_0331_1;
 			}
 		}
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:643>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_173 = __this->___x;
-			int32_t L_174 = V_4;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_172 = __this->___x;
+			int32_t L_173 = V_4;
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
-			int32_t L_175 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxw;
+			int32_t L_174 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxw;
 			il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
-			int32_t L_176;
-			L_176 = Res_random_m4C7D8B74D6563FDABCAD9A9B88B6EA731051D971(((int32_t)-10), ((int32_t)il2cpp_codegen_add(L_175, ((int32_t)50))), NULL);
-			NullCheck(L_173);
-			(L_173)->SetAt(static_cast<il2cpp_array_size_t>(L_174), (int32_t)L_176);
+			int32_t L_175;
+			L_175 = Res_random_m4C7D8B74D6563FDABCAD9A9B88B6EA731051D971(((int32_t)-10), ((int32_t)il2cpp_codegen_add(L_174, ((int32_t)50))), NULL);
+			NullCheck(L_172);
+			(L_172)->SetAt(static_cast<il2cpp_array_size_t>(L_173), (int32_t)L_175);
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:644>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_177 = __this->___y;
-			int32_t L_178 = V_4;
-			int32_t L_179;
-			L_179 = Res_random_m4C7D8B74D6563FDABCAD9A9B88B6EA731051D971(((int32_t)-50), 0, NULL);
-			NullCheck(L_177);
-			(L_177)->SetAt(static_cast<il2cpp_array_size_t>(L_178), (int32_t)L_179);
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_176 = __this->___y;
+			int32_t L_177 = V_4;
+			int32_t L_178;
+			L_178 = Res_random_m4C7D8B74D6563FDABCAD9A9B88B6EA731051D971(((int32_t)-50), 0, NULL);
+			NullCheck(L_176);
+			(L_176)->SetAt(static_cast<il2cpp_array_size_t>(L_177), (int32_t)L_178);
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:645>
+			BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_179 = __this->___activeEff;
+			int32_t L_180 = V_4;
+			NullCheck(L_179);
+			(L_179)->SetAt(static_cast<il2cpp_array_size_t>(L_180), (bool)0);
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:646>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_181 = __this->___t;
+			int32_t L_182 = V_4;
+			NullCheck(L_181);
+			(L_181)->SetAt(static_cast<il2cpp_array_size_t>(L_182), (int32_t)0);
 		}
 
-IL_0320_1:
-		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:646>
-			BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_180 = __this->___activeEff;
-			int32_t L_181 = V_4;
-			NullCheck(L_180);
-			int32_t L_182 = L_181;
-			uint8_t L_183 = (uint8_t)(L_180)->GetAt(static_cast<il2cpp_array_size_t>(L_182));
-			if (L_183)
-			{
-				goto IL_04b9_1;
-			}
-		}
+IL_0331_1:
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:648>
-			V_6 = 0;
-			goto IL_03dc_1;
+			BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_183 = __this->___activeEff;
+			int32_t L_184 = V_4;
+			NullCheck(L_183);
+			int32_t L_185 = L_184;
+			uint8_t L_186 = (uint8_t)(L_183)->GetAt(static_cast<il2cpp_array_size_t>(L_185));
+			if (L_186)
+			{
+				goto IL_04ca_1;
+			}
 		}
-
-IL_0336_1:
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:650>
+			V_6 = 0;
+			goto IL_03ed_1;
+		}
+
+IL_0347_1:
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:652>
 			il2cpp_codegen_runtime_class_init_inline(Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_il2cpp_TypeInfo_var);
-			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_184 = ((Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_StaticFields*)il2cpp_codegen_static_fields_for(Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_il2cpp_TypeInfo_var))->___vTeleport;
-			int32_t L_185 = V_6;
-			NullCheck(L_184);
-			RuntimeObject* L_186;
-			L_186 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_184, L_185, NULL);
-			V_7 = ((Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC*)CastclassClass((RuntimeObject*)L_186, Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_il2cpp_TypeInfo_var));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:651>
-			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_187 = V_7;
-			if (!L_187)
-			{
-				goto IL_03d6_1;
-			}
-		}
-		{
-			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_188 = V_7;
-			NullCheck(L_188);
-			bool L_189 = L_188->___paintFire;
-			if (!L_189)
-			{
-				goto IL_03d6_1;
-			}
-		}
-		{
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_190 = __this->___x;
-			int32_t L_191 = V_4;
-			NullCheck(L_190);
-			int32_t L_192 = L_191;
-			int32_t L_193 = (L_190)->GetAt(static_cast<il2cpp_array_size_t>(L_192));
-			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_194 = V_7;
-			NullCheck(L_194);
-			int32_t L_195 = L_194->___x;
-			if ((((int32_t)L_193) >= ((int32_t)((int32_t)il2cpp_codegen_add(L_195, ((int32_t)80))))))
-			{
-				goto IL_03d6_1;
-			}
-		}
-		{
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_196 = __this->___x;
-			int32_t L_197 = V_4;
-			NullCheck(L_196);
-			int32_t L_198 = L_197;
-			int32_t L_199 = (L_196)->GetAt(static_cast<il2cpp_array_size_t>(L_198));
-			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_200 = V_7;
-			NullCheck(L_200);
-			int32_t L_201 = L_200->___x;
-			if ((((int32_t)L_199) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_201, ((int32_t)80))))))
-			{
-				goto IL_03d6_1;
-			}
-		}
-		{
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_202 = __this->___y;
-			int32_t L_203 = V_4;
-			NullCheck(L_202);
-			int32_t L_204 = L_203;
-			int32_t L_205 = (L_202)->GetAt(static_cast<il2cpp_array_size_t>(L_204));
-			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_206 = V_7;
-			NullCheck(L_206);
-			int32_t L_207 = L_206->___y;
-			if ((((int32_t)L_205) >= ((int32_t)((int32_t)il2cpp_codegen_add(L_207, ((int32_t)80))))))
-			{
-				goto IL_03d6_1;
-			}
-		}
-		{
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_208 = __this->___y;
-			int32_t L_209 = V_4;
-			NullCheck(L_208);
-			int32_t L_210 = L_209;
-			int32_t L_211 = (L_208)->GetAt(static_cast<il2cpp_array_size_t>(L_210));
-			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_212 = V_7;
-			NullCheck(L_212);
-			int32_t L_213 = L_212->___y;
-			if ((((int32_t)L_211) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_213, ((int32_t)80))))))
-			{
-				goto IL_03d6_1;
-			}
-		}
-		{
+			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_187 = ((Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_StaticFields*)il2cpp_codegen_static_fields_for(Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_il2cpp_TypeInfo_var))->___vTeleport;
+			int32_t L_188 = V_6;
+			NullCheck(L_187);
+			RuntimeObject* L_189;
+			L_189 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_187, L_188, NULL);
+			V_7 = ((Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC*)CastclassClass((RuntimeObject*)L_189, Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_il2cpp_TypeInfo_var));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:653>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_214 = __this->___x;
-			int32_t L_215 = V_4;
-			NullCheck(L_214);
-			int32_t* L_216 = ((L_214)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_215)));
-			int32_t L_217 = *((int32_t*)L_216);
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_218 = __this->___x;
-			int32_t L_219 = V_4;
-			NullCheck(L_218);
-			int32_t L_220 = L_219;
-			int32_t L_221 = (L_218)->GetAt(static_cast<il2cpp_array_size_t>(L_220));
-			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_222 = V_7;
-			NullCheck(L_222);
-			int32_t L_223 = L_222->___x;
-			if ((((int32_t)L_221) >= ((int32_t)L_223)))
+			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_190 = V_7;
+			if (!L_190)
 			{
-				G_B51_0 = L_217;
-				G_B51_1 = L_216;
-				goto IL_03d2_1;
+				goto IL_03e7_1;
 			}
-			G_B50_0 = L_217;
-			G_B50_1 = L_216;
 		}
 		{
-			G_B52_0 = ((int32_t)-10);
-			G_B52_1 = G_B50_0;
-			G_B52_2 = G_B50_1;
-			goto IL_03d4_1;
+			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_191 = V_7;
+			NullCheck(L_191);
+			bool L_192 = L_191->___paintFire;
+			if (!L_192)
+			{
+				goto IL_03e7_1;
+			}
+		}
+		{
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_193 = __this->___x;
+			int32_t L_194 = V_4;
+			NullCheck(L_193);
+			int32_t L_195 = L_194;
+			int32_t L_196 = (L_193)->GetAt(static_cast<il2cpp_array_size_t>(L_195));
+			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_197 = V_7;
+			NullCheck(L_197);
+			int32_t L_198 = L_197->___x;
+			if ((((int32_t)L_196) >= ((int32_t)((int32_t)il2cpp_codegen_add(L_198, ((int32_t)80))))))
+			{
+				goto IL_03e7_1;
+			}
+		}
+		{
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_199 = __this->___x;
+			int32_t L_200 = V_4;
+			NullCheck(L_199);
+			int32_t L_201 = L_200;
+			int32_t L_202 = (L_199)->GetAt(static_cast<il2cpp_array_size_t>(L_201));
+			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_203 = V_7;
+			NullCheck(L_203);
+			int32_t L_204 = L_203->___x;
+			if ((((int32_t)L_202) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_204, ((int32_t)80))))))
+			{
+				goto IL_03e7_1;
+			}
+		}
+		{
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_205 = __this->___y;
+			int32_t L_206 = V_4;
+			NullCheck(L_205);
+			int32_t L_207 = L_206;
+			int32_t L_208 = (L_205)->GetAt(static_cast<il2cpp_array_size_t>(L_207));
+			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_209 = V_7;
+			NullCheck(L_209);
+			int32_t L_210 = L_209->___y;
+			if ((((int32_t)L_208) >= ((int32_t)((int32_t)il2cpp_codegen_add(L_210, ((int32_t)80))))))
+			{
+				goto IL_03e7_1;
+			}
+		}
+		{
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_211 = __this->___y;
+			int32_t L_212 = V_4;
+			NullCheck(L_211);
+			int32_t L_213 = L_212;
+			int32_t L_214 = (L_211)->GetAt(static_cast<il2cpp_array_size_t>(L_213));
+			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_215 = V_7;
+			NullCheck(L_215);
+			int32_t L_216 = L_215->___y;
+			if ((((int32_t)L_214) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_216, ((int32_t)80))))))
+			{
+				goto IL_03e7_1;
+			}
+		}
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:655>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_217 = __this->___x;
+			int32_t L_218 = V_4;
+			NullCheck(L_217);
+			int32_t* L_219 = ((L_217)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_218)));
+			int32_t L_220 = *((int32_t*)L_219);
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_221 = __this->___x;
+			int32_t L_222 = V_4;
+			NullCheck(L_221);
+			int32_t L_223 = L_222;
+			int32_t L_224 = (L_221)->GetAt(static_cast<il2cpp_array_size_t>(L_223));
+			Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC* L_225 = V_7;
+			NullCheck(L_225);
+			int32_t L_226 = L_225->___x;
+			if ((((int32_t)L_224) >= ((int32_t)L_226)))
+			{
+				G_B50_0 = L_220;
+				G_B50_1 = L_219;
+				goto IL_03e3_1;
+			}
+			G_B49_0 = L_220;
+			G_B49_1 = L_219;
+		}
+		{
+			G_B51_0 = ((int32_t)-10);
+			G_B51_1 = G_B49_0;
+			G_B51_2 = G_B49_1;
+			goto IL_03e5_1;
 		}
 
-IL_03d2_1:
+IL_03e3_1:
 		{
-			G_B52_0 = ((int32_t)10);
-			G_B52_1 = G_B51_0;
-			G_B52_2 = G_B51_1;
+			G_B51_0 = ((int32_t)10);
+			G_B51_1 = G_B50_0;
+			G_B51_2 = G_B50_1;
 		}
 
-IL_03d4_1:
+IL_03e5_1:
 		{
-			*((int32_t*)G_B52_2) = (int32_t)((int32_t)il2cpp_codegen_add(G_B52_1, G_B52_0));
+			*((int32_t*)G_B51_2) = (int32_t)((int32_t)il2cpp_codegen_add(G_B51_1, G_B51_0));
 		}
 
-IL_03d6_1:
+IL_03e7_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:648>
-			int32_t L_224 = V_6;
-			V_6 = ((int32_t)il2cpp_codegen_add(L_224, 1));
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:650>
+			int32_t L_227 = V_6;
+			V_6 = ((int32_t)il2cpp_codegen_add(L_227, 1));
 		}
 
-IL_03dc_1:
+IL_03ed_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:648>
-			int32_t L_225 = V_6;
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:650>
+			int32_t L_228 = V_6;
 			il2cpp_codegen_runtime_class_init_inline(Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_il2cpp_TypeInfo_var);
-			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_226 = ((Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_StaticFields*)il2cpp_codegen_static_fields_for(Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_il2cpp_TypeInfo_var))->___vTeleport;
-			NullCheck(L_226);
-			int32_t L_227;
-			L_227 = MyVector_size_mF025A05E2021611BFB9E107342658AEB05222BA9(L_226, NULL);
-			if ((((int32_t)L_225) < ((int32_t)L_227)))
+			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_229 = ((Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_StaticFields*)il2cpp_codegen_static_fields_for(Teleport_t7DA0AAB400611F9CE2A644E906868E196EBF22AC_il2cpp_TypeInfo_var))->___vTeleport;
+			NullCheck(L_229);
+			int32_t L_230;
+			L_230 = MyVector_size_mF025A05E2021611BFB9E107342658AEB05222BA9(L_229, NULL);
+			if ((((int32_t)L_228) < ((int32_t)L_230)))
 			{
-				goto IL_0336_1;
+				goto IL_0347_1;
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:656>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_228 = __this->___y;
-			int32_t L_229 = V_4;
-			NullCheck(L_228);
-			int32_t* L_230 = ((L_228)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_229)));
-			int32_t L_231 = *((int32_t*)L_230);
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_232 = __this->___vy;
-			int32_t L_233 = V_4;
-			NullCheck(L_232);
-			int32_t L_234 = L_233;
-			int32_t L_235 = (L_232)->GetAt(static_cast<il2cpp_array_size_t>(L_234));
-			*((int32_t*)L_230) = (int32_t)((int32_t)il2cpp_codegen_add(L_231, L_235));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:657>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_236 = __this->___x;
-			int32_t L_237 = V_4;
-			NullCheck(L_236);
-			int32_t* L_238 = ((L_236)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_237)));
-			int32_t L_239 = *((int32_t*)L_238);
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_240 = __this->___vx;
-			int32_t L_241 = V_4;
-			NullCheck(L_240);
-			int32_t L_242 = L_241;
-			int32_t L_243 = (L_240)->GetAt(static_cast<il2cpp_array_size_t>(L_242));
-			*((int32_t*)L_238) = (int32_t)((int32_t)il2cpp_codegen_add(L_239, L_243));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:658>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_244 = __this->___t;
-			int32_t L_245 = V_4;
-			NullCheck(L_244);
-			int32_t* L_246 = ((L_244)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_245)));
-			int32_t L_247 = *((int32_t*)L_246);
-			*((int32_t*)L_246) = (int32_t)((int32_t)il2cpp_codegen_add(L_247, 1));
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_231 = __this->___y;
+			int32_t L_232 = V_4;
+			NullCheck(L_231);
+			int32_t* L_233 = ((L_231)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_232)));
+			int32_t L_234 = *((int32_t*)L_233);
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_235 = __this->___vy;
+			int32_t L_236 = V_4;
+			NullCheck(L_235);
+			int32_t L_237 = L_236;
+			int32_t L_238 = (L_235)->GetAt(static_cast<il2cpp_array_size_t>(L_237));
+			*((int32_t*)L_233) = (int32_t)((int32_t)il2cpp_codegen_add(L_234, L_238));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:659>
-			int32_t L_248 = __this->___typeEff;
-			if ((!(((uint32_t)L_248) == ((uint32_t)((int32_t)11)))))
-			{
-				goto IL_0440_1;
-			}
-		}
-		{
-			G_B58_0 = 3;
-			goto IL_0441_1;
-		}
-
-IL_0440_1:
-		{
-			G_B58_0 = 4;
-		}
-
-IL_0441_1:
-		{
-			V_5 = G_B58_0;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_239 = __this->___x;
+			int32_t L_240 = V_4;
+			NullCheck(L_239);
+			int32_t* L_241 = ((L_239)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_240)));
+			int32_t L_242 = *((int32_t*)L_241);
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_243 = __this->___vx;
+			int32_t L_244 = V_4;
+			NullCheck(L_243);
+			int32_t L_245 = L_244;
+			int32_t L_246 = (L_243)->GetAt(static_cast<il2cpp_array_size_t>(L_245));
+			*((int32_t*)L_241) = (int32_t)((int32_t)il2cpp_codegen_add(L_242, L_246));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:660>
-			int32_t L_249 = __this->___typeEff;
-			if ((!(((uint32_t)L_249) == ((uint32_t)((int32_t)15)))))
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_247 = __this->___t;
+			int32_t L_248 = V_4;
+			NullCheck(L_247);
+			int32_t* L_249 = ((L_247)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_248)));
+			int32_t L_250 = *((int32_t*)L_249);
+			*((int32_t*)L_249) = (int32_t)((int32_t)il2cpp_codegen_add(L_250, 1));
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:661>
+			int32_t L_251 = __this->___typeEff;
+			if ((!(((uint32_t)L_251) == ((uint32_t)((int32_t)11)))))
 			{
-				goto IL_0450_1;
+				goto IL_0451_1;
 			}
 		}
 		{
-			G_B61_0 = 4;
-			goto IL_0451_1;
-		}
-
-IL_0450_1:
-		{
-			G_B61_0 = 4;
+			G_B57_0 = 3;
+			goto IL_0452_1;
 		}
 
 IL_0451_1:
 		{
-			V_5 = G_B61_0;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:661>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_250 = __this->___t;
-			int32_t L_251 = V_4;
-			NullCheck(L_250);
-			int32_t L_252 = L_251;
-			int32_t L_253 = (L_250)->GetAt(static_cast<il2cpp_array_size_t>(L_252));
-			int32_t L_254 = __this->___typeEff;
-			if ((((int32_t)L_254) == ((int32_t)2)))
-			{
-				G_B63_0 = L_253;
-				goto IL_0468_1;
-			}
-			G_B62_0 = L_253;
-		}
-		{
-			G_B64_0 = 2;
-			G_B64_1 = G_B62_0;
-			goto IL_0469_1;
+			G_B57_0 = 4;
 		}
 
-IL_0468_1:
+IL_0452_1:
 		{
-			G_B64_0 = 4;
-			G_B64_1 = G_B63_0;
-		}
-
-IL_0469_1:
-		{
-			if ((((int32_t)G_B64_1) <= ((int32_t)G_B64_0)))
+			V_5 = G_B57_0;
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:662>
+			int32_t L_252 = __this->___typeEff;
+			if ((!(((uint32_t)L_252) == ((uint32_t)((int32_t)15)))))
 			{
-				goto IL_0515_1;
+				goto IL_0461_1;
 			}
 		}
 		{
+			G_B60_0 = 4;
+			goto IL_0462_1;
+		}
+
+IL_0461_1:
+		{
+			G_B60_0 = 4;
+		}
+
+IL_0462_1:
+		{
+			V_5 = G_B60_0;
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:663>
-			int32_t L_255 = __this->___typeEff;
-			if ((((int32_t)L_255) == ((int32_t)((int32_t)11))))
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_253 = __this->___t;
+			int32_t L_254 = V_4;
+			NullCheck(L_253);
+			int32_t L_255 = L_254;
+			int32_t L_256 = (L_253)->GetAt(static_cast<il2cpp_array_size_t>(L_255));
+			int32_t L_257 = __this->___typeEff;
+			if ((((int32_t)L_257) == ((int32_t)2)))
 			{
-				goto IL_0494_1;
+				G_B62_0 = L_256;
+				goto IL_0479_1;
 			}
+			G_B61_0 = L_256;
 		}
 		{
-			int32_t L_256 = __this->___typeEff;
-			if ((((int32_t)L_256) == ((int32_t)((int32_t)15))))
+			G_B63_0 = 2;
+			G_B63_1 = G_B61_0;
+			goto IL_047a_1;
+		}
+
+IL_0479_1:
+		{
+			G_B63_0 = 4;
+			G_B63_1 = G_B62_0;
+		}
+
+IL_047a_1:
+		{
+			if ((((int32_t)G_B63_1) <= ((int32_t)G_B63_0)))
 			{
-				goto IL_0494_1;
+				goto IL_0526_1;
 			}
 		}
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:665>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_257 = __this->___frame;
-			int32_t L_258 = V_4;
-			NullCheck(L_257);
-			int32_t* L_259 = ((L_257)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_258)));
-			int32_t L_260 = *((int32_t*)L_259);
-			*((int32_t*)L_259) = (int32_t)((int32_t)il2cpp_codegen_add(L_260, 1));
+			int32_t L_258 = __this->___typeEff;
+			if ((((int32_t)L_258) == ((int32_t)((int32_t)11))))
+			{
+				goto IL_04a5_1;
+			}
 		}
-
-IL_0494_1:
+		{
+			int32_t L_259 = __this->___typeEff;
+			if ((((int32_t)L_259) == ((int32_t)((int32_t)15))))
+			{
+				goto IL_04a5_1;
+			}
+		}
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:667>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_261 = __this->___t;
-			int32_t L_262 = V_4;
-			NullCheck(L_261);
-			(L_261)->SetAt(static_cast<il2cpp_array_size_t>(L_262), (int32_t)0);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:668>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_263 = __this->___frame;
-			int32_t L_264 = V_4;
-			NullCheck(L_263);
-			int32_t L_265 = L_264;
-			int32_t L_266 = (L_263)->GetAt(static_cast<il2cpp_array_size_t>(L_265));
-			int32_t L_267 = V_5;
-			if ((((int32_t)L_266) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_267, 1)))))
-			{
-				goto IL_0515_1;
-			}
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_260 = __this->___frame;
+			int32_t L_261 = V_4;
+			NullCheck(L_260);
+			int32_t* L_262 = ((L_260)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_261)));
+			int32_t L_263 = *((int32_t*)L_262);
+			*((int32_t*)L_262) = (int32_t)((int32_t)il2cpp_codegen_add(L_263, 1));
 		}
+
+IL_04a5_1:
 		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:669>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_264 = __this->___t;
+			int32_t L_265 = V_4;
+			NullCheck(L_264);
+			(L_264)->SetAt(static_cast<il2cpp_array_size_t>(L_265), (int32_t)0);
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:670>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_268 = __this->___frame;
-			int32_t L_269 = V_4;
-			NullCheck(L_268);
-			(L_268)->SetAt(static_cast<il2cpp_array_size_t>(L_269), (int32_t)0);
-			goto IL_0515_1;
-		}
-
-IL_04b9_1:
-		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:676>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_270 = __this->___t;
-			int32_t L_271 = V_4;
-			NullCheck(L_270);
-			int32_t* L_272 = ((L_270)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_271)));
-			int32_t L_273 = *((int32_t*)L_272);
-			*((int32_t*)L_272) = (int32_t)((int32_t)il2cpp_codegen_add(L_273, 1));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:677>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_274 = __this->___t;
-			int32_t L_275 = V_4;
-			NullCheck(L_274);
-			int32_t L_276 = L_275;
-			int32_t L_277 = (L_274)->GetAt(static_cast<il2cpp_array_size_t>(L_276));
-			if ((!(((uint32_t)L_277) == ((uint32_t)((int32_t)100)))))
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_266 = __this->___frame;
+			int32_t L_267 = V_4;
+			NullCheck(L_266);
+			int32_t L_268 = L_267;
+			int32_t L_269 = (L_266)->GetAt(static_cast<il2cpp_array_size_t>(L_268));
+			int32_t L_270 = V_5;
+			if ((((int32_t)L_269) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_270, 1)))))
 			{
-				goto IL_0515_1;
+				goto IL_0526_1;
 			}
 		}
 		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:672>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_271 = __this->___frame;
+			int32_t L_272 = V_4;
+			NullCheck(L_271);
+			(L_271)->SetAt(static_cast<il2cpp_array_size_t>(L_272), (int32_t)0);
+			goto IL_0526_1;
+		}
+
+IL_04ca_1:
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:678>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_273 = __this->___t;
+			int32_t L_274 = V_4;
+			NullCheck(L_273);
+			int32_t* L_275 = ((L_273)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_274)));
+			int32_t L_276 = *((int32_t*)L_275);
+			*((int32_t*)L_275) = (int32_t)((int32_t)il2cpp_codegen_add(L_276, 1));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:679>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_278 = __this->___t;
-			int32_t L_279 = V_4;
-			NullCheck(L_278);
-			(L_278)->SetAt(static_cast<il2cpp_array_size_t>(L_279), (int32_t)0);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:680>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_280 = __this->___x;
-			int32_t L_281 = V_4;
-			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
-			int32_t L_282 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxw;
-			il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
-			int32_t L_283;
-			L_283 = Res_random_m4C7D8B74D6563FDABCAD9A9B88B6EA731051D971(((int32_t)-10), ((int32_t)il2cpp_codegen_add(L_282, ((int32_t)50))), NULL);
-			NullCheck(L_280);
-			(L_280)->SetAt(static_cast<il2cpp_array_size_t>(L_281), (int32_t)L_283);
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_277 = __this->___t;
+			int32_t L_278 = V_4;
+			NullCheck(L_277);
+			int32_t L_279 = L_278;
+			int32_t L_280 = (L_277)->GetAt(static_cast<il2cpp_array_size_t>(L_279));
+			if ((!(((uint32_t)L_280) == ((uint32_t)((int32_t)100)))))
+			{
+				goto IL_0526_1;
+			}
+		}
+		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:681>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_284 = __this->___y;
-			int32_t L_285 = V_4;
-			int32_t L_286;
-			L_286 = Res_random_m4C7D8B74D6563FDABCAD9A9B88B6EA731051D971(((int32_t)-50), 0, NULL);
-			NullCheck(L_284);
-			(L_284)->SetAt(static_cast<il2cpp_array_size_t>(L_285), (int32_t)L_286);
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_281 = __this->___t;
+			int32_t L_282 = V_4;
+			NullCheck(L_281);
+			(L_281)->SetAt(static_cast<il2cpp_array_size_t>(L_282), (int32_t)0);
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:682>
-			BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_287 = __this->___activeEff;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_283 = __this->___x;
+			int32_t L_284 = V_4;
+			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
+			int32_t L_285 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxw;
+			il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
+			int32_t L_286;
+			L_286 = Res_random_m4C7D8B74D6563FDABCAD9A9B88B6EA731051D971(((int32_t)-10), ((int32_t)il2cpp_codegen_add(L_285, ((int32_t)50))), NULL);
+			NullCheck(L_283);
+			(L_283)->SetAt(static_cast<il2cpp_array_size_t>(L_284), (int32_t)L_286);
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:683>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_287 = __this->___y;
 			int32_t L_288 = V_4;
+			int32_t L_289;
+			L_289 = Res_random_m4C7D8B74D6563FDABCAD9A9B88B6EA731051D971(((int32_t)-50), 0, NULL);
 			NullCheck(L_287);
-			(L_287)->SetAt(static_cast<il2cpp_array_size_t>(L_288), (bool)0);
+			(L_287)->SetAt(static_cast<il2cpp_array_size_t>(L_288), (int32_t)L_289);
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:684>
+			BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_290 = __this->___activeEff;
+			int32_t L_291 = V_4;
+			NullCheck(L_290);
+			(L_290)->SetAt(static_cast<il2cpp_array_size_t>(L_291), (bool)0);
 		}
 
-IL_0515_1:
+IL_0526_1:
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:635>
-			int32_t L_289 = V_4;
-			V_4 = ((int32_t)il2cpp_codegen_add(L_289, 1));
+			int32_t L_292 = V_4;
+			V_4 = ((int32_t)il2cpp_codegen_add(L_292, 1));
 		}
 
-IL_051b_1:
+IL_052c_1:
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:635>
-			int32_t L_290 = V_4;
-			int32_t L_291 = __this->___sum;
-			if ((((int32_t)L_290) < ((int32_t)L_291)))
+			int32_t L_293 = V_4;
+			int32_t L_294 = __this->___sum;
+			if ((((int32_t)L_293) < ((int32_t)L_294)))
 			{
 				goto IL_02a8_1;
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:686>
-			goto IL_06dc_1;
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:688>
+			goto IL_06ed_1;
 		}
 
-IL_052d_1:
-		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:690>
-			V_8 = 0;
-			goto IL_05a2_1;
-		}
-
-IL_0532_1:
+IL_053e_1:
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:692>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_292 = __this->___t;
-			int32_t L_293 = V_8;
-			NullCheck(L_292);
-			int32_t* L_294 = ((L_292)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_293)));
-			int32_t L_295 = *((int32_t*)L_294);
-			*((int32_t*)L_294) = (int32_t)((int32_t)il2cpp_codegen_add(L_295, 1));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:693>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_296 = __this->___t;
-			int32_t L_297 = V_8;
-			NullCheck(L_296);
-			int32_t L_298 = L_297;
-			int32_t L_299 = (L_296)->GetAt(static_cast<il2cpp_array_size_t>(L_298));
-			if ((((int32_t)L_299) <= ((int32_t)((int32_t)10))))
-			{
-				goto IL_059c_1;
-			}
-		}
-		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:695>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_300 = __this->___tick;
-			int32_t L_301 = V_8;
-			NullCheck(L_300);
-			int32_t* L_302 = ((L_300)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_301)));
-			int32_t L_303 = *((int32_t*)L_302);
-			*((int32_t*)L_302) = (int32_t)((int32_t)il2cpp_codegen_add(L_303, 1));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:696>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_304 = __this->___t;
-			int32_t L_305 = V_8;
-			NullCheck(L_304);
-			(L_304)->SetAt(static_cast<il2cpp_array_size_t>(L_305), (int32_t)0);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:697>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_306 = __this->___tick;
-			int32_t L_307 = V_8;
-			NullCheck(L_306);
-			int32_t L_308 = L_307;
-			int32_t L_309 = (L_306)->GetAt(static_cast<il2cpp_array_size_t>(L_308));
-			if ((((int32_t)L_309) <= ((int32_t)5)))
-			{
-				goto IL_0583_1;
-			}
-		}
-		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:699>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_310 = __this->___tick;
-			int32_t L_311 = V_8;
-			NullCheck(L_310);
-			(L_310)->SetAt(static_cast<il2cpp_array_size_t>(L_311), (int32_t)0);
+			V_8 = 0;
+			goto IL_05b3_1;
 		}
 
-IL_0583_1:
+IL_0543_1:
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:694>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_295 = __this->___t;
+			int32_t L_296 = V_8;
+			NullCheck(L_295);
+			int32_t* L_297 = ((L_295)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_296)));
+			int32_t L_298 = *((int32_t*)L_297);
+			*((int32_t*)L_297) = (int32_t)((int32_t)il2cpp_codegen_add(L_298, 1));
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:695>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_299 = __this->___t;
+			int32_t L_300 = V_8;
+			NullCheck(L_299);
+			int32_t L_301 = L_300;
+			int32_t L_302 = (L_299)->GetAt(static_cast<il2cpp_array_size_t>(L_301));
+			if ((((int32_t)L_302) <= ((int32_t)((int32_t)10))))
+			{
+				goto IL_05ad_1;
+			}
+		}
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:697>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_303 = __this->___tick;
+			int32_t L_304 = V_8;
+			NullCheck(L_303);
+			int32_t* L_305 = ((L_303)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_304)));
+			int32_t L_306 = *((int32_t*)L_305);
+			*((int32_t*)L_305) = (int32_t)((int32_t)il2cpp_codegen_add(L_306, 1));
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:698>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_307 = __this->___t;
+			int32_t L_308 = V_8;
+			NullCheck(L_307);
+			(L_307)->SetAt(static_cast<il2cpp_array_size_t>(L_308), (int32_t)0);
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:699>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_309 = __this->___tick;
+			int32_t L_310 = V_8;
+			NullCheck(L_309);
+			int32_t L_311 = L_310;
+			int32_t L_312 = (L_309)->GetAt(static_cast<il2cpp_array_size_t>(L_311));
+			if ((((int32_t)L_312) <= ((int32_t)5)))
+			{
+				goto IL_0594_1;
+			}
+		}
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:701>
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_312 = __this->___frame;
-			int32_t L_313 = V_8;
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_314 = __this->___dem;
-			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_315 = __this->___tick;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_313 = __this->___tick;
+			int32_t L_314 = V_8;
+			NullCheck(L_313);
+			(L_313)->SetAt(static_cast<il2cpp_array_size_t>(L_314), (int32_t)0);
+		}
+
+IL_0594_1:
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:703>
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_315 = __this->___frame;
 			int32_t L_316 = V_8;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_317 = __this->___dem;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_318 = __this->___tick;
+			int32_t L_319 = V_8;
+			NullCheck(L_318);
+			int32_t L_320 = L_319;
+			int32_t L_321 = (L_318)->GetAt(static_cast<il2cpp_array_size_t>(L_320));
+			NullCheck(L_317);
+			int32_t L_322 = L_321;
+			int32_t L_323 = (L_317)->GetAt(static_cast<il2cpp_array_size_t>(L_322));
 			NullCheck(L_315);
-			int32_t L_317 = L_316;
-			int32_t L_318 = (L_315)->GetAt(static_cast<il2cpp_array_size_t>(L_317));
-			NullCheck(L_314);
-			int32_t L_319 = L_318;
-			int32_t L_320 = (L_314)->GetAt(static_cast<il2cpp_array_size_t>(L_319));
-			NullCheck(L_312);
-			(L_312)->SetAt(static_cast<il2cpp_array_size_t>(L_313), (int32_t)L_320);
+			(L_315)->SetAt(static_cast<il2cpp_array_size_t>(L_316), (int32_t)L_323);
 		}
 
-IL_059c_1:
+IL_05ad_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:690>
-			int32_t L_321 = V_8;
-			V_8 = ((int32_t)il2cpp_codegen_add(L_321, 1));
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:692>
+			int32_t L_324 = V_8;
+			V_8 = ((int32_t)il2cpp_codegen_add(L_324, 1));
 		}
 
-IL_05a2_1:
+IL_05b3_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:690>
-			int32_t L_322 = V_8;
-			int32_t L_323 = __this->___sum;
-			if ((((int32_t)L_322) < ((int32_t)L_323)))
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:692>
+			int32_t L_325 = V_8;
+			int32_t L_326 = __this->___sum;
+			if ((((int32_t)L_325) < ((int32_t)L_326)))
 			{
-				goto IL_0532_1;
+				goto IL_0543_1;
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:704>
-			goto IL_06dc_1;
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:706>
+			goto IL_06ed_1;
 		}
 
-IL_05b1_1:
+IL_05c2_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:707>
-			int32_t L_324 = __this->___tFire;
-			__this->___tFire = ((int32_t)il2cpp_codegen_add(L_324, 1));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:708>
-			int32_t L_325 = __this->___tFire;
-			if ((!(((uint32_t)L_325) == ((uint32_t)3))))
-			{
-				goto IL_05ed_1;
-			}
-		}
-		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:709>
+			int32_t L_327 = __this->___tFire;
+			__this->___tFire = ((int32_t)il2cpp_codegen_add(L_327, 1));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:710>
-			__this->___tFire = 0;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:711>
-			int32_t L_326 = __this->___frameFire;
-			__this->___frameFire = ((int32_t)il2cpp_codegen_add(L_326, 1));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:712>
-			int32_t L_327 = __this->___frameFire;
-			if ((((int32_t)L_327) <= ((int32_t)1)))
+			int32_t L_328 = __this->___tFire;
+			if ((!(((uint32_t)L_328) == ((uint32_t)3))))
 			{
-				goto IL_05ed_1;
+				goto IL_05fe_1;
 			}
 		}
 		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:712>
+			__this->___tFire = 0;
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:713>
+			int32_t L_329 = __this->___frameFire;
+			__this->___frameFire = ((int32_t)il2cpp_codegen_add(L_329, 1));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:714>
+			int32_t L_330 = __this->___frameFire;
+			if ((((int32_t)L_330) <= ((int32_t)1)))
+			{
+				goto IL_05fe_1;
+			}
+		}
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:716>
 			__this->___frameFire = 0;
 		}
 
-IL_05ed_1:
+IL_05fe_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:717>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:719>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			int32_t L_328 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___gameTick;
-			int32_t L_329 = __this->___tStart;
-			if (((int32_t)(L_328%L_329)))
+			int32_t L_331 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___gameTick;
+			int32_t L_332 = __this->___tStart;
+			if (((int32_t)(L_331%L_332)))
 			{
-				goto IL_0602_1;
+				goto IL_0613_1;
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:719>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:721>
 			__this->___isFly = (bool)1;
 		}
 
-IL_0602_1:
+IL_0613_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:721>
-			bool L_330 = __this->___isFly;
-			if (!L_330)
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:723>
+			bool L_333 = __this->___isFly;
+			if (!L_333)
 			{
-				goto IL_06dc_1;
-			}
-		}
-		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:725>
-			int32_t L_331 = __this->___way;
-			if ((!(((uint32_t)L_331) == ((uint32_t)1))))
-			{
-				goto IL_0647_1;
+				goto IL_06ed_1;
 			}
 		}
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:727>
-			int32_t L_332 = __this->___xShip;
-			int32_t L_333 = __this->___speed;
-			__this->___xShip = ((int32_t)il2cpp_codegen_add(L_332, L_333));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:728>
-			int32_t L_334 = __this->___xShip;
-			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
-			int32_t L_335 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxw;
-			if ((((int32_t)L_334) <= ((int32_t)((int32_t)il2cpp_codegen_add(L_335, ((int32_t)50))))))
+			int32_t L_334 = __this->___way;
+			if ((!(((uint32_t)L_334) == ((uint32_t)1))))
 			{
-				goto IL_06dc_1;
+				goto IL_0658_1;
 			}
 		}
 		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:729>
+			int32_t L_335 = __this->___xShip;
+			int32_t L_336 = __this->___speed;
+			__this->___xShip = ((int32_t)il2cpp_codegen_add(L_335, L_336));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:730>
+			int32_t L_337 = __this->___xShip;
+			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
+			int32_t L_338 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxw;
+			if ((((int32_t)L_337) <= ((int32_t)((int32_t)il2cpp_codegen_add(L_338, ((int32_t)50))))))
+			{
+				goto IL_06ed_1;
+			}
+		}
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:732>
 			BackgroudEffect_reloadShip_mC4379EF2837E5B626FA31596C4D881CCB7B01C32(__this, NULL);
-			goto IL_06dc_1;
+			goto IL_06ed_1;
 		}
 
-IL_0647_1:
-		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:733>
-			int32_t L_336 = __this->___way;
-			if ((!(((uint32_t)L_336) == ((uint32_t)2))))
-			{
-				goto IL_0675_1;
-			}
-		}
+IL_0658_1:
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:735>
-			int32_t L_337 = __this->___xShip;
-			int32_t L_338 = __this->___speed;
-			__this->___xShip = ((int32_t)il2cpp_codegen_subtract(L_337, L_338));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:736>
-			int32_t L_339 = __this->___xShip;
-			if ((((int32_t)L_339) >= ((int32_t)((int32_t)-50))))
+			int32_t L_339 = __this->___way;
+			if ((!(((uint32_t)L_339) == ((uint32_t)2))))
 			{
-				goto IL_06dc_1;
+				goto IL_0686_1;
 			}
 		}
 		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:737>
+			int32_t L_340 = __this->___xShip;
+			int32_t L_341 = __this->___speed;
+			__this->___xShip = ((int32_t)il2cpp_codegen_subtract(L_340, L_341));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:738>
+			int32_t L_342 = __this->___xShip;
+			if ((((int32_t)L_342) >= ((int32_t)((int32_t)-50))))
+			{
+				goto IL_06ed_1;
+			}
+		}
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:740>
 			BackgroudEffect_reloadShip_mC4379EF2837E5B626FA31596C4D881CCB7B01C32(__this, NULL);
-			goto IL_06dc_1;
+			goto IL_06ed_1;
 		}
 
-IL_0675_1:
-		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:741>
-			int32_t L_340 = __this->___way;
-			if ((!(((uint32_t)L_340) == ((uint32_t)3))))
-			{
-				goto IL_06a9_1;
-			}
-		}
+IL_0686_1:
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:743>
-			int32_t L_341 = __this->___yShip;
-			int32_t L_342 = __this->___speed;
-			__this->___yShip = ((int32_t)il2cpp_codegen_add(L_341, L_342));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:744>
-			int32_t L_343 = __this->___yShip;
-			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
-			int32_t L_344 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxh;
-			if ((((int32_t)L_343) <= ((int32_t)((int32_t)il2cpp_codegen_add(L_344, ((int32_t)50))))))
+			int32_t L_343 = __this->___way;
+			if ((!(((uint32_t)L_343) == ((uint32_t)3))))
 			{
-				goto IL_06dc_1;
+				goto IL_06ba_1;
 			}
 		}
 		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:745>
+			int32_t L_344 = __this->___yShip;
+			int32_t L_345 = __this->___speed;
+			__this->___yShip = ((int32_t)il2cpp_codegen_add(L_344, L_345));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:746>
+			int32_t L_346 = __this->___yShip;
+			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
+			int32_t L_347 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxh;
+			if ((((int32_t)L_346) <= ((int32_t)((int32_t)il2cpp_codegen_add(L_347, ((int32_t)50))))))
+			{
+				goto IL_06ed_1;
+			}
+		}
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:748>
 			BackgroudEffect_reloadShip_mC4379EF2837E5B626FA31596C4D881CCB7B01C32(__this, NULL);
-			goto IL_06dc_1;
+			goto IL_06ed_1;
 		}
 
-IL_06a9_1:
-		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:749>
-			int32_t L_345 = __this->___way;
-			if ((!(((uint32_t)L_345) == ((uint32_t)4))))
-			{
-				goto IL_06dc_1;
-			}
-		}
+IL_06ba_1:
 		{
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:751>
-			int32_t L_346 = __this->___yShip;
-			int32_t L_347 = __this->___speed;
-			__this->___yShip = ((int32_t)il2cpp_codegen_subtract(L_346, L_347));
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:752>
-			int32_t L_348 = __this->___yShip;
-			if ((((int32_t)L_348) >= ((int32_t)((int32_t)-50))))
+			int32_t L_348 = __this->___way;
+			if ((!(((uint32_t)L_348) == ((uint32_t)4))))
 			{
-				goto IL_06dc_1;
+				goto IL_06ed_1;
 			}
 		}
 		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:753>
+			int32_t L_349 = __this->___yShip;
+			int32_t L_350 = __this->___speed;
+			__this->___yShip = ((int32_t)il2cpp_codegen_subtract(L_349, L_350));
 			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:754>
+			int32_t L_351 = __this->___yShip;
+			if ((((int32_t)L_351) >= ((int32_t)((int32_t)-50))))
+			{
+				goto IL_06ed_1;
+			}
+		}
+		{
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:756>
 			BackgroudEffect_reloadShip_mC4379EF2837E5B626FA31596C4D881CCB7B01C32(__this, NULL);
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:757>
-			goto IL_06dc_1;
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:759>
+			goto IL_06ed_1;
 		}
 
-IL_06d7_1:
+IL_06e8_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:759>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:761>
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			BackgroudEffect_updateFog_mD2FA9E079EDDB8F61FA5F63CE67A978E1EE99E59(NULL);
 		}
 
-IL_06dc_1:
+IL_06ed_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:762>
-			goto IL_06e1;
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:764>
+			goto IL_06f2;
 		}
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -12577,23 +12580,23 @@ IL_06dc_1:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_06de;
+			goto CATCH_06ef;
 		}
 		throw e;
 	}
 
-CATCH_06de:
+CATCH_06ef:
 	{
-		Exception_t* L_349 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:763>
+		Exception_t* L_352 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:765>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:767>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
-		goto IL_06e1;
+		goto IL_06f2;
 	}
 
-IL_06e1:
+IL_06f2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:766>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:768>
 		return;
 	}
 }
@@ -12615,7 +12618,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintFront_mB81BDDAB7E05
 	try
 	{
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:772>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:774>
 			int32_t L_0 = __this->___typeEff;
 			V_0 = L_0;
 			int32_t L_1 = V_0;
@@ -12693,19 +12696,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintFront_mB81BDDAB7E05
 
 IL_0052_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:779>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:781>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_2 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:780>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:782>
 			int32_t L_3 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:781>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:783>
 			V_1 = 0;
 			goto IL_011a_1;
 		}
 
 IL_0065_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:783>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:785>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_4 = __this->___type;
 			int32_t L_5 = V_1;
 			NullCheck(L_4);
@@ -12773,7 +12776,7 @@ IL_0065_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:785>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:787>
 			BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_30 = __this->___activeEff;
 			int32_t L_31 = V_1;
 			NullCheck(L_30);
@@ -12785,7 +12788,7 @@ IL_0065_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:787>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:789>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_34 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_35 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___imgHatMua;
@@ -12811,7 +12814,7 @@ IL_0065_1:
 
 IL_00fa_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:791>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:793>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_48 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_49 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___imgMua1;
@@ -12831,14 +12834,14 @@ IL_00fa_1:
 
 IL_0116_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:781>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:783>
 			int32_t L_58 = V_1;
 			V_1 = ((int32_t)il2cpp_codegen_add(L_58, 1));
 		}
 
 IL_011a_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:781>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:783>
 			int32_t L_59 = V_1;
 			int32_t L_60 = __this->___sum;
 			if ((((int32_t)L_59) < ((int32_t)L_60)))
@@ -12847,13 +12850,13 @@ IL_011a_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:795>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:797>
 			goto IL_0179_1;
 		}
 
 IL_0128_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:804>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:806>
 			int32_t L_61 = __this->___typeEff;
 			if ((!(((uint32_t)L_61) == ((uint32_t)((int32_t)15)))))
 			{
@@ -12861,7 +12864,7 @@ IL_0128_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:806>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:808>
 			il2cpp_codegen_runtime_class_init_inline(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var);
 			SmallU5BU5D_t3A26A363C392F04E89AF082AF245543EDB17BC7D* L_62 = ((SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_StaticFields*)il2cpp_codegen_static_fields_for(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var))->___imgNew;
 			NullCheck(L_62);
@@ -12886,7 +12889,7 @@ IL_0128_1:
 			}
 		}
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:808>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:810>
 			il2cpp_codegen_runtime_class_init_inline(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var);
 			SmallU5BU5D_t3A26A363C392F04E89AF082AF245543EDB17BC7D* L_69 = ((SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_StaticFields*)il2cpp_codegen_static_fields_for(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var))->___imgNew;
 			NullCheck(L_69);
@@ -12901,7 +12904,7 @@ IL_0128_1:
 
 IL_0166_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:810>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:812>
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_73 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___imgLacay;
 			if (!L_73)
@@ -12912,7 +12915,7 @@ IL_0166_1:
 
 IL_016d_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:815>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:817>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_74 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_75 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___imgLacay;
@@ -12921,7 +12924,7 @@ IL_016d_1:
 
 IL_0179_1:
 		{
-			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:824>
+			//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:826>
 			goto IL_017e;
 		}
 	}
@@ -12938,15 +12941,15 @@ IL_0179_1:
 CATCH_017b:
 	{
 		Exception_t* L_76 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:825>
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:827>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:829>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_017e;
 	}
 
 IL_017e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:828>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:830>
 		return;
 	}
 }
@@ -12963,18 +12966,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintLacay1_m4A96A927107
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:832>
-		int32_t L_0 = __this->___typeEff;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:833>
-		int32_t L_1 = __this->___typeEff;
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:834>
+		int32_t L_0 = __this->___typeEff;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:835>
+		int32_t L_1 = __this->___typeEff;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:836>
 		V_0 = 0;
 		goto IL_00a2;
 	}
 
 IL_001b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:836>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:838>
 		int32_t L_2 = V_0;
 		if (((int32_t)(L_2%3)))
 		{
@@ -13045,7 +13048,7 @@ IL_001b:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:838>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:840>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_26 = ___0_g;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_27 = ___1_img;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
@@ -13076,14 +13079,14 @@ IL_001b:
 
 IL_009e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:834>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:836>
 		int32_t L_44 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_44, 1));
 	}
 
 IL_00a2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:834>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:836>
 		int32_t L_45 = V_0;
 		int32_t L_46 = __this->___sum;
 		if ((((int32_t)L_45) < ((int32_t)L_46)))
@@ -13092,7 +13095,7 @@ IL_00a2:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:841>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:843>
 		return;
 	}
 }
@@ -13109,18 +13112,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintLacay2_m0473883D3A6
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:845>
-		int32_t L_0 = __this->___typeEff;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:846>
-		int32_t L_1 = __this->___typeEff;
 		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:847>
+		int32_t L_0 = __this->___typeEff;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:848>
+		int32_t L_1 = __this->___typeEff;
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:849>
 		V_0 = 0;
 		goto IL_00a2;
 	}
 
 IL_001b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:849>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:851>
 		int32_t L_2 = V_0;
 		if (!((int32_t)(L_2%3)))
 		{
@@ -13191,7 +13194,7 @@ IL_001b:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:851>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:853>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_26 = ___0_g;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_27 = ___1_img;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
@@ -13222,14 +13225,14 @@ IL_001b:
 
 IL_009e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:847>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:849>
 		int32_t L_44 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_44, 1));
 	}
 
 IL_00a2:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:847>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:849>
 		int32_t L_45 = V_0;
 		int32_t L_46 = __this->___sum;
 		if ((((int32_t)L_45) < ((int32_t)L_46)))
@@ -13238,7 +13241,7 @@ IL_00a2:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:854>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:856>
 		return;
 	}
 }
@@ -13256,7 +13259,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintBehindTile_mDDFF193
 	int32_t G_B6_0 = 0;
 	int32_t G_B10_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:858>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:860>
 		int32_t L_0 = __this->___typeEff;
 		if ((!(((uint32_t)L_0) == ((uint32_t)8))))
 		{
@@ -13264,7 +13267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintBehindTile_mDDFF193
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:861>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:863>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_1 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_2 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___imgShip;
@@ -13281,7 +13284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintBehindTile_mDDFF193
 		int32_t L_9 = __this->___yShip;
 		NullCheck(L_1);
 		mGraphics_drawRegion_m0848120CE73023DFD40EB85D4AEB769C05AFB247(L_1, L_2, 0, 0, L_4, L_6, L_7, L_8, L_9, 3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:862>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:864>
 		int32_t L_10 = __this->___way;
 		if ((((int32_t)L_10) == ((int32_t)1)))
 		{
@@ -13298,7 +13301,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintBehindTile_mDDFF193
 
 IL_0052:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:864>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:866>
 		int32_t L_12 = __this->___trans;
 		if (L_12)
 		{
@@ -13318,7 +13321,7 @@ IL_005e:
 IL_0060:
 	{
 		V_0 = G_B6_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:865>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:867>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_13 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_14 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___imgFire1;
@@ -13334,7 +13337,7 @@ IL_0060:
 
 IL_0090:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:869>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:871>
 		int32_t L_20 = __this->___trans;
 		if (L_20)
 		{
@@ -13354,7 +13357,7 @@ IL_009c:
 IL_009e:
 	{
 		V_1 = G_B10_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:870>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:872>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_21 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_22 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___imgFire2;
@@ -13369,7 +13372,7 @@ IL_009e:
 
 IL_00cf:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:874>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:876>
 		return;
 	}
 }
@@ -13388,7 +13391,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintBack_m60834749B110C
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:878>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:880>
 		int32_t L_0 = __this->___typeEff;
 		V_0 = L_0;
 		int32_t L_1 = V_0;
@@ -13466,23 +13469,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintBack_m60834749B110C
 
 IL_004e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:884>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:886>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:885>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:887>
 		int32_t L_3 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:886>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:888>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_4 = ___0_g;
 		NullCheck(L_4);
 		mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_4, ((int32_t)10742731), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:887>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:889>
 		V_1 = 0;
 		goto IL_00dc;
 	}
 
 IL_0069:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:889>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:891>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_5 = __this->___type;
 		int32_t L_6 = V_1;
 		NullCheck(L_5);
@@ -13550,7 +13553,7 @@ IL_0069:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:891>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:893>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_31 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_32 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___imgMua2;
@@ -13570,14 +13573,14 @@ IL_0069:
 
 IL_00d8:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:887>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:889>
 		int32_t L_41 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_41, 1));
 	}
 
 IL_00dc:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:887>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:889>
 		int32_t L_42 = V_1;
 		int32_t L_43 = __this->___sum;
 		if ((((int32_t)L_42) < ((int32_t)L_43)))
@@ -13586,13 +13589,13 @@ IL_00dc:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:894>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:896>
 		return;
 	}
 
 IL_00e6:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:903>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:905>
 		int32_t L_44 = __this->___typeEff;
 		if ((!(((uint32_t)L_44) == ((uint32_t)((int32_t)15)))))
 		{
@@ -13600,7 +13603,7 @@ IL_00e6:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:905>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:907>
 		il2cpp_codegen_runtime_class_init_inline(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var);
 		SmallU5BU5D_t3A26A363C392F04E89AF082AF245543EDB17BC7D* L_45 = ((SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_StaticFields*)il2cpp_codegen_static_fields_for(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var))->___imgNew;
 		NullCheck(L_45);
@@ -13625,7 +13628,7 @@ IL_00e6:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:907>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:909>
 		il2cpp_codegen_runtime_class_init_inline(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var);
 		SmallU5BU5D_t3A26A363C392F04E89AF082AF245543EDB17BC7D* L_52 = ((SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_StaticFields*)il2cpp_codegen_static_fields_for(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var))->___imgNew;
 		NullCheck(L_52);
@@ -13640,7 +13643,7 @@ IL_00e6:
 
 IL_0124:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:909>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:911>
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_56 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___imgLacay;
 		if (!L_56)
@@ -13651,7 +13654,7 @@ IL_0124:
 
 IL_012b:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:914>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:916>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_57 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_58 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___imgLacay;
@@ -13660,7 +13663,7 @@ IL_012b:
 
 IL_0137:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:925>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:927>
 		return;
 	}
 }
@@ -13676,7 +13679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_addEffect_m6327BD605C2ED
 	}
 	BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3* V_0 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:929>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:931>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___lowGraphic;
 		if (L_0)
@@ -13685,12 +13688,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_addEffect_m6327BD605C2ED
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:931>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:933>
 		int32_t L_1 = ___0_id;
 		BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3* L_2 = (BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)il2cpp_codegen_object_new(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		BackgroudEffect__ctor_mE8106663BA985B04B3320CDEB45898D1F66AC829(L_2, L_1, NULL);
 		V_0 = L_2;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:932>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:934>
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_3 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
 		BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3* L_4 = V_0;
@@ -13700,7 +13703,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_addEffect_m6327BD605C2ED
 
 IL_0019:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:934>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:936>
 		return;
 	}
 }
@@ -13715,27 +13718,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_addWater_m2DB4881870DF1C
 	}
 	BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3* V_0 = NULL;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:938>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:940>
 		BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3* L_0 = (BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)il2cpp_codegen_object_new(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		BackgroudEffect__ctor_mE8106663BA985B04B3320CDEB45898D1F66AC829(L_0, ((int32_t)10), NULL);
 		V_0 = L_0;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:939>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:941>
 		BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3* L_1 = V_0;
 		int32_t L_2 = ___0_color;
 		NullCheck(L_1);
 		L_1->___colorWater = L_2;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:940>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:942>
 		BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3* L_3 = V_0;
 		int32_t L_4 = ___1_yWater;
 		NullCheck(L_3);
 		L_3->___yWater = L_4;
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:941>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:943>
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_5 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
 		BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3* L_6 = V_0;
 		NullCheck(L_5);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_5, L_6, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:942>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:944>
 		return;
 	}
 }
@@ -13750,14 +13753,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintWaterAll_m0B1A31142
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:946>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:948>
 		V_0 = 0;
 		goto IL_001e;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:948>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:950>
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
 		int32_t L_1 = V_0;
@@ -13767,14 +13770,14 @@ IL_0004:
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_3 = ___0_g;
 		NullCheck(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)));
 		BackgroudEffect_paintWater_m77636AF8B1ED9238FB8FA62AEDD5D69F9378AB5D(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)), L_3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:946>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:948>
 		int32_t L_4 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_4, 1));
 	}
 
 IL_001e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:946>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:948>
 		int32_t L_5 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_6 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
@@ -13787,7 +13790,7 @@ IL_001e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:950>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:952>
 		return;
 	}
 }
@@ -13802,14 +13805,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintBehindTileAll_mD342
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:954>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:956>
 		V_0 = 0;
 		goto IL_001e;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:956>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:958>
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
 		int32_t L_1 = V_0;
@@ -13819,14 +13822,14 @@ IL_0004:
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_3 = ___0_g;
 		NullCheck(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)));
 		BackgroudEffect_paintBehindTile_mDDFF193674E2C9E240CB917F1A419619936CCD1A(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)), L_3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:954>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:956>
 		int32_t L_4 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_4, 1));
 	}
 
 IL_001e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:954>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:956>
 		int32_t L_5 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_6 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
@@ -13839,7 +13842,7 @@ IL_001e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:958>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:960>
 		return;
 	}
 }
@@ -13854,14 +13857,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintFrontAll_m2870D9E79
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:962>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:964>
 		V_0 = 0;
 		goto IL_001e;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:964>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:966>
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
 		int32_t L_1 = V_0;
@@ -13871,14 +13874,14 @@ IL_0004:
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_3 = ___0_g;
 		NullCheck(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)));
 		BackgroudEffect_paintFront_mB81BDDAB7E053510B6BF227D069F960E71250EBB(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)), L_3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:962>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:964>
 		int32_t L_4 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_4, 1));
 	}
 
 IL_001e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:962>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:964>
 		int32_t L_5 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_6 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
@@ -13891,7 +13894,7 @@ IL_001e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:966>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:968>
 		return;
 	}
 }
@@ -13906,14 +13909,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintFarAll_m72BFADDA91F
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:970>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:972>
 		V_0 = 0;
 		goto IL_001e;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:972>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:974>
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
 		int32_t L_1 = V_0;
@@ -13923,14 +13926,14 @@ IL_0004:
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_3 = ___0_g;
 		NullCheck(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)));
 		BackgroudEffect_paintFar_m72CCBAB5E1025E305C9F960EACB613C11B9C2893(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)), L_3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:970>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:972>
 		int32_t L_4 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_4, 1));
 	}
 
 IL_001e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:970>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:972>
 		int32_t L_5 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_6 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
@@ -13943,7 +13946,7 @@ IL_001e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:974>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:976>
 		return;
 	}
 }
@@ -13958,14 +13961,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_paintBackAll_mE74F418AD1
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:978>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:980>
 		V_0 = 0;
 		goto IL_001e;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:980>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:982>
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
 		int32_t L_1 = V_0;
@@ -13975,14 +13978,14 @@ IL_0004:
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_3 = ___0_g;
 		NullCheck(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)));
 		BackgroudEffect_paintBack_m60834749B110C4551192A827A15C206322980D8C(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)), L_3, NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:978>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:980>
 		int32_t L_4 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_4, 1));
 	}
 
 IL_001e:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:978>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:980>
 		int32_t L_5 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_6 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
@@ -13995,7 +13998,7 @@ IL_001e:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:982>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:984>
 		return;
 	}
 }
@@ -14010,14 +14013,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BackgroudEffect_updateEff_m5B006AD6B3935
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:986>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:988>
 		V_0 = 0;
 		goto IL_001d;
 	}
 
 IL_0004:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:988>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:990>
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
 		int32_t L_1 = V_0;
@@ -14026,14 +14029,14 @@ IL_0004:
 		L_2 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_0, L_1, NULL);
 		NullCheck(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)));
 		BackgroudEffect_update_mBCEC0BCDB7BA96B9F91115090F21A0075D151488(((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3*)CastclassClass((RuntimeObject*)L_2, BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var)), NULL);
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:986>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:988>
 		int32_t L_3 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_3, 1));
 	}
 
 IL_001d:
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:986>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:988>
 		int32_t L_4 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_5 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
@@ -14046,7 +14049,7 @@ IL_001d:
 		}
 	}
 	{
-		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:990>
+		//<source_info:F:/Teamobi2026/SRC/Client_nampan/Assets/Scripts/BackgroudEffect.cs:992>
 		return;
 	}
 }
